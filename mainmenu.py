@@ -86,7 +86,7 @@ class eliesatpanel(Screen):
 
 <!-- calender -->
 </widget>
-<widget source="global.CurrentTime" render="Label" position="1530,980" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<widget source="global.CurrentTime" render="Label" position="1550,980" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
 <convert type="ClockToText">Format %A %d %B</convert>
 </widget>
 
@@ -135,7 +135,7 @@ class eliesatpanel(Screen):
 
 <!-- processor -->
 <widget source="CPULabel" render="Label" position="1300,730.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="CPU" render="Label" position="1490,730" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="CPU" render="Label" position="1490,730" zPosition="2" size="490,40" font="lsat; 22" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- mac address -->
 <widget source="macLabel" render="Label" position="1300,770.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
@@ -163,7 +163,7 @@ class eliesatpanel(Screen):
 
 <!-- flash -->
 <widget source="FlashLabel" render="Label" position="1200,485" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 22" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- image installation date -->
 <widget source="installedLabel" render="Label" position="2100,630" zPosition="2" size="390,22" font="Regular;20" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
@@ -193,7 +193,7 @@ class eliesatpanel(Screen):
 		self["key_red"] = StaticText(_("Config"))
 		self["key_green"] = StaticText(_("Scripts"))
 		self["key_yellow"] = StaticText(_("Tools"))
-		self["key_blue"] = StaticText(_("About"))
+		self["key_blue"] = StaticText(_("Update"))
 		self.list = []
 		self["menu"] = List(self.list)
 		self.mList()
