@@ -35,6 +35,10 @@ class allinone(Screen):
 <eLabel text="ALLINONE" position="160,120" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
 <ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
 
+<!-- title -->
+<eLabel text="All in one " position="1500,700" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
+
 
 <!-- minitv -->
 <widget source="session.VideoPicture" render="Pig" position="1320,120" size="550,400" zPosition="1" backgroundColor="#ff000000" />
@@ -175,15 +179,15 @@ class allinone(Screen):
 		self.list.append((_("Remove-Multistalker portals"), 28, _("حذف بورتلات الiptv بلاجين multistalker"), B))
 		self.list.append((_("Remove-Picons"), 29, _("حذف البيكونات من جميع المسارات"), C))
 		self.list.append((_("Remove-Playlists bouquetmaker"), 30, _("حذف اسطر الiptv و الرجوع للافتراضي"), D))
-		self.list.append((_("XXX"), 31, _("تثبيت الdns الافتراضي"), E))
-		self.list.append((_("XXX"), 32, _("اعطاء لايحة السكريبتات تصريح بالتنفيذ"), F))
-		self.list.append((_("XXX"), 33, _("حل مشكلة freeserver serviceinfo-module"), G))
-		self.list.append((_("XXX"), 34, _("حل مشكلة تنصيب باكجات بامتداد ipk"), H))
-		self.list.append((_("XXX"), 35, _("حل مشكلة المساحة no space left"), I))
-		self.list.append((_("XXX"), 36, _("إضافة عدد البورتلات ل ٢٠٠"), J))
-		self.list.append((_("XXX"), 37, _("حل مشكلة اقلاع الايميو صورة openpli"), K))
-		self.list.append((_("XXX"), 38, _("حل مشكلة اقلاع الايميو صورة openatv"), L))
-		self.list.append((_("XXX"), 39, _("حل مشكلة اعداد download place"), M))
+		self.list.append((_("Remove-Playlists ipaudio"), 31, _("حذف مصادر الصوتيات و الرجوع للافتراضي"), E))
+		self.list.append((_("Remove-Playlists iptosat"), 32, _("حذف اسطر الiptv و الرجوع للافتراضي"), F))
+		self.list.append((_("Remove-Playlists jedimakerxtream"), 33, _("حذف اسطر الiptv و الرجوع للافتراضي"), G))
+		self.list.append((_("Remove-Playlists e2iplayer"), 34, _("حذف اسطر الiptv و الرجوع للافتراضي"), H))
+		self.list.append((_("Remove-Playlists xtreamity"), 35, _("حذف اسطر الiptv و الرجوع للافتراضي "), I))
+		self.list.append((_("Remove-Channels"), 36, _("ضبط مصنع للاقمار و القنوات"), J))
+		self.list.append((_("Remove-Scripts"), 37, _("حذف السكريبتات من المسار الافتراضي"), K))
+		self.list.append((_("Remove-Swapper logos"), 38, _("حذف اللوجوهات من بلاجين bootlogoswapper"), L))
+		self.list.append((_("Remove-Settings"), 39, _("حذف اعدادات التيونر"), M))
 		self.list.append((_("XXX"), 40, _("حل مشكلة no space left on device"), N))
 
 		if self.indexpos != None:
@@ -329,35 +333,35 @@ class allinone(Screen):
         ])
 			elif item is 31:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-dns.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-ipaudio.sh -qO - | /bin/sh"
         ])
 			elif item is 32:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_chmod-scripts.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-iptosat.sh -qO - | /bin/sh"
         ])
 			elif item is 33:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-freeserver-serviceinfo-module.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-jedimakerxtream.sh -qO - | /bin/sh"
         ])
 			elif item is 34:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-ipk-package-installation.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-tsiplayer.sh -qO - | /bin/sh"
         ])
 			elif item is 35:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-hdd--space-inodes.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-xstreamity.sh -qO - | /bin/sh"
         ])
 			elif item is 36:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-portals-to200.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-sats-channels-lists.sh -qO - | /bin/sh"
         ])
 			elif item is 37:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/softcams/-/raw/main/support/support-2-r0.2.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-scripts.sh -qO - | /bin/sh"
         ])
 			elif item is 38:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-atv-softcam-restart.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-bootlogo-swapper-logos.sh -qO - | /bin/sh"
         ])
 			elif item is 39:
 				self.session.open(Console, _("Installing package please wait..."), [
