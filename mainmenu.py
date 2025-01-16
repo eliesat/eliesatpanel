@@ -368,7 +368,7 @@ class eliesatpanel(Screen):
 		self.session.open(PluginBrowser)
 	
 	def infoKey (self):
-		self.session.open(Console, _("Installing package please wait..."), [
+		self.session.open(Console, _("Please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 

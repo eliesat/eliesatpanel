@@ -53,6 +53,9 @@ if [ $extract -eq 0 ]; then
     mv /tmp/eliesatpanel-main/* /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/ >/dev/null 2>&1
     rm -rf /tmp/eliesatpanel-main >/dev/null 2>&1
     fi
+print_message "> Eliesatpanel is installed successfully and up to date ..."
+echo
+echo 3
 
 print_message "> End of process ..."
 echo "-----------------------------------------------"
