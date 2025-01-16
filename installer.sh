@@ -40,7 +40,7 @@ rm -rf /control /postinst /preinst /prerm /postrm /tmp/*.ipk /tmp/*.tar.gz >/dev
 # Download and install eliesatpanel
 #######################################
 
-wget --show-progress -qO $package --no-check-certificate $url
+wget -qO $package --no-check-certificate $url
 tar -xzf $package -C /tmp
 extract=$?
 rm -rf $package >/dev/null 2>&1
@@ -55,7 +55,7 @@ if [ $extract -eq 0 ]; then
     fi
 print_message "> Eliesatpanel is installed successfully and up to date ..."
 echo
-echo 3
+sleep 3
 
 print_message "> End of process ..."
 echo "-----------------------------------------------"
