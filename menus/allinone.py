@@ -169,12 +169,12 @@ class allinone(Screen):
 		self.list.append((_("Hdd-Create swap file"), 22, _("إنشاء ذاكرة تشاركية 1gb"), v))
 		self.list.append((_("Remove-Crash logs"), 23, _("حذف ملفات الكراش"), w))
 		self.list.append((_("Remove-E2iplayer"), 24, _("حذف بلاجين e2iplayer"), x))
-		self.list.append((_("XXX"), 25, _("تنزيل و تثبيت باكاج openpli #gstreamer"), y))
-		self.list.append((_("XXX"), 26, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), z))
-		self.list.append((_("XXX"), 27, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), A))
-		self.list.append((_("XXX"), 28, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), B))
-		self.list.append((_("XXX"), 29, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), C))
-		self.list.append((_("XXX"), 30, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), D))
+		self.list.append((_("Remove-Emus config folders"), 25, _("حذف مجلدات الconfig الخاص بالايميوهات"), y))
+		self.list.append((_("Remove-Emus"), 26, _("حذف الايميوهات"), z))
+		self.list.append((_("Remove-Epg rytec sources"), 27, _("حذف سورسات الدليل rytec بلاجين egggrabber"), A))
+		self.list.append((_("Remove-Multistalker portals"), 28, _("حذف بورتلات الiptv بلاجين multistalker"), B))
+		self.list.append((_("Remove-Picons"), 29, _("حذف البيكونات من جميع المسارات"), C))
+		self.list.append((_("Remove-Playlists bouquetmaker"), 30, _("حذف اسطر الiptv و الرجوع للافتراضي"), D))
 		self.list.append((_("XXX"), 31, _("تثبيت الdns الافتراضي"), E))
 		self.list.append((_("XXX"), 32, _("اعطاء لايحة السكريبتات تصريح بالتنفيذ"), F))
 		self.list.append((_("XXX"), 33, _("حل مشكلة freeserver serviceinfo-module"), G))
@@ -305,27 +305,27 @@ class allinone(Screen):
         ])
 			elif item is 25:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_update-dependencies-audio.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-emus-config-files.sh -qO - | /bin/sh"
         ])
 			elif item is 26:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-cloudflare-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-emus.sh -qO - | /bin/sh"
         ])
 			elif item is 27:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-google-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-epg-rytec-sources.sh -qO - | /bin/sh"
         ])
 			elif item is 28:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-opendns-home-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-multistalker-portals.sh -qO - | /bin/sh"
         ])
 			elif item is 29:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-opendns-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-picons.sh -qO - | /bin/sh"
         ])
 			elif item is 30:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-quad9-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-bouquetmakerxtream.sh -qO - | /bin/sh"
         ])
 			elif item is 31:
 				self.session.open(Console, _("Installing package please wait..."), [
