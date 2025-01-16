@@ -7,6 +7,7 @@ print_message() {
 }
 print_message "> Start of process ..."
 echo "-----------------------------------------------"
+echo
 sleep 2
 
 cleanup() {
@@ -55,7 +56,7 @@ if [ $extract -eq 0 ]; then
     fi
 print_message "> Eliesatpanel is installed successfully and up to date ..."
 echo
-sleep 3
+sleep 2
 
 print_message "> End of process ..."
 echo "-----------------------------------------------"
