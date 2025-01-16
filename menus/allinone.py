@@ -147,7 +147,6 @@ class allinone(Screen):
 		K = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		L = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		M = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		N = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Wget"), 1, _("تنزيل و تثبيت باكاج openpli #wget"), a))
 		self.list.append((_("Update"), 2, _("تحديث فيدات الصورة"), b))
@@ -188,7 +187,6 @@ class allinone(Screen):
 		self.list.append((_("Remove-Scripts"), 37, _("حذف السكريبتات من المسار الافتراضي"), K))
 		self.list.append((_("Remove-Swapper logos"), 38, _("حذف اللوجوهات من بلاجين bootlogoswapper"), L))
 		self.list.append((_("Remove-Settings"), 39, _("حذف اعدادات التيونر"), M))
-		self.list.append((_("XXX"), 40, _("حل مشكلة no space left on device"), N))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -366,10 +364,6 @@ class allinone(Screen):
 			elif item is 39:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-xtraevent-download-place.sh -qO - | /bin/sh"
-        ])
-			elif item is 40:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-xtraevent-nospace.sh -qO - | /bin/sh"
         ])
 
 			else:
