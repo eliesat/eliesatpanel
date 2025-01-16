@@ -45,7 +45,7 @@ class allinone(Screen):
 
 <!-- calender -->
 </widget>
-<widget source="global.CurrentTime" render="Label" position="1530,610" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<widget source="global.CurrentTime" render="Label" position="1550,610" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
 <convert type="ClockToText">Format %A %d %B</convert>
 </widget>
 
@@ -104,31 +104,49 @@ class allinone(Screen):
 		self.mList()
 	def mList(self):
 		self.list = []
-		onepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		twopng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		treepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		fourpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		fivepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		sixpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		sevenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		eightpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		ninepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		tenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		elevenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		twelvenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		thirtenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		a = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		b = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		c = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		d = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		e = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		f = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		g = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		h = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		i = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		j = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		k = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		l = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		m = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		n = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		o = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		p = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		q = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		r = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		s = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		t = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		
 
-		self.list.append((_("Ajpanel-14.0.0"), 1, _("إدارة الملفات و مجموعة كبيرة من الخدمات"), onepng))
-		self.list.append((_("Ciefpsettingspanel-1.9"), 2, _("بانل تسطيب اضافات"), twopng ))
-		self.list.append((_("Epanel-5.8r2"), 3, _("خدمات منوعة للصورة و المستخدم"), sixpng ))
-		self.list.append((_("Leviaddonsmanager-10.1r28"), 4, _("بانل تسطيب اضافات"), eightpng ))
-		self.list.append((_("Levimulticammanager-10.1r34"), 5, _("بانل تسطيب كامات و سكريبتات"), treepng))
-		self.list.append((_("Linuxsatpanel-2.7.0"), 6, _("بانل تسطيب اضافات"), sevenpng))
-		self.list.append((_("Eliesatpanel"), 7, _("اج بانل ايلي سات بانل"), fourpng))
-		self.list.append((_("Novaler-store-3.0r0"), 8, _("بانل تسطيب اضافات خاص باجهزة نوفالر"), ninepng))
-		self.list.append((_("Smartaddonspanel"), 9, _("بانل تسطيب اضافات "), elevenpng))
-		self.list.append((_("trial2"), 10, _("بانل تسطيب اضافات خاص باجهزة نوفالر"), twelvenpng))
-		self.list.append((_("s4aupdater"), 11, _("بانل تسطيب ملف قنوات بيكونات"), tenpng))
+		self.list.append((_("Wget"), 1, _("تنزيل و تثبيت باكاج openpli #wget"), a))
+		self.list.append((_("Update"), 2, _("تحديث فيدات الصورة"), b))
+		self.list.append((_("Upgrade"), 3, _("ترقية الصورة و الباكجات المثبته"), c))
+		self.list.append((_("Dependencies"), 4, _("تنزيل و تثبيت المكتبات من فيد الصورة"), d))
+		self.list.append((_("Gstreamer"), 5, _("تنزيل و تثبيت باكاج openpli #gstreamer"), e))
+		self.list.append((_("Dns-Cloudflare"), 6, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), f))
+		self.list.append((_("Dns-Google"), 7, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), g))
+		self.list.append((_("Dns-Home opendns"), 8, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), h))
+		self.list.append((_("Dns-Opendns"), 9, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), i))
+		self.list.append((_("Dns-Quad9"), 10, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), j))
+		self.list.append((_("Dns-Default"), 11, _("تثبيت الdns الافتراضي"), k))
+		self.list.append((_("Fix-Chmod scripts"), 12, _("اعطاء لايحة السكريبتات تصريح بالتنفيذ"), l))
+		self.list.append((_("Fix-Freeserver"), 13, _("حل مشكلة freeserver serviceinfo-module"), m))
+		self.list.append((_("Fix-Ipk installation"), 14, _("حل مشكلة تنصيب باكجات بامتداد ipk"), n))
+		self.list.append((_("Fix-Inodes"), 15, _("حل مشكلة المساحة no space left"), o))
+		self.list.append((_("Fix-Portals to 200"), 16, _("إضافة عدد البورتلات ل ٢٠٠"), p))
+		self.list.append((_("Fix-Openpli emu"), 17, _("حل مشكلة اقلاع الايميو صورة openpli"), q))
+		self.list.append((_("Fix-Openatv emu"), 18, _("حل مشكلة اقلاع الايميو صورة openatv"), r))
+		self.list.append((_("Fix-xtraevent"), 19, _("حل مشكلة اعداد download place"), s))
+		self.list.append((_("Fix-xtraevent"), 20, _("حل مشكلة no space left on device"), t))
+
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
 		self["menu"].setList(self.list)
@@ -152,33 +170,99 @@ class allinone(Screen):
 		if item:
 			if item is 1:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "clear >/dev/null 2>&1 && wget https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh -qO - | /bin/sh"
+            "opkg install wget"
         ])
 			elif item is 2:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "opkg update"
+        ])
 			elif item is 3:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "opkg upgrade"
+        ])
 			elif item is 4:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_update-dependencies.sh -qO - | /bin/sh"
+        ])
 			elif item is 5:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_update-dependencies-audio.sh -qO - | /bin/sh"
+        ])
 			elif item is 6:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-cloudflare-installer.sh -qO - | /bin/sh"
+        ])
 			elif item is 7:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-google-installer.sh -qO - | /bin/sh"
+        ])
 			elif item is 8:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-opendns-home-installer.sh -qO - | /bin/sh"
+        ])
 			elif item is 9:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-opendns-installer.sh -qO - | /bin/sh"
+        ])
 			elif item is 10:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-quad9-installer.sh -qO - | /bin/sh"
+        ])
 			elif item is 11:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-dns.sh -qO - | /bin/sh"
+        ])
+			elif item is 12:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_chmod-scripts.sh -qO - | /bin/sh"
+        ])
+			elif item is 13:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-freeserver-serviceinfo-module.sh -qO - | /bin/sh"
+        ])
+			elif item is 14:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-ipk-package-installation.sh -qO - | /bin/sh"
+        ])
+			elif item is 15:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-hdd--space-inodes.sh -qO - | /bin/sh"
+        ])
+			elif item is 16:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-portals-to200.sh -qO - | /bin/sh"
+        ])
+			elif item is 17:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/softcams/-/raw/main/support/support-2-r0.2.sh -qO - | /bin/sh"
+        ])
+			elif item is 18:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-atv-softcam-restart.sh -qO - | /bin/sh"
+        ])
+			elif item is 19:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-xtraevent-download-place.sh -qO - | /bin/sh"
+        ])
+			elif item is 20:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-xtraevent-nospace.sh -qO - | /bin/sh"
+        ])
+
 			else:
 				self.close(None)
 
 	def exit(self):
 		self.close()
+
+	def keyRed (self):
+
+		self.session.open(PluginBrowser)
+
+	def update (self):
+				self.session.open(Console, _("Installing package please wait..."), [
+            "clear >/dev/null 2>&1 && wget https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh -qO - | /bin/sh"
+        ])
 
 	def keyRed (self):
 
