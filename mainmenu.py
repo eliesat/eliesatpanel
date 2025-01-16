@@ -11,6 +11,7 @@ import sys, traceback
 import re
 import time
 import gettext
+from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.menus.allinone import allinone
 from Plugins.Extensions.ElieSatPanel.menus.dependencies import dependencies
 from Plugins.Extensions.ElieSatPanel.menus.display import display
@@ -39,6 +40,7 @@ from Components.ActionMap import ActionMap, NumberActionMap
 from Components.Sources.List import List
 from Components.Label import Label
 from Components.MenuList import MenuList
+from Components.Button import Button
 from Components.config import config, getConfigListEntry, ConfigText, ConfigPassword, ConfigClock, ConfigInteger, ConfigDateTime, ConfigSelection, ConfigSubsection, ConfigYesNo, configfile, NoSave
 from Components.ConfigList import ConfigListScreen
 from Components.Harddisk import harddiskmanager
@@ -179,7 +181,7 @@ class eliesatpanel(Screen):
 		self.setTitle(_("ElieSatPanel"))
 		self.iConsole = iConsole()
 		self.indexpos = None
-		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions"],
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions" "ColorActions", "HotkeyActions"],
 		{
 			"ok": self.keyOK,
 			"cancel": self.exit,
@@ -188,7 +190,7 @@ class eliesatpanel(Screen):
 			"info": self.infoKey,
 			"green": self.keyGreen,
 			"yellow": self.keyYellow,
-			"blue": self.keyBlue,
+			"blue": self.update,
 		})
 		self["key_red"] = StaticText(_("Config"))
 		self["key_green"] = StaticText(_("Scripts"))
@@ -354,8 +356,10 @@ class eliesatpanel(Screen):
 
 		self.session.open(PluginBrowser)
 
-	def keyBlue (self):
-		self.session.open(PluginBrowser)
+	def update (self):
+				self.session.open(Console, _("Installing package please wait..."), [
+            "clear >/dev/null 2>&1 && wget https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh -qO - | /bin/sh"
+        ])
 				
 	def keyYellow (self):
 		self.session.open(PluginBrowser)
@@ -364,7 +368,9 @@ class eliesatpanel(Screen):
 		self.session.open(PluginBrowser)
 	
 	def infoKey (self):
-		self.session.open(eliesatpanel)
+		self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
 	def getLivestreamerVersion(self):
 		if fileExists("/usr/lib/python2.7/site-packages/livestreamer/__init__.py"):
