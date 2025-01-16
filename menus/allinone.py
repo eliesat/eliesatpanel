@@ -395,7 +395,9 @@ class allinone(Screen):
 		self.session.open(PluginBrowser)
 	
 	def infoKey (self):
-		self.session.open(eliesatpanel)
+		self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
 	def cancel(self):
 		self.close()
