@@ -1,6 +1,21 @@
 #!/bin/bash
 
 clear >/dev/null 2>&1
+
+#check python version
+python=$(python -c "import platform; print(platform.python_version())")
+sleep 1;
+case $python in 
+3.*)
+python=ok
+;;
+*)
+echo "> your image python version: $python is not supported"
+sleep 3
+exit 1
+;;
+esac
+
 # Functions
 print_message() {
     echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1"
