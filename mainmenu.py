@@ -358,7 +358,7 @@ class eliesatpanel(Screen):
 
 	def update (self):
 				self.session.open(Console, _("Installing package please wait..."), [
-            "clear >/dev/null 2>&1 && wget https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh -qO - | /bin/sh"
+            "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
         ])
 				
 	def keyYellow (self):
