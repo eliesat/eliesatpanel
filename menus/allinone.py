@@ -3,6 +3,7 @@
 
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 import gettext
+from Components.Button import Button
 from Components.Language import language
 from Components.PluginComponent import plugins
 from Components.Sources.StaticText import StaticText
@@ -88,18 +89,18 @@ class allinone(Screen):
 		self.setTitle(_("ElieSatPanel"))
 		self.iConsole = iConsole()
 		self.indexpos = None
-		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions"],
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions" "ColorActions", "HotkeyActions"],
 		{
 			"ok": self.keyOK,
 			"cancel": self.exit,
 			"back": self.exit,
-			"red": self.keyRed,
+			"red": self.exit,
 			"info": self.infoKey,
 			"green": self.keyGreen,
 			"yellow": self.keyYellow,
 			"blue": self.keyBlue,
 		})
-		self["key_red"] = StaticText(_("Config"))
+		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Softcam"))
 		self["key_yellow"] = StaticText(_("Tools"))
 		self["key_blue"] = StaticText(_("Install"))
