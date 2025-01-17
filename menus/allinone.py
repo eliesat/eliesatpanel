@@ -98,12 +98,12 @@ class allinone(Screen):
 			"info": self.infoKey,
 			"green": self.keyGreen,
 			"yellow": self.keyYellow,
-			"blue": self.keyBlue,
+			"blue": self.restart,
 		})
 		self["key_red"] = StaticText(_("Close"))
-		self["key_green"] = StaticText(_("Softcam"))
+		self["key_green"] = StaticText(_("Browse"))
 		self["key_yellow"] = StaticText(_("Tools"))
-		self["key_blue"] = StaticText(_("Install"))
+		self["key_blue"] = StaticText(_("Restart E2"))
 		self.list = []
 		self["menu"] = List(self.list)
 		self.mList()
@@ -377,9 +377,9 @@ class allinone(Screen):
 
 		self.session.open(PluginBrowser)
 
-	def update (self):
-				self.session.open(Console, _("Installing package please wait..."), [
-            "clear >/dev/null 2>&1 && wget https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh -qO - | /bin/sh"
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 
 	def keyRed (self):
