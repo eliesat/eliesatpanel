@@ -97,12 +97,12 @@ class allinone(Screen):
 			"red": self.exit,
 			"info": self.infoKey,
 			"green": self.keyGreen,
-			"yellow": self.keyYellow,
+			"yellow": self.keyOK,
 			"blue": self.restart,
 		})
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Browse"))
-		self["key_yellow"] = StaticText(_("Tools"))
+		self["key_yellow"] = StaticText(_("Install"))
 		self["key_blue"] = StaticText(_("Restart E2"))
 		self.list = []
 		self["menu"] = List(self.list)
