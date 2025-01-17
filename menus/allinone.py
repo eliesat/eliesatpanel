@@ -78,7 +78,7 @@ class allinone(Screen):
 
 <!-- info button -->
 </widget>
-<ePixmap position="1700,870" size="140,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/info.png" zPosition="2" alphatest="blend" />
+<ePixmap position="1550,870" size="140,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/info.png" zPosition="2" alphatest="blend" />
 
 </screen>"""
 
@@ -395,7 +395,7 @@ class allinone(Screen):
 		self.session.open(PluginBrowser)
 	
 	def infoKey (self):
-		self.session.open(Console, _("Installing package please wait..."), [
+		self.session.open(Console, _("Please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 
