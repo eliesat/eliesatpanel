@@ -27,20 +27,21 @@ global min, first_start
 min = first_start = 0
 ####################################
 
-class allinone(Screen):
+class XXXX(Screen):
 	skin = """
 <screen name="allinone" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
 <ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
 
 <!-- title -->
-<eLabel text="ALLINONE" position="160,120" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<eLabel text="XXXX" position="160,120" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
 <ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
 
-<!-- title1 -->
-<eLabel text="All in one " position="1500,700" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<!-- title -->
+<eLabel text="XXXX" position="1500,700" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
 
 <!-- title2 -->
 <eLabel text="Select and press ok to install" position="1460,790" size="400,50" zPosition="1" font="Bold;27" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+
 
 <!-- minitv -->
 <widget source="session.VideoPicture" render="Pig" position="1320,120" size="550,400" zPosition="1" backgroundColor="#ff000000" />
@@ -150,45 +151,45 @@ class allinone(Screen):
 		L = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		M = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
-		self.list.append((_("Wget"), 1, _("تنزيل و تثبيت باكاج openpli #wget"), a))
-		self.list.append((_("Update"), 2, _("تحديث فيدات الصورة"), b))
-		self.list.append((_("Upgrade"), 3, _("ترقية الصورة و الباكجات المثبته"), c))
-		self.list.append((_("Dependencies"), 4, _("تنزيل و تثبيت المكتبات من فيد الصورة"), d))
-		self.list.append((_("Gstreamer"), 5, _("تنزيل و تثبيت باكاج openpli #gstreamer"), e))
-		self.list.append((_("Dns-Cloudflare"), 6, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), f))
-		self.list.append((_("Dns-Google"), 7, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), g))
-		self.list.append((_("Dns-Home opendns"), 8, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), h))
-		self.list.append((_("Dns-Opendns"), 9, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), i))
-		self.list.append((_("Dns-Quad9"), 10, _("تأمين سرعة اتصال بالسيرفر و الفيدات"), j))
-		self.list.append((_("Dns-Default"), 11, _("تثبيت الdns الافتراضي"), k))
-		self.list.append((_("Fix-Chmod scripts"), 12, _("اعطاء لايحة السكريبتات تصريح بالتنفيذ"), l))
-		self.list.append((_("Fix-Freeserver"), 13, _("حل مشكلة freeserver serviceinfo-module"), m))
-		self.list.append((_("Fix-Ipk installation"), 14, _("حل مشكلة تنصيب باكجات بامتداد ipk"), n))
-		self.list.append((_("Fix-Inodes"), 15, _("حل مشكلة المساحة no space left"), o))
-		self.list.append((_("Fix-Portals to 200"), 16, _("إضافة عدد البورتلات ل ٢٠٠"), p))
-		self.list.append((_("Fix-Openpli emu"), 17, _("حل مشكلة اقلاع الايميو صورة openpli"), q))
-		self.list.append((_("Fix-Openatv emu"), 18, _("حل مشكلة اقلاع الايميو صورة openatv"), r))
-		self.list.append((_("Fix-xtraevent"), 19, _("حل مشكلة اعداد download place"), s))
-		self.list.append((_("Fix-xtraevent"), 20, _("حل مشكلة no space left on device"), t))
-		self.list.append((_("Hdd-intialize to ext4"), 21, _("فرمطت و تهيئة الذاكرة الخارجية ل ext4"), u))
-		self.list.append((_("Hdd-Create swap file"), 22, _("إنشاء ذاكرة تشاركية 1gb"), v))
-		self.list.append((_("Remove-Crash logs"), 23, _("حذف ملفات الكراش"), w))
-		self.list.append((_("Remove-E2iplayer"), 24, _("حذف بلاجين e2iplayer"), x))
-		self.list.append((_("Remove-Emus config folders"), 25, _("حذف مجلدات الconfig الخاص بالايميوهات"), y))
-		self.list.append((_("Remove-Emus"), 26, _("حذف الايميوهات"), z))
-		self.list.append((_("Remove-Epg rytec sources"), 27, _("حذف سورسات الدليل rytec بلاجين egggrabber"), A))
-		self.list.append((_("Remove-Multistalker portals"), 28, _("حذف بورتلات الiptv بلاجين multistalker"), B))
-		self.list.append((_("Remove-Picons"), 29, _("حذف البيكونات من جميع المسارات"), C))
-		self.list.append((_("Remove-Playlists bouquetmaker"), 30, _("حذف اسطر الiptv و الرجوع للافتراضي"), D))
-		self.list.append((_("Remove-Playlists ipaudio"), 31, _("حذف مصادر الصوتيات و الرجوع للافتراضي"), E))
-		self.list.append((_("Remove-Playlists iptosat"), 32, _("حذف اسطر الiptv و الرجوع للافتراضي"), F))
-		self.list.append((_("Remove-Playlists jedimakerxtream"), 33, _("حذف اسطر الiptv و الرجوع للافتراضي"), G))
-		self.list.append((_("Remove-Playlists e2iplayer"), 34, _("حذف اسطر الiptv و الرجوع للافتراضي"), H))
-		self.list.append((_("Remove-Playlists xtreamity"), 35, _("حذف اسطر الiptv و الرجوع للافتراضي "), I))
-		self.list.append((_("Remove-Channels"), 36, _("ضبط مصنع للاقمار و القنوات"), J))
-		self.list.append((_("Remove-Scripts"), 37, _("حذف السكريبتات من المسار الافتراضي"), K))
-		self.list.append((_("Remove-Swapper logos"), 38, _("حذف اللوجوهات من بلاجين bootlogoswapper"), L))
-		self.list.append((_("Remove-Settings"), 39, _("حذف اعدادات التيونر"), M))
+		self.list.append((_("XXXX"), 1, _("XXXX"), a))
+		self.list.append((_("XXXX"), 2, _("XXXX"), b))
+		self.list.append((_("XXXX"), 3, _("XXXX"), c))
+		self.list.append((_("XXXX"), 4, _("XXXX"), d))
+		self.list.append((_("XXXX"), 5, _("XXXX"), e))
+		self.list.append((_("XXXX"), 6, _("XXXX"), f))
+		self.list.append((_("XXXX"), 7, _("XXXX"), g))
+		self.list.append((_("XXXX"), 8, _("XXXX"), h))
+		self.list.append((_("XXXX"), 9, _("XXXX"), i))
+		self.list.append((_("XXXX"), 10, _("XXXX"), j))
+		self.list.append((_("XXXX"), 11, _("XXXX"), k))
+		self.list.append((_("XXXX"), 12, _("XXXX"), l))
+		self.list.append((_("XXXX"), 13, _("XXXX"), m))
+		self.list.append((_("XXXX"), 14, _("XXXX"), n))
+		self.list.append((_("XXXX"), 15, _("XXXX"), o))
+		self.list.append((_("XXXX"), 16, _("XXXX"), p))
+		self.list.append((_("XXXX"), 17, _("XXXX"), q))
+		self.list.append((_("XXXX"), 18, _("XXXX"), r))
+		self.list.append((_("XXXX"), 19, _("XXXX"), s))
+		self.list.append((_("XXXX"), 20, _("XXXX"), t))
+		self.list.append((_("XXXX"), 21, _("XXXX"), u))
+		self.list.append((_("XXXX"), 22, _("XXXX"), v))
+		self.list.append((_("XXXX"), 23, _("XXXX"), w))
+		self.list.append((_("XXXX"), 24, _("XXXX"), x))
+		self.list.append((_("XXXX"), 25, _("XXXX"), y))
+		self.list.append((_("XXXX"), 26, _("XXXX"), z))
+		self.list.append((_("XXXX"), 27, _("XXXX"), A))
+		self.list.append((_("XXXX"), 28, _("XXXX"), B))
+		self.list.append((_("XXXX"), 29, _("XXXX"), C))
+		self.list.append((_("XXXX"), 30, _("XXXX"), D))
+		self.list.append((_("XXXX"), 31, _("XXXX"), E))
+		self.list.append((_("XXXX"), 32, _("XXXX"), F))
+		self.list.append((_("XXXX"), 33, _("XXXX"), G))
+		self.list.append((_("XXXX"), 34, _("XXXX"), H))
+		self.list.append((_("XXXX"), 35, _("XXXX"), I))
+		self.list.append((_("XXXX"), 36, _("XXXX"), J))
+		self.list.append((_("XXXX"), 37, _("XXXX"), K))
+		self.list.append((_("XXXX"), 38, _("XXXX"), L))
+		self.list.append((_("XXXX"), 39, _("XXXX"), M))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -213,159 +214,159 @@ class allinone(Screen):
 		if item:
 			if item is 1:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "opkg install wget"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 2:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "opkg update"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh -qO - | /bin/sh"
         ])
 			elif item is 3:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "opkg upgrade"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 4:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_update-dependencies.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 5:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_update-dependencies-audio.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 6:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-cloudflare-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 7:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-google-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 8:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-opendns-home-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 9:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-opendns-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 10:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_dns-quad9-installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 11:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-dns.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 12:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_chmod-scripts.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 13:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-freeserver-serviceinfo-module.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 14:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-ipk-package-installation.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 15:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-hdd--space-inodes.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 16:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-portals-to200.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 17:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/softcams/-/raw/main/support/support-2-r0.2.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 18:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-atv-softcam-restart.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 19:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-xtraevent-download-place.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 20:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-xtraevent-nospace.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 21:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_hdd-intialize-ext4.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 22:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_hdd-create-swapfile-1gb.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 23:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-crash-logs.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 24:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-e2iplayer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 25:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-emus-config-files.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 26:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-emus.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 27:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-epg-rytec-sources.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 28:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-multistalker-portals.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 29:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-picons.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 30:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-bouquetmakerxtream.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 31:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-ipaudio.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 32:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-iptosat.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 33:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-jedimakerxtream.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 34:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-tsiplayer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 35:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-playlists-xstreamity.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 36:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-sats-channels-lists.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 37:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-scripts.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 38:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/remove/_remove-bootlogo-swapper-logos.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 			elif item is 39:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/all/_fix-xtraevent-download-place.sh -qO - | /bin/sh"
+            "wget --no-check-certificate XXXX -qO - | /bin/sh"
         ])
 
 			else:
