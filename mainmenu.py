@@ -186,16 +186,16 @@ class eliesatpanel(Screen):
 			"ok": self.keyOK,
 			"cancel": self.exit,
 			"back": self.exit,
-			"red": self.keyRed,
+			"red": self.exit,
 			"info": self.infoKey,
 			"green": self.keyGreen,
-			"yellow": self.keyYellow,
-			"blue": self.update,
+			"yellow": self.update,
+			"blue": self.restart,
 		})
-		self["key_red"] = StaticText(_("Config"))
-		self["key_green"] = StaticText(_("Scripts"))
-		self["key_yellow"] = StaticText(_("Tools"))
-		self["key_blue"] = StaticText(_("Update"))
+		self["key_red"] = StaticText(_("Exit"))
+		self["key_green"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Update"))
+		self["key_blue"] = StaticText(_("Restart E2"))
 		self.list = []
 		self["menu"] = List(self.list)
 		self.mList()
@@ -359,6 +359,11 @@ class eliesatpanel(Screen):
 	def update (self):
 				self.session.open(Console, _("Installing package please wait..."), [
             "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
+        ])
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 				
 	def keyYellow (self):
