@@ -1,5 +1,4 @@
 
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -257,26 +256,26 @@ class extensions(Screen):
 		self.list.append((_("Footonsat-1.9"), 38, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), L))
 		self.list.append((_("Footonsat-1.9-mod-mohamed_os"), 39, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), M))
 		self.list.append((_("Freearhey-2.9"), 40, _("اي بي تي في مجاني"), N))
-		self.list.append((_("xxxx"), 41, _("xxxx"), O))
-		self.list.append((_("xxxx"), 42, _("xxxz"), P))
-		self.list.append((_("xxxx"), 43, _("xxxx"), Q))
-		self.list.append((_("xxxx"), 44, _("xxxx"), R))
-		self.list.append((_("xxxx"), 45, _("xxxx"), S))
-		self.list.append((_("xxxx"), 46, _("xxxx"), T))
-		self.list.append((_("xxxx"), 47, _("xxxx"), U))
-		self.list.append((_("xxxx"), 48, _("xxxx"), V))
-		self.list.append((_("xxxx"), 49, _("xxxx"), W))
-		self.list.append((_("xxxx"), 50, _("xxxx"), X))
-		self.list.append((_("xxxx"), 51, _("xxxx"), Y))
-		self.list.append((_("xxxx"), 52, _("xxxx"), Z))
-		self.list.append((_("xxxx"), 53, _("xxxx"), pa))
-		self.list.append((_("xxxx"), 54, _("xxxx"), pb))
-		self.list.append((_("xxxx"), 55, _("xxxx"), pc))
-		self.list.append((_("xxxx"), 56, _("xxxx"), pd))
-		self.list.append((_("xxxx"), 57, _("xxxx"), pe))
-		self.list.append((_("xxxx"), 58, _("xxxx"), pf))
-		self.list.append((_("xxxx"), 59, _("xxxx"), pg))
-		self.list.append((_("xxxx"), 60, _("xxxx"), ph))
+		self.list.append((_("Freeserver-8.3.8-r1"), 41, _("جلب اسطر سسكام مجانية و خدمات أخرى"), O))
+		self.list.append((_("gioppygio-12.2"), 42, _("تسطيب بيكونات و ملفات قنوات"), P))
+		self.list.append((_("Hasbahca-1.7"), 43, _("اي بي تي في مجاني"), Q))
+		self.list.append((_("Historyzapselector-1.0.42"), 44, _("تصفح آخر قنوات سات قلبت فيهم mod dorik"), R))
+		self.list.append((_("Horoscope-1.1"), 45, _("الابراج"), S))
+		self.list.append((_("Imdb-2.1"), 46, _("عرض بوستر و معلومات فيلم لقناة لها دليل الكتروني"), T))
+		self.list.append((_("Internetspeedtest-1.7"), 47, _("اختبار سرعة الاتصال بالانترنيت"), U))
+		self.list.append((_("Ipaudio-6.8"), 48, _("اضافة الصوتيات على قنوات السات"), V))
+		self.list.append((_("Ipaudio-7.4-ffmpeg"), 49, _("اضافة الصوتيات على قنوات السات"), W))
+		self.list.append((_("Ipaudiopro-1.3"), 50, _("اضافة الصوتيات على قنوات السات py2 py3.9 py3.12"), X))
+		self.list.append((_("Ipaudiopro-1.4"), 51, _("اضافة الصوتيات على قنوات السات"), Y))
+		self.list.append((_("Ipchecker-004"), 52, _("عرض اي يي الرسيفر و الخارجي معا"), Z))
+		self.list.append((_("Iptosat-1.8"), 53, _("مشاهدة قنوات الiptv على قنوات السات"), pa))
+		self.list.append((_("Iptvarchive-2.0.87"), 54, _("معاينة ارشيف الاي بي تي في"), pb))
+		self.list.append((_("Iptvdream-4.120"), 55, _("قارئ و مشغل ملفات m3u"), pc))
+		self.list.append((_("Isettingse2-5.8"), 56, _("تسطيب ملفات قنوات py3.11"), pd))
+		self.list.append((_("Jediepgxtream-2.12"), 57, _("تثبيت الدليل على قنوات ال اي يي تي في"), pe))
+		self.list.append((_("Jedimakerxtream-6.37"), 58, _("مشاهدة الiptv بمفضلات السات"), pf))
+		self.list.append((_("Keyadder-8.2"), 59, _("اضافة مفتاح او شفرة بيس على ملف السوفتكام"), pg))
+		self.list.append((_("Lamedbmerger-1.0"), 60, _("دمج ملفين قنوات و اقمار ببعض بملف واحد py3.11"), ph))
 		self.list.append((_("xxxx"), 61, _("xxxx"), pi))
 		self.list.append((_("xxxx"), 62, _("xxxx"), pj))
 		self.list.append((_("xxxx"), 63, _("xxxx"), pk))
@@ -505,83 +504,83 @@ class extensions(Screen):
         ])
 			elif item is 41:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ansite/ansite.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/freeserver/freeserver.sh -qO - | /bin/sh"
         ])
 			elif item is 42:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/arabicsavior/arabicsavior.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/gioppygio/gioppygio.sh -qO - | /bin/sh"
         ])
 			elif item is 43:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/astronomy/astronomy.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh -qO - | /bin/sh"
         ])
 			elif item is 44:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/athantimes/athantimes.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/historyzapselector/historyzapselector-dorik.sh -qO - | /bin/sh"
         ])
 			elif item is 45:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/athkar/athkar.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/horoscope/horoscope.sh -qO - | /bin/sh"
         ])
 			elif item is 46:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/azkar-almuslim/azkar-almuslim.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/imdb/imdb.sh -qO - | /bin/sh"
         ])
 			elif item is 47:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/weathercomponenthandler/weathercomponenthandler.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh -qO - | /bin/sh"
         ])
 			elif item is 48:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/xmlupdate.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio.sh -qO - | /bin/sh"
         ])
 			elif item is 49:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/vu+/bootlogos-vu+.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio-7.4-ffmpeg.sh -qO - | /bin/sh"
         ])
 			elif item is 50:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.3/ipaudiopro.sh -qO - | /bin/sh"
         ])
 			elif item is 51:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.4/ipaudiopro.sh -qO - | /bin/sh"
         ])
 			elif item is 52:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ipchecker/ipchecker.sh -qO - | /bin/sh"
         ])
 			elif item is 53:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/acherone/acherone.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/iptosat/iptosat.sh -qO - | /bin/sh"
         ])
 			elif item is 54:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/alajre/alajre.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/iptvarchive/iptvarchive.sh -qO - | /bin/sh"
         ])
 			elif item is 55:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/iptvdream-all/iptvdream-all.sh -qO - | /bin/sh"
         ])
 			elif item is 56:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/apod/apod.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/isetting-e2/isetting-e2.sh -qO - | /bin/sh"
         ])
 			elif item is 57:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ansite/ansite.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/jediepgxtream/jediepgxtream.sh -qO - | /bin/sh"
         ])
 			elif item is 58:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/arabicsavior/arabicsavior.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/jedimakerxtream/jedimakerxtream.sh -qO - | /bin/sh"
         ])
 			elif item is 59:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/astronomy/astronomy.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/keyadder/keyadder.sh -qO - | /bin/sh"
         ])
 			elif item is 60:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/athantimes/athantimes.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/lamedbmerger/lamedbmerger.sh -qO - | /bin/sh"
         ])
 			elif item is 61:
 				self.session.open(Console, _("Installing package please wait..."), [
