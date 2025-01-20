@@ -237,16 +237,16 @@ class extensions(Screen):
 		self.list.append((_("Bundesliga-clock-1.0"), 18, _("تثبيت الساعة على الشاشة بشكل دائم"), r))
 		self.list.append((_("Cacheflush-2.0r4"), 19, _("مسح ملفات الكاش من الذاكرة العشوائية"), s))
 		self.list.append((_("chlogochanger-1.0"), 20, _("تخصيص شعار للقنوات من اختيارك"), t))
-		self.list.append((_("xxxx"), 21, _("xxxx"), u))
-		self.list.append((_("xxxx"), 22, _("xxxx"), v))
-		self.list.append((_("xxxx"), 23, _("xxxx"), w))
-		self.list.append((_("xxxx"), 24, _("xxxx"), x))
-		self.list.append((_("xxxx"), 25, _("xxxx"), y))
-		self.list.append((_("xxxx"), 26, _("xxxx"), z))
-		self.list.append((_("xxxx"), 27, _("xxxx"), A))
-		self.list.append((_("xxxx"), 28, _("xxxx"), B))
-		self.list.append((_("xxxx"), 29, _("xxxx"), C))
-		self.list.append((_("xxxx"), 30, _("xxxx"), D))
+		self.list.append((_("Cccamimfo-1.9"), 21, _("عرض معلومات السسكام"), u))
+		self.list.append((_("Chocholousek-5.0.240904"), 22, _("تسطيب بيكونات"), v))
+		self.list.append((_("Ciefpsettingsmotor-1.6"), 23, _("تنزيل و تثبيت ملف قنوات بافل سييف"), w))
+		self.list.append((_("Crashlogviewer-1.5"), 24, _("تصفح ملفات الكراش"), x))
+		self.list.append((_("Crondmanager-1.3"), 25, _("اضافة توقيت للسكريبت برسم التنفيذ"), y))
+		self.list.append((_("Dreamexplorer-2024.08.21"), 26, _("مدير ملفات mod lululla"), z))
+		self.list.append((_("E2iplayer"), 27, _("مشغل اي بي تي في mohamed_os"), A))
+		self.list.append((_("E2m3ubouquet-1.9.5"), 28, _("تحويل الiptv لمفضلات mod-dorik"), B))
+		self.list.append((_("Easy-cccam-0.2"), 29, _("اضافة اسطر cccam"), C))
+		self.list.append((_("Epggrabber-24.2"), 30, _("الدليل الالكتروني"), D))
 		self.list.append((_("xxxx"), 31, _("xxxz"), E))
 		self.list.append((_("xxxx"), 32, _("xxxx"), F))
 		self.list.append((_("xxxx"), 33, _("xxxx"), G))
@@ -425,43 +425,43 @@ class extensions(Screen):
         ])
 			elif item is 21:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opendroid.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/cccaminfo/cccaminfo.sh -qO - | /bin/sh"
         ])
 			elif item is 22:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openeight.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/chocholousek-picons/chocholousek-picons.sh -qO - | /bin/sh"
         ])
 			elif item is 23:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openfix.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingsmotor/ciefpsettingsmotor.sh -qO - | /bin/sh"
         ])
 			elif item is 24:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openhdf.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/crashlogviewer/crashlogviewer.sh -qO - | /bin/sh"
         ])
 			elif item is 25:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opennfr.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/crondmanager/crondmanager.sh -qO - | /bin/sh"
         ])
 			elif item is 26:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openpli.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/dreamexplorer/dreamexplorer.sh -qO - | /bin/sh"
         ])
 			elif item is 27:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openspa.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer/e2iplayer-main.sh -qO - | /bin/sh"
         ])
 			elif item is 28:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opentr.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/e2m3u2bouquet/e2m3u2bouquet.sh -qO - | /bin/sh"
         ])
 			elif item is 29:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openvision.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/easy-cccam/easy-cccam.sh -qO - | /bin/sh"
         ])
 			elif item is 30:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openvix.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/epggrabber2/epggrabber.sh -qO - | /bin/sh"
         ])
 			elif item is 31:
 				self.session.open(Console, _("Installing package please wait..."), [
