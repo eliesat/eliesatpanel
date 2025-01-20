@@ -247,16 +247,16 @@ class extensions(Screen):
 		self.list.append((_("E2m3ubouquet-1.9.5"), 28, _("تحويل الiptv لمفضلات mod-dorik"), B))
 		self.list.append((_("Easy-cccam-0.2"), 29, _("اضافة اسطر cccam"), C))
 		self.list.append((_("Epggrabber-24.2"), 30, _("الدليل الالكتروني"), D))
-		self.list.append((_("xxxx"), 31, _("xxxz"), E))
-		self.list.append((_("xxxx"), 32, _("xxxx"), F))
-		self.list.append((_("xxxx"), 33, _("xxxx"), G))
-		self.list.append((_("xxxx"), 34, _("xxxx"), H))
-		self.list.append((_("xxxx"), 35, _("xxxx"), I))
-		self.list.append((_("xxxx"), 36, _("xxxx"), J))
-		self.list.append((_("xxxx"), 37, _("xxxx"), K))
-		self.list.append((_("xxxx"), 38, _("xxxx"), L))
-		self.list.append((_("xxxx"), 39, _("xxxx"), M))
-		self.list.append((_("xxxx"), 40, _("xxxx"), N))
+		self.list.append((_("Epggrabber-24.0-mod-elie"), 31, _("الدليل الالكتروني"), E))
+		self.list.append((_("Epgimport-9.9"), 32, _("جلب الدليل الاكتروني و عرضه على لايحة القنوات"), F))
+		self.list.append((_("Epgimport-1.9.1-mod-dorik"), 33, _("جلب الدليل الاكتروني و عرضه على لايحة القنوات"), G))
+		self.list.append((_("Epgtranslator-1.4r2"), 34, _("ترجمة دليل الالكتروني"), H))
+		self.list.append((_("Feedsfinder-3.1"), 35, _("خاص بالفيدات و شفرات البيس"), I))
+		self.list.append((_("Filecommander-2024.08.31"), 36, _("مدير ملفات mod lululla"), J))
+		self.list.append((_("Filmxy-1.4"), 37, _("اي بي تي في مجاني"), K))
+		self.list.append((_("Footonsat-1.9"), 38, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), L))
+		self.list.append((_("Footonsat-1.9-mod-mohamed_os"), 39, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), M))
+		self.list.append((_("Freearhey-2.9"), 40, _("اي بي تي في مجاني"), N))
 		self.list.append((_("xxxx"), 41, _("xxxx"), O))
 		self.list.append((_("xxxx"), 42, _("xxxz"), P))
 		self.list.append((_("xxxx"), 43, _("xxxx"), Q))
@@ -465,43 +465,43 @@ class extensions(Screen):
         ])
 			elif item is 31:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-pkteam.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/epggrabber/epggrabber.sh -qO - | /bin/sh"
         ])
 			elif item is 32:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-pure2.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/epgimport/epgimport.sh -qO - | /bin/sh"
         ])
 			elif item is 33:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-satdreamgr.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/epgimport-mod-dorik1972/epgimport-mod-dorik1972.sh -qO - | /bin/sh"
         ])
 			elif item is 34:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-satlodge.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh -qO - | /bin/sh"
         ])
 			elif item is 35:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-teamblue.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/feedsfinder/feedsfinder.sh -qO - | /bin/sh"
         ])
 			elif item is 36:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/bootvideo1/openatv.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/filecommander/filecommander.sh -qO - | /bin/sh"
         ])
 			elif item is 37:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/bootvideo1/openatv.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/filmxy/filmxy.sh -qO - | /bin/sh"
         ])
 			elif item is 38:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/alajre/alajre.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/footonsat/footonsat.sh -qO - | /bin/sh"
         ])
 			elif item is 39:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/footonsat-mohamed-os/footonsat_mohamed_os.sh -qO - | /bin/sh"
         ])
 			elif item is 40:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/apod/apod.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/freearhey/freearhey.sh -qO - | /bin/sh"
         ])
 			elif item is 41:
 				self.session.open(Console, _("Installing package please wait..."), [
