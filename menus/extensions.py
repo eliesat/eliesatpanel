@@ -34,11 +34,11 @@ class extensions(Screen):
 <ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
 
 <!-- title -->
-<eLabel text="Display" position="160,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<eLabel text="Extensions" position="160,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
 <ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
 
 <!-- title1 -->
-<eLabel text="Display" position="1520,700" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<eLabel text="Extensions" position="1490,700" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
 
 <!-- title2 -->
 <eLabel text="Select and press ok to install" position="1440,790" size="400,50" zPosition="1" font="Bold;27" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
@@ -150,6 +150,19 @@ class extensions(Screen):
 		K = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		L = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		M = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		N = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		O = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		P = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		Q = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		R = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		S = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		T = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		U = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		V = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		W = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		X = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		Y = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		Z = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Acherone-1.2"), 1, _("تصفح لايحة السكريبتات و تنفيذهم"), a))
 		self.list.append((_("Alajre-1.2"), 2, _("الأجر py2"), b))
@@ -188,6 +201,21 @@ class extensions(Screen):
 		self.list.append((_("xxxx"), 35, _("xxxx"), I))
 		self.list.append((_("xxxx"), 36, _("xxxx"), J))
 		self.list.append((_("xxxx"), 37, _("xxxx"), K))
+		self.list.append((_("xxxx"), 38, _("xxxx"), L))
+		self.list.append((_("xxxx"), 39, _("xxxx"), M))
+		self.list.append((_("xxxx"), 40, _("xxxx"), N))
+		self.list.append((_("xxxx"), 41, _("xxxx"), O))
+		self.list.append((_("xxxx"), 42, _("xxxz"), P))
+		self.list.append((_("xxxx"), 43, _("xxxx"), Q))
+		self.list.append((_("xxxx"), 44, _("xxxx"), R))
+		self.list.append((_("xxxx"), 45, _("xxxx"), S))
+		self.list.append((_("xxxx"), 46, _("xxxx"), T))
+		self.list.append((_("xxxx"), 47, _("xxxx"), U))
+		self.list.append((_("xxxx"), 48, _("xxxx"), V))
+		self.list.append((_("xxxx"), 49, _("xxxx"), W))
+		self.list.append((_("xxxx"), 50, _("xxxx"), X))
+		self.list.append((_("xxxx"), 51, _("xxxx"), Y))
+		self.list.append((_("xxxx"), 52, _("xxxx"), Z))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -357,6 +385,66 @@ class extensions(Screen):
 			elif item is 37:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/bootvideo1/openatv.sh -qO - | /bin/sh"
+        ])
+			elif item is 38:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/alajre/alajre.sh -qO - | /bin/sh"
+        ])
+			elif item is 39:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh -qO - | /bin/sh"
+        ])
+			elif item is 40:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/apod/apod.sh -qO - | /bin/sh"
+        ])
+			elif item is 41:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ansite/ansite.sh -qO - | /bin/sh"
+        ])
+			elif item is 42:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/arabicsavior/arabicsavior.sh -qO - | /bin/sh"
+        ])
+			elif item is 43:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/astronomy/astronomy.sh -qO - | /bin/sh"
+        ])
+			elif item is 44:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/athantimes/athantimes.sh -qO - | /bin/sh"
+        ])
+			elif item is 45:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/athkar/athkar.sh -qO - | /bin/sh"
+        ])
+			elif item is 46:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/azkar-almuslim/azkar-almuslim.sh -qO - | /bin/sh"
+        ])
+			elif item is 47:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/weathercomponenthandler/weathercomponenthandler.sh -qO - | /bin/sh"
+        ])
+			elif item is 48:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/xmlupdate.sh -qO - | /bin/sh"
+        ])
+			elif item is 49:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/vu+/bootlogos-vu+.sh -qO - | /bin/sh"
+        ])
+			elif item is 50:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+        ])
+			elif item is 51:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+        ])
+			elif item is 52:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
         ])
 
 			else:
