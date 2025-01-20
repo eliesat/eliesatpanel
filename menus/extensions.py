@@ -1,3 +1,5 @@
+
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -225,16 +227,16 @@ class extensions(Screen):
 		self.list.append((_("Athantimes-2.8"), 8, _("الآذان"), h))
 		self.list.append((_("Azkar-1.0"), 9, _("اذكار المسلم mod elsafty"), i))
 		self.list.append((_("Azkar-almuslim-1.1"), 10, _("اذكار المسلم"), j))
-		self.list.append((_("xxxx"), 11, _("xxxx"), k))
-		self.list.append((_("xxxx"), 12, _("xxxx"), l))
-		self.list.append((_("xxxx"), 13, _("xxxx"), m))
-		self.list.append((_("xxxx"), 14, _("xxxx"), n))
-		self.list.append((_("xxxx"), 15, _("xxxx"), o))
-		self.list.append((_("xxxx"), 16, _("xxxx"), p))
-		self.list.append((_("xxxx"), 17, _("xxxx"), q))
-		self.list.append((_("xxxx"), 18, _("xxxx"), r))
-		self.list.append((_("xxxx"), 19, _("xxxx"), s))
-		self.list.append((_("xxxx"), 20, _("xxxx"), t))
+		self.list.append((_("backupflashe-9.4"), 11, _("باكآب الصورة"), k))
+		self.list.append((_("Bissfeedautokey-2.8"), 12, _("خاص بالفيدات و شفرات البيس"), l))
+		self.list.append((_("Bitrate-2.0"), 13, _("عرض معدل البت لقنوات السات على الشاشة"), m))
+		self.list.append((_("Bitrate-mod-ariad"), 14, _("عرض معدل البت لقنوات السات على الشاشة"), n))
+		self.list.append((_("Bootlogokids-stony272"), 15, _("صور اقلاع للاطفال"), o))
+		self.list.append((_("Bootlogoswapper-1.0"), 16, _("صور اقلاع eliesat-special-edition"), p))
+		self.list.append((_("Bouquetmakerxtream-1.42"), 17, _("مشغل اي بي تي في"), q))
+		self.list.append((_("Bundesliga-clock-1.0"), 18, _("تثبيت الساعة على الشاشة بشكل دائم"), r))
+		self.list.append((_("Cacheflush-2.0r4"), 19, _("مسح ملفات الكاش من الذاكرة العشوائية"), s))
+		self.list.append((_("chlogochanger-1.0"), 20, _("تخصيص شعار للقنوات من اختيارك"), t))
 		self.list.append((_("xxxx"), 21, _("xxxx"), u))
 		self.list.append((_("xxxx"), 22, _("xxxx"), v))
 		self.list.append((_("xxxx"), 23, _("xxxx"), w))
@@ -383,43 +385,43 @@ class extensions(Screen):
         ])
 			elif item is 11:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/weathercomponenthandler/weathercomponenthandler.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/backupflashe/backupflashe.sh -qO - | /bin/sh"
         ])
 			elif item is 12:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/xmlupdate.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/bissfeedautokey/bissfeedautokey.sh -qO - | /bin/sh"
         ])
 			elif item is 13:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/vu+/bootlogos-vu+.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/bitrate/bitrate.sh -qO - | /bin/sh"
         ])
 			elif item is 14:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/bitrate/bitrate-mod-ariad.sh -qO - | /bin/sh"
         ])
 			elif item is 15:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-cobralibero.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/bootlogokids/bootlogokids-stony272.sh -qO - | /bin/sh"
         ])
 			elif item is 16:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-egami.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/bootlogoswapper/bootlogoswapper-eliesat-special-edition.sh -qO - | /bin/sh"
         ])
 			elif item is 17:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-nonsolosat.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/bouquetmakerxtream/bouquetmakerxtream.sh -qO - | /bin/sh"
         ])
 			elif item is 18:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-novaler.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/bundesliga-permanent-clock/bundesliga-permanent-clock.sh -qO - | /bin/sh"
         ])
 			elif item is 19:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openatv.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/cacheflush/cacheflush.sh -qO - | /bin/sh"
         ])
 			elif item is 20:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openblackhole.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/chlogochanger/chlogochanger.sh -qO - | /bin/sh"
         ])
 			elif item is 21:
 				self.session.open(Console, _("Installing package please wait..."), [
