@@ -15,13 +15,11 @@ def main(session, **kwargs):
     else:
         session.open(eliesatpanel)
 
+def menu(menuid, **kwargs):
+	if menuid == "mainmenu":
+		return [(_("ElieSatPanel"), main, _("eliesatpanel_"), 48)]
+	return []
+
 def Plugins(**kwargs):
-    return [
-        PluginDescriptor(
-            name="ElieSatPanel",
-            description=f"Addons for enigma2 devices",
-            where=PluginDescriptor.WHERE_PLUGINMENU,
-            icon="esp.png",
-            fnc=main,
-        )
-    ]
+    return [PluginDescriptor(name="ElieSatPanel", description=_("Addons for enigma2 devices"), where=PluginDescriptor.WHERE_PLUGINMENU, icon="esp.png", fnc=main),
+            PluginDescriptor(name="ElieSatPanel", description=_("Addons for enigma2 devices"), where=PluginDescriptor.WHERE_MENU, fnc=menu)]
