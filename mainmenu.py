@@ -367,7 +367,7 @@ class eliesatpanel(Screen):
         ])
 
 	def news (self):
-				self.session.open(Console, _("Installing package please wait..."), [
+				self.session.open(Console, _("Please wait..."), [
             "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
         ])
 				
