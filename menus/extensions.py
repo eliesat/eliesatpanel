@@ -1,8 +1,5 @@
 
 
-
-
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -310,20 +307,20 @@ class extensions(Screen):
 		self.list.append((_("Shootyourscreen-0.3"), 88, _("التقاط و تخزين صورة عن الشاشة"), pJ))
 		self.list.append((_("Spinnerselector-3.2"), 89, _("تسطيب سبينرات"), pK))
 		self.list.append((_("Subssupport-1.5.8r9"), 90, _("الترجمة"), pL))
-		self.list.append((_("xxxx"), 91, _("xxxx"), pM))
-		self.list.append((_("xxxx"), 92, _("xxxx"), pN))
-		self.list.append((_("xxxx"), 93, _("xxxx"), pO))
-		self.list.append((_("xxxx"), 94, _("xxxz"), pP))
-		self.list.append((_("xxxx"), 95, _("xxxx"), pQ))
-		self.list.append((_("xxxx"), 96, _("xxxx"), pR))
-		self.list.append((_("xxxx"), 97, _("xxxx"), pS))
-		self.list.append((_("xxxx"), 98, _("xxxx"), pT))
-		self.list.append((_("xxxx"), 99, _("xxxx"), pU))
-		self.list.append((_("xxxx"), 100, _("xxxx"), pV))
-		self.list.append((_("xxxx"), 101, _("xxxx"), pW))
-		self.list.append((_("xxxx"), 102, _("xxxx"), pX))
-		self.list.append((_("xxxx"), 103, _("xxxx"), pY))
-		self.list.append((_("xxxx"), 104, _("xxxx"), pZ))
+		self.list.append((_("Subssupport-1.7.0-r10"), 91, _("الترجمة"), pM))
+		self.list.append((_("Theweather-2.5r0"), 92, _("حالة الطقس"), pN))
+		self.list.append((_("Tmdb-8.6r7"), 93, _("عرض بوستر و معلومات فيلم"), pO))
+		self.list.append((_("Transmission-5.0.9.9"), 94, _("مشاهدة و تنزيل افلام و مسلسلات"), pP))
+		self.list.append((_("Vavoo-1.32"), 95, _("اي بي تي في مجاني"), pQ))
+		self.list.append((_("Visualweather-1.10"), 96, _("حالة الطقس"), pR))
+		self.list.append((_("Weathermsn-1.3r3"), 97, _("حالة الطقس"), pS))
+		self.list.append((_("Weatherplugin-2.2"), 98, _("حالة الطقس"), pT))
+		self.list.append((_("Weatherpluginicons-1.1"), 99, _("ايقونات بلاجين الطقس weatherplugin"), pU))
+		self.list.append((_("Wireguard-vpn-14.6"), 100, _("اضافة اشتراك الvpn + معاينة سرعة النت"), pV))
+		self.list.append((_("Worldcam-4.6"), 101, _("كاميرات من حول العالم"), pW))
+		self.list.append((_("Xcplugin-forever-4.0"), 102, _("مشغل اي بي تي في"), pX))
+		self.list.append((_("Xklass-1.32"), 103, _("مشغل اي بي تي في"), pY))
+		self.list.append((_("Xstreamity-4.73"), 104, _("مشغل اي بي تي في"), pZ))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -708,59 +705,59 @@ class extensions(Screen):
         ])
 			elif item is 91:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh -qO - | /bin/sh"
         ])
 			elif item is 92:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/apod/apod.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/theweather/theweather.sh -qO - | /bin/sh"
         ])
 			elif item is 93:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ansite/ansite.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/tmdb/tmbd.sh -qO - | /bin/sh"
         ])
 			elif item is 94:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/arabicsavior/arabicsavior.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh -qO - | /bin/sh"
         ])
 			elif item is 95:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/astronomy/astronomy.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh -qO - | /bin/sh"
         ])
 			elif item is 96:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/athantimes/athantimes.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/visualweather/visualweather.sh -qO - | /bin/sh"
         ])
 			elif item is 97:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/athkar/athkar.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/weathermsn/weathermsn.sh -qO - | /bin/sh"
         ])
 			elif item is 98:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/azkar-almuslim/azkar-almuslim.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin/weatherplugin.sh -qO - | /bin/sh"
         ])
 			elif item is 99:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/weathercomponenthandler/weathercomponenthandler.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh -qO - | /bin/sh"
         ])
 			elif item is 100:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/xmlupdate.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/wireguard-vpn/wireguard-vpn.sh -qO - | /bin/sh"
         ])
 			elif item is 101:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/vu+/bootlogos-vu+.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh -qO - | /bin/sh"
         ])
 			elif item is 102:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh -qO - | /bin/sh"
         ])
 			elif item is 103:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh -qO - | /bin/sh"
         ])
 			elif item is 104:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh -qO - | /bin/sh"
         ])
 
 			else:
