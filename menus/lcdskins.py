@@ -3,6 +3,7 @@
 
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 import gettext
+from Components.Button import Button
 from Components.Language import language
 from Components.PluginComponent import plugins
 from Components.Sources.StaticText import StaticText
@@ -28,19 +29,24 @@ min = first_start = 0
 
 class lcdskins(Screen):
 	skin = """
-<screen name="plugins" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
+<screen name="lcdskins" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
 <ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
 
 <!-- title -->
-<eLabel text="LCDSKINS" position="160,120" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<eLabel text="Lcdskins" position="160,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
 <ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
 
+<!-- title1 -->
+<eLabel text="Lcdskins" position="1520,700" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+
+<!-- title2 -->
+<eLabel text="Select and press ok to install" position="1440,790" size="400,50" zPosition="1" font="Bold;27" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
 
 <!-- minitv -->
 <widget source="session.VideoPicture" render="Pig" position="1320,120" size="550,400" zPosition="1" backgroundColor="#ff000000" />
 
 <!-- clock -->
-<widget source="global.CurrentTime" render="Label" position="1310,600" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
+<widget source="global.CurrentTime" render="Label" position="1290,600" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
 		<convert type="ClockToText">Default</convert>
 
 <!-- calender -->
@@ -74,7 +80,7 @@ class lcdskins(Screen):
 
 <!-- info button -->
 </widget>
-<ePixmap position="1700,870" size="140,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/info.png" zPosition="2" alphatest="blend" />
+<ePixmap position="1530,870" size="140,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/info.png" zPosition="2" alphatest="blend" />
 
 </screen>"""
 
@@ -84,51 +90,56 @@ class lcdskins(Screen):
 		self.setTitle(_("ElieSatPanel"))
 		self.iConsole = iConsole()
 		self.indexpos = None
-		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions"],
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions" "ColorActions", "HotkeyActions"],
 		{
 			"ok": self.keyOK,
 			"cancel": self.exit,
 			"back": self.exit,
-			"red": self.keyRed,
+			"red": self.exit,
 			"info": self.infoKey,
 			"green": self.keyGreen,
-			"yellow": self.keyYellow,
-			"blue": self.keyBlue,
+			"yellow": self.keyOK,
+			"blue": self.restart,
 		})
-		self["key_red"] = StaticText(_("Config"))
-		self["key_green"] = StaticText(_("Softcam"))
-		self["key_yellow"] = StaticText(_("Tools"))
-		self["key_blue"] = StaticText(_("Install"))
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Install"))
+		self["key_blue"] = StaticText(_("Restart E2"))
 		self.list = []
 		self["menu"] = List(self.list)
 		self.mList()
 	def mList(self):
 		self.list = []
-		onepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		twopng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		treepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		fourpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		fivepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		sixpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		sevenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		eightpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		ninepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		tenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		elevenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		twelvenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		thirtenpng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		a = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		b = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		c = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		d = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		e = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		f = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		g = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		h = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		i = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		j = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		k = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		l = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		m = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		n = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
-		self.list.append((_("Ajpanel-14.0.0"), 1, _("إدارة الملفات و مجموعة كبيرة من الخدمات"), onepng))
-		self.list.append((_("Ciefpsettingspanel-1.9"), 2, _("بانل تسطيب اضافات"), twopng ))
-		self.list.append((_("Epanel-5.8r2"), 3, _("خدمات منوعة للصورة و المستخدم"), sixpng ))
-		self.list.append((_("Leviaddonsmanager-10.1r28"), 4, _("بانل تسطيب اضافات"), eightpng ))
-		self.list.append((_("Levimulticammanager-10.1r34"), 5, _("بانل تسطيب كامات و سكريبتات"), treepng))
-		self.list.append((_("Linuxsatpanel-2.7.0"), 6, _("بانل تسطيب اضافات"), sevenpng))
-		self.list.append((_("Eliesatpanel"), 7, _("اج بانل ايلي سات بانل"), fourpng))
-		self.list.append((_("Novaler-store-3.0r0"), 8, _("بانل تسطيب اضافات خاص باجهزة نوفالر"), ninepng))
-		self.list.append((_("Smartaddonspanel"), 9, _("بانل تسطيب اضافات "), elevenpng))
-		self.list.append((_("trial2"), 10, _("بانل تسطيب اضافات خاص باجهزة نوفالر"), twelvenpng))
-		self.list.append((_("s4aupdater"), 11, _("بانل تسطيب ملف قنوات بيكونات"), tenpng))
+		self.list.append((_("Lcdskin1"), 1, _("سكين شاشة vu+ uno 4k se"), a))
+		self.list.append((_("Lcdskin2"), 2, _("سكين شاشة vu+ uno 4k se"), b))
+		self.list.append((_("Lcdskin3"), 3, _("سكين شاشة vu+ uno 4k se"), c))
+		self.list.append((_("Lcdskin4"), 4, _("سكين شاشة vu+ uno 4k se"), d))
+		self.list.append((_("Lcdskin5"), 5, _("سكين شاشة vu+ uno 4k se"), e))
+		self.list.append((_("Lcdskin6"), 6, _("سكين شاشة vu+ uno 4k se"), f))
+		self.list.append((_("Lcdskin7"), 7, _("سكين شاشة vu+ uno 4k se"), g))
+		self.list.append((_("Lcdskin8"), 8, _("سكين شاشة vu+ uno 4k se"), h))
+		self.list.append((_("Lcdskin9"), 9, _("سكين شاشة vu+ uno 4k se"), i))
+		self.list.append((_("Lcdskin10"), 10, _("سكين شاشة vu+ uno 4k se"), j))
+		self.list.append((_("Lcdskin11"), 11, _("سكين شاشة vu+ uno 4k se"), k))
+		self.list.append((_("Lcdskin12"), 12, _("سكين شاشة vu+ uno 4k se"), l))
+		self.list.append((_("Lcdskin13"), 13, _("سكين شاشة vu+ uno 4k se"), m))
+		self.list.append((_("Splash-image"), 14, _("صورة للشاشة الامامية الخاصة باجهزة الvu+"), n))
+
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
 		self["menu"].setList(self.list)
@@ -152,33 +163,75 @@ class lcdskins(Screen):
 		if item:
 			if item is 1:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "clear >/dev/null 2>&1 && wget https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/openatv-neutral/openatv.sh -qO - | /bin/sh"
         ])
 			elif item is 2:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-2.sh -qO - | /bin/sh"
+        ])
 			elif item is 3:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-3.sh -qO - | /bin/sh"
+        ])
 			elif item is 4:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-4.sh -qO - | /bin/sh"
+        ])
 			elif item is 5:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-5.sh -qO - | /bin/sh"
+        ])
 			elif item is 6:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-.sh -qO - | /bin/sh"
+        ])
 			elif item is 7:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-7.sh -qO - | /bin/sh"
+        ])
 			elif item is 8:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-8.sh -qO - | /bin/sh"
+        ])
 			elif item is 9:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-9.sh -qO - | /bin/sh"
+        ])
 			elif item is 10:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-10.sh -qO - | /bin/sh"
+        ])
 			elif item is 11:
-				self.session.open(PluginBrowser)
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-11.sh -qO - | /bin/sh"
+        ])
+			elif item is 12:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-12.sh -qO - | /bin/sh"
+        ])
+			elif item is 13:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-13.sh -qO - | /bin/sh"
+        ])
+			elif item is 14:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/splash/splash.sh -qO - | /bin/sh"
+        ])
+
 			else:
 				self.close(None)
 
 	def exit(self):
 		self.close()
+
+	def keyRed (self):
+
+		self.session.open(PluginBrowser)
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
 
 	def keyRed (self):
 
@@ -194,7 +247,9 @@ class lcdskins(Screen):
 		self.session.open(PluginBrowser)
 	
 	def infoKey (self):
-		self.session.open(eliesatpanel)
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
 	def cancel(self):
 		self.close()
