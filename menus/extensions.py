@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -72,7 +70,7 @@ class extensions(Screen):
 <convert type="TemplatedMultiContent">
 	{"template": [
 		MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-		MultiContentEntryText(pos = (700, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+		MultiContentEntryText(pos = (640, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
 		MultiContentEntryPixmapAlphaTest(pos = (6, 10), size = (100, 40), png = 3), # index 4 is the pixmap
 			],
 	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
@@ -216,6 +214,10 @@ class extensions(Screen):
 		pX = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		pY = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		pZ = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		aa = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		ab = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		ac = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		ad = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Acherone-1.2"), 1, _("تصفح لايحة السكريبتات و تنفيذهم"), a))
 		self.list.append((_("Alajre-1.2"), 2, _("الأجر py2"), b))
@@ -227,7 +229,7 @@ class extensions(Screen):
 		self.list.append((_("Athantimes-2.8"), 8, _("الآذان"), h))
 		self.list.append((_("Azkar-1.0"), 9, _("اذكار المسلم mod elsafty"), i))
 		self.list.append((_("Azkar-almuslim-1.1"), 10, _("اذكار المسلم"), j))
-		self.list.append((_("backupflashe-9.4"), 11, _("باكآب الصورة"), k))
+		self.list.append((_("Backupflashe-9.4"), 11, _("باكآب الصورة"), k))
 		self.list.append((_("Bissfeedautokey-2.8"), 12, _("خاص بالفيدات و شفرات البيس"), l))
 		self.list.append((_("Bitrate-2.0"), 13, _("عرض معدل البت لقنوات السات على الشاشة"), m))
 		self.list.append((_("Bitrate-mod-ariad"), 14, _("عرض معدل البت لقنوات السات على الشاشة"), n))
@@ -236,7 +238,7 @@ class extensions(Screen):
 		self.list.append((_("Bouquetmakerxtream-1.42"), 17, _("مشغل اي بي تي في"), q))
 		self.list.append((_("Bundesliga-clock-1.0"), 18, _("تثبيت الساعة على الشاشة بشكل دائم"), r))
 		self.list.append((_("Cacheflush-2.0r4"), 19, _("مسح ملفات الكاش من الذاكرة العشوائية"), s))
-		self.list.append((_("chlogochanger-1.0"), 20, _("تخصيص شعار للقنوات من اختيارك"), t))
+		self.list.append((_("Chlogochanger-1.0"), 20, _("تخصيص شعار للقنوات من اختيارك"), t))
 		self.list.append((_("Cccamimfo-1.9"), 21, _("عرض معلومات السسكام"), u))
 		self.list.append((_("Chocholousek-5.0.240904"), 22, _("تسطيب بيكونات"), v))
 		self.list.append((_("Ciefpsettingsmotor-1.6"), 23, _("تنزيل و تثبيت ملف قنوات بافل سييف"), w))
@@ -255,10 +257,10 @@ class extensions(Screen):
 		self.list.append((_("Filecommander-2024.08.31"), 36, _("مدير ملفات mod lululla"), J))
 		self.list.append((_("Filmxy-1.4"), 37, _("اي بي تي في مجاني"), K))
 		self.list.append((_("Footonsat-1.9"), 38, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), L))
-		self.list.append((_("Footonsat-1.9-mod-mohamed_os"), 39, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), M))
+		self.list.append((_("Footonsat-1.9-mohamed_os"), 39, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), M))
 		self.list.append((_("Freearhey-2.9"), 40, _("اي بي تي في مجاني"), N))
 		self.list.append((_("Freeserver-8.3.8-r1"), 41, _("جلب اسطر سسكام مجانية و خدمات أخرى"), O))
-		self.list.append((_("gioppygio-12.2"), 42, _("تسطيب بيكونات و ملفات قنوات"), P))
+		self.list.append((_("Gioppygio-12.2"), 42, _("تسطيب بيكونات و ملفات قنوات"), P))
 		self.list.append((_("Hasbahca-1.7"), 43, _("اي بي تي في مجاني"), Q))
 		self.list.append((_("Historyzapselector-1.0.42"), 44, _("تصفح آخر قنوات سات قلبت فيهم mod dorik"), R))
 		self.list.append((_("Horoscope-1.1"), 45, _("الابراج"), S))
@@ -287,10 +289,10 @@ class extensions(Screen):
 		self.list.append((_("Mycam-7.0"), 68, _("اشتراك شيرينج مدفوع"), pp))
 		self.list.append((_("Ncam-status-3.2"), 69, _("معلومات عن حالة المحاكي"), pq))
 		self.list.append((_("Newpermanentclock-1.0"), 70, _("تثبيت الساعة على الشاشة بشكل دائم"), pr))
-		self.list.append((_("oaweather-3.0"), 71, _("حالة الطقس py3.11"), ps))
+		self.list.append((_("Oaweather-3.0"), 71, _("حالة الطقس py3.11"), ps))
 		self.list.append((_("Oscam-status-6.4"), 72, _("معلومات عن حالة المحاكي"), pt))
-		self.list.append((_("piconinstaller-24.08.23"), 73, _("تسطيب بيكونات"), pu))
-		self.list.append((_("pluginskinmover-0.8"), 74, _("نقل و قراءة البلاجينات على التخزين الخارجي"), pv))
+		self.list.append((_("Piconinstaller-24.08.23"), 73, _("تسطيب بيكونات"), pu))
+		self.list.append((_("Pluginskinmover-0.8"), 74, _("نقل و قراءة البلاجينات على التخزين الخارجي"), pv))
 		self.list.append((_("Plutotv-20240831"), 75, _("اي بي تي في مجاني"), pw))
 		self.list.append((_("Quarter-pounder-6.2.0"), 76, _("تنشيط قنوات الاي بي تي في"), px))
 		self.list.append((_("Quran-karim-2.2"), 77, _("القرآن الكريم"), py))
@@ -321,6 +323,10 @@ class extensions(Screen):
 		self.list.append((_("Xcplugin-forever-4.0"), 102, _("مشغل اي بي تي في"), pX))
 		self.list.append((_("Xklass-1.32"), 103, _("مشغل اي بي تي في"), pY))
 		self.list.append((_("Xstreamity-4.73"), 104, _("مشغل اي بي تي في"), pZ))
+		self.list.append((_("Xtraevent-4.2"), 105, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), aa))
+		self.list.append((_("Xtraevent-4.5"), 106, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ab))
+		self.list.append((_("Xtraevent-6.805"), 107, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ac))
+		self.list.append((_("Youtube-2025.01.11"), 108, _("مشاهدة فيديوهات اليوتيوب"), ad))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -758,6 +764,22 @@ class extensions(Screen):
 			elif item is 104:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh -qO - | /bin/sh"
+        ])
+			elif item is 105:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.2.sh -qO - | /bin/sh"
+        ])
+			elif item is 106:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.5.sh -qO - | /bin/sh"
+        ])
+			elif item is 107:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/new/xtraevent.sh -qO - | /bin/sh"
+        ])
+			elif item is 108:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/youtube/youtube.sh -qO - | /bin/sh"
         ])
 
 			else:
