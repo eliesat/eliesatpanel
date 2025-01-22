@@ -138,7 +138,7 @@ class panels(Screen):
 		self.list.append((_("S4aupdater-24.08.30.2303"), 9, _("بانل تسطيب اضافات"), i))
 		self.list.append((_("Satvenuspanel-7.3.3"), 10, _("بانل تسطيب اضافات"), j))
 		self.list.append((_("Simple-zoom-panel-2.2.4"), 11, _("بانل تسطيب اضافات"), k))
-		self.list.append((_("Smartaddonspanel-1.0"), 12, _("بانل تسطيب اضافات"), l))
+		self.list.append((_("Smartaddonspanel-2.0"), 12, _("بانل تسطيب اضافات"), l))
 		self.list.append((_("Tvaddon-2.1.5"), 13, _("بانل تسطيب اضافات"), m))
 		self.list.append((_("Tvmanager-2.4"), 14, _("بانل تسطيب كامات"), n))
 		self.list.append((_("zoom"), 15, _("اسطر سسكام مجانية"), o))
