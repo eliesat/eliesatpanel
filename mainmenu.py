@@ -61,13 +61,17 @@ from types import *
 global min, first_start
 min = first_start = 0
 ####################################
+Panel = 'ElieSatPanel'
+Version = '2.0'
+
 class eliesatpanel(Screen):
 	skin = """
 <screen name="eliesatpanel" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
 <ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
 
 <!-- title -->
-<eLabel text="ElieSatPanel v2.0" position="160,120" size="400,50" zPosition="1" font="Regular;45" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<widget name="Panel" position="160,125" size="270,50" font="Regular;45" halign="center" valign="center" foregroundColor="white" transparent="1"/>
+<widget name="Version" position="450,125" size="100,50" font="Regular;45" halign="center" valign="center" foregroundColor="white" transparent="1"/>
 <ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- hdd -->
@@ -238,6 +242,8 @@ class eliesatpanel(Screen):
 		self.getPythonVersionString()
 		self.getGStreamerVersionString()
 		self.network_info()
+		self["Version"] = Label(_("V" + Version))
+		self["Panel"] = Label(_(Panel))
 
 	def mList(self):
 		self.list = []
