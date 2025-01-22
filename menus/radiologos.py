@@ -122,33 +122,6 @@ class radiologos(Screen):
 		j = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		k = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		l = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		m = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		n = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		o = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		p = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		q = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		r = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		s = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		t = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		u = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		v = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		w = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		x = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		y = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		z = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		A = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		B = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		C = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		D = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		E = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		F = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		G = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		H = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		I = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		J = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		K = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		L = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		M = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Radiologo1"), 1, _("تغيير خلفية قنوات الراديو"), a))
 		self.list.append((_("Radiologo2"), 2, _("تغيير خلفية قنوات الراديو"), b))
@@ -162,31 +135,6 @@ class radiologos(Screen):
 		self.list.append((_("Radiologo10"), 10, _("تغيير خلفية قنوات الراديو"), j))
 		self.list.append((_("Radiologo11"), 11, _("تغيير خلفية قنوات الراديو"), k))
 		self.list.append((_("Radiologo12"), 12, _("تغيير خلفية قنوات الراديو"), l))
-		self.list.append((_("xxxx"), 13, _("xxxx"), m))
-		self.list.append((_("xxxx"), 14, _("xxxx"), n))
-		self.list.append((_("xxxx"), 15, _("xxxx"), o))
-		self.list.append((_("xxxx"), 16, _("xxxx"), p))
-		self.list.append((_("xxxx"), 17, _("xxxx"), q))
-		self.list.append((_("xxxx"), 18, _("xxxx"), r))
-		self.list.append((_("xxxx"), 19, _("xxxx"), s))
-		self.list.append((_("xxxx"), 20, _("xxxx"), t))
-		self.list.append((_("xxxx"), 21, _("xxxx"), u))
-		self.list.append((_("xxxx"), 22, _("xxxx"), v))
-		self.list.append((_("xxxx"), 23, _("xxxx"), w))
-		self.list.append((_("xxxx"), 24, _("xxxx"), x))
-		self.list.append((_("xxxx"), 25, _("xxxx"), y))
-		self.list.append((_("xxxx"), 26, _("xxxx"), z))
-		self.list.append((_("xxxx"), 27, _("xxxx"), A))
-		self.list.append((_("xxxx"), 28, _("xxxx"), B))
-		self.list.append((_("xxxx"), 29, _("xxxx"), C))
-		self.list.append((_("xxxx"), 30, _("xxxx"), D))
-		self.list.append((_("xxxx"), 31, _("xxxx"), E))
-		self.list.append((_("xxxx"), 32, _("xxxx"), F))
-		self.list.append((_("xxxx"), 33, _("xxxx"), G))
-		self.list.append((_("xxxx"), 34, _("xxxx"), H))
-		self.list.append((_("xxxx"), 35, _("xxxx"), I))
-		self.list.append((_("xxxx"), 36, _("xxxx"), J))
-		self.list.append((_("xxxx"), 37, _("xxxx"), K))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -256,106 +204,6 @@ class radiologos(Screen):
 			elif item is 12:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/radiologo/radiologo-12.sh -qO - | /bin/sh"
-        ])
-			elif item is 13:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/vu+/bootlogos-vu+.sh -qO - | /bin/sh"
-        ])
-			elif item is 14:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
-        ])
-			elif item is 15:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-cobralibero.sh -qO - | /bin/sh"
-        ])
-			elif item is 16:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-egami.sh -qO - | /bin/sh"
-        ])
-			elif item is 17:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-nonsolosat.sh -qO - | /bin/sh"
-        ])
-			elif item is 18:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-novaler.sh -qO - | /bin/sh"
-        ])
-			elif item is 19:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openatv.sh -qO - | /bin/sh"
-        ])
-			elif item is 20:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openblackhole.sh -qO - | /bin/sh"
-        ])
-			elif item is 21:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opendroid.sh -qO - | /bin/sh"
-        ])
-			elif item is 22:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openeight.sh -qO - | /bin/sh"
-        ])
-			elif item is 23:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openfix.sh -qO - | /bin/sh"
-        ])
-			elif item is 24:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openhdf.sh -qO - | /bin/sh"
-        ])
-			elif item is 25:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opennfr.sh -qO - | /bin/sh"
-        ])
-			elif item is 26:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openpli.sh -qO - | /bin/sh"
-        ])
-			elif item is 27:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openspa.sh -qO - | /bin/sh"
-        ])
-			elif item is 28:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opentr.sh -qO - | /bin/sh"
-        ])
-			elif item is 29:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openvision.sh -qO - | /bin/sh"
-        ])
-			elif item is 30:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openvix.sh -qO - | /bin/sh"
-        ])
-			elif item is 31:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-pkteam.sh -qO - | /bin/sh"
-        ])
-			elif item is 32:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-pure2.sh -qO - | /bin/sh"
-        ])
-			elif item is 33:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-satdreamgr.sh -qO - | /bin/sh"
-        ])
-			elif item is 34:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-satlodge.sh -qO - | /bin/sh"
-        ])
-			elif item is 35:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-teamblue.sh -qO - | /bin/sh"
-        ])
-			elif item is 36:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/bootvideo1/openatv.sh -qO - | /bin/sh"
-        ])
-			elif item is 37:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/bootvideo1/openatv.sh -qO - | /bin/sh"
         ])
 
 			else:
