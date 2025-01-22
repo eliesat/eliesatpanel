@@ -128,27 +128,6 @@ class spinners(Screen):
 		p = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		q = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		r = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		s = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		t = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		u = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		v = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		w = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		x = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		y = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		z = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		A = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		B = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		C = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		D = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		E = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		F = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		G = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		H = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		I = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		J = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		K = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		L = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		M = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Barcelona"), 1, _("نادي برشلونة"), a))
 		self.list.append((_("Bayern-munich"), 2, _("نادي بايرن ميونخ"), b))
@@ -156,37 +135,17 @@ class spinners(Screen):
 		self.list.append((_("Clock-1"), 4, _("ساعة"), d))
 		self.list.append((_("Clock-2"), 5, _("ساعة"), e))
 		self.list.append((_("Dortmund"), 6, _("نادي دورتموند"), f))
-		self.list.append((_("xxxx"), 7, _("xxxx"), g))
-		self.list.append((_("xxxx"), 8, _("xxxx"), h))
-		self.list.append((_("xxxx"), 9, _("xxxx"), i))
-		self.list.append((_("xxxx"), 10, _("xxxx"), j))
-		self.list.append((_("xxxx"), 11, _("xxxx"), k))
-		self.list.append((_("xxxx"), 12, _("xxxx"), l))
-		self.list.append((_("xxxx"), 13, _("xxxx"), m))
-		self.list.append((_("xxxx"), 14, _("xxxx"), n))
-		self.list.append((_("xxxx"), 15, _("xxxx"), o))
-		self.list.append((_("xxxx"), 16, _("xxxx"), p))
-		self.list.append((_("xxxx"), 17, _("xxxx"), q))
-		self.list.append((_("xxxx"), 18, _("xxxx"), r))
-		self.list.append((_("xxxx"), 19, _("xxxx"), s))
-		self.list.append((_("xxxx"), 20, _("xxxx"), t))
-		self.list.append((_("xxxx"), 21, _("xxxx"), u))
-		self.list.append((_("xxxx"), 22, _("xxxx"), v))
-		self.list.append((_("xxxx"), 23, _("xxxx"), w))
-		self.list.append((_("xxxx"), 24, _("xxxx"), x))
-		self.list.append((_("xxxx"), 25, _("xxxx"), y))
-		self.list.append((_("xxxx"), 26, _("xxxx"), z))
-		self.list.append((_("xxxx"), 27, _("xxxx"), A))
-		self.list.append((_("xxxx"), 28, _("xxxx"), B))
-		self.list.append((_("xxxx"), 29, _("xxxx"), C))
-		self.list.append((_("xxxx"), 30, _("xxxx"), D))
-		self.list.append((_("xxxx"), 31, _("xxxx"), E))
-		self.list.append((_("xxxx"), 32, _("xxxx"), F))
-		self.list.append((_("xxxx"), 33, _("xxxx"), G))
-		self.list.append((_("xxxx"), 34, _("xxxx"), H))
-		self.list.append((_("xxxx"), 35, _("xxxx"), I))
-		self.list.append((_("xxxx"), 36, _("xxxx"), J))
-		self.list.append((_("xxxx"), 37, _("xxxx"), K))
+		self.list.append((_("Pigeon"), 7, _("حمامة"), g))
+		self.list.append((_("Liverpool"), 8, _("نادي ليفربول"), h))
+		self.list.append((_("Loading1"), 9, _("شعار التحميل لودينج"), i))
+		self.list.append((_("Loading2"), 10, _("شعار التحميل لودينج"), j))
+		self.list.append((_("Manchester united"), 11, _("نادي مانشيستر يونايتد"), k))
+		self.list.append((_("Openatv-1"), 12, _("اوبن اي تي في"), l))
+		self.list.append((_("Openatv-2"), 13, _("اوبن اي تي في"), m))
+		self.list.append((_("Openatv-3"), 14, _("اوبن اي تي في"), n))
+		self.list.append((_("Openatv-original"), 15, _("اوبن اي تي في"), o))
+		self.list.append((_("Pingu"), 16, _("بطريق"), p))
+		self.list.append((_("Realmadrid"), 17, _("نادي ريال مدريد"), q))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -235,127 +194,47 @@ class spinners(Screen):
         ])
 			elif item is 7:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/house/bootlogos-coffee.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-hdglass17-1.sh -qO - | /bin/sh"
         ])
 			elif item is 8:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/house/bootlogos-house.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-liverpool-1.sh -qO - | /bin/sh"
         ])
 			elif item is 9:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/moon/bootlogos-moon.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-loading-1.sh -qO - | /bin/sh"
         ])
 			elif item is 10:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/nature/bootlogos-nature.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-loading-2.sh -qO - | /bin/sh"
         ])
 			elif item is 11:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/ramadan/bootlogos-ramadan.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-manutd-1.sh -qO - | /bin/sh"
         ])
 			elif item is 12:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/smart/bootlogos-smart.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/openatv-1.sh -qO - | /bin/sh"
         ])
 			elif item is 13:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/vu+/bootlogos-vu+.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/openatv-2.sh -qO - | /bin/sh"
         ])
 			elif item is 14:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-areadelta.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/openatv-3.sh -qO - | /bin/sh"
         ])
 			elif item is 15:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-cobralibero.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/openatv-original.sh -qO - | /bin/sh"
         ])
 			elif item is 16:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-egami.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-pingu-1.sh -qO - | /bin/sh"
         ])
 			elif item is 17:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-nonsolosat.sh -qO - | /bin/sh"
-        ])
-			elif item is 18:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-novaler.sh -qO - | /bin/sh"
-        ])
-			elif item is 19:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openatv.sh -qO - | /bin/sh"
-        ])
-			elif item is 20:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openblackhole.sh -qO - | /bin/sh"
-        ])
-			elif item is 21:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opendroid.sh -qO - | /bin/sh"
-        ])
-			elif item is 22:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openeight.sh -qO - | /bin/sh"
-        ])
-			elif item is 23:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openfix.sh -qO - | /bin/sh"
-        ])
-			elif item is 24:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openhdf.sh -qO - | /bin/sh"
-        ])
-			elif item is 25:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opennfr.sh -qO - | /bin/sh"
-        ])
-			elif item is 26:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openpli.sh -qO - | /bin/sh"
-        ])
-			elif item is 27:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openspa.sh -qO - | /bin/sh"
-        ])
-			elif item is 28:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-opentr.sh -qO - | /bin/sh"
-        ])
-			elif item is 29:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openvision.sh -qO - | /bin/sh"
-        ])
-			elif item is 30:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-openvix.sh -qO - | /bin/sh"
-        ])
-			elif item is 31:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-pkteam.sh -qO - | /bin/sh"
-        ])
-			elif item is 32:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-pure2.sh -qO - | /bin/sh"
-        ])
-			elif item is 33:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-satdreamgr.sh -qO - | /bin/sh"
-        ])
-			elif item is 34:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-satlodge.sh -qO - | /bin/sh"
-        ])
-			elif item is 35:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/n-image/bootlogos-n-teamblue.sh -qO - | /bin/sh"
-        ])
-			elif item is 36:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/bootvideo1/openatv.sh -qO - | /bin/sh"
-        ])
-			elif item is 37:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/bootvideo1/openatv.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-realmadrid-1.sh -qO - | /bin/sh"
         ])
 
 			else:
