@@ -80,11 +80,11 @@ class eliesatpanel(Screen):
 <!-- title -->
 <widget name="Panel" position="160,125" size="270,50" font="Regular;45" halign="center" valign="center" foregroundColor="white" transparent="1"/>
 <widget name="Version" position="410,130" size="150,50" font="Regular;35" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-<ePixmap position="75,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="73,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- hdd -->
-<widget source="device" render="Label" position="160,900" zPosition="2" size="1000,45" font="Regular;32.5" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="70,895" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<widget source="device" render="Label" position="160,910" zPosition="2" size="1000,45" font="Regular;35" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="70,905" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- ip address -->
 <widget source="ipLabel" render="Label" position="160,860" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
