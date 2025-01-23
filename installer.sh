@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear >/dev/null 2>&1
-# Check script url connectivity and install ajpanel_eliesatpanel
+# Check script url connectivity and install eliesatpanel
 #######################################
 if wget -q --method=HEAD https://github.com/eliesat/eliesatpanel/blob/main/installer.sh; then
 connection=ok
