@@ -83,7 +83,7 @@ class eliesatpanel(Screen):
 <ePixmap position="73,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- hdd -->
-<widget source="device" render="Label" position="160,910" zPosition="2" size="1000,45" font="Regular;35" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="device" render="Label" position="160,905" zPosition="2" size="1000,45" font="Regular;35" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="70,905" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- ip address -->
