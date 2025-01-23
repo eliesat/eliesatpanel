@@ -5,7 +5,6 @@ import _enigma
 import enigma
 import socket
 import gzip
-import urllib.request, urllib.parse, urllib.error
 import stat
 import sys, traceback
 import re
@@ -57,6 +56,15 @@ from Tools.LoadPixmap import LoadPixmap
 from Components.Console import Console as iConsole
 from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from types import *
+
+PY3 = sys.version_info.major >= 3
+if sys.version_info[0] < 3:
+    from urllib2 import urlopen, Request, URLError
+    PY3 = False
+else:
+    from urllib.request import urlopen, Request
+    from urllib.error import URLError
+    PY3 = True
 
 global min, first_start
 min = first_start = 0
