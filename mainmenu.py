@@ -70,7 +70,7 @@ global min, first_start
 min = first_start = 0
 ####################################
 Panel = 'ElieSatPanel'
-Version = '2.0'
+Version = '2.0r0'
 
 class eliesatpanel(Screen):
 	skin = """
@@ -79,7 +79,7 @@ class eliesatpanel(Screen):
 
 <!-- title -->
 <widget name="Panel" position="160,125" size="270,50" font="Regular;45" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-<widget name="Version" position="450,125" size="100,50" font="Regular;45" halign="center" valign="center" foregroundColor="white" transparent="1"/>
+<widget name="Version" position="410,130" size="150,50" font="Regular;35" halign="center" valign="center" foregroundColor="white" transparent="1"/>
 <ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- hdd -->
