@@ -80,16 +80,16 @@ class eliesatpanel(Screen):
 <!-- title -->
 <widget name="Panel" position="160,125" size="270,50" font="Regular;45" halign="center" valign="center" foregroundColor="white" transparent="1"/>
 <widget name="Version" position="410,130" size="150,50" font="Regular;35" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-<ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="75,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- hdd -->
 <widget source="device" render="Label" position="160,900" zPosition="2" size="1000,45" font="Regular;32.5" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="55,895" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="70,895" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- ip address -->
 <widget source="ipLabel" render="Label" position="160,860" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 	<widget source="ipInfo" render="Label" position="350,860" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="55,855" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="70,855" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- minitv -->
 <widget source="session.VideoPicture" render="Pig" position="1320,120" size="550,290" zPosition="1" backgroundColor="#ff000000" />
@@ -120,10 +120,10 @@ class eliesatpanel(Screen):
 	{"template": [
 		MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (600, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-		MultiContentEntryPixmapAlphaTest(pos = (6, 10), size = (100, 40), png = 3), # index 4 is the pixmap
+		MultiContentEntryPixmapAlphaTest(pos = (25, 5), size = (50, 40), png = 3), # index 4 is the pixmap
 			],
 	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
-	"itemHeight": 64
+	"itemHeight": 66
 	}
 	</convert>
 
