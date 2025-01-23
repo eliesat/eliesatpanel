@@ -34,7 +34,7 @@ class drivers(Screen):
 
 <!-- title -->
 <eLabel text="Drivers" position="160,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
-<ePixmap position="55,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
+<ePixmap position="73,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
 
 <!-- title1 -->
 <eLabel text="Drivers" position="1520,700" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
@@ -71,10 +71,10 @@ class drivers(Screen):
 	{"template": [
 		MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
 		MultiContentEntryText(pos = (700, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-		MultiContentEntryPixmapAlphaTest(pos = (6, 10), size = (100, 40), png = 3), # index 4 is the pixmap
+		MultiContentEntryPixmapAlphaTest(pos = (25, 10), size = (50, 40), png = 3), # index 4 is the pixmap
 			],
 	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
-	"itemHeight": 64
+	"itemHeight": 66
 	}
 	</convert>
 
