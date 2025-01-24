@@ -33,6 +33,8 @@ sleep 2
 cleanup() {
     rm -rf /var/cache/opkg/* /var/lib/opkg/lists/* /run/opkg.lock $i >/dev/null 2>&1
 }
+
+#check print image and python version
 ###########################################
 image_version="/etc/image-version"
 box_type=$(head -n 1 /etc/hostname)
@@ -45,7 +47,7 @@ sleep 2
 print_message "> Python : $python_version"
 sleep 2
 
-# check libraries
+# check and install libraries
 ###########################################
 # Check python
 pyVersion=$(python -c"from sys import version_info; print(version_info[0])")
