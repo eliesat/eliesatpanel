@@ -2,17 +2,23 @@
 
 clear >/dev/null 2>&1
 
+#configuration
+###########################################
+plugin=main
+version='3.1'
+changelog='\panel update'
+url=https://github.com/eliesat/eliesatpanel/archive/main.tar.gz
+package=/tmp/$plugin.tar.gz
+rm -rf /tmp/$plugin.tar.gz >/dev/null 2>&1
+
 # Check script url connectivity and install eliesatpanel
-#######################################
+###########################################
 if wget -q --method=HEAD https://github.com/eliesat/eliesatpanel/blob/main/installer.sh; then
 connection=ok
 else
 echo "> Server is down, try again later..."
 exit 1
 fi
-###########################################
-version='3.1'
-changelog='\panel update'
 
 # Functions
 ###########################################
@@ -83,20 +89,13 @@ for i in "${deps[@]}"; do
   install "$i"
 done
 
-#configuration
-###########################################
-plugin=main
-url=https://github.com/eliesat/eliesatpanel/archive/main.tar.gz
-package=/tmp/$plugin.tar.gz
-rm -rf /tmp/$plugin.tar.gz >/dev/null 2>&1
-
 # Remove unnecessary files and folders
 ###########################################
 [ -d "/CONTROL" ] && rm -r /CONTROL >/dev/null 2>&1
 rm -rf /control /postinst /preinst /prerm /postrm /tmp/*.ipk /tmp/*.tar.gz >/dev/null 2>&1
 
 # Download and install eliesatpanel
-#######################################
+###########################################
 wget -qO $package --no-check-certificate $url
 tar -xzf $package -C /tmp
 extract=$?
