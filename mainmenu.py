@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+from datetime import datetime
+from threading import Timer
+from .menus.compat import compat_urlopen, compat_Request, PY3
 import _enigma
 import enigma
 import socket
@@ -70,7 +72,8 @@ global min, first_start
 min = first_start = 0
 ####################################
 Panel = 'ElieSatPanel'
-Version = '2.0'
+Version = '1.0'
+installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 
 class eliesatpanel(Screen):
 	skin = """
@@ -252,6 +255,8 @@ class eliesatpanel(Screen):
 		self.network_info()
 		self["Version"] = Label(_("V" + Version))
 		self["Panel"] = Label(_(Panel))
+		t = Timer(0.5, self.update_me)
+		t.start()
 
 	def mList(self):
 		self.list = []
@@ -639,6 +644,37 @@ class eliesatpanel(Screen):
 		size = st.f_bsize * st.f_blocks / 1024
 		self["flashTotal"].text = _("Total: %s Kb  Free: %s Kb") % (size , avail)
 		
-		
 	def cancel(self):
 		self.close()
+
+	def update_me(self):
+		remote_version = '0.0'
+		remote_changelog = ''
+		req = compat_Request(installer, headers={'User-Agent': 'Mozilla/5.0'})
+		page = compat_urlopen(req).read()
+		if PY3:
+			data = page.decode("utf-8")
+		else:
+			data = page.encode("utf-8")
+		if data:
+			lines = data.split("\n")
+			for line in lines:
+				if line.startswith("version"):
+					remote_version = line.split("=")
+					remote_version = line.split("'")[1]
+				if line.startswith("changelog"):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					break
+
+		if float(Version) < float(remote_version):
+			new_version = remote_version
+			new_changelog = remote_changelog
+			self.session.openWithCallback(self.install_update, MessageBox, _("New version %s is available. \n %s \n\nDo you want to install it now?" % (new_version, new_changelog)), MessageBox.TYPE_YESNO)
+
+	def install_update(self, answer=False):
+		if answer:
+			self.session.open(Console, title='Updating please wait...', cmdlist='wget -q "--no-check-certificate" ' + installer + ' -O - | /bin/sh', finishedCallback=self.myCallback, closeOnSuccess=False)
+
+	def myCallback(self, result):
+		return
