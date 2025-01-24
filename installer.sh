@@ -5,8 +5,8 @@ clear >/dev/null 2>&1
 #configuration
 ###########################################
 plugin=main
-version='2.1'
-changelog='auto update'
+version='3.1'
+changelog='\panel update'
 url=https://github.com/eliesat/eliesatpanel/archive/main.tar.gz
 package=/tmp/$plugin.tar.gz
 rm -rf /tmp/$plugin.tar.gz >/dev/null 2>&1
@@ -36,13 +36,15 @@ cleanup() {
 
 #check print image and python version
 ###########################################
-image_version="/etc/image-version"
-box_type=$(head -n 1 /etc/hostname)
-distro_value=$(grep '^distro=' "$image_version" | awk -F '=' '{print $2}')
-distro_version=$(grep '^version=' "$image_version" | awk -F '=' '{print $2}')
-python_version=$(python --version 2>&1 | sed 's/[^ ]* //')
+if [ -f /etc/image-version ]; then image_version=$(cat /etc/image-version | grep -iF "creator" | cut -d"=" -f2 | xargs) 
+elif [ -f /etc/issue ]; then image_version=$(cat /etc/issue | head -n1 | awk '{print $1;}') 
+else 
+image='> image name not found' 
+fi 
 
-print_message "> Image : $distro_value-$distro_version"
+python_version=$(python -c "import platform; print(platform.python_version())")
+
+print_message "> Image : $image_version"
 sleep 2
 print_message "> Python : $python_version"
 sleep 2
