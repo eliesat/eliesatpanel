@@ -148,12 +148,12 @@ class eliesatpanel(Screen):
 <widget source="Hardware" render="Label" position="1490,690" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- processor -->
-<widget source="CPULabel" render="Label" position="1300,730.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="CPU" render="Label" position="1490,730" zPosition="2" size="490,40" font="lsat; 22" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="CPULabel" render="Label" position="1300,730.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="CPU" render="Label" position="1490,730" zPosition="2" size="400,50" font="lsat; 23" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- mac address -->
-<widget source="macLabel" render="Label" position="1300,770.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="macInfo" render="Label" position="1490,770" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="macLabel" render="Label" position="1300,770.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1"/>
+<widget source="macInfo" render="Label" position="1490,770" zPosition="2" size="200,50" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- driver version-->
 <widget source="driverLabel" render="Label" position="1300,810.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
@@ -168,16 +168,16 @@ class eliesatpanel(Screen):
 <widget source="gstreamer" render="Label" position="1490,890" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- ram -->
-<widget source="MemoryLabel" render="Label" position="1226,415" zPosition="2" size="150,40" font="lsat; 24" halign="right" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="MemoryLabel" render="Label" position="1230,415" zPosition="2" size="150,40" font="lsat; 24" halign="right" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="memTotal" render="Label" position="1390,410" zPosition="2" size="420,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- swap -->
-<widget source="SwapLabel" render="Label" position="1226,450" zPosition="2" size="150,40" font="lsat; 24" halign="right" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="SwapLabel" render="Label" position="1230,450" zPosition="2" size="150,40" font="lsat; 24" halign="right" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="swapTotal" render="Label" position="1390,445" zPosition="2" size="420,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- flash -->
 <widget source="FlashLabel" render="Label" position="1200,485" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 22" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 23" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- image installation date -->
 <widget source="installedLabel" render="Label" position="2100,630" zPosition="2" size="390,22" font="Regular;20" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
@@ -237,10 +237,10 @@ class eliesatpanel(Screen):
 		self["EnigmaVersion"] = StaticText()
 		self["HardwareLabel"] = StaticText(_("Hardware:"))
 		self["ImageLabel"] = StaticText(_("Image:"))
-		self["KernelLabel"] = StaticText(_("Kernel Version:"))
+		self["KernelLabel"] = StaticText(_("Kernel Ver:"))
 		self["EnigmaVersionLabel"] = StaticText(_("Last Upgrade:"))
 		self["driver"] = StaticText()
-		self["driverLabel"] = StaticText(_("Driver Version:"))
+		self["driverLabel"] = StaticText(_("Driver Ver:"))
 		self.memInfo()
 		self.FlashMem()
 		self.devices()
