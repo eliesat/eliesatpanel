@@ -1,6 +1,7 @@
 #!/bin/bash
 
 clear >/dev/null 2>&1
+
 # Check script url connectivity and install eliesatpanel
 #######################################
 if wget -q --method=HEAD https://github.com/eliesat/eliesatpanel/blob/main/installer.sh; then
@@ -40,41 +41,47 @@ sleep 2
 
 # check libraries
 ###########################################
-if [ -f /var/lib/dpkg/status ]; then
-   STATUS=/var/lib/dpkg/status
-   OSTYPE=DreamOs
+# Check python
+pyVersion=$(python -c"from sys import version_info; print(version_info[0])")
+
+if [ "$pyVersion" = 3 ]; then
+deps+=( "python3-requests" "python3-six" )
 else
-   STATUS=/var/lib/opkg/status
-   OSTYPE=Dream
-fi
-echo ""
-if python --version 2>&1 | grep -q '^Python 3\.'; then
-	PYTHON=PY3
-	Packagesix=python3-six
-	Packagerequests=python3-requests
-else
-	PYTHON=PY2
-	Packagerequests=python-requests
+deps+=( "python-requests" "python-six" )
 fi
 
-if [ $PYTHON = "PY3" ]; then
-	if grep -qs "Package: $Packagesix" cat $STATUS ; then
-		ok=ok
-	else
-		opkg update && opkg install python3-six >/dev/null 2>&1
-	fi
+if [ -f /etc/opkg/opkg.conf ]; then
+  STATUS='/var/lib/opkg/status'
+  OSTYPE='Opensource'
+  OPKG='opkg update'
+  OPKGINSTAL='opkg install'
+elif [ -f /etc/apt/apt.conf ]; then
+  STATUS='/var/lib/dpkg/status'
+  OSTYPE='DreamOS'
+  OPKG='apt-get update'
+  OPKGINSTAL='apt-get install'
 fi
-if grep -qs "Package: $Packagerequests" cat $STATUS ; then
-	ok=ok
-else
-	if [ $OSTYPE = "DreamOs" ]; then
-		apt-get update && apt-get install python-requests -y >/dev/null 2>&1
-	elif [ $PYTHON = "PY3" ]; then
-		opkg update >/dev/null 2>&1 && opkg install python3-requests >/dev/null 2>&1
-	elif [ $PYTHON = "PY2" ]; then
-		opkg update >/dev/null 2>&1 && opkg install python-requests >/dev/null 2>&1
-	fi
-fi
+
+install() {
+  if ! grep -qs "Package: $1" "$STATUS"; then
+    $OPKG >/dev/null 2>&1
+    rm -rf /run/opkg.lock >/dev/null 2>&1
+    sleep 1
+    if [ "$OSTYPE" = "Opensource" ]; then
+      $OPKGINSTAL "$1"
+      sleep 1
+      clear
+    elif [ "$OSTYPE" = "DreamOS" ]; then
+      $OPKGINSTAL "$1" -y
+      sleep 1
+      clear
+    fi
+  fi
+}
+
+for i in "${deps[@]}"; do
+  install "$i"
+done
 
 #configuration
 ###########################################
@@ -90,7 +97,6 @@ rm -rf /control /postinst /preinst /prerm /postrm /tmp/*.ipk /tmp/*.tar.gz >/dev
 
 # Download and install eliesatpanel
 #######################################
-
 wget -qO $package --no-check-certificate $url
 tar -xzf $package -C /tmp
 extract=$?
@@ -107,8 +113,19 @@ if [ $extract -eq 0 ]; then
 print_message "> Eliesatpanel is installed successfully and up to date ..."
 echo
 sleep 2
-
+fi
 print_message "> End of process ..."
-echo "-----------------------------------------------"
+sleep 3
+print_message "> Please Wait enigma2 restarting. ..."
+echo "-----------------------------------------------------------"
+sleep 3
 
+# Restart Enigma2 service or kill enigma2 based on the system
+############################################
+if [ "$OSTYPE" == DreamOS ]; then
+    sleep 2
+    systemctl restart enigma2
+else
+    sleep 2
+    killall -9 enigma2
 fi
