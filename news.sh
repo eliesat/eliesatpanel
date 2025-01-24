@@ -1,11 +1,11 @@
 #!/bin/sh
 
 DATE="$(date +%a.%d.%b.%Y)"
-echo ">>>Eliesatpanel $DATE<<<"
+echo ">>> Eliesatpanel $DATE (lebanon) <<<"
 sleep 1
-echo ">>>zoukmosbeh-lebanon<<<"
 
-echo "> no new news "
+
+echo "> ElieSatPanel (trial-تجريبي) "
 sleep 3
 
 echo
