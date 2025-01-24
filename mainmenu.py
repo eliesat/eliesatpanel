@@ -70,7 +70,7 @@ global min, first_start
 min = first_start = 0
 ####################################
 Panel = 'ElieSatPanel'
-Version = '2.0r0'
+Version = '2.0'
 
 class eliesatpanel(Screen):
 	skin = """
