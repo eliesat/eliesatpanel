@@ -230,7 +230,6 @@ class eliesatpanel(Screen):
 		self["CPULabel"] = StaticText(_("Processor:"))
 		self["CPU"] = StaticText()
 		self["Kernel"] = StaticText()
-		self["nim"] = StaticText()
 		self["ipLabel"] = StaticText(_("IP address:"))
 		self["ipInfo"] = StaticText()
 		self["macLabel"] = StaticText(_("Mac Address:"))
