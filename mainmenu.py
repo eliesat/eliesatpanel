@@ -72,7 +72,7 @@ global min, first_start
 min = first_start = 0
 ####################################
 Panel = 'ElieSatPanel'
-Version = '2.2'
+Version = '2.2.2'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 
 class eliesatpanel(Screen):
