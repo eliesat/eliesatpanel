@@ -126,7 +126,7 @@ class panels(Screen):
 		n = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		o = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		p = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-
+		q = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		self.list.append((_("Ajpanel-14.0.0"), 1, _("ادارة الملفات و مجموعة كبيرة من الخدمات"), a))
 		self.list.append((_("Ajpanel-eliesatpanel"), 2, _("بانل تسطيب اضافات"), b))
 		self.list.append((_("Ciefpsettingspanel-2.2"), 3, _("بانل تسطيب اضافات"), c))
@@ -134,6 +134,7 @@ class panels(Screen):
 		self.list.append((_("Levi45addonmanager-10.1-r28"), 5, _("بانل تسطيب اضافات"), e))
 		self.list.append((_("Levi45multicammanager-10.1-r34"), 6, _("بانل تسطيب كامات و سكريبتات مختلفة"), f))
 		self.list.append((_("Linuxsat-panel-2.7.0"), 7, _("بانل تسطيب اضافات"), g))
+		self.list.append((_("Magicpanel-5.0.0"), 17, _("بانل تسطيب اضافات"), q))
 		self.list.append((_("Novalerstore-3.0r0"), 8, _("بانل تسطيب اضافات"), h))
 		self.list.append((_("S4aupdater-24.08.30.2303"), 9, _("بانل تسطيب اضافات"), i))
 		self.list.append((_("Satvenuspanel-7.3.3"), 10, _("بانل تسطيب اضافات"), j))
@@ -228,6 +229,10 @@ class panels(Screen):
 			elif item is 16:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh -qO - | /bin/sh"
+        ])
+			elif item is 17:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/magicpanel/magicpanel.sh -qO - | /bin/sh"
         ])
 
 			else:
