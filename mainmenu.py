@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from datetime import datetime
-from threading import Timer
-from .menus.compat import compat_urlopen, compat_Request, PY3
+
+import os
 import _enigma
 import enigma
 import socket
@@ -12,6 +11,9 @@ import sys, traceback
 import re
 import time
 import gettext
+from datetime import datetime
+from threading import Timer
+from .menus.compat import compat_urlopen, compat_Request, PY3
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.menus.allinone import allinone
 from Plugins.Extensions.ElieSatPanel.menus.dependencies import dependencies
@@ -33,7 +35,6 @@ from Plugins.Extensions.ElieSatPanel.menus.skins import skins
 from Plugins.Extensions.ElieSatPanel.menus.softcams import softcams
 from Plugins.Extensions.ElieSatPanel.menus.spinners import spinners
 from Plugins.Extensions.ElieSatPanel.menus.systemplugins import systemplugins
-from Components.Language import language
 from Components.PluginComponent import plugins
 from Components.Sources.StaticText import StaticText
 from Components.Pixmap import Pixmap
@@ -42,13 +43,9 @@ from Components.Sources.List import List
 from Components.Label import Label
 from Components.MenuList import MenuList
 from Components.Button import Button
-from Components.config import config, getConfigListEntry, ConfigText, ConfigPassword, ConfigClock, ConfigInteger, ConfigDateTime, ConfigSelection, ConfigSubsection, ConfigYesNo, configfile, NoSave
-from Components.ConfigList import ConfigListScreen
 from Components.Harddisk import harddiskmanager
-from enigma import eEPGCache
 from enigma import *
 from os import environ
-import os
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
 from Screens.PluginBrowser import PluginBrowser
@@ -59,18 +56,8 @@ from Components.Console import Console as iConsole
 from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from types import *
 
-PY3 = sys.version_info.major >= 3
-if sys.version_info[0] < 3:
-    from urllib2 import urlopen, Request, URLError
-    PY3 = False
-else:
-    from urllib.request import urlopen, Request
-    from urllib.error import URLError
-    PY3 = True
-
 global min, first_start
 min = first_start = 0
-####################################
 Panel = 'ElieSatPanel'
 Version = '2.22'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
@@ -121,9 +108,9 @@ class eliesatpanel(Screen):
 <widget source="menu" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" render="Listbox" position="48,200" size="1240,660" scrollbarMode="showOnDemand">
 <convert type="TemplatedMultiContent">
 	{"template": [
-		MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-		MultiContentEntryText(pos = (600, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-		MultiContentEntryPixmapAlphaTest(pos = (25, 5), size = (50, 40), png = 3), # index 4 is the pixmap
+		MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # menu title
+		MultiContentEntryText(pos = (600, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # description
+		MultiContentEntryPixmapAlphaTest(pos = (25, 5), size = (50, 40), png = 3), # picture
 			],
 	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
 	"itemHeight": 66
@@ -182,10 +169,6 @@ class eliesatpanel(Screen):
 <widget source="FlashLabel" render="Label" position="1200,485" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 23" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
-<!-- image installation date -->
-<widget source="installedLabel" render="Label" position="2100,630" zPosition="2" size="390,22" font="Regular;20" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="installed" render="Label" position="2100,630" zPosition="2" size="390,22" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
 </screen>"""
 
 	def __init__(self, session):
@@ -194,7 +177,7 @@ class eliesatpanel(Screen):
 		self.setTitle(_("ElieSatPanel"))
 		self.iConsole = iConsole()
 		self.indexpos = None
-		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions" "ColorActions", "HotkeyActions"],
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
 		{
 			"ok": self.keyOK,
 			"cancel": self.exit,
@@ -219,10 +202,8 @@ class eliesatpanel(Screen):
 		self["swapTotal"] = StaticText()
 		self["flashTotal"] = StaticText()
 		self["device"] = StaticText()
-		self["installedLabel"] = StaticText(_("Installed Date:"))
 		self["gstreamerLabel"] = StaticText(_("GStreamer:"))
 		self["pythonLabel"] = StaticText(_("Python:"))
-		self["installed"] = StaticText()
 		self["gstreamer"] = StaticText()
 		self["python"] = StaticText()
 		self["Hardware"] = StaticText()
@@ -246,7 +227,6 @@ class eliesatpanel(Screen):
 		self.devices()
 		self.mainInfo()
 		self.cpuinfo()
-		self.getFlashDateString()
 		self.getPythonVersionString()
 		self.getGStreamerVersionString()
 		self.network_info()
@@ -304,14 +284,6 @@ class eliesatpanel(Screen):
 			self["menu"].setIndex(self.indexpos)
 		self["menu"].setList(self.list)
 		
-	def go(self, num = None):
-		if num is not None:
-			num -= 1
-			if not num < self["menu"].count():
-				return
-			self["menu"].setIndex(num)
-		item = self["menu"].getCurrent()[1]
-		self.select_item(item)
 		
 	def keyOK(self, item = None):
 		self.indexpos = self["menu"].getIndex()
@@ -367,32 +339,18 @@ class eliesatpanel(Screen):
 
 	def exit(self):
 		self.close()
-
-	def keyRed (self):
-
-		self.session.open(PluginBrowser)
-
-	def update (self):
-				self.session.open(Console, _("Installing package please wait..."), [
-            "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
-        ])
-
-	def restart (self):
-				self.session.open(Console, _("Restarting enigma2 please wait..."), [
-            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
-        ])
-
 	def news (self):
 				self.session.open(Console, _("Please wait..."), [
             "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
         ])
-				
-	def keyYellow (self):
-		self.session.open(PluginBrowser)
-		
-	def keyGreen (self):
-		self.session.open(PluginBrowser)
-	
+	def update (self):
+				self.session.open(Console, _("Installing package please wait..."), [
+            "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
+        ])
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
 	def infoKey (self):
 		self.session.open(Console, _("Please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
@@ -436,11 +394,6 @@ class eliesatpanel(Screen):
 		except:
 			self["gstreamer"].text =  _("unknown")
 		
-	def getFlashDateString(self):
-		try:
-			self["installed"].text = time.strftime(_("%Y-%m-%d %H:%M"), time.localtime(os.stat("/boot").st_ctime))
-		except:
-			self["installed"].text =  _("unknown")
 			
 	def getPythonVersionString(self):
 		try:
