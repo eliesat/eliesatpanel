@@ -186,8 +186,6 @@ class eliesatpanel(Screen):
 <widget source="installedLabel" render="Label" position="2100,630" zPosition="2" size="390,22" font="Regular;20" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="installed" render="Label" position="2100,630" zPosition="2" size="390,22" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
-<!-- tuner -->
-<widget source="nim" render="Label" position="1500,2100" zPosition="2" size="580,88" font="Regular;20" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 </screen>"""
 
 	def __init__(self, session):
@@ -564,43 +562,6 @@ class eliesatpanel(Screen):
 			pass
 		return _("unavailable")
 		
-	def listnims(self):
-		tuner_name = {'0':'Tuner A:', '1':'Tuner B:', '2':'Tuner C:', '3':'Tuner D:', '4':'Tuner E:', '5':'Tuner F:', '6':'Tuner G:', '7':'Tuner H:', '8':'Tuner I:', '9':'Tuner J:'}
-		nimlist = nims = ''
-		allnims = []
-		fbc_count = 0
-		if fileExists("/proc/bus/nim_sockets"):
-			for line in open("/proc/bus/nim_sockets"):
-				if 'NIM Socket' in line:
-					nimlist += tuner_name[line.split()[-1].replace(':', '')] + ' '
-				elif 'Type:' in line:
-					nimlist += '(%s)' % line.split()[-1].replace('\n', '').strip() + ' '
-				elif 'Name:' in line:
-					nimlist += '%s' % line.split(':')[1].replace('\n', '').strip() + '\n'					
-			allnims = []
-			fbc_count = nimlist.count('FBC')
-			if fbc_count / 4 > 0:
-				fbc = fbc_count / 4
-				for line in nimlist.split('\n'):
-					allnims.append(line)  
-				for count in range(0, len(allnims)):
-					if count < fbc:
-						nims += allnims[count] + '\n'
-					if count >= fbc * 4:
-						nims += allnims[count] + '\n'
-				return nims
-			else:
-				return nimlist
-		else:
-			return _("unavailable")
-			
-		nims = nimmanager.nimList(showFBCTuners=False)
-		for count in range(len(nims)):
-			if count < 4:
-				self["Tuner" + str(count)] = StaticText(nims[count])
-			else:
-				self["Tuner" + str(count)] = StaticText("")
-			AboutText += nims[count] + "\n"
 			
 	def mainInfo(self):
 		package = 0
@@ -608,7 +569,6 @@ class eliesatpanel(Screen):
 		self["Image"].text = self.getImageTypeString()
 		self["Kernel"].text = self.getKernelVersionString()
 		self["EnigmaVersion"].text = self.getImageVersionString()
-		self["nim"].text = self.listnims()
 		if fileExists(self.status()):
 			for line in open(self.status()):
 				if "-dvb-modules" in line and "Package:" in line:
