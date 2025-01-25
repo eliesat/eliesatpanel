@@ -129,7 +129,7 @@ class panels(Screen):
 
 		self.list.append((_("Ajpanel-14.0.0"), 1, _("ادارة الملفات و مجموعة كبيرة من الخدمات"), a))
 		self.list.append((_("Ajpanel-eliesatpanel"), 2, _("بانل تسطيب اضافات"), b))
-		self.list.append((_("Ciefpsettingspanel-1.9"), 3, _("بانل تسطيب اضافات"), c))
+		self.list.append((_("Ciefpsettingspanel-2.2"), 3, _("بانل تسطيب اضافات"), c))
 		self.list.append((_("Epanel-5.8r2"), 4, _("بانل خدمات متنوعة للصورة و المستخدم"), d))
 		self.list.append((_("Levi45addonmanager-10.1-r28"), 5, _("بانل تسطيب اضافات"), e))
 		self.list.append((_("Levi45multicammanager-10.1-r34"), 6, _("بانل تسطيب كامات و سكريبتات مختلفة"), f))
