@@ -5,7 +5,7 @@ clear >/dev/null 2>&1
 #configuration
 ###########################################
 plugin=main
-version='2.1.1'
+version='2.2.0'
 changelog=''
 url=https://github.com/eliesat/eliesatpanel/archive/main.tar.gz
 package=/tmp/$plugin.tar.gz
