@@ -134,6 +134,8 @@ class settings(Screen):
 		v = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		w = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		x = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		y = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		z = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("A.ibrahreem-motor"), 1, _("ملف قنوات 26.10.2024"), a))
 		self.list.append((_("A-hussein-motor"), 2, _("ملف قنوات 15.07.2024"), b))
@@ -142,12 +144,14 @@ class settings(Screen):
 		self.list.append((_("Ciefp-motor"), 5, _("ملف قنوات 23.01.2025"), e))
 		self.list.append((_("Lassaed-motor"), 6, _("ملف قنوات 25.06.2024"), f))
 		self.list.append((_("M.saleh-motor"), 7, _("ملف قنوات 01.01.2025"), g))
+		self.list.append((_("M.mallah-motor"), 25, _("ملف قنوات 25.01.2025"), y))
 		self.list.append((_("Mnasr-motor"), 8, _("ملف قنوات 30.08.2024"), h))
 		self.list.append((_("Mohamed-os-motor"), 9, _("ملف قنوات 17.01.2025"), i))
 		self.list.append((_("Mohgooda-motor"), 10, _("ملف قنوات 09.08.2024"), j))
 		self.list.append((_("Morpheus883-motor"), 11, _("ملف قنوات 24.01.2025"), k))
 		self.list.append((_("Novaler-motor"), 12, _("ملف قنوات 05.09.2024"), l))
 		self.list.append((_("Ismail-saidi-motor"), 13, _("ملف قنوات 23.12.2024"), m))
+		self.list.append((_("S.refaey-motor"), 26, _("ملف قنوات 25.01.2025"), z))
 		self.list.append((_("t.alashry-motor"), 14, _("ملف قنوات 01.01.2025"), n))
 		self.list.append((_("Vhannibal-motor"), 15, _("ملف قنوات 23.01.2025"), o))
 		self.list.append((_("Freq-Eliesat"), 16, _("ملف ترددات 21.10.2024"), p))
@@ -276,6 +280,14 @@ class settings(Screen):
 			elif item is 24:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/settings/-/raw/main/tuner/tuner-1.3.sh -qO - | /bin/sh"
+        ])
+			elif item is 25:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/settings/-/raw/main/m.mallah/m.mallah-motor.sh -qO - | /bin/sh"
+        ])
+			elif item is 26:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/settings/-/raw/main/s.refaey/s.refaey-motor.sh -qO - | /bin/sh"
         ])
 
 			else:
