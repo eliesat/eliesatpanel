@@ -5,8 +5,8 @@ clear >/dev/null 2>&1
 #configuration
 ###########################################
 plugin=main
-version='2.22'
-changelog='magicpanel-5.0 بانل الاستاذ حمدي'
+version='2.23'
+changelog='blue button: scripts'
 url=https://github.com/eliesat/eliesatpanel/archive/main.tar.gz
 package=/tmp/$plugin.tar.gz
 rm -rf /tmp/$plugin.tar.gz >/dev/null 2>&1

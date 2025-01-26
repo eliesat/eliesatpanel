@@ -59,8 +59,9 @@ from types import *
 global min, first_start
 min = first_start = 0
 Panel = 'ElieSatPanel'
-Version = '2.22'
+Version = '2.23'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
+scriptpath = "/usr/script/"
 
 class eliesatpanel(Screen):
 	skin = """
@@ -186,12 +187,12 @@ class eliesatpanel(Screen):
 			"info": self.infoKey,
 			"green": self.news,
 			"yellow": self.update,
-			"blue": self.restart,
+			"blue": self.scriptslist,
 		})
 		self["key_red"] = StaticText(_("Exit"))
 		self["key_green"] = StaticText(_("News"))
 		self["key_yellow"] = StaticText(_("Update"))
-		self["key_blue"] = StaticText(_("Restart E2"))
+		self["key_blue"] = StaticText(_("Scripts"))
 		self.list = []
 		self["menu"] = List(self.list)
 		self.mList()
@@ -347,10 +348,8 @@ class eliesatpanel(Screen):
 				self.session.open(Console, _("Installing package please wait..."), [
             "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
         ])
-	def restart (self):
-				self.session.open(Console, _("Restarting enigma2 please wait..."), [
-            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
-        ])
+	def scriptslist(self):
+				self.session.open(Scripts)
 	def infoKey (self):
 		self.session.open(Console, _("Please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
@@ -590,3 +589,97 @@ class eliesatpanel(Screen):
 
 	def myCallback(self, result):
 		return
+
+class Scripts(Screen):
+	skin = """
+<screen name="Scripts" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="Scripts">
+
+<ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
+  
+<widget name="list" position="48,200" size="1240,660" font="Regular;35" halign="center" valign="center" render="Listbox" itemHeight="66" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" scrollbarMode="showOnDemand" />
+
+<!-- title -->
+<eLabel text="Scripts lists" position="560,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<ePixmap position="473,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="800,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+
+<!-- title1 -->
+<eLabel text="Scripts lists" position="1500,700" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+
+<!-- title2 -->
+<eLabel text="Select and press ok to execute" position="1440,790" size="400,50" zPosition="1" font="Bold;27" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+
+<!-- minitv -->
+<widget source="session.VideoPicture" render="Pig" position="1320,120" size="550,400" zPosition="1" backgroundColor="#ff000000" />
+
+<!-- clock -->
+<widget source="global.CurrentTime" render="Label" position="1290,600" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
+		<convert type="ClockToText">Default</convert>
+
+<!-- calender -->
+</widget>
+<widget source="global.CurrentTime" render="Label" position="1530,610" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<convert type="ClockToText">Format %A %d %B</convert>
+</widget>
+
+<ePixmap position="120,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
+<widget source="key_red" render="Label" position="160,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="400,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
+<widget source="key_green" render="Label" position="440,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="680,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
+<widget source="key_yellow" render="Label" position="720,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="960,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
+<widget source="key_blue" render="Label" position="1000,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+</screen>"""
+
+	def __init__(self, session):
+		Screen.__init__(self, session)
+		self.session = session
+		self.script, self.name = '', ''
+		self.setTitle(_("Script Executer"))
+		self.iConsole = iConsole()
+		self.script_menu()
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Run"))
+		self["key_yellow"] = StaticText(_("Bg Run"))
+		self["key_blue"] = StaticText(_("Restart E2"))
+		self["actions"] = ActionMap(["OkCancelActions","ColorActions"], {"ok": self.run, "green": self.run, "yellow": self.bgrun, "red": self.exit, "blue": self.restart, "cancel": self.close}, -1)
+		
+	def script_menu(self):
+		list = []
+		if pathExists(scriptpath):
+			list = os.listdir("%s" % scriptpath[:-1])
+			list = [x for x in list if x.endswith('.sh') or x.endswith('.py')]
+		else:
+			list = []
+		list.sort()
+		self["list"] = MenuList(list)
+	
+	def bgrun(self):
+		self.script = self["list"].getCurrent()
+		if self.script is not None:
+			self.name = "%s%s" % (scriptpath, self.script)
+			if self.name.endswith('.sh'):
+				os.chmod('%s' %  self.name, 0o755)
+			else:
+				self.name = 'python %s' % self.name
+			self.iConsole.ePopen("nohup %s >/dev/null &" %  self.name)
+			self.mbox = self.session.open(MessageBox,(_("the script is running in the background...")), MessageBox.TYPE_INFO, timeout = 4 )
+
+	def run(self):
+		self.script = self["list"].getCurrent()
+		if self.script is not None:
+			self.name = "%s%s" % (scriptpath, self.script)
+			if self.name.endswith('.sh'):
+				os.chmod('%s' %  self.name, 0o755)
+			else:
+				self.name = 'python %s' % self.name
+			self.session.open(Console, self.script.replace("_", " "), cmdlist=[self.name])
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+
+	def exit(self):
+		self.close()
