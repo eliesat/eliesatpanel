@@ -6,7 +6,7 @@ clear >/dev/null 2>&1
 ###########################################
 plugin=main
 version='2.25'
-changelog='settings'
+changelog='ajpanel-15.0.0'
 url=https://github.com/eliesat/eliesatpanel/archive/main.tar.gz
 package=/tmp/$plugin.tar.gz
 rm -rf /tmp/$plugin.tar.gz >/dev/null 2>&1
