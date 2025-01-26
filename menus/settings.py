@@ -139,7 +139,7 @@ class settings(Screen):
 		self.list.append((_("A-hussein-motor"), 2, _("ملف قنوات 15.07.2024"), b))
 		self.list.append((_("A-salama-motor"), 3, _("ملف قنوات 26.09.2024"), c))
 		self.list.append((_("A-shawky-motor"), 4, _("ملف قنوات 08.06.2024"), d))
-		self.list.append((_("Ciefp-motor"), 5, _("ملف قنوات 23.01.2024"), e))
+		self.list.append((_("Ciefp-motor"), 5, _("ملف قنوات 23.01.2025"), e))
 		self.list.append((_("Lassaed-motor"), 6, _("ملف قنوات 25.06.2024"), f))
 		self.list.append((_("M.saleh-motor"), 7, _("ملف قنوات 01.01.2025"), g))
 		self.list.append((_("Mnasr-motor"), 8, _("ملف قنوات 30.08.2024"), h))
