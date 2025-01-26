@@ -5,8 +5,8 @@ clear >/dev/null 2>&1
 #configuration
 ###########################################
 plugin=main
-version='2.23'
-changelog='blue button: scripts'
+version='2.24'
+changelog=''
 url=https://github.com/eliesat/eliesatpanel/archive/main.tar.gz
 package=/tmp/$plugin.tar.gz
 rm -rf /tmp/$plugin.tar.gz >/dev/null 2>&1
