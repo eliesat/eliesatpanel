@@ -235,7 +235,7 @@ class extensions(Screen):
 		self.list.append((_("Bitrate-mod-ariad"), 14, _("عرض معدل البت لقنوات السات على الشاشة"), n))
 		self.list.append((_("Bootlogokids-stony272"), 15, _("صور اقلاع للاطفال"), o))
 		self.list.append((_("Bootlogoswapper-1.0"), 16, _("صور اقلاع eliesat-special-edition"), p))
-		self.list.append((_("Bouquetmakerxtream-1.43"), 17, _("مشغل اي بي تي في"), q))
+		self.list.append((_("Bouquetmakerxtream-1.45"), 17, _("تحويل اشتراك الiptv لمفضلات"), q))
 		self.list.append((_("Bundesliga-clock-1.0"), 18, _("تثبيت الساعة على الشاشة بشكل دائم"), r))
 		self.list.append((_("Cacheflush-2.0r4"), 19, _("مسح ملفات الكاش من الذاكرة العشوائية"), s))
 		self.list.append((_("Chlogochanger-1.0"), 20, _("تخصيص شعار للقنوات من اختيارك"), t))
