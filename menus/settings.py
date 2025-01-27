@@ -156,7 +156,7 @@ class settings(Screen):
 		self.list.append((_("Vhannibal-motor"), 15, _("ملف قنوات 23.01.2025"), o))
 		self.list.append((_("Freq-Eliesat"), 16, _("ملف ترددات 21.10.2024"), p))
 		self.list.append((_("Freq-flysat"), 17, _("ملف ترددات 18.12.2024"), q))
-		self.list.append((_("Freq-Lyngsat"), 18, _("ملف ترددات 05.01.2025"), r))
+		self.list.append((_("Freq-Lyngsat"), 18, _("ملف ترددات 26.01.2025"), r))
 		self.list.append((_("Freq-Oe-alliance"), 19, _("ملف ترددات  محدث تلقائيا"), s))
 		self.list.append((_("Freq-Openpli"), 20, _("ملف ترددات  محدث تلقائيا"), t))
 		self.list.append((_("Tuner-diseqc-1.0"), 21, _("اعدادات افتراضيه للدايسك ٤ مخارج"), u))
