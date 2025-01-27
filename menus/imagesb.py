@@ -121,7 +121,7 @@ class imagesb(Screen):
 		i = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		j = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
-		self.list.append((_("Openatv-7.5"), 1, _("باكآب صورة openatv 7.5"), a))
+		self.list.append((_("Openatv-7.5.1"), 1, _("باكآب صورة openatv 7.5"), a))
 		self.list.append((_("xxxx"), 2, _("xxxx"), b))
 		self.list.append((_("xxxx"), 3, _("xxxx"), c))
 		self.list.append((_("xxxx"), 4, _("xxxx"), d))
@@ -155,7 +155,7 @@ class imagesb(Screen):
 		if item:
 			if item is 1:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/openatv-neutral/openatv.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/images/-/raw/main/openatv/backup-atv.feed-new.sh -qO - | /bin/sh"
         ])
 			elif item is 2:
 				self.session.open(Console, _("Installing package please wait..."), [
