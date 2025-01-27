@@ -272,7 +272,7 @@ class extensions(Screen):
 		self.list.append((_("Ipaudiopro-1.4"), 51, _("اضافة الصوتيات على قنوات السات"), Y))
 		self.list.append((_("Ipchecker-004"), 52, _("عرض اي يي الرسيفر و الخارجي معا"), Z))
 		self.list.append((_("Iptosat-1.8"), 53, _("مشاهدة قنوات الiptv على قنوات السات"), pa))
-		self.list.append((_("Iptvarchive-2.0.87"), 54, _("معاينة ارشيف الاي بي تي في"), pb))
+		self.list.append((_("Iptvarchive-2.0.89"), 54, _("معاينة ارشيف الاي بي تي في"), pb))
 		self.list.append((_("Iptvdream-4.120"), 55, _("قارئ و مشغل ملفات m3u"), pc))
 		self.list.append((_("Isettingse2-5.8"), 56, _("تسطيب ملفات قنوات py3.11"), pd))
 		self.list.append((_("Jediepgxtream-2.12"), 57, _("تثبيت الدليل على قنوات ال اي يي تي في"), pe))
