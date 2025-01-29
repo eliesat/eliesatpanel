@@ -155,7 +155,7 @@ class systemplugins(Screen):
 		self.list.append((_("Devicemanager-3.12"), 3, _("فرمطة الفلاشة الخارجية"), c))
 		self.list.append((_("Mountmanager-3.12"), 4, _("ماونت للفلاشة الخارجية"), d))
 		self.list.append((_("Networkbrowser-3.12"), 5, _("البحث و تصفح الشبكة الداخليه"), e))
-		self.list.append((_("Newvirtualkeyboard-13.0"), 6, _("لوحة مفاتيح اضافية"), f))
+		self.list.append((_("Newvirtualkeyboard-13.1"), 6, _("لوحة مفاتيح اضافية"), f))
 		self.list.append((_("Servicescanupdates-1.0"), 7, _("انشاء مفضلة بالبحث الجديد للقمر"), g))
 		self.list.append((_("Setpasswd-3.12"), 8, _("تغيير كلمة مرور الصورة"), h))
 		self.list.append((_("Softwaremanager-3.12"), 9, _("ادارة الصورة و الدخول على الفيدات"), i))
