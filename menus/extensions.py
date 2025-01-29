@@ -249,7 +249,7 @@ class extensions(Screen):
 		self.list.append((_("E2m3ubouquet-1.9.8"), 28, _("تحويل الiptv لمفضلات mod-dorik"), B))
 		self.list.append((_("Easy-cccam-0.2"), 29, _("اضافة اسطر cccam"), C))
 		self.list.append((_("Epggrabber-24.2"), 30, _("الدليل الالكتروني"), D))
-		self.list.append((_("Epggrabber-24.0-mod-elie"), 31, _("الدليل الالكتروني"), E))
+		self.list.append((_("Epggrabber-24.2-mod-elie"), 31, _("الدليل الالكتروني"), E))
 		self.list.append((_("Epgimport-9.9"), 32, _("جلب الدليل الاكتروني و عرضه على لايحة القنوات"), F))
 		self.list.append((_("Epgimport-1.9.1-mod-dorik"), 33, _("جلب الدليل الاكتروني و عرضه على لايحة القنوات"), G))
 		self.list.append((_("Epgtranslator-1.4r2"), 34, _("ترجمة دليل الالكتروني"), H))
