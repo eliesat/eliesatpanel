@@ -132,7 +132,7 @@ class skins(Screen):
 		t = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		u = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
-		self.list.append((_("Aglare-fhd-5.3"), 1, _("egami-openatv-openspa-pure2"), a))
+		self.list.append((_("Aglare-fhd-5.4"), 1, _("egami-openatv-openspa-pure2"), a))
 		self.list.append((_("Aglare-fhd-pli-5.1"), 2, _("openblackhole-openpli--openvix"), b))
 		self.list.append((_("Alayam-fhd-1.0"), 3, _("all"), c))
 		self.list.append((_("batman-vpx-fhd"), 4, _("all"), d))
@@ -144,7 +144,7 @@ class skins(Screen):
 		self.list.append((_("Dragon-fhd-2.0"), 10, _("all"), j))
 		self.list.append((_("Fullhdglass17-9.32"), 11, _("all"), k))
 		self.list.append((_("Nitroadvance-fhd-5.4"), 12, _("all"), l))
-		self.list.append((_("Maxy-fhd-1.2"), 13, _("egami-openatv-openspa-pure2"), m))
+		self.list.append((_("Maxy-fhd-1.3"), 13, _("egami-openatv-openspa-pure2"), m))
 		self.list.append((_("Maxi-fhd-pli-1.0"), 14, _("openblackhole-openpli-openvix"), n))
 		self.list.append((_("Nitro-fhd-1.0"), 15, _("all"), o))
 		self.list.append((_("Nitrogreenwood-1.0"), 16, _("all"), p))
