@@ -322,7 +322,7 @@ class extensions(Screen):
 		self.list.append((_("Worldcam-4.6"), 101, _("كاميرات من حول العالم"), pW))
 		self.list.append((_("Xcplugin-forever-4.0"), 102, _("مشغل اي بي تي في"), pX))
 		self.list.append((_("Xklass-1.32"), 103, _("مشغل اي بي تي في"), pY))
-		self.list.append((_("Xstreamity-4.73"), 104, _("مشغل اي بي تي في"), pZ))
+		self.list.append((_("Xstreamity-4.74"), 104, _("مشغل اي بي تي في"), pZ))
 		self.list.append((_("Xtraevent-4.2"), 105, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), aa))
 		self.list.append((_("Xtraevent-4.5"), 106, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ab))
 		self.list.append((_("Xtraevent-6.805"), 107, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ac))
