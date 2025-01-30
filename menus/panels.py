@@ -127,7 +127,7 @@ class panels(Screen):
 		o = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		p = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		q = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		self.list.append((_("Ajpanel-15.0.1"), 1, _("ادارة الملفات و مجموعة كبيرة من الخدمات"), a))
+		self.list.append((_("Ajpanel-10.5.1"), 1, _("ادارة الملفات و مجموعة كبيرة من الخدمات"), a))
 		self.list.append((_("Ajpanel-eliesatpanel"), 2, _("بانل تسطيب اضافات"), b))
 		self.list.append((_("Ciefpsettingspanel-2.2"), 3, _("بانل تسطيب اضافات"), c))
 		self.list.append((_("Epanel-5.8r2"), 4, _("بانل خدمات متنوعة للصورة و المستخدم"), d))
