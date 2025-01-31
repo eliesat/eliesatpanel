@@ -313,7 +313,7 @@ class extensions(Screen):
 		self.list.append((_("Theweather-2.5r0"), 92, _("حالة الطقس"), pN))
 		self.list.append((_("Tmdb-8.6r7"), 93, _("عرض بوستر و معلومات فيلم"), pO))
 		self.list.append((_("Transmission-5.0.9.9"), 94, _("مشاهدة و تنزيل افلام و مسلسلات"), pP))
-		self.list.append((_("Vavoo-1.32"), 95, _("اي بي تي في مجاني"), pQ))
+		self.list.append((_("Vavoo-1.33"), 95, _("اي بي تي في مجاني"), pQ))
 		self.list.append((_("Visualweather-1.10"), 96, _("حالة الطقس"), pR))
 		self.list.append((_("Weathermsn-1.3r3"), 97, _("حالة الطقس"), pS))
 		self.list.append((_("Weatherplugin-2.2"), 98, _("حالة الطقس"), pT))
