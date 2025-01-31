@@ -258,7 +258,7 @@ class extensions(Screen):
 		self.list.append((_("Filmxy-1.4"), 37, _("اي بي تي في مجاني"), K))
 		self.list.append((_("Footonsat-1.9"), 38, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), L))
 		self.list.append((_("Footonsat-1.9-mohamed_os"), 39, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), M))
-		self.list.append((_("Freearhey-2.9"), 40, _("اي بي تي في مجاني"), N))
+		self.list.append((_("Freearhey-3.1"), 40, _("اي بي تي في مجاني"), N))
 		self.list.append((_("Freeserver-8.3.8-r1"), 41, _("جلب اسطر سسكام مجانية و خدمات أخرى"), O))
 		self.list.append((_("Gioppygio-12.2"), 42, _("تسطيب بيكونات و ملفات قنوات"), P))
 		self.list.append((_("Hasbahca-1.7"), 43, _("اي بي تي في مجاني"), Q))
