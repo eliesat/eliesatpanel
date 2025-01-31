@@ -261,7 +261,7 @@ class extensions(Screen):
 		self.list.append((_("Freearhey-3.1"), 40, _("اي بي تي في مجاني"), N))
 		self.list.append((_("Freeserver-8.3.8-r1"), 41, _("جلب اسطر سسكام مجانية و خدمات أخرى"), O))
 		self.list.append((_("Gioppygio-12.2"), 42, _("تسطيب بيكونات و ملفات قنوات"), P))
-		self.list.append((_("Hasbahca-1.7"), 43, _("اي بي تي في مجاني"), Q))
+		self.list.append((_("Hasbahca-1.8"), 43, _("اي بي تي في مجاني"), Q))
 		self.list.append((_("Historyzapselector-1.0.42"), 44, _("تصفح آخر قنوات سات قلبت فيهم mod dorik"), R))
 		self.list.append((_("Horoscope-1.1"), 45, _("الابراج"), S))
 		self.list.append((_("Imdb-2.1"), 46, _("عرض بوستر و معلومات فيلم لقناة لها دليل الكتروني"), T))
