@@ -269,7 +269,7 @@ class extensions(Screen):
 		self.list.append((_("Ipaudio-6.8"), 48, _("اضافة الصوتيات على قنوات السات"), V))
 		self.list.append((_("Ipaudio-7.4-ffmpeg"), 49, _("اضافة الصوتيات على قنوات السات"), W))
 		self.list.append((_("Ipaudiopro-1.3"), 50, _("اضافة الصوتيات على قنوات السات py2 py3.9 py3.12"), X))
-		self.list.append((_("Ipaudiopro-1.4"), 51, _("اضافة الصوتيات على قنوات السات"), Y))
+		self.list.append((_("Ipaudiopro-1.5"), 51, _("اضافة الصوتيات على قنوات السات"), Y))
 		self.list.append((_("Ipchecker-004"), 52, _("عرض اي يي الرسيفر و الخارجي معا"), Z))
 		self.list.append((_("Iptosat-1.8"), 53, _("مشاهدة قنوات الiptv على قنوات السات"), pa))
 		self.list.append((_("Iptvarchive-2.0.89"), 54, _("معاينة ارشيف الاي بي تي في"), pb))
@@ -551,7 +551,7 @@ class extensions(Screen):
         ])
 			elif item is 51:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.4/ipaudiopro.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.5/ipaudiopro.sh -qO - | /bin/sh"
         ])
 			elif item is 52:
 				self.session.open(Console, _("Installing package please wait..."), [
