@@ -13,6 +13,7 @@ import time
 import gettext
 from datetime import datetime
 from threading import Timer
+from Plugins.Extensions.ElieSatPanel.menus.CC import CCcamInfoMain
 from .menus.compat import compat_urlopen, compat_Request, PY3
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.menus.allinone import allinone
@@ -99,7 +100,7 @@ class eliesatpanel(Screen):
 <ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
 <widget source="key_red" render="Label" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
-<widget source="key_green" render="Label" position="440,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="key_green" render="Label" position="387.5,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
 <widget source="key_yellow" render="Label" position="720,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
@@ -185,12 +186,12 @@ class eliesatpanel(Screen):
 			"back": self.exit,
 			"red": self.exit,
 			"info": self.infoKey,
-			"green": self.news,
+			"green": self.cccam,
 			"yellow": self.update,
 			"blue": self.scriptslist,
 		})
 		self["key_red"] = StaticText(_("Exit"))
-		self["key_green"] = StaticText(_("News"))
+		self["key_green"] = StaticText(_("Cccam Adder"))
 		self["key_yellow"] = StaticText(_("Update"))
 		self["key_blue"] = StaticText(_("Scripts"))
 		self.list = []
@@ -340,10 +341,8 @@ class eliesatpanel(Screen):
 
 	def exit(self):
 		self.close()
-	def news (self):
-				self.session.open(Console, _("Please wait..."), [
-            "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
+	def cccam(self):
+				self.session.open(CCcamInfoMain)
 	def update (self):
 				self.session.open(Console, _("Installing package please wait..."), [
             "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
