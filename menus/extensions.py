@@ -219,6 +219,7 @@ class extensions(Screen):
 		ac = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		ad = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		ae = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		af = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Acherone-1.2"), 1, _("تصفح لايحة السكريبتات و تنفيذهم"), a))
 		self.list.append((_("Alajre-1.2"), 2, _("الأجر py2"), b))
@@ -309,6 +310,7 @@ class extensions(Screen):
 		self.list.append((_("Scriptexecuter-1.0"), 86, _("تصفح لايحة السكريبتات و تنفيذهم"), pH))
 		self.list.append((_("Sherlockmod-1.4.2"), 87, _("اينفوبار اضافي"), pI))
 		self.list.append((_("Shootyourscreen-0.3"), 88, _("التقاط و تخزين صورة عن الشاشة"), pJ))
+		self.list.append((_("skin-e2sentials-1.0"), 110, _("اضافات على سكين المستخدم"), af))
 		self.list.append((_("Spinnerselector-3.2"), 89, _("تسطيب سبينرات"), pK))
 		self.list.append((_("Subssupport-1.5.8r9"), 90, _("الترجمة"), pL))
 		self.list.append((_("Subssupport-1.7.0-r10"), 91, _("الترجمة"), pM))
@@ -786,6 +788,10 @@ class extensions(Screen):
 			elif item is 109:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/foreca/foreca.sh -qO - | /bin/sh"
+        ])
+			elif item is 110:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/%20skin-e2sentials/skin-e2sentials.sh -qO - | /bin/sh"
         ])
 
 			else:
