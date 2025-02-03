@@ -235,7 +235,7 @@ class extensions(Screen):
 		self.list.append((_("Bitrate-mod-ariad"), 14, _("عرض معدل البت لقنوات السات على الشاشة"), n))
 		self.list.append((_("Bootlogokids-stony272"), 15, _("صور اقلاع للاطفال"), o))
 		self.list.append((_("Bootlogoswapper-1.0"), 16, _("صور اقلاع eliesat-special-edition"), p))
-		self.list.append((_("Bouquetmakerxtream-1.45"), 17, _("تحويل اشتراك الiptv لمفضلات"), q))
+		self.list.append((_("Bouquetmakerxtream-1.46"), 17, _("تحويل اشتراك الiptv لمفضلات"), q))
 		self.list.append((_("Bundesliga-clock-1.0"), 18, _("تثبيت الساعة على الشاشة بشكل دائم"), r))
 		self.list.append((_("Cacheflush-2.0r4"), 19, _("مسح ملفات الكاش من الذاكرة العشوائية"), s))
 		self.list.append((_("Chlogochanger-1.0"), 20, _("تخصيص شعار للقنوات من اختيارك"), t))
@@ -326,7 +326,7 @@ class extensions(Screen):
 		self.list.append((_("Xtraevent-4.2"), 105, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), aa))
 		self.list.append((_("Xtraevent-4.5"), 106, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ab))
 		self.list.append((_("Xtraevent-6.805"), 107, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ac))
-		self.list.append((_("Youtube-2025.01.25"), 108, _("مشاهدة فيديوهات اليوتيوب"), ad))
+		self.list.append((_("Youtube-2025.02.02"), 108, _("مشاهدة فيديوهات اليوتيوب"), ad))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
