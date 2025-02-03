@@ -218,6 +218,7 @@ class extensions(Screen):
 		ab = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		ac = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		ad = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		ae = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Acherone-1.2"), 1, _("تصفح لايحة السكريبتات و تنفيذهم"), a))
 		self.list.append((_("Alajre-1.2"), 2, _("الأجر py2"), b))
@@ -258,6 +259,7 @@ class extensions(Screen):
 		self.list.append((_("Filmxy-1.4"), 37, _("اي بي تي في مجاني"), K))
 		self.list.append((_("Footonsat-1.9"), 38, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), L))
 		self.list.append((_("Footonsat-1.9-mohamed_os"), 39, _("مواعيد مبارايات كرة القدم مع القنوات الناقلة"), M))
+		self.list.append((_("Foreca-3.3"), 109, _("حالة الطقس"), ae))
 		self.list.append((_("Freearhey-3.1"), 40, _("اي بي تي في مجاني"), N))
 		self.list.append((_("Freeserver-8.3.8-r1"), 41, _("جلب اسطر سسكام مجانية و خدمات أخرى"), O))
 		self.list.append((_("Gioppygio-12.2"), 42, _("تسطيب بيكونات و ملفات قنوات"), P))
@@ -780,6 +782,10 @@ class extensions(Screen):
 			elif item is 108:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/youtube/youtube.sh -qO - | /bin/sh"
+        ])
+			elif item is 109:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/foreca/foreca.sh -qO - | /bin/sh"
         ])
 
 			else:
