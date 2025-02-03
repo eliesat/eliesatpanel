@@ -13,7 +13,6 @@ import time
 import gettext
 from datetime import datetime
 from threading import Timer
-from Plugins.Extensions.ElieSatPanel.menus.CC import CCcamInfoMain
 from .menus.compat import compat_urlopen, compat_Request, PY3
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.menus.allinone import allinone
@@ -342,7 +341,7 @@ class eliesatpanel(Screen):
 	def exit(self):
 		self.close()
 	def cccam(self):
-				self.session.open(CCcamInfoMain)
+				self.close(None)
 	def update (self):
 				self.session.open(Console, _("Installing package please wait..."), [
             "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
