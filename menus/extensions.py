@@ -220,6 +220,8 @@ class extensions(Screen):
 		ad = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		ae = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		af = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		ag = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		ah = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Acherone-1.2"), 1, _("تصفح لايحة السكريبتات و تنفيذهم"), a))
 		self.list.append((_("Alajre-1.2"), 2, _("الأجر py2"), b))
@@ -264,6 +266,7 @@ class extensions(Screen):
 		self.list.append((_("Freearhey-3.1"), 40, _("اي بي تي في مجاني"), N))
 		self.list.append((_("Freeserver-8.3.8-r1"), 41, _("جلب اسطر سسكام مجانية و خدمات أخرى"), O))
 		self.list.append((_("Gioppygio-12.2"), 42, _("تسطيب بيكونات و ملفات قنوات"), P))
+		self.list.append((_("Hardwareinfo-5.2"), 111, _("معلومات عز الجهاز"), ag))
 		self.list.append((_("Hasbahca-1.8"), 43, _("اي بي تي في مجاني"), Q))
 		self.list.append((_("Historyzapselector-1.0.42"), 44, _("تصفح آخر قنوات سات قلبت فيهم mod dorik"), R))
 		self.list.append((_("Horoscope-1.1"), 45, _("الابراج"), S))
@@ -331,6 +334,7 @@ class extensions(Screen):
 		self.list.append((_("Xtraevent-4.5"), 106, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ab))
 		self.list.append((_("Xtraevent-6.805"), 107, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ac))
 		self.list.append((_("Youtube-2025.02.02"), 108, _("مشاهدة فيديوهات اليوتيوب"), ad))
+		self.list.append((_("zaptimer-1.0"), 112, _("وضع توقيت للرجوع للقناة"), ah))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -792,6 +796,14 @@ class extensions(Screen):
 			elif item is 110:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/%20skin-e2sentials/skin-e2sentials.sh -qO - | /bin/sh"
+        ])
+			elif item is 111:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/hardwareinfo/hardwareinfo.sh -qO - | /bin/sh"
+        ])
+			elif item is 112:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/zaptimer/zaptimer.sh -qO - | /bin/sh"
         ])
 
 			else:
