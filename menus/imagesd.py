@@ -149,6 +149,7 @@ class imagesd(Screen):
 		K = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		L = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		M = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		N = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Egami-10.3"), 1, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), a))
 		self.list.append((_("Egami-10.4"), 2, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), b))
@@ -168,6 +169,7 @@ class imagesd(Screen):
 		self.list.append((_("Openblackhole-5.2"), 16, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), p))
 		self.list.append((_("Openblackhole-5.3"), 17, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), q))
 		self.list.append((_("Openblackhole-5.4"), 18, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), r))
+		self.list.append((_("Openblackhole-5.5.1"), 38, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), N))
 		self.list.append((_("Opendroid-7.5"), 19, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), s))
 		self.list.append((_("Openhdf-6.5"), 20, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), t))
 		self.list.append((_("Openhdf-7.2"), 21, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), u))
@@ -182,7 +184,7 @@ class imagesd(Screen):
 		self.list.append((_("Openspa-8.1"), 30, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), D))
 		self.list.append((_("Openspa-8.3"), 31, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), E))
 		self.list.append((_("Openspa-8.4"), 32, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), F))
-		self.list.append((_("Openvix-6.6"), 33, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), G))
+		self.list.append((_("Openvix-6.7"), 33, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), G))
 		self.list.append((_("Pure2-6.5"), 34, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), H))
 		self.list.append((_("Pure2-7.3"), 35, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), I))
 		self.list.append((_("Pure2-7.4"), 36, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), J))
@@ -356,6 +358,10 @@ class imagesd(Screen):
 			elif item is 37:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/images/teamblue.sh -qO - | /bin/sh"
+        ])
+			elif item is 38:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/images/openblackhole-5.5.1.sh -qO - | /bin/sh"
         ])
 
 			else:
