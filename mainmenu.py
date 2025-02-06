@@ -59,7 +59,7 @@ from types import *
 global min, first_start
 min = first_start = 0
 Panel = 'ElieSatPanel'
-Version = '2.37'
+Version = '2.38'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 scriptpath = "/usr/script/"
 
@@ -186,12 +186,12 @@ class eliesatpanel(Screen):
 			"red": self.exit,
 			"info": self.infoKey,
 			"green": self.cccam,
-			"yellow": self.update,
+			"yellow": self.grid,
 			"blue": self.scriptslist,
 		})
 		self["key_red"] = StaticText(_("Exit"))
 		self["key_green"] = StaticText(_("Cccam Adder"))
-		self["key_yellow"] = StaticText(_("Update"))
+		self["key_yellow"] = StaticText(_("grid"))
 		self["key_blue"] = StaticText(_("Scripts"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -342,10 +342,13 @@ class eliesatpanel(Screen):
 		self.close()
 	def cccam(self):
 				self.close(None)
-	def update (self):
-				self.session.open(Console, _("Installing package please wait..."), [
-            "clear >/dev/null 2>&1 && wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
-        ])
+	def grid(self):
+		try:
+			from Plugins.Extensions.AJPan.plugin import CCKxBC
+			if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh"):
+				self.session.open(CCKxBC)
+		except:
+				self.session.open(MessageBox, _('Install Ajpanel_Eliesatpanel and try again...'), MessageBox.TYPE_ERROR)
 	def scriptslist(self):
 				self.session.open(Scripts)
 	def infoKey (self):
