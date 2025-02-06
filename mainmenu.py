@@ -59,7 +59,7 @@ from types import *
 global min, first_start
 min = first_start = 0
 Panel = 'ElieSatPanel'
-Version = '2.38'
+Version = '2.39'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 scriptpath = "/usr/script/"
 
@@ -341,7 +341,13 @@ class eliesatpanel(Screen):
 	def exit(self):
 		self.close()
 	def cccam(self):
-				self.close(None)
+		try:
+			from Plugins.Extensions.ElieSatPanel.menus.CC import CCcamInfoMain
+			if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/esp.png"):
+				self.session.open(CCcamInfoMain)
+		except:
+				self.session.open(MessageBox, _('Your image is not supported'), MessageBox.TYPE_ERROR)
+
 	def grid(self):
 		try:
 			from Plugins.Extensions.AJPan.plugin import CCKxBC
