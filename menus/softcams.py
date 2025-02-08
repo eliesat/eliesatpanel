@@ -142,7 +142,7 @@ class softcams(Screen):
 		self.list.append((_("Supcam-oscam-11868-r802"), 9, _("mohamed-os"), i))
 		self.list.append((_("Ultracam-oscam-11868-r802"), 10, _("mohamed-os"), j))
 		self.list.append((_("Ncam-15.2"), 11, _("fairbird •ipk•deb"), k))
-		self.list.append((_("Oscamicamnew-11863-r802"), 12, _("kite888 •ipk•deb"), l))
+		self.list.append((_("Oscamicamnew-11868-r802"), 12, _("kite888 •ipk•deb"), l))
 		self.list.append((_("Oscam-11868-emu-r802"), 13, _("audi06 •ipk •deb"), m))
 		self.list.append((_("Oscam-11868-emu-r802"), 14, _("levi45 •ipk •deb"), n))
 		self.list.append((_("Oscam-11838-emu-r802"), 15, _("samur •ipk •deb"), o))
