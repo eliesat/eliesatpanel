@@ -325,7 +325,7 @@ class extensions(Screen):
 		self.list.append((_("Weathermsn-1.3r3"), 97, _("حالة الطقس"), pS))
 		self.list.append((_("Weatherplugin-2.2"), 98, _("حالة الطقس"), pT))
 		self.list.append((_("Weatherpluginicons-1.1"), 99, _("ايقونات بلاجين الطقس weatherplugin"), pU))
-		self.list.append((_("Wireguard-vpn-14.8"), 100, _("اضافة اشتراك الvpn + معاينة سرعة النت"), pV))
+		self.list.append((_("Wireguard-vpn-14.9"), 100, _("اضافة اشتراك الvpn + معاينة سرعة النت"), pV))
 		self.list.append((_("Worldcam-4.7"), 101, _("كاميرات من حول العالم"), pW))
 		self.list.append((_("Xcplugin-forever-4.0"), 102, _("مشغل اي بي تي في"), pX))
 		self.list.append((_("Xklass-1.34"), 103, _("مشغل اي بي تي في"), pY))
