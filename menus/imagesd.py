@@ -150,6 +150,7 @@ class imagesd(Screen):
 		L = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		M = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		N = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		O = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Egami-10.3"), 1, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), a))
 		self.list.append((_("Egami-10.4"), 2, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), b))
@@ -163,6 +164,7 @@ class imagesd(Screen):
 		self.list.append((_("Openatv-7.4"), 10, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), j))
 		self.list.append((_("Openatv-7.5"), 11, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), k))
 		self.list.append((_("Openatv-7.5.1"), 12, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), l))
+		self.list.append((_("Openatv-7.6"), 39, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), O))
 		self.list.append((_("Openblackhole-4.4"), 13, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), m))
 		self.list.append((_("Openblackhole-5.0"), 14, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), n))
 		self.list.append((_("Openblackhole-5.1"), 15, _("تنزيل صور خام من الموقع الرسمي media/hdd or usb or mmc"), o))
@@ -362,6 +364,10 @@ class imagesd(Screen):
 			elif item is 38:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/images/openblackhole-5.5.1.sh -qO - | /bin/sh"
+        ])
+			elif item is 39:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/images/openatv-7.6.sh -qO - | /bin/sh"
         ])
 
 			else:
