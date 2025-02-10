@@ -632,16 +632,24 @@ class CCcamInfoMain(Screen):
             sel = self.menu_list[idx]
 
             if sel == _("Red"):
-                getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
+                self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
             if sel == _("Green"):
-                getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
+                self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
             if sel == _("YELLOW"):
-                getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
+                self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
             if sel == _("Blue"):
-                getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
+                self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
             if sel == _("Menu"):
                 self.session.openWithCallback(self.updateMenuList, CCcamInfoMenuConfig)
@@ -685,22 +693,22 @@ class CCcamInfoMain(Screen):
             self.workingFinished()
 
     def red(self):
-        self.keyNumberGlobal(2)
+        self.keyNumberGlobal(1)
 
     def green(self):
-        self.keyNumberGlobal(3)
+        self.keyNumberGlobal(2)
 
     def yellow(self):
-        self.keyNumberGlobal(4)
+        self.keyNumberGlobal(3)
 
     def blue(self):
-        self.keyNumberGlobal(5)
+        self.keyNumberGlobal(4)
 
     def menu(self):
-        self.keyNumberGlobal(6)
+        self.keyNumberGlobal(5)
 
     def info(self):
-        self.keyNumberGlobal(7)
+        self.keyNumberGlobal(6)
 
     def okClicked(self):
         self.keyNumberGlobal(self["menu"].getSelectedIndex())
