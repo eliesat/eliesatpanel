@@ -55,8 +55,7 @@ import sys
 import base64
 # from base64 import encodebytes
 import requests
-
-
+from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 try:
     from urllib.parse import urlparse, urlunparse
 except:
@@ -68,8 +67,8 @@ forceDebug = eGetEnigmaDebugLvl() > 4
 # pathExists = exists
 
 
-VERSION = "V4"
-DATE = "13.09.2024"
+VERSION = "V5"
+DATE = "09.09.2025"
 CFG = "/etc/CCcam.cfg"
 CFG_path = '/etc'
 global Counter
@@ -239,6 +238,12 @@ def notBlackListed(entry):
 
 menu_list = [
     _("CCcam.cfg Basic Line Editor"),
+    _("Red"),
+    _("Green"),
+    _("Yellow"),
+    _("Blue"),
+    _("Menu"),
+    _("Info"),
 ]
 
 if exists(resolveFilename(SCOPE_GUISKIN, "icons/lock_on.png")):
@@ -402,17 +407,17 @@ class CCcamLineEdit(Setup):
 def CCcamListEntry(name, idx):
     screenwidth = getDesktop(0).size().width()
     res = [name]
-    if idx == 10:
+    if idx == 1:
         idx = "red"
-    elif idx == 11:
+    elif idx == 2:
         idx = "green"
-    elif idx == 12:
+    elif idx == 3:
         idx = "yellow"
-    elif idx == 13:
+    elif idx == 4:
         idx = "blue"
-    elif idx == 14:
+    elif idx == 5:
         idx = "menu"
-    elif idx == 15:
+    elif idx == 6:
         idx = "info"
     if exists(resolveFilename(SCOPE_CURRENT_SKIN, "buttons/key_%s.png" % str(idx))):
         png = resolveFilename(SCOPE_CURRENT_SKIN, "buttons/key_%s.png" % str(idx))
@@ -538,7 +543,7 @@ class CCcamInfoMain(Screen):
         self.setTitle(_("CCcam Adder"))
         self["menu"] = CCcamList([])
         self.working = False
-        self.Console = Console()
+       # self.Console = Console()
         if not isfile(CFG):
             print("[CCcamInfo] %s not found" % CFG)
             searchConfig()
@@ -626,9 +631,25 @@ class CCcamInfoMain(Screen):
             self.working = True
             sel = self.menu_list[idx]
 
-            if sel == _("General"):
+            if sel == _("Red"):
                 getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
 
+            if sel == _("Green"):
+                getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
+
+            if sel == _("YELLOW"):
+                getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
+
+            if sel == _("Blue"):
+                getPage(self.url, self.showCCcamGeneral, self.getWebpageError)
+
+            if sel == _("Menu"):
+                self.session.openWithCallback(self.updateMenuList, CCcamInfoMenuConfig)
+
+            if sel == _("Info"):
+                self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
             elif sel == _("CCcam.cfg Basic Line Editor"):
                 if isfile(CFG):
@@ -664,22 +685,22 @@ class CCcamInfoMain(Screen):
             self.workingFinished()
 
     def red(self):
-        self.keyNumberGlobal(10)
+        self.keyNumberGlobal(2)
 
     def green(self):
-        self.keyNumberGlobal(11)
+        self.keyNumberGlobal(3)
 
     def yellow(self):
-        self.keyNumberGlobal(12)
+        self.keyNumberGlobal(4)
 
     def blue(self):
-        self.keyNumberGlobal(13)
+        self.keyNumberGlobal(5)
 
     def menu(self):
-        self.keyNumberGlobal(14)
+        self.keyNumberGlobal(6)
 
     def info(self):
-        self.keyNumberGlobal(15)
+        self.keyNumberGlobal(7)
 
     def okClicked(self):
         self.keyNumberGlobal(self["menu"].getSelectedIndex())
