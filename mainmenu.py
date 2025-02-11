@@ -59,7 +59,7 @@ from types import *
 global min, first_start
 min = first_start = 0
 Panel = 'ElieSatPanel'
-Version = '2.43'
+Version = '2.44'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 scriptpath = "/usr/script/"
 
@@ -350,9 +350,9 @@ class eliesatpanel(Screen):
 
 	def grid(self):
 		try:
-			from Plugins.Extensions.AJPan.plugin import CCKxBC
+			from Plugins.Extensions.AJPan.plugin import CCVtWv
 			if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh"):
-				self.session.open(CCKxBC)
+				self.session.open(CCVtWv)
 		except:
 				self.session.open(MessageBox, _('Install Ajpanel_Eliesatpanel and try again...'), MessageBox.TYPE_ERROR)
 	def scriptslist(self):
