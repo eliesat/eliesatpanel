@@ -140,7 +140,7 @@ class eliesatpanel(Screen):
 
 <!-- processor -->
 <widget source="CPULabel" render="Label" position="1280,690.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="CPU" render="Label" position="1470,690" zPosition="2" size="400,50" font="lsat; 23" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="CPU" render="Label" position="1470,690" zPosition="2" size="400,50" font="lsat; 22" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- mac address -->
 <widget source="macLabel" render="Label" position="1300,2770.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1"/>
@@ -606,8 +606,8 @@ class Scripts(Screen):
 
 <!-- title -->
 <eLabel text="Scripts lists" position="560,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
-<ePixmap position="473,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
-<ePixmap position="800,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
+<ePixmap position="473,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="800,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- title2 -->
 <eLabel text="Select and press ok to execute" position="380,880" size="700,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
