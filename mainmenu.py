@@ -15,6 +15,7 @@ from datetime import datetime
 from threading import Timer
 from .menus.compat import compat_urlopen, compat_Request, PY3
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
+from Plugins.Extensions.ElieSatPanel.menus.UI import ui
 from Plugins.Extensions.ElieSatPanel.menus.allinone import allinone
 from Plugins.Extensions.ElieSatPanel.menus.dependencies import dependencies
 from Plugins.Extensions.ElieSatPanel.menus.display import display
@@ -662,9 +663,9 @@ class Scripts(Screen):
 		self.setTitle(_("Script Executer"))
 		self.iConsole = iConsole()
 		self.script_menu()
-		self["key_red"] = StaticText(_("Close"))
-		self["key_green"] = StaticText(_("Run"))
-		self["key_yellow"] = StaticText(_("Bg Run"))
+		self["key_red"] = StaticText(_("Remove"))
+		self["key_green"] = StaticText(_("Update"))
+		self["key_yellow"] = StaticText(_("Uninstall"))
 		self["key_blue"] = StaticText(_("Restart E2"))
 		self["ipLabel"] = StaticText(_("Local  IP:"))
 		self["ipInfo"] = StaticText()
@@ -675,7 +676,7 @@ class Scripts(Screen):
 		self["Panel"] = Label(_(Panel))
 		self.intInfo()
 		self.network_info()
-		self["actions"] = ActionMap(["OkCancelActions","ColorActions"], {"ok": self.run, "green": self.run, "yellow": self.bgrun, "red": self.exit, "blue": self.restart, "cancel": self.close}, -1)
+		self["actions"] = ActionMap(["OkCancelActions","ColorActions"], {"ok": self.run, "green": self.update, "yellow": self.bgrun, "red": self.remove, "blue": self.restart, "cancel": self.close}, -1)
 	def script_menu(self):
 		list = []
 		if pathExists(scriptpath):
@@ -687,15 +688,7 @@ class Scripts(Screen):
 		self["list"] = MenuList(list)
 	
 	def bgrun(self):
-		self.script = self["list"].getCurrent()
-		if self.script is not None:
-			self.name = "%s%s" % (scriptpath, self.script)
-			if self.name.endswith('.sh'):
-				os.chmod('%s' %  self.name, 0o755)
-			else:
-				self.name = 'python %s' % self.name
-			self.iConsole.ePopen("nohup %s >/dev/null &" %  self.name)
-			self.mbox = self.session.open(MessageBox,(_("the script is running in the background...")), MessageBox.TYPE_INFO, timeout = 4 )
+				self.session.open(ui)
 
 	def run(self):
 		self.script = self["list"].getCurrent()
@@ -752,3 +745,11 @@ class Scripts(Screen):
 		return
 	def exit(self):
 		self.close()
+
+	def remove(self):
+		os.system('rm -rf /usr/script/*')
+		self.session.open(MessageBox,(_("Remove of scripts lists is done , press green button to reinstall")), MessageBox.TYPE_INFO, timeout = 4 )
+	def update(self):
+				self.session.open(Console, _("Installing scripts please wait..."), [
+            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/scripts/main/installer.sh -qO - | /bin/sh"
+        ])
