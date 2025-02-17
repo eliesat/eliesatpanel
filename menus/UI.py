@@ -47,11 +47,35 @@ class ui(Screen):
 	skin = """
 <screen name="uninstall" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
 <ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
+<!-- title -->
+<eLabel text="Installed plugins lists" position="460,120" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="370,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="880,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+
+<!-- title2 -->
+<eLabel text="Select and press ok to remove" position="380,880" size="700,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="310,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
+    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
+<!-- minitv -->
+<widget source="session.VideoPicture" render="Pig" position="1305,195" size="550,400" zPosition="1" backgroundColor="#ff000000" />
+
+<!-- clock -->
+<widget source="global.CurrentTime" render="Label" position="1290,100" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="2">
+		<convert type="ClockToText">Default</convert>
+
+<!-- calender -->
+</widget>
+<widget source="global.CurrentTime" render="Label" position="1530,105" size="335,54" font="lsat; 24" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="1">
+<convert type="ClockToText">Format %A %d %B</convert>
+</widget>
+
+<!-- menu  -->
 <widget source="menu" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" render="Listbox" position="48,200" size="1240,660"  transparent="1">
 	<convert type="TemplatedMultiContent">
 		{"template": [
 			MultiContentEntryText(pos = (120, 10), size = (900, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-			MultiContentEntryText(pos = (1030, 19), size = (900, 35), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
+			MultiContentEntryText(pos = (1030, 19), size = (163, 35), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
 			MultiContentEntryPixmapAlphaTest(pos = (25, 5), size = (50, 40), png = 2), # index 4 is the pixmap
 				],
 	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
@@ -63,6 +87,15 @@ class ui(Screen):
 <widget source="key_red" render="Label" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
 <widget source="key_green" render="Label" position="387.5,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<!-- ip address -->
+<widget source="ipLabel" render="Label" position="1350,755" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<widget source="ipInfo" render="Label" position="1540,755" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,750" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+
+<!-- internet -->
+	<widget source="internet" render="Label" position="1540,805" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="internetLabel" render="Label" position="1350,805" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,800" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 </screen>"""
 	  
 	def __init__(self, session, args=None):
@@ -77,6 +110,13 @@ class ui(Screen):
 		self.list = []
 		self["menu"] = List(self.list)
 		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions"],
 			{
 				"cancel": self.cancel,
@@ -119,6 +159,45 @@ class ui(Screen):
 			self.iConsole.ePopen("rm -rf %s" % ipk_dir, self.finish)
 		else:
 			self.nList()
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+
 
 	def finish(self, result, retval, extra_args):
 		self.nList()
