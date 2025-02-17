@@ -606,29 +606,29 @@ class Scripts(Screen):
 <widget name="list" position="48,200" size="1240,660" font="Regular;35" halign="center" valign="center" render="Listbox" itemHeight="66" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" transparent="1" scrollbarMode="showOnDemand" />
 
 <!-- title -->
-<eLabel text="Scripts lists" position="560,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<eLabel text="Scripts lists" position="560,120" size="400,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="473,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 <ePixmap position="800,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- title2 -->
-<eLabel text="Select and press ok to execute" position="380,880" size="700,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<eLabel text="Select and press ok to execute" position="380,880" size="700,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="310,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- title3 -->
-<widget name="Panel" position="1365,790" size="270,50" font="Regular;40" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-<widget name="Version" position="1610,795" size="150,50" font="Regular;35" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-<ePixmap position="1280,790" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<widget name="Panel" position="1365,650" size="270,50" font="Regular;40" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+<widget name="Version" position="1610,650" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+<ePixmap position="1280,650" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- minitv -->
-<widget source="session.VideoPicture" render="Pig" position="1305,120" size="550,400" zPosition="1" backgroundColor="#ff000000" />
+<widget source="session.VideoPicture" render="Pig" position="1305,195" size="550,400" zPosition="1" backgroundColor="#ff000000" />
 
 <!-- clock -->
-<widget source="global.CurrentTime" render="Label" position="1290,600" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
+<widget source="global.CurrentTime" render="Label" position="1290,100" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="2">
 		<convert type="ClockToText">Default</convert>
 
 <!-- calender -->
 </widget>
-<widget source="global.CurrentTime" render="Label" position="1530,610" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<widget source="global.CurrentTime" render="Label" position="1530,105" size="335,54" font="lsat; 24" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="1">
 <convert type="ClockToText">Format %A %d %B</convert>
 </widget>
 
@@ -645,15 +645,18 @@ class Scripts(Screen):
     <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
 
 <!-- ip address -->
-<widget source="ipLabel" render="Label" position="1350,895" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-	<widget source="ipInfo" render="Label" position="1540,895" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="1280,890" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<widget source="ipLabel" render="Label" position="1350,755" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<widget source="ipInfo" render="Label" position="1540,755" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,750" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- internet -->
-	<widget source="internet" render="Label" position="1540,845" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<widget source="internetLabel" render="Label" position="1350,845" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="1280,840" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+	<widget source="internet" render="Label" position="1540,805" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="internetLabel" render="Label" position="1350,805" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,800" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
+<!-- path -->
+<eLabel text="Path: /usr/script/" position="1390,850" size="400,50" zPosition="1" font="Regular;35" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,845" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 </screen>"""
 
 	def __init__(self, session):
