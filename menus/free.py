@@ -127,7 +127,7 @@ class free(Screen):
 
 		self.list.append((_("Cccam-scripts"), 1, _("سسكام مجاني"), a))
 		self.list.append((_("Cccam-scripts1"), 2, _("سسكام مجاني"), b))
-		self.list.append((_("Emil-scripts-28.10.2024"), 3, _("حزمة سكريبتات مجانية"), c))
+		self.list.append((_("Emil-scripts-08.01.2025"), 3, _("حزمة سكريبتات مجانية"), c))
 		self.list.append((_("Filmxy-fnc1"), 4, _("تثبيت اسم المستخدم و كلمة المرور صورة pure2"), d))
 		self.list.append((_("Filmxy-fnc2"), 5, _("تثبيت اسم المستخدم و كلمة المرور صورة pure2"), e))
 		self.list.append((_("Fonts-1.0r0"), 6, _("ملف خطوط"), f))
