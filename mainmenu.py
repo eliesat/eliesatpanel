@@ -59,7 +59,7 @@ from types import *
 global min, first_start
 min = first_start = 0
 Panel = 'ElieSatPanel'
-Version = '2.51'
+Version = '2.52'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 scriptpath = "/usr/script/"
 
@@ -69,8 +69,8 @@ class eliesatpanel(Screen):
 <ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
 
 <!-- title -->
-<widget name="Panel" position="160,105" size="270,50" font="Regular;45" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-<widget name="Version" position="410,110" size="150,50" font="Regular;35" halign="center" valign="center" foregroundColor="white" transparent="1"/>
+<widget name="Panel" position="160,105" size="270,50" font="Regular;45" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+<widget name="Version" position="410,110" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
 <ePixmap position="73,105" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- hdd -->
@@ -86,12 +86,12 @@ class eliesatpanel(Screen):
 <widget source="session.VideoPicture" render="Pig" position="1305,100" size="550,290" zPosition="1" backgroundColor="#ff000000" />
 
 <!-- clock -->
-<widget source="global.CurrentTime" render="Label" position="650,85" size="350,90" font="lsat; 60" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
+<widget source="global.CurrentTime" render="Label" position="650,85" size="350,90" font="lsat; 60" noWrap="1" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="2">
 		<convert type="ClockToText">Default</convert>
 
 <!-- calender -->
 </widget>
-<widget source="global.CurrentTime" render="Label" position="870,100" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<widget source="global.CurrentTime" render="Label" position="880,100" size="335,54" font="lsat; 24" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="1">
 <convert type="ClockToText">Format %A %d %B</convert>
 </widget>
 
