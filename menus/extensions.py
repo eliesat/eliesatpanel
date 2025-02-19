@@ -296,7 +296,7 @@ class extensions(Screen):
 		self.list.append((_("Ncam-status-3.2"), 69, _("معلومات عن حالة المحاكي"), pq))
 		self.list.append((_("Newpermanentclock-1.0"), 70, _("تثبيت الساعة على الشاشة بشكل دائم"), pr))
 		self.list.append((_("Oaweather-3.0"), 71, _("حالة الطقس py3.11"), ps))
-		self.list.append((_("Oscam-status-6.4"), 72, _("معلومات عن حالة المحاكي"), pt))
+		self.list.append((_("Oscam-status-6.5"), 72, _("معلومات عن حالة المحاكي"), pt))
 		self.list.append((_("Piconinstaller-24.08.23"), 73, _("تسطيب بيكونات"), pu))
 		self.list.append((_("Pluginskinmover-0.8"), 74, _("نقل و قراءة البلاجينات على التخزين الخارجي"), pv))
 		self.list.append((_("Plutotv-20240831"), 75, _("اي بي تي في مجاني"), pw))
