@@ -144,7 +144,7 @@ class softcams(Screen):
 		self.list.append((_("Ncam-15.2"), 11, _("fairbird •ipk•deb"), k))
 		self.list.append((_("Oscamicamnew-11868-r802"), 12, _("kite888 •ipk•deb"), l))
 		self.list.append((_("Oscam-11868-emu-r802"), 13, _("audi06 •ipk •deb"), m))
-		self.list.append((_("Oscam-11868-emu-r802"), 14, _("levi45 •ipk •deb"), n))
+		self.list.append((_("Oscam-11869-emu-r802"), 14, _("levi45 •ipk •deb"), n))
 		self.list.append((_("Oscam-11838-emu-r802"), 15, _("samur •ipk •deb"), o))
 		self.list.append((_("Softcam-deneme6"), 16, _("ملف الخاص بالتشفير و مفاتيح البيس"), p))
 		self.list.append((_("Softcam-dvbsat.org-team"), 17, _("ملف الخاص بالتشفير و مفاتيح البيس"), q))
