@@ -995,6 +995,9 @@ class iptv(Screen, ConfigListScreen):
             getConfigListEntry("PASSWORD :", self.passw),
         ])
 
+    def exit(self):
+        self.close()
+
 # define the path to the folder where you want to create the file 
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('ElieSatPanel'))
 folder_path = os.path.join(plugin_path, 'iptv')
@@ -1008,5 +1011,3 @@ file_path = os.path.join(folder_path, file_name)
 with open(file_path, 'w') as f: 
     f.write('This is an example file.') 
 
-    def exit(self):
-        self.close()
