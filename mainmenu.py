@@ -55,6 +55,8 @@ from Tools.LoadPixmap import LoadPixmap
 from Components.Console import Console as iConsole
 from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from types import *
+from Components.ConfigList import ConfigListScreen
+from Components.config import ConfigText, getConfigListEntry
 
 global min, first_start
 min = first_start = 0
@@ -97,7 +99,7 @@ class eliesatpanel(Screen):
 
 <!-- button -->
 <ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
-<widget source="key_red" render="Label" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="key_red" render="Label" position="115,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
 <widget source="key_green" render="Label" position="387.5,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
@@ -182,13 +184,13 @@ class eliesatpanel(Screen):
 			"ok": self.keyOK,
 			"cancel": self.exit,
 			"back": self.exit,
-			"red": self.exit,
+			"red": self.iptv,
 			"info": self.infoKey,
 			"green": self.cccam,
 			"yellow": self.grid,
 			"blue": self.scriptslist,
 		})
-		self["key_red"] = StaticText(_("Exit"))
+		self["key_red"] = StaticText(_("Iptv Adder"))
 		self["key_green"] = StaticText(_("Cccam Adder"))
 		self["key_yellow"] = StaticText(_("grid"))
 		self["key_blue"] = StaticText(_("Scripts"))
@@ -339,6 +341,8 @@ class eliesatpanel(Screen):
 
 	def exit(self):
 		self.close()
+	def iptv(self):
+				self.session.open(iptv)
 	def cccam(self):
 		try:
 			from Plugins.Extensions.ElieSatPanel.menus.CC import CCcamInfoMain
@@ -929,3 +933,80 @@ class ui(Screen):
 
 	def finish(self, result, retval, extra_args):
 		self.nList()
+
+class iptv(Screen, ConfigListScreen):
+    skin = """
+<screen name="iptv" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="iptvadder">
+<ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
+<widget name="config" position="48,200" size="1240,660" font="Regular;35" halign="center" valign="center" render="Listbox" itemHeight="66" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" transparent="1" scrollbarMode="showOnDemand" />
+
+<eLabel text="Iptv user adder" position="460,120" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="370,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="780,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<!-- title2 -->
+<eLabel text="Select and press ok to write on the screen" position="280,880" size="1000,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="210,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+
+<ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />            
+<eLabel text="Close" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />     
+<ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
+<eLabel text="Send" position="387.5,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
+<eLabel text="Save" position="720,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
+<eLabel text="backup" position="1000,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<!-- minitv -->
+<widget source="session.VideoPicture" render="Pig" position="1305,195" size="550,400" zPosition="1" backgroundColor="#ff000000" />
+
+<!-- clock -->
+<widget source="global.CurrentTime" render="Label" position="1290,100" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="2">
+		<convert type="ClockToText">Default</convert>
+
+<!-- calender -->
+</widget>
+<widget source="global.CurrentTime" render="Label" position="1530,105" size="335,54" font="lsat; 24" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="1">
+<convert type="ClockToText">Format %A %d %B</convert>
+</widget>
+
+    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
+    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
+        </screen>
+    """
+
+    def __init__(self, session):
+        self.session = session
+        Screen.__init__(self, session)
+        self["actions"] = ActionMap(["SetupActions", "ColorActions"], {
+            "cancel": self.exit,
+            "red": self.exit,
+            "green": self.exit,
+            "yellow": self.exit
+        }, -2)
+
+        self.url = ConfigText(default="http://eliesatpanel.com", fixed_size=False)
+        self.port = ConfigText(default="8080", fixed_size=False)
+        self.user = ConfigText(default="username", fixed_size=False)
+        self.passw = ConfigText(default="password", fixed_size=False)
+
+        ConfigListScreen.__init__(self, [
+            getConfigListEntry("URL :", self.url),
+            getConfigListEntry("PORT :", self.port),
+            getConfigListEntry("USERNAME :", self.user),
+            getConfigListEntry("PASSWORD :", self.passw),
+        ])
+
+# define the path to the folder where you want to create the file 
+plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('ElieSatPanel'))
+folder_path = os.path.join(plugin_path, 'iptv')
+# create the folder if it doesn't exist 
+if not os.path.exists(folder_path): 
+    os.makedirs(folder_path) 
+# define the file name and path 
+file_name = 'iptv.txt' 
+file_path = os.path.join(folder_path, file_name) 
+# create the file 
+with open(file_path, 'w') as f: 
+    f.write('This is an example file.') 
+
+    def exit(self):
+        self.close()
