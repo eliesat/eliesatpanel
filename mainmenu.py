@@ -1012,7 +1012,7 @@ class iptv(Screen, ConfigListScreen):
     def writeConfigFile(self, line, extension):
         config_file = {
             ".m3u": [
-                "/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/iptv/iptv.txt",
+                "/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/iptv.txt",
             ],
         }
 
