@@ -133,7 +133,7 @@ class skins(Screen):
 		u = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Aglare-fhd-5.4"), 1, _("egami-openatv-openspa-pure2"), a))
-		self.list.append((_("Aglare-fhd-pli-5.1"), 2, _("openblackhole-openpli--openvix"), b))
+		self.list.append((_("Aglare-fhd-pli-5.2"), 2, _("openblackhole-openpli--openvix"), b))
 		self.list.append((_("Alayam-fhd-1.0"), 3, _("all"), c))
 		self.list.append((_("batman-vpx-fhd"), 4, _("all"), d))
 		self.list.append((_("batman-vpx2-fhd"), 5, _("all"), e))
