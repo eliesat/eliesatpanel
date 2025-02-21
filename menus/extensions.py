@@ -795,7 +795,7 @@ class extensions(Screen):
         ])
 			elif item is 110:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/%20skin-e2sentials/skin-e2sentials.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/skine2sentials/skin-e2sentials.sh -qO - | /bin/sh"
         ])
 			elif item is 111:
 				self.session.open(Console, _("Installing package please wait..."), [
