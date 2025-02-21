@@ -981,7 +981,7 @@ class iptv(Screen, ConfigListScreen):
         self["actions"] = ActionMap(["SetupActions", "ColorActions"], {
             "cancel": self.exit,
             "red": self.exit,
-            "green": self.exit,
+            "green": self.send,
             "yellow": self.save
         }, -2)
 
@@ -999,6 +999,11 @@ class iptv(Screen, ConfigListScreen):
 
     def exit(self):
         self.close()
+
+    def send(self):
+     self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/sus/iptv.sh -qO - | /bin/sh"
+        ])
 
     def save(self):
         line = {
@@ -1018,8 +1023,8 @@ class iptv(Screen, ConfigListScreen):
 
         for path in config_file[extension]:
             if extension == ".m3u":
-                    content = f"{line['url']} {line['port']} {line['user']} {line['passw']}\n"
+                    sus = f"{line['url']} {line['port']} {line['user']} {line['passw']}\n"
             with open(path, "w") as f:
-                f.write(content)
+                f.write(sus)
     def exit(self):
         self.close()
