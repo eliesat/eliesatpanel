@@ -203,7 +203,7 @@ class settings(Screen):
         ])
 			elif item is 5:
 				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/display/-/raw/main/christmas/bootlogos-christmas.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://gitlab.com/eliesat/settings/-/raw/main/ciefp-motor/ciefp-motor.sh -qO - | /bin/sh"
         ])
 			elif item is 6:
 				self.session.open(Console, _("Installing package please wait..."), [
