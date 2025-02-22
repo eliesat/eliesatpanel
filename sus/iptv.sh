@@ -1,14 +1,7 @@
 #!/bin/bash
 
 dir="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/iptv.txt"
-
-
-# Check for cmd cccam file
-###########################################
-if [  -s $dir ]; then 
-cmd=found
-sleep 1
-else
+if [ ! -s "$dir" ]; then
 echo "> url= None"
 echo "> port= None"
 echo "> username= None"
