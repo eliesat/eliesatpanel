@@ -61,7 +61,7 @@ do
    else
 if ! grep -q $username "${files[$playlists]}" >/dev/null 2>&1; then
 cat <<EOF >> "${files[$playlists]}"
-$url/get.php?username=$username&password=$password&type=m3u_plus
+$url:$port/get.php?username=$username&password=$password&type=m3u
 EOF
 echo "> your iptv data installed in $playlists playlists file successfully"
 sleep 3
