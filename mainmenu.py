@@ -982,7 +982,8 @@ class iptv(Screen, ConfigListScreen):
             "cancel": self.exit,
             "red": self.exit,
             "green": self.send,
-            "yellow": self.save
+            "yellow": self.save,
+            "blue": self.check
         }, -2)
 
         self.url = ConfigText(default="http://eliesatpanel.com", fixed_size=False)
@@ -1001,9 +1002,8 @@ class iptv(Screen, ConfigListScreen):
         self.close()
 
     def send(self):
-     self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/sus/iptv.sh -qO - | /bin/sh"
-        ])
+     cmd1 = ". /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/iptv.sh"
+     self.session.open(Console, _("sending"), cmdlist=[cmd1])
 
     def save(self):
         line = {
@@ -1026,5 +1026,8 @@ class iptv(Screen, ConfigListScreen):
                     sus = f"{line['url']} {line['port']} {line['user']} {line['passw']}\n"
             with open(path, "w") as f:
                 f.write(sus)
+
+    def check(self):
+        self.close()
     def exit(self):
         self.close()
