@@ -61,7 +61,7 @@ from types import *
 global min, first_start
 min = first_start = 0
 Panel = 'ElieSatPanel'
-Version = '2.55'
+Version = '2.56'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 scriptpath = "/usr/script/"
 
@@ -1002,6 +1002,12 @@ class iptv(Screen, ConfigListScreen):
         self.close()
 
     def send(self):
+     with open(file_path, 'r') as file_obj: 
+     first_char = file_obj.read(1) 
+      if not first_char:
+       print("File is empty") 
+     else:
+
      cmd1 = ". /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/iptv.sh"
      self.session.open(Console, _("sending"), cmdlist=[cmd1])
 
