@@ -1056,7 +1056,16 @@ class iptv(Screen, ConfigListScreen):
             ],
         }
 
-        for path in config_file[extension]:
+
+        PY3 = sys.version_info.major >= 3
+        if sys.version_info[0] < 3:
+         for path in config_file[extension]:
+            if extension == ".m3u":
+                        sus = "{url} {port} {usr} {passw}\n".format(**line)
+            with open(path, "w") as f:
+                f.write(sus)
+        else:
+         for path in config_file[extension]:
             if extension == ".m3u":
                     sus = f"{line['url']} {line['port']} {line['user']} {line['passw']}\n"
             with open(path, "w") as f:
