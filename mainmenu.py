@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
 import os
 import _enigma
 import enigma
@@ -61,7 +60,7 @@ from types import *
 global min, first_start
 min = first_start = 0
 Panel = 'ElieSatPanel'
-Version = '2.56'
+Version = '2.57'
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 scriptpath = "/usr/script/"
 
@@ -171,6 +170,12 @@ class eliesatpanel(Screen):
 <!-- flash -->
 <widget source="FlashLabel" render="Label" position="1200,485" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 23" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+
+<!-- internet -->
+	<widget source="internet" render="Label" position="1505,950" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="internetLabel" render="Label" position="1315,950" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,945" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+
 </screen>"""
 
 	def __init__(self, session):
@@ -179,6 +184,8 @@ class eliesatpanel(Screen):
 		self.setTitle(_("ElieSatPanel"))
 		self.iConsole = iConsole()
 		self.indexpos = None
+		self["NumberActions"] = NumberActionMap(["NumberActions"], {'0': self.keyNumberGlobal,
+                                                                    },)
 		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
 		{
 			"ok": self.keyOK,
@@ -234,6 +241,9 @@ class eliesatpanel(Screen):
 		self.network_info()
 		self["Version"] = Label(_("V" + Version))
 		self["Panel"] = Label(_(Panel))
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
 		t = Timer(0.5, self.update_me)
 		t.start()
 
@@ -338,6 +348,15 @@ class eliesatpanel(Screen):
 
 			else:
 				self.close(None)
+
+	def keyNumberGlobal(self, number):
+			print('pressed', number)
+			if number == 0:
+				self.session.open(Console, _("Updating ElieSatPanel, please wait..."), [
+            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
+        ])
+			else:
+				return
 
 	def exit(self):
 		self.close()
@@ -600,6 +619,22 @@ class eliesatpanel(Screen):
 			self.session.open(Console, title='Updating please wait...', cmdlist='wget -q "--no-check-certificate" ' + installer + ' -O - | /bin/sh', finishedCallback=self.myCallback, closeOnSuccess=False)
 
 	def myCallback(self, result):
+		return
+
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
 		return
 
 class Scripts(Screen):
@@ -1003,7 +1038,7 @@ class iptv(Screen, ConfigListScreen):
 
     def send(self):
      cmd1 = ". /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/iptv.sh"
-     self.session.open(Console, _("sending"), cmdlist=[cmd1])
+     self.session.open(Console, _("Writing your iptv suscription, please wait"), cmdlist=[cmd1])
 
     def save(self):
         line = {
