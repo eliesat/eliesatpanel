@@ -141,7 +141,7 @@ class panels(Screen):
 		self.list.append((_("Simple-zoom-panel-2.2.5"), 11, _("بانل تسطيب اضافات"), k))
 		self.list.append((_("Smartaddonspanel-2.0"), 12, _("بانل تسطيب اضافات"), l))
 		self.list.append((_("Tvaddon-2.1.5"), 13, _("بانل تسطيب اضافات"), m))
-		self.list.append((_("Tvmanager-2.4"), 14, _("بانل تسطيب كامات"), n))
+		self.list.append((_("Tvmanager-2.5"), 14, _("بانل تسطيب كامات"), n))
 		self.list.append((_("zoom"), 15, _("اسطر سسكام مجانية"), o))
 		self.list.append((_("zoom-final-fix"), 16, _("بانل تسطيب اضافات سكريبتات و خدمات مختلفة py2"), p))
 
