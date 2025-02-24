@@ -233,7 +233,7 @@ class extensions(Screen):
 		self.list.append((_("Athantimes-2.8"), 8, _("الآذان"), h))
 		self.list.append((_("Azkar-1.0"), 9, _("اذكار المسلم mod elsafty"), i))
 		self.list.append((_("Azkar-almuslim-1.1"), 10, _("اذكار المسلم"), j))
-		self.list.append((_("Backupflashe-9.4"), 11, _("باكآب الصورة"), k))
+		self.list.append((_("Backupflashe-9.5"), 11, _("باكآب الصورة"), k))
 		self.list.append((_("Bissfeedautokey-2.8"), 12, _("خاص بالفيدات و شفرات البيس"), l))
 		self.list.append((_("Bitrate-2.0"), 13, _("عرض معدل البت لقنوات السات على الشاشة"), m))
 		self.list.append((_("Bitrate-mod-ariad"), 14, _("عرض معدل البت لقنوات السات على الشاشة"), n))
