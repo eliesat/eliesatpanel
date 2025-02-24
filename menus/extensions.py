@@ -333,7 +333,7 @@ class extensions(Screen):
 		self.list.append((_("Xtraevent-4.2"), 105, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), aa))
 		self.list.append((_("Xtraevent-4.5"), 106, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ab))
 		self.list.append((_("Xtraevent-6.805"), 107, _("جلب بوسترات يعمل على السكينات الخاصة فيه"), ac))
-		self.list.append((_("Youtube-2025.02.13"), 108, _("مشاهدة فيديوهات اليوتيوب"), ad))
+		self.list.append((_("Youtube-2025.02.24"), 108, _("مشاهدة فيديوهات اليوتيوب"), ad))
 		self.list.append((_("zaptimer-1.0"), 112, _("وضع توقيت للرجوع للقناة"), ah))
 
 		if self.indexpos != None:
