@@ -111,6 +111,12 @@ if [ $extract -eq 0 ]; then
     create=$?
     if [ $create -eq 0 ]; then
     mv /tmp/eliesatpanel-main/* /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/ >/dev/null 2>&1
+
+    if [ "$pyVersion" = 2 ]; then
+    mv /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/menus/mainmenu.py /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/ >/dev/null 2>&1
+    else
+    rm -rf /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/menus/mainmenu.py >/dev/null 2>&1
+    fi
     rm -rf /tmp/eliesatpanel-main >/dev/null 2>&1
     fi
 print_message "> Eliesatpanel is installed successfully and up to date ..."
