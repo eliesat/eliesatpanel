@@ -316,7 +316,7 @@ class extensions(Screen):
 		self.list.append((_("skin-e2sentials-1.0"), 110, _("اضافات على سكين المستخدم"), af))
 		self.list.append((_("Spinnerselector-3.2"), 89, _("تسطيب سبينرات"), pK))
 		self.list.append((_("Subssupport-1.5.8r9"), 90, _("الترجمة"), pL))
-		self.list.append((_("Subssupport-1.7.0-r11"), 91, _("الترجمة"), pM))
+		self.list.append((_("Subssupport-1.7.0-r12"), 91, _("الترجمة"), pM))
 		self.list.append((_("Theweather-2.5r0"), 92, _("حالة الطقس"), pN))
 		self.list.append((_("Tmdb-8.6r7"), 93, _("عرض بوستر و معلومات فيلم"), pO))
 		self.list.append((_("Transmission-5.0.9.9"), 94, _("مشاهدة و تنزيل افلام و مسلسلات"), pP))
