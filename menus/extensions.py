@@ -222,6 +222,7 @@ class extensions(Screen):
 		af = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		ag = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		ah = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		ai = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Acherone-1.2"), 1, _("تصفح لايحة السكريبتات و تنفيذهم"), a))
 		self.list.append((_("Alajre-1.2"), 2, _("الأجر py2"), b))
@@ -251,6 +252,7 @@ class extensions(Screen):
 		self.list.append((_("Dreamexplorer-2024.08.21"), 26, _("مدير ملفات mod lululla"), z))
 		self.list.append((_("E2iplayer"), 27, _("مشغل اي بي تي في mohamed_os"), A))
 		self.list.append((_("E2m3ubouquet-2.0.1"), 28, _("تحويل الiptv لمفضلات mod-dorik"), B))
+		self.list.append((_("Enigma2readeradder-1.0"), 113, _("كتابة سطر السسكام و تعريفه داخل الايميوهات"), i))
 		self.list.append((_("Easy-cccam-0.2"), 29, _("اضافة اسطر cccam"), C))
 		self.list.append((_("Epggrabber-24.3"), 30, _("الدليل الالكتروني"), D))
 		self.list.append((_("Epggrabber-24.2-mod-elie"), 31, _("الدليل الالكتروني"), E))
@@ -804,6 +806,11 @@ class extensions(Screen):
 			elif item is 112:
 				self.session.open(Console, _("Installing package please wait..."), [
             "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/zaptimer/zaptimer.sh -qO - | /bin/sh"
+        ])
+
+			elif item is 113:
+				self.session.open(Console, _("Installing package please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/extensions/-/raw/main/e2reader/enigma2readeradder.sh -qO - | /bin/sh"
         ])
 
 			else:
