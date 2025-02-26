@@ -353,7 +353,7 @@ class eliesatpanel(Screen):
 			print('pressed', number)
 			if number == 0:
 				self.session.open(Console, _("Updating ElieSatPanel, please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/xml/main/installer.sh -qO - | /bin/sh"
         ])
 			else:
 				return
@@ -372,12 +372,13 @@ class eliesatpanel(Screen):
 			self.session.open(iptv3)
 
 	def cccam(self):
-		try:
-			from Plugins.Extensions.ElieSatPanel.menus.CC import CCcamInfoMain
-			if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/esp.png"):
-				self.session.open(CCcamInfoMain)
-		except:
-				self.session.open(MessageBox, _('Your image is not supported'), MessageBox.TYPE_ERROR)
+		PY3 = sys.version_info.major >= 3
+		if sys.version_info[0] < 3:
+			from Plugins.Extensions.ElieSatPanel.sus.cpy2 import cccam2
+			self.session.open(cccam2)
+		else:
+			from Plugins.Extensions.ElieSatPanel.sus.cpy3 import cccam3
+			self.session.open(cccam3)
 
 	def grid(self):
 		try:
