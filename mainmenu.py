@@ -353,7 +353,7 @@ class eliesatpanel(Screen):
 			print('pressed', number)
 			if number == 0:
 				self.session.open(Console, _("Updating ElieSatPanel, please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/xml/main/installer.sh -qO - | /bin/sh"
+            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
         ])
 			else:
 				return
