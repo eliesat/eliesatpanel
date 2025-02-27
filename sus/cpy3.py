@@ -4,7 +4,7 @@ from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Components.ActionMap import ActionMap
 from Components.ConfigList import ConfigListScreen
-from Components.config import ConfigText, ConfigSelection, getConfigListEntry
+from Components.config import ConfigText, ConfigSelection, getConfigListEntry, ConfigInteger
 from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
@@ -70,7 +70,7 @@ class cccam3(Screen, ConfigListScreen):
         ])
 
         self.url = ConfigText(default="tv8k.cc", fixed_size=False)
-        self.port = ConfigText(default="12667", fixed_size=False)
+        self.port = ConfigInteger(default=12677, limits=(1, 99999))
         self.user = ConfigText(default="eaglesat", fixed_size=False)
         self.passw = ConfigText(default="eaglesat", fixed_size=False)
 
