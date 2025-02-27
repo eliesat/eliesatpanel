@@ -8,6 +8,7 @@ from Components.config import ConfigText, ConfigSelection, getConfigListEntry
 from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
+
 class cccam3(Screen, ConfigListScreen):
     skin = """
 <screen name="cccam" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="cccamadder">
@@ -16,7 +17,7 @@ class cccam3(Screen, ConfigListScreen):
 
 <eLabel text="Cccam user adder" position="460,120" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="370,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
-<ePixmap position="780,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="820,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 <!-- title2 -->
 <eLabel text="Select and press ok to write on the screen" position="280,880" size="1000,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="210,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
@@ -63,11 +64,15 @@ class cccam3(Screen, ConfigListScreen):
             ("mgcamd", "MgCamd"), 
         ])
 
-        self.label = ConfigText(default="ElieSat", fixed_size=False)
+        self.label = ConfigSelection(choices=[
+            ("server-eagle-sat", "Server-Eagle-Sat"),
+            ("eliesat", "ElieSat"),
+        ])
+
         self.url = ConfigText(default="tv8k.cc", fixed_size=False)
-        self.port = ConfigText(default="22222", fixed_size=False)
-        self.user = ConfigText(default="server-eagle", fixed_size=False)
-        self.passw = ConfigText(default="server-eagle", fixed_size=False)
+        self.port = ConfigText(default="12667", fixed_size=False)
+        self.user = ConfigText(default="eaglesat", fixed_size=False)
+        self.passw = ConfigText(default="eaglesat", fixed_size=False)
 
         ConfigListScreen.__init__(self, [
             getConfigListEntry("LABEL :", self.label),
