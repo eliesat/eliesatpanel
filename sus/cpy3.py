@@ -110,7 +110,8 @@ class cccam3(Screen, ConfigListScreen):
                 f.write(sus)
 
     def check(self):
-        self.close()
+     cmd1 = ". /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/ccuser.sh"
+     self.session.open(Console, _("Writing your sharing suscription, please wait"), cmdlist=[cmd1])
 
     def exit(self):
         self.close()

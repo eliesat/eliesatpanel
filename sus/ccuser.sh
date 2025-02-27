@@ -5,7 +5,7 @@ if [ ! -s "$dir" ]; then
 echo "> url= None"
 echo "> port= None"
 echo "> username= None"
-echo "> username= None"
+echo "> password= None"
 sleep 2
 echo "Write and save a new cccam user , then try again ..." 
 sleep 1
