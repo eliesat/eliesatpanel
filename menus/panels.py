@@ -133,7 +133,7 @@ class panels(Screen):
 		self.list.append((_("Epanel-5.8r2"), 4, _("بانل خدمات متنوعة للصورة و المستخدم"), d))
 		self.list.append((_("Levi45addonmanager-10.1-r28"), 5, _("بانل تسطيب اضافات"), e))
 		self.list.append((_("Levi45multicammanager-10.1-r35"), 6, _("بانل تسطيب كامات و سكريبتات مختلفة"), f))
-		self.list.append((_("Linuxsat-panel-2.7.4"), 7, _("بانل تسطيب اضافات"), g))
+		self.list.append((_("Linuxsat-panel-2.7.6"), 7, _("بانل تسطيب اضافات"), g))
 		self.list.append((_("Magicpanel-5.0.0"), 17, _("بانل تسطيب اضافات"), q))
 		self.list.append((_("Novalerstore-3.0r0"), 8, _("بانل تسطيب اضافات"), h))
 		self.list.append((_("S4aupdater-24.08.30.2303"), 9, _("بانل تسطيب اضافات"), i))

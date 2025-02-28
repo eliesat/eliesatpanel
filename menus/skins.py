@@ -152,7 +152,7 @@ class skins(Screen):
 		self.list.append((_("Premiumfhd-black-3.1"), 18, _("all"), r))
 		self.list.append((_("Premiumfhd-blue-3.1"), 19, _("all"), s))
 		self.list.append((_("Premium-fhd-magneta-3.1"), 20, _("all"), t))
-		self.list.append((_("Xdreamy-fhd-5.6.0"), 21, _("all"), u))
+		self.list.append((_("Xdreamy-fhd-5.8.0"), 21, _("all"), u))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
