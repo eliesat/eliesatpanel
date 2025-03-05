@@ -251,7 +251,7 @@ class extensions(Screen):
 		self.list.append((_("Crondmanager-1.3"), 25, _("اضافة توقيت للسكريبت برسم التنفيذ"), y))
 		self.list.append((_("Dreamexplorer-2024.08.21"), 26, _("مدير ملفات mod lululla"), z))
 		self.list.append((_("E2iplayer"), 27, _("مشغل اي بي تي في mohamed_os"), A))
-		self.list.append((_("E2m3ubouquet-2.0.1"), 28, _("تحويل الiptv لمفضلات mod-dorik"), B))
+		self.list.append((_("E2m3ubouquet-2.0.2"), 28, _("تحويل الiptv لمفضلات mod-dorik"), B))
 		self.list.append((_("Enigma2readeradder-2.0"), 113, _("كتابة سطر السسكام و تعريفه داخل الايميوهات"), i))
 		self.list.append((_("Easy-cccam-0.2"), 29, _("اضافة اسطر cccam"), C))
 		self.list.append((_("Epggrabber-24.3"), 30, _("الدليل الالكتروني"), D))
