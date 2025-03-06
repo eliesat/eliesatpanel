@@ -1,0 +1,60 @@
+<screen name="uninstall" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
+<ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
+<!-- title -->
+<eLabel text="Packages:" position="160,105" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="73,105" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<eLabel text="Descriptions:" position="770,105" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="683,105" size="50,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<!-- title2 -->
+<eLabel text="Select and press ok to install or remove" position="300,880" size="900,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="210,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
+    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
+<!-- title3 -->
+<widget name="Panel" position="1350,655" size="270,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+<widget name="Version" position="1580,655" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+<ePixmap position="1280,650" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<!-- clock -->
+<widget source="global.CurrentTime" render="Label" position="1290,450" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
+		<convert type="ClockToText">Default</convert>
+<!-- calender -->
+</widget>
+<widget source="global.CurrentTime" render="Label" position="1530,460" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<convert type="ClockToText">Format %A %d %B</convert>
+</widget>
+<!-- minitv -->
+<widget source="session.VideoPicture" render="Pig" position="1305,100" size="550,290" zPosition="1" backgroundColor="#ff000000" />
+<!-- menu  -->
+<widget source="menu" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" render="Listbox" position="48,200" size="1240,660"  transparent="1">
+	<convert type="TemplatedMultiContent">
+		{"template": [
+			MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+			MultiContentEntryText(pos = (620, 19), size = (680, 35), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
+			MultiContentEntryPixmapAlphaTest(pos = (25, 5), size = (50, 40), png = 2), # index 4 is the pixmap
+				],
+	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
+	"itemHeight": 66
+	}
+	</convert>
+	</widget>
+<!-- button  -->
+<ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
+<widget source="key_red" render="Label" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
+<widget source="key_green" render="Label" position="440,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
+<widget source="key_yellow" render="Label" position="720,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
+<widget source="key_blue" render="Label" position="1000,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<!-- ip address -->
+<widget source="ipLabel" render="Label" position="1350,730" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<widget source="ipInfo" render="Label" position="1540,730" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,725" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<!-- internet -->
+	<widget source="internet" render="Label" position="1540,805" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="internetLabel" render="Label" position="1350,805" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1280,800" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<!-- info button -->
+<ePixmap position="1530,880" size="140,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/info.png" zPosition="2" alphatest="blend" />
+<eLabel text="Dns" position="1530,555" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+</screen>
