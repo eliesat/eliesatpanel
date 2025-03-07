@@ -5,6 +5,8 @@
 <widget name="Panel" position="160,105" size="270,50" font="Regular;45" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
 <widget name="Version" position="410,110" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
 <ePixmap position="73,105" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,1" zPosition="2" />
+    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,1" zPosition="2" />
 
 <!-- hdd -->
 <widget source="device" render="Label" position="160,895" zPosition="2" size="1000,45" font="Regular;35" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
