@@ -70,6 +70,8 @@ class eliesatpanel(Screen):
 <widget name="Panel" position="160,105" size="270,50" font="Regular;45" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
 <widget name="Version" position="410,110" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
 <ePixmap position="73,105" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,1" zPosition="2" />
+    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,1" zPosition="2" />
 
 <!-- hdd -->
 <widget source="device" render="Label" position="160,895" zPosition="2" size="1000,45" font="Regular;35" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
@@ -243,6 +245,8 @@ class eliesatpanel(Screen):
 		self.intInfo()
 		t = Timer(0.5, self.update_me)
 		t.start()
+		t1 = Timer(0.5, self.update_adds)
+		t1.start()
 
 	def mList(self):
 		self.list = []
@@ -566,6 +570,18 @@ class eliesatpanel(Screen):
 		
 	def cancel(self):
 		self.close()
+
+	def update_adds(self):
+		import requests
+		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/allinone'
+		response = requests.get(url)
+		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/allinone'
+		if response.status_code == 200:
+			with open(file_Path, 'wb') as file:
+				file.write(response.content)
+			print('File downloaded successfully')
+		else:
+			print('Failed to download file')
 
 	def update_me(self):
 		remote_version = '0.0'
