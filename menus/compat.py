@@ -1,6 +1,6 @@
 # Source code from (https://github.com/Taapat/enigma2-plugin-youtube/blob/master/src/compat.py)
 from sys import version_info
-
+from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 PY3 = version_info[0] == 3
 
 if version_info[0] == 2:
@@ -107,3 +107,8 @@ def compat_ssl_urlopen(url):
 		return compat_urlopen(url, context=sslContext)
 	else:
 		return compat_urlopen(url)
+
+def readFromFile(filename):
+    _file = resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/{}".format(filename))
+    with open(_file, 'r') as f:
+        return f.read()
