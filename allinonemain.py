@@ -123,7 +123,7 @@ class allinonemain(Screen):
 		self.list = []
 		a = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
-		self.list.append((_("Dns"), 1, _("تغيير ال dns"), a))
+		self.list.append((_("Dns"), 1, _("تغيير الدي ان اس "), a))
 		self.list.append((_("Dependencies"), 2, _("مكتبات و ادوات تشغيل"), a))
 		self.list.append((_("Fix"), 3, _("اصلاح او حل مشكل"), a))
 		self.list.append((_("Drivers"), 4, _("تعريفات"), a))
