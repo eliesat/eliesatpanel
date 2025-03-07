@@ -12,7 +12,7 @@ import time
 import gettext
 from datetime import datetime
 from threading import Timer
-from .menus.compat import compat_urlopen, compat_Request, PY3
+from .menus.compat import compat_urlopen, compat_Request, PY3, readFromFile
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
 from Components.ConfigList import ConfigListScreen
@@ -43,15 +43,11 @@ min = first_start = 0
 installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
 scriptpath = "/usr/script/"
 
-def readFromFile(filename):
-    _file = resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/{}".format(filename))
-    with open(_file, 'r') as f:
-        return f.read()
 class allinonemain(Screen):
 	def __init__(self, session):
 		self.session = session
 		Screen.__init__(self, session)
-		skin = "/skins/eefhd.xml"
+		skin = "/skins/submenus-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("ElieSatPanel"))
 		self.iConsole = iConsole()
@@ -806,7 +802,7 @@ def status_path():
 class allinonedns(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session
@@ -925,7 +921,7 @@ class allinonedns(Screen):
 class allinonedeps(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session
@@ -1044,7 +1040,7 @@ class allinonedeps(Screen):
 class allinonedrvs(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session
@@ -1163,7 +1159,7 @@ class allinonedrvs(Screen):
 class allinonefix(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session
@@ -1282,7 +1278,7 @@ class allinonefix(Screen):
 class allinonehdd(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session
@@ -1400,7 +1396,7 @@ class allinonehdd(Screen):
 class allinoneins(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session
@@ -1518,7 +1514,7 @@ class allinoneins(Screen):
 class allinonerem(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session
@@ -1636,7 +1632,7 @@ class allinonerem(Screen):
 class allinoneother(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
-		skin = "/skins/efhd.xml"
+		skin = "/skins/addons-fhd.xml"
 		self.skin = readFromFile(skin)
 		self.setTitle(_("Ipk remove"))
 		self.session = session

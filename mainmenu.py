@@ -12,7 +12,7 @@ import time
 import gettext
 from datetime import datetime
 from threading import Timer
-from .menus.compat import compat_urlopen, compat_Request, PY3
+from .menus.compat import compat_urlopen, compat_Request, PY3, readFromFile
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.allinonemain import allinonemain
 from Plugins.Extensions.ElieSatPanel.menus.display import display
@@ -62,124 +62,12 @@ installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/install
 scriptpath = "/usr/script/"
 
 class eliesatpanel(Screen):
-	skin = """
-<screen name="eliesatpanel" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
-<ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
-
-<!-- title -->
-<widget name="Panel" position="160,105" size="270,50" font="Regular;45" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
-<widget name="Version" position="410,110" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
-<ePixmap position="73,105" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
-    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,1" zPosition="2" />
-    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,1" zPosition="2" />
-
-<!-- hdd -->
-<widget source="device" render="Label" position="160,895" zPosition="2" size="1000,45" font="Regular;35" halign="left" valign="top" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="70,890" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
-
-<!-- ip address -->
-<widget source="ipLabel" render="Label" position="1350,895" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-	<widget source="ipInfo" render="Label" position="1540,895" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="1280,890" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
-
-<!-- minitv -->
-<widget source="session.VideoPicture" render="Pig" position="1305,100" size="550,290" zPosition="1" backgroundColor="#ff000000" />
-
-<!-- clock -->
-<widget source="global.CurrentTime" render="Label" position="650,85" size="350,90" font="lsat; 60" noWrap="1" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="2">
-		<convert type="ClockToText">Default</convert>
-
-<!-- calender -->
-</widget>
-<widget source="global.CurrentTime" render="Label" position="880,100" size="335,54" font="lsat; 24" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="1">
-<convert type="ClockToText">Format %A %d %B</convert>
-</widget>
-
-<!-- button -->
-<ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
-<widget source="key_red" render="Label" position="115,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
-<widget source="key_green" render="Label" position="387.5,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
-<widget source="key_yellow" render="Label" position="720,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
-<widget source="key_blue" render="Label" position="1000,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- menu list -->
-<widget source="menu" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" render="Listbox" position="48,200" size="1240,660" scrollbarMode="showOnDemand" transparent="1">
-<convert type="TemplatedMultiContent">
-	{"template": [
-		MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # menu title
-		MultiContentEntryText(pos = (600, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # description
-		MultiContentEntryPixmapAlphaTest(pos = (25, 5), size = (50, 40), png = 3), # picture
-			],
-	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
-	"itemHeight": 66
-	}
-	</convert>
-
-<!-- info button -->
-</widget>
-<ePixmap position="1700,800" size="140,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/info.png" zPosition="2" alphatest="blend" />
-
-<!-- image -->
-<widget source="ImageLabel" render="Label" position="1280,536.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="Image" render="Label" position="1470,540" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- python -->
-<widget source="pythonLabel" render="Label" position="1280,570.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="python" render="Label" position="1470,570" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- last upgrade -->
-<widget source="EnigmaVersionLabel" render="Label" position="1280,600.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="EnigmaVersion" render="Label" position="1470,600" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-	
-<!-- hardware -->
-<widget source="HardwareLabel" render="Label" position="1280,660.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="Hardware" render="Label" position="1470,660" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- processor -->
-<widget source="CPULabel" render="Label" position="1280,690.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="CPU" render="Label" position="1470,690" zPosition="2" size="400,50" font="lsat; 22" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- mac address -->
-<widget source="macLabel" render="Label" position="1300,2770.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1"/>
-<widget source="macInfo" render="Label" position="1490,2770" zPosition="2" size="200,50" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- driver version-->
-<widget source="driverLabel" render="Label" position="1280,750.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="driver" render="Label" position="1470,755" zPosition="2" size="390,30" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- kernel version -->
-<widget source="KernelLabel" render="Label" position="1280,780.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="Kernel" render="Label" position="1470,780" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- gstreamer -->
-<widget source="gstreamerLabel" render="Label" position="1280,810.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="gstreamer" render="Label" position="1470,810" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- ram -->
-<widget source="MemoryLabel" render="Label" position="1230,415" zPosition="2" size="150,40" font="lsat; 24" halign="right" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="memTotal" render="Label" position="1390,410" zPosition="2" size="420,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- swap -->
-<widget source="SwapLabel" render="Label" position="1230,450" zPosition="2" size="150,40" font="lsat; 24" halign="right" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="swapTotal" render="Label" position="1390,445" zPosition="2" size="420,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- flash -->
-<widget source="FlashLabel" render="Label" position="1200,485" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
-<widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 23" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-
-<!-- internet -->
-	<widget source="internet" render="Label" position="1505,950" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<widget source="internetLabel" render="Label" position="1315,950" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="1280,945" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
-
-</screen>"""
 
 	def __init__(self, session):
 		self.session = session
 		Screen.__init__(self, session)
+		skin = "/skins/mainmenu-fhd.xml"
+		self.skin = readFromFile(skin)
 		self.setTitle(_("ElieSatPanel"))
 		self.iConsole = iConsole()
 		self.indexpos = None
@@ -630,7 +518,9 @@ class eliesatpanel(Screen):
 		else:
 			self["internet"].text = _("Disconnected")
 		return
-
+#############################################################################
+#############################################################################
+#############################################################################
 class Scripts(Screen):
 	skin = """
 <screen name="Scripts" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="Scripts">
@@ -791,7 +681,9 @@ class Scripts(Screen):
             "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/scripts/main/installer.sh -qO - | /bin/sh"
         ])
 
-#######################################
+#############################################################################
+#############################################################################
+#############################################################################
 def status_path():
 	status = '/usr/lib/opkg/status'
 	if fileExists("/usr/lib/ipkg/status"):
