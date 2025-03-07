@@ -4,7 +4,7 @@ Status: Dns
 Dns-Cloudflare='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/all/_dns-cloudflare-installer.sh'
 
 Package: Dns-Google
-Version: 1.0     الرجوع للدي ان اس الافتراضي
+Version: 1.0     تأمين سرعة اتصال بالسيرفر و الفيدات
 Status: Dns
 Dns-Google='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/all/_dns-google-installer.sh'
 
