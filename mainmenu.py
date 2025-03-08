@@ -15,22 +15,19 @@ from threading import Timer
 from .menus.compat import compat_urlopen, compat_Request, PY3, readFromFile
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.allinonemain import allinonemain
-from Plugins.Extensions.ElieSatPanel.menus.display import display
+from Plugins.Extensions.ElieSatPanel.displaymain import displaymain
 from Plugins.Extensions.ElieSatPanel.menus.extensions import extensions
 from Plugins.Extensions.ElieSatPanel.menus.feeds import feeds
 from Plugins.Extensions.ElieSatPanel.menus.free import free
 from Plugins.Extensions.ElieSatPanel.menus.imagesd import imagesd
 from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
-from Plugins.Extensions.ElieSatPanel.menus.lcdskins import lcdskins
 from Plugins.Extensions.ElieSatPanel.menus.multiboot import multiboot
 from Plugins.Extensions.ElieSatPanel.menus.novaler import novaler
 from Plugins.Extensions.ElieSatPanel.menus.panels import panels
 from Plugins.Extensions.ElieSatPanel.menus.picons import picons
-from Plugins.Extensions.ElieSatPanel.menus.radiologos import radiologos
 from Plugins.Extensions.ElieSatPanel.menus.settings import settings
 from Plugins.Extensions.ElieSatPanel.menus.skins import skins
 from Plugins.Extensions.ElieSatPanel.menus.softcams import softcams
-from Plugins.Extensions.ElieSatPanel.menus.spinners import spinners
 from Plugins.Extensions.ElieSatPanel.menus.systemplugins import systemplugins
 from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
 from Components.ConfigList import ConfigListScreen
@@ -146,17 +143,14 @@ class eliesatpanel(Screen):
 		self.list.append((_("Free"), 5, _("اضافات مجانية"), a))
 		self.list.append((_("Images (download)"), 6, _("تنزيل صور خام من الموقع الرسمي"), a))
 		self.list.append((_("Images (backup)"), 7, _("تثبيت باكآب على صورة خام"), a))
-		self.list.append((_("Lcd skins"), 8, _("سكينات الشاشة الامامية"), a))
-		self.list.append((_("Multiboot"), 9, _("اضافات الخاصة بالاقلاع المتعدد و بالصور"), a))
-		self.list.append((_("Novaler"), 10, _("اضافات الخاصة بجهاز نوفالر"), a))
-		self.list.append((_("Panels"), 11, _("بانلات مختلفة"), a))
-		self.list.append((_("Picons"), 12, _("شعارات القنوات"), a))
-		self.list.append((_("Radiologos"), 13, _("خلفيات لقنوات الراديو"), a))
-		self.list.append((_("Settings"), 14, _("ملفات قنوات ترددات و اعدادات التيونر"), a))
-		self.list.append((_("Skins"), 15, _("سكينات"), a))
-		self.list.append((_("Softcams"), 16, _("كامات و ملفات التشفير "), a))
-		self.list.append((_("Spinners"), 17, _("شعار المتحرك اعلى الشاشة يسارا"), a))
-		self.list.append((_("Systemplugins"), 18, _("بلاجينات و اضافات السيستام"), a))
+		self.list.append((_("Multiboot"), 8, _("اضافات الخاصة بالاقلاع المتعدد و بالصور"), a))
+		self.list.append((_("Novaler"), 9, _("اضافات الخاصة بجهاز نوفالر"), a))
+		self.list.append((_("Panels"), 10, _("بانلات مختلفة"), a))
+		self.list.append((_("Picons"), 11, _("شعارات القنوات"), a))
+		self.list.append((_("Settings"), 12, _("ملفات قنوات ترددات و اعدادات التيونر"), a))
+		self.list.append((_("Skins"), 13, _("سكينات"), a))
+		self.list.append((_("Softcams"), 14, _("كامات و ملفات التشفير "), a))
+		self.list.append((_("Systemplugins"), 15, _("بلاجينات و اضافات السيستام"), a))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -174,7 +168,7 @@ class eliesatpanel(Screen):
 			if item is 1:
 				self.session.open(allinonemain)
 			elif item is 2:
-				self.session.open(display)
+				self.session.open(displaymain)
 			elif item is 3:
 				self.session.open(extensions)
 			elif item is 4:
@@ -186,26 +180,20 @@ class eliesatpanel(Screen):
 			elif item is 7:
 				self.session.open(imagesb)
 			elif item is 8:
-				self.session.open(lcdskins)
-			elif item is 9:
 				self.session.open(multiboot)
-			elif item is 10:
+			elif item is 9:
 				self.session.open(novaler)
-			elif item is 11:
+			elif item is 10:
 				self.session.open(panels)
-			elif item is 12:
+			elif item is 11:
 				self.session.open(picons)
-			elif item is 13:
-				self.session.open(radiologos)
-			elif item is 14:
+			elif item is 12:
 				self.session.open(settings)
-			elif item is 15:
+			elif item is 13:
 				self.session.open(skins)
-			elif item is 16:
+			elif item is 14:
 				self.session.open(softcams)
-			elif item is 17:
-				self.session.open(spinners)
-			elif item is 18:
+			elif item is 15:
 				self.session.open(systemplugins)
 
 			else:
