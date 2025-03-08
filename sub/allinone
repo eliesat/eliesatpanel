@@ -594,7 +594,7 @@ Status: Lcd
 Lcdskin13='https://gitlab.com/eliesat/display/-/raw/main/lcdskin/lcdskin-13.sh'
 
 Package: Splash-image
-Version: 1.0     صور الشاشة الامامية بكل اجهزة الفيو
+Version: 1.0     صور الشاشة الامامية لكل اجهزة الفيو
 Status: Lcd
 Splash-image='https://gitlab.com/eliesat/display/-/raw/main/splash/splash.sh'
 
