@@ -1489,89 +1489,89 @@ Ultracam='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ultracam
 Package: Ajpanel
 Version: 10.7.0     ادارة الملفات و مجموعة الخدمات
 Status: Pan
-Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh
+Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh'
 
 Package: Ciefpsettingspanel
 Version: 2.2     بانل تسطيب اضافات
 Status: Pan
-Ciefpsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh
+Ciefpsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 
 Package: Ajpanel-Eliesatpanel
 Version: 1.0     بانل تسطيب اضافات
 Status: Pan
-Ajpanel-Eliesatpanel='https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh
+Ajpanel-Eliesatpanel='https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh'
 
 Package: Epanel
 Version: 5.8r2     بانل خدمات متنوعة للصورة
 Status: Pan
-Epanel='https://gitlab.com/eliesat/extensions/-/raw/main/epanel/epanel.sh
+Epanel='https://gitlab.com/eliesat/extensions/-/raw/main/epanel/epanel.sh'
 
 Package: Levi45addonmanager
 Version: 10.2-r0     بانل تسطيب اضافات
 Status: Pan
-Levi45addonmanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45-addon-manager.sh
+Levi45addonmanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45-addon-manager.sh'
 
 Package: Levi45multicammanager
 Version: 10.1-r38     بانل تسطيب كامات
 Status: Pan
-Levi45multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh
+Levi45multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh'
 
 Package: Linuxsat-panel
 Version: 2.7.7     بانل تسطيب اضافات
 Status: Pan
-Linuxsat-panel='https://gitlab.com/eliesat/extensions/-/raw/main/linuxsat-panel/linuxsat-panel.sh
+Linuxsat-panel='https://gitlab.com/eliesat/extensions/-/raw/main/linuxsat-panel/linuxsat-panel.sh'
 
 Package: Magicpanel
 Version: 5.0     بانل تسطيب اضافات
 Status: Pan
-Magicpanel='https://gitlab.com/eliesat/extensions/-/raw/main/magicpanel/magicpanel.sh
+Magicpanel='https://gitlab.com/eliesat/extensions/-/raw/main/magicpanel/magicpanel.sh'
 
 Package: Novalerstore
 Version: 3.0r0     بانل تسطيب اضافات
 Status: Pan
-Novalerstore='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novalerstore/novalerstore.sh
+Novalerstore='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novalerstore/novalerstore.sh'
 
 Package: Oneupdater
 Version: 3.1     بانل تسطيب بيكونات و ملفات قنوات
 Status: Pan
-Oneupdater='https://gitlab.com/eliesat/extensions/-/raw/main/oneupdater/oneupdater.sh
+Oneupdater='https://gitlab.com/eliesat/extensions/-/raw/main/oneupdater/oneupdater.sh'
 
 Package: S4aupdater
 Version: 24.08.30.2303     بانل تسطيب اضافات
 Status: Pan
-S4aupdater='https://gitlab.com/eliesat/extensions/-/raw/main/s4aupdater/s4aupdater.sh
+S4aupdater='https://gitlab.com/eliesat/extensions/-/raw/main/s4aupdater/s4aupdater.sh'
 
 Package: Satvenuspanel
 Version: 7.3.3     بانل تسطيب اضافات
 Status: Pan
-Satvenuspanel='https://gitlab.com/eliesat/extensions/-/raw/main/satvenuspanel/satvenuspanel.sh
+Satvenuspanel='https://gitlab.com/eliesat/extensions/-/raw/main/satvenuspanel/satvenuspanel.sh'
 
 Package: Simple-zoom-panel
 Version: 2.2.5     بانل تسطيب اضافات
 Status: Pan
-Simple-zoom-panel='https://gitlab.com/eliesat/extensions/-/raw/main/simple-zoom-panel/simple-zoom-panel.sh
+Simple-zoom-panel='https://gitlab.com/eliesat/extensions/-/raw/main/simple-zoom-panel/simple-zoom-panel.sh'
 
 Package: Smartaddonspanel
 Version: 2.0     بانل تسطيب اضافات
 Status: Pan
-Smartaddonspanel='https://gitlab.com/eliesat/extensions/-/raw/main/smartaddonspanel/smartaddonspanel.sh
+Smartaddonspanel='https://gitlab.com/eliesat/extensions/-/raw/main/smartaddonspanel/smartaddonspanel.sh'
 
 Package: Tvaddon
 Version: 2.1.5     بانل تسطيب اضافات
 Status: Pan
-Tvaddon='https://gitlab.com/eliesat/extensions/-/raw/main/tvaddon/tvaddon.sh
+Tvaddon='https://gitlab.com/eliesat/extensions/-/raw/main/tvaddon/tvaddon.sh'
 
 Package: Tvmanager
 Version: 2.5     بانل تسطيب اضافات
 Status: Pan
-Tvmanager='https://gitlab.com/eliesat/extensions/-/raw/main/tvmanager/tvmanager.sh
+Tvmanager='https://gitlab.com/eliesat/extensions/-/raw/main/tvmanager/tvmanager.sh'
 
 Package: zoom
 Version: 11.0r0     اسطر سسكام مجانية
 Status: Pan
-zoom='https://gitlab.com/eliesat/extensions/-/raw/main/zoom/zoom.sh
+zoom='https://gitlab.com/eliesat/extensions/-/raw/main/zoom/zoom.sh'
 
 Package: zoom-final-fix
 Version: 1.0     py2 بانل تسطيب اضافات سكريبتات و خدمات
 Status: Pan
-zoom-final-fix='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh
+zoom-final-fix='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
