@@ -799,7 +799,7 @@ Version: 1.1     اذكار المسلم
 Status: Plg
 Azkar-almuslim='https://gitlab.com/eliesat/extensions/-/raw/main/azkar-almuslim/azkar-almuslim.sh'
 
-Package: backupflashe
+Package: Backupflashe
 Version: 9.5     باكآب الصورة
 Status: Plg
 Backupflashe='https://gitlab.com/eliesat/extensions/-/raw/main/backupflashe/backupflashe.sh'
@@ -1204,10 +1204,10 @@ Version: 0.3     التقاط و تخزين صورة عن الشاشة
 Status: Plg
 Shootyourscreen='https://gitlab.com/eliesat/extensions/-/raw/main/shootyourscreen/shootyourscreen.sh'
 
-Package: skin-e2sentials
+Package: Skin-e2sentials
 Version: 1.0     اضافات على السكين المستخدم
 Status: Plg
-skin-e2sentials='https://gitlab.com/eliesat/extensions/-/raw/main/skine2sentials/skin-e2sentials.sh'
+Skin-e2sentials='https://gitlab.com/eliesat/extensions/-/raw/main/skine2sentials/skin-e2sentials.sh'
 
 Package: Spinnerselector
 Version: 3.2     تسطيب سبينرات
