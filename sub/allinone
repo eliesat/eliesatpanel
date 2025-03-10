@@ -1030,7 +1030,7 @@ Status: Plg
 Iptosat='https://gitlab.com/eliesat/extensions/-/raw/main/iptosat/iptosat.sh'
 
 Package: Iptvarchive
-Version: 2.0.89     معاينة ارشيف الاي بي تي في
+Version: 2.0.90     معاينة ارشيف الاي بي تي في
 Status: Plg
 Iptvarchive='https://gitlab.com/eliesat/extensions/-/raw/main/iptvarchive/iptvarchive.sh'
 
