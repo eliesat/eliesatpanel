@@ -1313,3 +1313,116 @@ Package: Zaptimer
 Version: 1.0     توقيت للرجوع للقناة
 Status: Plg
 Zaptimer='https://gitlab.com/eliesat/extensions/-/raw/main/zaptimer/zaptimer.sh'
+
+##############multiboot###############
+
+Package: barryallen
+Version: 12.91-r1     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+barryallen='https://gitlab.com/eliesat/extensions/-/raw/main/barryallen/barryallen.sh'
+
+Package: Egamiboot
+Version: 10.6     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Egamiboot='https://gitlab.com/eliesat/extensions/-/raw/main/egamiboot/egamiboot.sh'
+
+Package: Image-downloader
+Version: 2.6     تنزيل صور خام خام
+Status: Mul
+Image-downloader='https://gitlab.com/eliesat/extensions/-/raw/main/image-downloader/image-downloader.sh'
+
+Package: Meoboot
+Version: 0.1     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Meoboot='https://gitlab.com/eliesat/extensions/-/raw/main/meoboot/meoboot.sh'
+
+Package: Multiboot-flashonline
+Version: 7.1     تنزيل و تسطيب صور خام
+Status: Mul
+Multiboot-flashonline='https://gitlab.com/eliesat/extensions/-/raw/main/multiboot-flashonline/multiboot-flashonline.sh'
+
+Package: Nfr4xboot
+Version: 2.0     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Nfr4xboot='https://gitlab.com/eliesat/extensions/-/raw/main/nfr4xboot/nfr4xboot.sh'
+
+
+Package: Neoboot-1
+Version: 2.05     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-1='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-2.05.sh'
+
+Package: Neoboot-2
+Version: 5.8     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-2='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-5.8.sh'
+
+Package: Neoboot-3
+Version: 8.20     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-3='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-8.20.sh'
+
+Package: Neoboot-4
+Version: 9.11     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-4='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.11.sh'
+
+Package: Neoboot-5
+Version: 9.32     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-5='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.32.sh'
+
+Package: Neoboot-6
+Version: 9.36     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-6='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.36.sh'
+
+Package: Neoboot-7
+Version: 9.54     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-7='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.54.sh'
+
+Package: Neoboot-8
+Version: 9.58     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-8='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.58-r3.sh'
+
+Package: Neoboot-9
+Version: 9.60     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-9='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.60.sh'
+
+Package: Neoboot-10
+Version: 9.62     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-10='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.62.sh'
+
+Package: Neoboot-11
+Version: 9.65     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-11='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.65.sh'
+
+Package: Neoboot-12
+Version: 9.65     تسطيب صور على الذاكرة الخارجية م الصفطي
+Status: Mul
+Neoboot-12='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-lea.sh'
+
+Package: Neoboot-duo4k
+Version: 5.3     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-duo4k='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-duo4k.sh'
+
+Package: Neoboot-e2turk
+Version: 3.9.1     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Neoboot-e2turk='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-e2turk.sh'
+
+Package: Opdboot
+Version: 3.11.x     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Opdboot='https://gitlab.com/eliesat/extensions/-/raw/main/opdboot/opdboot.sh'
+
+Package: Openmultiboot
+Version: 1.0     تسطيب صور على الذاكرة الخارجية
+Status: Mul
+Openmultiboot='https://gitlab.com/eliesat/extensions/-/raw/main/openmultiboot/openmultiboot.sh'
