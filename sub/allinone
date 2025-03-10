@@ -1,3 +1,4 @@
+✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️
 Package: Dns-Cloudflare
 Version: 1.0     تأمين سرعة اتصال بالسيرفر و الفيدات
 Status: Dns
@@ -333,8 +334,7 @@ Version: 1.0       كلمة مرور و اسم المستخدم
 Status: Other
 Filmxy-fnc2='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/all/_filmxy-fnc2.sh'
 
-##############display###############
-
+✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️
 --------------bootvideos-----------
 
 Package: bootvideo-Enigma2
@@ -746,6 +746,7 @@ Version: 1.0     نادي ريال مدريد
 Status: Spn
 Spinner-Realmadrid='https://gitlab.com/eliesat/display/-/raw/main/spinner/spinner-realmadrid-1.sh'
 
+✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️
 ##############extensions###############
 
 Package: Acherone
@@ -801,7 +802,7 @@ Azkar-almuslim='https://gitlab.com/eliesat/extensions/-/raw/main/azkar-almuslim/
 Package: backupflashe
 Version: 9.5     باكآب الصورة
 Status: Plg
-backupflashe='https://gitlab.com/eliesat/extensions/-/raw/main/backupflashe/backupflashe.sh'
+Backupflashe='https://gitlab.com/eliesat/extensions/-/raw/main/backupflashe/backupflashe.sh'
 
 Package: Bissfeedautokey
 Version: 2.8     الفيدات و شفرات البيس
@@ -963,10 +964,10 @@ Version: 8.3.8-r1     سسكام مجاني
 Status: Plg
 Freeserver='https://gitlab.com/eliesat/extensions/-/raw/main/freeserver/freeserver.sh'
 
-Package: gioppygio
+Package: Gioppygio
 Version: 12.2     بيكونات و ملفات قنوات
 Status: Plg
-gioppygio='https://gitlab.com/eliesat/extensions/-/raw/main/gioppygio/gioppygio.sh'
+Gioppygio='https://gitlab.com/eliesat/extensions/-/raw/main/gioppygio/gioppygio.sh'
 
 Package: Hardwareinfo
 Version: 5.2     معلومات عن الجهاز
@@ -998,22 +999,22 @@ Version: 1.7     اختبار سرعة الاتصال بالانترنيت
 Status: Plg
 Internetspeedtest='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
 
-Package: Ipaudio
+Package: Ipaudio-1
 Version: 6.8     اضافة الصوتيات على قنوات السات
 Status: Plg
 Ipaudio='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio.sh'
 
-Package: Ipaudio
+Package: Ipaudio-2
 Version: 7.4-ffmpeg     اضافة الصوتيات على قنوات السات
 Status: Plg
 Ipaudio='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio-7.4-ffmpeg.sh'
 
-Package: Ipaudiopro
+Package: Ipaudiopro-1
 Version: 1.3     اضافة الصوتيات على قنوات السات py2 py3.9
 Status: Plg
 Ipaudiopro='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.3/ipaudiopro.sh'
 
-Package: Ipaudiopro
+Package: Ipaudiopro-2
 Version: 1.5     اضافة الصوتيات على قنوات السات
 Status: Plg
 Ipaudiopro='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.5/ipaudiopro.sh'
@@ -1079,7 +1080,7 @@ Status: Plg
 Moviesmanager='https://gitlab.com/eliesat/extensions/-/raw/main/moviesmanager/moviesmanager.sh'
 
 Package: Multiquickbutton
-Version: 2.7.15-r10     تخصيص وظائف لازرار الرومونت كوننرول
+Version: 2.7.15-r10     تخصيص وظائف لازرار الرومونت
 Status: Plg
 Multiquickbutton='https://gitlab.com/eliesat/extensions/-/raw/main/multiquickbutton/multiquickbutton.sh'
 
@@ -1088,12 +1089,12 @@ Version: 1.5     مشغل بورتلات اي بي تي في
 Status: Plg
 Multistalker='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker/multistalker.sh'
 
-Package: Multistalkerpro
+Package: Multistalkerpro-1
 Version: 1.0     مشغل بورتلات اي بي تي في
 Status: Plg
 Multistalkerpro='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multistalkerpro.sh'
 
-Package: Multistalkerpro
+Package: Multistalkerpro-2
 Version: 1.2     مشغل بورتلات اي بي تي في •py3.12.x
 Status: Plg
 Multistalkerpro='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multi-stalkerpro.sh'
@@ -1113,245 +1114,202 @@ Version: 1.0     تثبيت الساعة على الشاشة بشكل دائم
 Status: Plg
 Newpermanentclock='https://gitlab.com/eliesat/extensions/-/raw/main/newpermanentclock/newpermanentclock.sh'
 
-<item name="oaweather-3.0" icon="extensions.png" info="(حالة الطقس py3.11.x)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false -O - | /bin/sh</item>
-Package: Internetspeedtest
-Package: XXX
-Version: 1.7     XXXX
+Package: Oaweather
+Version: 3.0     حالة الطقس
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Oaweather='https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false'
 
-<item name="Oscam-status-6.5" icon="extensions.png" info="(معلومات عن حالة المحاكي)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/oscam-status/oscam-status.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Oscam-status
+Version: 6.5     معلومات عن حالة المحاكي
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Oscam-status='https://gitlab.com/eliesat/extensions/-/raw/main/oscam-status/oscam-status.sh'
 
-<item name="piconinstaller-24.08.23" icon="extensions.png" info="(تسطيب بيكونات)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/piconinstaller/piconinstaller.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Piconinstaller
+Version: 24.08.23     تسطيب بيكونات
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Piconinstaller='https://gitlab.com/eliesat/extensions/-/raw/main/piconinstaller/piconinstaller.sh'
 
-<item name="pluginskinmover-0.8" icon="extensions.png" info="(نقل و قراءة البلاجينات على التخزين الخارجي)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/pluginskinmover/pluginskinmover.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Pluginskinmover
+Version: 0.8     نقل و قراءة البلاجينات على التخزين الخارجي
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Pluginskinmover='https://gitlab.com/eliesat/extensions/-/raw/main/pluginskinmover/pluginskinmover.sh'
 
-<item name="Plutotv-20240831" icon="extensions.png" info="(اي بي تي في مجاني)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Plutotv
+Version: 20240831     اي بي تي في مجاني
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Plutotv='https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh'
 
-<item name="Quarter-pounder-6.2.0" icon="extensions.png" info="(تنشيط قنوات الاي بي تي في)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/quarter-pounder/quarter-pounder.sh -O - | /bin/sh</item>
-Package: Internetspeedtest
-Package: XXX
-Version: 1.7     XXXX
+Package: Quarter-pounder
+Version: 6.2.0     تنشيط قنوات الاي بي تي في
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Quarter-pounder='https://gitlab.com/eliesat/extensions/-/raw/main/quarter-pounder/quarter-pounder.sh'
 
-<item name="Quran-karim-2.2" icon="extensions.png" info="(القرآن الكريم)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/quran-karim/quran-karim.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Quran-karim
+Version: 2.2     القرآن الكريم
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Quran-karim='https://gitlab.com/eliesat/extensions/-/raw/main/quran-karim/quran-karim.sh'
 
-<item name="Quran-0.2" icon="extensions.png" info="(القرآن الكريم mod raed)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/quran/quran.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Quran
+Version: 0.2     القرآن الكريم
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Quran='https://gitlab.com/eliesat/extensions/-/raw/main/quran/quran.sh'
 
-<item name="Radiom-1.1" icon="extensions.png" info="(ستريم لمحطات راديو)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/radiom/radiom.sh -O - | /bin/sh</item>
-Package: Internetspeedtest
-Package: XXX
-Version: 1.7     XXXX
+Package: Radiom
+Version: 1.1     ستريم لمحطات راديو
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Radiom='https://gitlab.com/eliesat/extensions/-/raw/main/radiom/radiom.sh'
 
-<item name="Radiogit-1.1" icon="extensions.png" info="(راديو)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/radiogit/radiogit.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Radiogit
+Version: 1.1     ستريم لمحطات راديو
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Radiogit='https://gitlab.com/eliesat/extensions/-/raw/main/radiogit/radiogit.sh'
 
-<item name="Raedquicksignal-17.6" icon="extensions.png" info="(مستكشف اشارة الترددات)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh -O - | /bin/sh</item>
-Package: Internetspeedtest
-Package: XXX
-Version: 1.7     XXXX
+Package: Raedquicksignal
+Version: 17.6     مستكشف اشارة الترددات
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Raedquicksignal='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh'
 
-<item name="Rakutentv-20240324" icon="extensions.png" info="(اي بي تي في مجاني)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/rakutentv/rakutentv.sh -O - | /bin/sh</item>
-Package: Internetspeedtest
-Package: XXX
-Version: 1.7     XXXX
+Package: Rakutentv
+Version: 20240324     اي بي تي في مجاني
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Rakutentv='https://gitlab.com/eliesat/extensions/-/raw/main/rakutentv/rakutentv.sh'
 
-<item name="Samsungtvplus-20241116" icon="extensions.png" info="(اي بي تي في مجاني)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/samsungtvplus/samsungtvplus.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Samsungtvplus
+Version: 20241116     اي بي تي في مجاني
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Samsungtvplus='https://gitlab.com/eliesat/extensions/-/raw/main/samsungtvplus/samsungtvplus.sh'
 
-<item name="Screengrabber-3.2" icon="extensions.png" info="(التقاط و تخزين صورة عن الشاشة)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/screengrabber/screengrabber.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Screengrabber
+Version: 3.2     التقاط و تخزين صورة عن الشاشة
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Screengrabber='https://gitlab.com/eliesat/extensions/-/raw/main/screengrabber/screengrabber.sh'
 
-<item name="Screennames-1.06" icon="extensions.png" info="(عرض اسامي سكرينات السكين)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/screennames/screennames.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Screennames
+Version: 1.06     عرض اسامي سكرينات السكين
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Screennames='https://gitlab.com/eliesat/extensions/-/raw/main/screennames/screennames.sh'
 
-<item name="Scriptexecuter-1.0" icon="extensions.png" info="(تصفح لايحة السكريبتات و تنفيذهم)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/scriptexecuter/scriptexecuter.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Scriptexecuter
+Version: 1.0     تصفح لايحة السكريبتات و تنفيذهم
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Scriptexecuter='https://gitlab.com/eliesat/extensions/-/raw/main/scriptexecuter/scriptexecuter.sh'
 
-<item name="Sherlockmod-1.4.2" icon="extensions.png" info="(اينفوبار اضافي )" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/sherlockmod/sherlockmod.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Sherlockmod
+Version: 1.4.2     اينفوبار اضافي
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Sherlockmod='https://gitlab.com/eliesat/extensions/-/raw/main/sherlockmod/sherlockmod.sh'
 
-<item name="Shootyourscreen-0.3" icon="extensions.png" info="(التقاط و تخزين صورة عن الشاشة)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/shootyourscreen/shootyourscreen.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Shootyourscreen
+Version: 0.3     التقاط و تخزين صورة عن الشاشة
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Shootyourscreen='https://gitlab.com/eliesat/extensions/-/raw/main/shootyourscreen/shootyourscreen.sh'
 
-<item name="skin-e2sentials-1.0" icon="extensions.png" info="(اضافات على السكين المستخدم)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/skine2sentials/skin-e2sentials.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: skin-e2sentials
+Version: 1.0     اضافات على السكين المستخدم
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+skin-e2sentials='https://gitlab.com/eliesat/extensions/-/raw/main/skine2sentials/skin-e2sentials.sh'
 
-<item name="Spinnerselector-3.2" icon="extensions.png" info="(تسطيب سبينرات)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/spinnerselector/spinnerselector.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Spinnerselector
+Version: 3.2     تسطيب سبينرات
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Spinnerselector='https://gitlab.com/eliesat/extensions/-/raw/main/spinnerselector/spinnerselector.sh'
 
-<item name="Subssupport-1.5.8r9" icon="extensions.png" info="(الترجمة)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Subssupport-1
+Version: 1.5.8r9     الترجمة
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Subssupport-1='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh'
 
-<item name="Subssupport-1.7.0-r15" icon="extensions.png" info="(الترجمة)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Subssupport-2
+Version: 1.7.0-r15     الترجمة
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Subssupport-2='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh'
 
-<item name="Theweather-2.5r0" icon="extensions.png" info="(حالة الطقس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/theweather/theweather.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Theweather
+Version: 2.5r0     حالة الطقس
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Theweather='https://gitlab.com/eliesat/extensions/-/raw/main/theweather/theweather.sh'
 
-<item name="Tmdb-8.6r7" icon="extensions.png" info="(عرض بوستر و معلومات فيلم لقناة لها دليل الكتروني )" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/tmdb/tmbd.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Tmdb
+Version: 8.6r7     عرض بوستر و معلومات فيلم
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Tmdb='https://gitlab.com/eliesat/extensions/-/raw/main/tmdb/tmbd.sh'
 
-<item name="Transmission-5.0.9.9" icon="extensions.png" info="(مشاهدة و تنزيل افلام و مسلسلات )" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Transmission
+Version: 5.0.9.9     مشاهدة و تنزيل افلام و مسلسلات
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Transmission='https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh'
 
-<item name="Vavoo-1.33" icon="extensions.png" info="(اي بي تي في مجاني)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Vavoo
+Version: 1.33     اي بي تي في مجاني
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Vavoo='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
-<item name="Visualweather-1.10" icon="extensions.png" info="(حالة الطقس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/visualweather/visualweather.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Visualweather
+Version: 1.10     حالة الطقس
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Visualweather='https://gitlab.com/eliesat/extensions/-/raw/main/visualweather/visualweather.sh'
 
-<item name="Weathermsn-1.3r3" icon="extensions.png" info="(حالة الطقس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/weathermsn/weathermsn.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Weathermsn
+Version: 1.3r3     حالة الطقس
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Weathermsn='https://gitlab.com/eliesat/extensions/-/raw/main/weathermsn/weathermsn.sh'
 
-<item name="Weatherplugin-2.2" icon="extensions.png" info="(حالة الطقس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin/weatherplugin.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Weatherplugin
+Version: 2.2     حالة الطقس
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Weatherplugin='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin/weatherplugin.sh'
 
-<item name="Weatherpluginicons-1.1" icon="extensions.png" info="(ايقونات بلاجين الطقس weatherplugin)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Weatherpluginicons
+Version: 1.1     ايقونات بلاجين الطقس
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Weatherpluginicons='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh'
 
-<item name="Wireguard-vpn-15.1" icon="extensions.png" info="(اضافة اشتراك الvpn + معاينة سرعة النت)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/wireguard-vpn/wireguard-vpn.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Wireguard-vpn
+Version: 15.1     اضافة اشتراك في بي ان معاينة سرعة النت
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Wireguard-vpn='https://gitlab.com/eliesat/extensions/-/raw/main/wireguard-vpn/wireguard-vpn.sh'
 
-<item name="Worldcam-4.8" icon="extensions.png" info="(كاميرات من حول العالم)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh -O - | /bin/sh</item>
-<item name="Xcplugin-forever-4.2" icon="extensions.png" info="(مشغل اي بي تي في)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Worldcam
+Version: 4.8     كاميرات حول العالم
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Worldcam='https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh
 
-<item name="Xklass-1.36" icon="extensions.png" info="(مشغل اي بي تي في)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Xcplugin-forever
+Version: 4.2     مشغل اي بي تي في
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
-<item name="Xstreamity-4.86" icon="extensions.png" info="(مشغل اي بي تي في)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Xklass
+Version: 1.36     مشغل اي بي تي في
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Xklass='https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh'
 
-<item name="Xtraevent-4.2" icon="extensions.png" info="(تسطيب بوسترات يعمل على السكينات الخاصة فيه)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.2.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Xstreamity
+Version: 4.86     مشغل اي بي تي في
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Xstreamity='https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh'
 
-<item name="Xtraevent-4.5" icon="extensions.png" info="(تسطيب بوسترات يعمل على السكينات الخاصة فيه)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.5.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Xtraevent-1
+Version: 4.2     تسطيب بوسترات
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Xtraevent-1='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.2.sh'
 
-<item name="Xtraevent-6.806" icon="extensions.png" info="(تسطيب بوسترات يعمل على السكينات الخاصة فيه mod kite888)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/new/xtraevent.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Xtraevent-2
+Version: 4.5     تسطيب بوسترات
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Xtraevent-2='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.5.sh'
 
-<item name="Youtube-2025.02.24" icon="extensions.png" info="(مشاهدة فيديوهات اليوتيوب)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/youtube/youtube.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Xtraevent-3
+Version: 6.806     تسطيب بوسترات
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Xtraevent-3='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/new/xtraevent.sh'
 
-<item name="Zaptimer-1.0" icon="extensions.png" info="(وضع توقيت للرجوع للقناة)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/extensions/-/raw/main/zaptimer/zaptimer.sh -O - | /bin/sh</item>
-Package: XXX
-Version: 1.7     XXXX
+Package: Youtube
+Version: 2025.02.24     مشاهدة فيديوهات اليوتيوب
 Status: Plg
-XXXXXX='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
+Youtube='https://gitlab.com/eliesat/extensions/-/raw/main/youtube/youtube.sh'
 
-</submenu>
-#########################################
+Package: Zaptimer
+Version: 1.0     توقيت للرجوع للقناة
+Status: Plg
+Zaptimer='https://gitlab.com/eliesat/extensions/-/raw/main/zaptimer/zaptimer.sh'
