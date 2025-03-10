@@ -146,8 +146,8 @@ class extensionsmain(Screen):
 				self.session.open(panels)
 			elif item is 5:
 				self.session.open(systemplugins)
-			elif item is 5:
-				self.session.open(freee)
+			elif item is 6:
+				self.session.open(free)
 			else:
 				self.close(None)
 
@@ -1349,7 +1349,7 @@ class systemplugins(Screen):
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 #############################################################################
-class freee(Screen):
+class free(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -1395,7 +1395,7 @@ class freee(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Freee" in line:
+			elif "Status:" in line and "Free" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
