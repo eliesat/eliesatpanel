@@ -1636,3 +1636,38 @@ Package: xmlupdate
 Version: 3.12     تحديث ملف الترددات
 Status: Sys
 xmlupdate='https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/xmlupdate.sh'
+
+Package: Cccam-scripts
+Version: 1.0     اسطر سسكام مجانية
+Status: Sys
+Cccam-scripts='https://gitlab.com/eliesat/free/-/raw/main/cccam-scripts/free-cccam.sh'
+
+Package: Emil-scripts
+Version: 08.01.2025     حزمة سكريبتات مجانية
+Status: Sys
+Emil-scripts='https://gitlab.com/eliesat/free/-/raw/main/emil/emil-scripts.sh'
+
+Package: Fonts
+Version: 1.0r0      
+Status: Sys
+Fonts='https://gitlab.com/eliesat/free/-/raw/main/fonts/fonts.sh'
+
+Package: Font-saber
+Version: 1.2     ملف خطوط صابر ارنان
+Status: Sys
+Font-saber='https://gitlab.com/eliesat/free/-/raw/main/fonts/font-saber.sh'
+
+Package: Ipaudiopro
+Version: 14.07.2024     صوتيات م. الصفطي
+Status: Sys
+Ipaudiopro='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'
+
+Package: Subtitles-mora
+Version: 1.0     ملفات ترجمة
+Status: Sys
+Subtitles-mora='https://gitlab.com/eliesat/free/-/raw/main/subtites-mora/subtitles-mora.sh'
+
+Package: Vavoo
+Version: 1.0     مفضلات اي بي تي في مجاني
+Status: Sys
+Vavoo='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'
