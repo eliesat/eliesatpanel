@@ -1575,3 +1575,64 @@ Package: zoom-final-fix
 Version: 1.0     py2 بانل تسطيب اضافات سكريبتات و خدمات
 Status: Pan
 zoom-final-fix='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
+
+Package: 3gmodemmanager
+Version: 3.12     3g 4g تعريف مودم يو اس بي
+Status: Sys
+3gmodemmanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/3gmodemmanager/3gmodemmanager.sh'
+
+Package: Ciplushelper
+Version: 5.8-r2     تعريف الكامة الخارجية
+Status: Sys
+Ciplushelper='https://gitlab.com/eliesat/systemplugins/-/raw/main/ciplushelper/ciplushelper.sh'
+
+Package: Devicemanager
+Version: 3.12     فرمطة الفلاشة الخارجية
+Status: Sys
+Devicemanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/devicemanager/devicemanager.sh'
+
+Package: Mountmanager
+Version: 3.12     ماونت للفلاشة الخارجية
+Status: Sys
+Mountmanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/mountmanager/mountmanager.sh'
+
+Package: Networkbrowser
+Version: 3.12     البحث و تصفح الشبكة الداخليه
+Status: Sys
+Networkbrowser='https://gitlab.com/eliesat/systemplugins/-/raw/main/networkbrowser/networkbrowser.sh'
+
+Package: Newvirtualkeyboard
+Version: 13.1     لوحة مفاتيح اضافية
+Status: Sys
+Newvirtualkeyboard='https://gitlab.com/eliesat/extensions/-/raw/main/newvirtualkeyboard/newvirtualkeyboard.sh'
+
+Package: Servicescanupdates
+Version: 1.0     انشاء مفضلة لقنوات
+Status: Sys
+Servicescanupdates='https://gitlab.com/eliesat/extensions/-/raw/main/servicescanupdates/servicescanupdates.sh'
+
+Package: Setpasswd
+Version: 3.12     تغيير كلمة مرور الصورة
+Status: Sys
+Setpasswd='https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/setpasswd.sh'
+
+Package: Softwaremanager
+Version: 3.12     openpli ادارة الصورة و الدخول على الفيدات
+Status: Sys
+Softwaremanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/softwaremanager/softwaremanager.sh'
+
+Package: Ts-sateditor
+Version: 4.0     اضافة حذف تعديل بالاقمار و الترددات
+Status: Sys
+Ts-sateditor='https://gitlab.com/eliesat/extensions/-/raw/main/ts-sateditor/ts-sateditor.sh'
+
+Package: Weathercomponenthandler
+Version: 1.0     اداة خاصة بالطقس
+Status: Sys
+Weathercomponenthandler='https://gitlab.com/eliesat/extensions/-/raw/main/weathercomponenthandler/weathercomponenthandler.sh'
+
+
+Package: xmlupdate
+Version: 3.12     تحديث ملف الترددات
+Status: Sys
+xmlupdate='https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/xmlupdate.sh'
