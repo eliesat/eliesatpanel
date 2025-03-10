@@ -21,7 +21,6 @@ from Plugins.Extensions.ElieSatPanel.menus.feeds import feeds
 from Plugins.Extensions.ElieSatPanel.menus.free import free
 from Plugins.Extensions.ElieSatPanel.menus.imagesd import imagesd
 from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
-from Plugins.Extensions.ElieSatPanel.menus.novaler import novaler
 from Plugins.Extensions.ElieSatPanel.menus.picons import picons
 from Plugins.Extensions.ElieSatPanel.menus.settings import settings
 from Plugins.Extensions.ElieSatPanel.menus.skins import skins

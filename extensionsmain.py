@@ -144,7 +144,7 @@ class extensionsmain(Screen):
 			elif item is 4:
 				self.session.open(panels)
 			elif item is 5:
-				self.session.open(systemsettings)
+				self.session.open(systemplugins)
 
 			else:
 				self.close(None)
@@ -1157,7 +1157,7 @@ class panels(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Lcd" in line:
+			elif "Status:" in line and "Pan" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -1275,7 +1275,7 @@ class systemplugins(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Rdl" in line:
+			elif "Status:" in line and "Sys" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
