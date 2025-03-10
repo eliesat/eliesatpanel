@@ -18,7 +18,6 @@ from Plugins.Extensions.ElieSatPanel.allinonemain import allinonemain
 from Plugins.Extensions.ElieSatPanel.extensionsmain import extensionsmain
 from Plugins.Extensions.ElieSatPanel.displaymain import displaymain
 from Plugins.Extensions.ElieSatPanel.menus.feeds import feeds
-from Plugins.Extensions.ElieSatPanel.menus.free import free
 from Plugins.Extensions.ElieSatPanel.menus.imagesd import imagesd
 from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
 from Plugins.Extensions.ElieSatPanel.menus.picons import picons
@@ -136,13 +135,12 @@ class eliesatpanel(Screen):
 		self.list.append((_("Display"), 2, _("صور و فيديوهات اقلاع"), a))
 		self.list.append((_("Extensions"), 3, _("بلاجينات و اضافات الانيجما٢"), a))
 		self.list.append((_("Feeds"), 4, _("فيدات منوعة"), a))
-		self.list.append((_("Free"), 5, _("اضافات مجانية"), a))
-		self.list.append((_("Images (download)"), 6, _("تنزيل صور خام من الموقع الرسمي"), a))
-		self.list.append((_("Images (backup)"), 7, _("تثبيت باكآب على صورة خام"), a))
-		self.list.append((_("Picons"), 11, _("شعارات القنوات"), a))
-		self.list.append((_("Settings"), 12, _("ملفات قنوات ترددات و اعدادات التيونر"), a))
-		self.list.append((_("Skins"), 13, _("سكينات"), a))
-		self.list.append((_("Softcams"), 14, _("كامات و ملفات التشفير "), a))
+		self.list.append((_("Images (download)"), 5, _("تنزيل صور خام من الموقع الرسمي"), a))
+		self.list.append((_("Images (backup)"), 6, _("تثبيت باكآب على صورة خام"), a))
+		self.list.append((_("Picons"), 7, _("شعارات القنوات"), a))
+		self.list.append((_("Settings"), 8, _("ملفات قنوات ترددات و اعدادات التيونر"), a))
+		self.list.append((_("Skins"), 9, _("سكينات"), a))
+		self.list.append((_("Softcams"), 10, _("كامات و ملفات التشفير "), a))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -166,18 +164,16 @@ class eliesatpanel(Screen):
 			elif item is 4:
 				self.session.open(feeds)
 			elif item is 5:
-				self.session.open(free)
-			elif item is 6:
 				self.session.open(imagesd)
-			elif item is 7:
+			elif item is 6:
 				self.session.open(imagesb)
-			elif item is 11:
+			elif item is 7:
 				self.session.open(picons)
-			elif item is 12:
+			elif item is 8:
 				self.session.open(settings)
-			elif item is 13:
+			elif item is 9:
 				self.session.open(skins)
-			elif item is 14:
+			elif item is 10:
 				self.session.open(softcams)
 
 			else:

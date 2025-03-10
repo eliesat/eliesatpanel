@@ -121,7 +121,8 @@ class extensionsmain(Screen):
 		self.list.append((_("Multiboot"), 2, _("اضافات خاصة بالاقلاع المتعدد و بالصور"), a))
 		self.list.append((_("Novaler"), 3, _("اضافات خاصة باجهزة نولالر"), a))
 		self.list.append((_("Panels"), 4, _("بانلات مختلفة"), a))
-		self.list.append((_("Systemsettings"), 5, _("اضافات خاصة بالسيستام"), a))
+		self.list.append((_("Systemplugins"), 5, _("اضافات خاصة بالسيستام"), a))
+		self.list.append((_("Free"), 6, _("اضافات مجانية"), a))
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
 		self["menu"].setList(self.list)
@@ -145,7 +146,8 @@ class extensionsmain(Screen):
 				self.session.open(panels)
 			elif item is 5:
 				self.session.open(systemplugins)
-
+			elif item is 5:
+				self.session.open(freee)
 			else:
 				self.close(None)
 
@@ -1347,7 +1349,7 @@ class systemplugins(Screen):
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 #############################################################################
-class spn(Screen):
+class freee(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -1393,7 +1395,7 @@ class spn(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Spn" in line:
+			elif "Status:" in line and "Freee" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
