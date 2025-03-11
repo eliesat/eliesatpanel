@@ -915,7 +915,7 @@ Emil-scripts='https://gitlab.com/eliesat/free/-/raw/main/emil/emil-scripts.sh'
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
-Ipaudiopro='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'
+Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'
 
 Package: Vavoo
 Version: 1.0     مفضلات اي بي تي في مجاني
