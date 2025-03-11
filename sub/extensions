@@ -1,5 +1,4 @@
 ##############extensions###############
-
 Package: Acherone
 Version: 1.2     تصفح لايحة السكريبتات و تنفيذهم
 Status: Plg
@@ -444,6 +443,11 @@ Package: Scriptexecuter
 Version: 1.0     تصفح لايحة السكريبتات و تنفيذهم
 Status: Plg
 Scriptexecuter='https://gitlab.com/eliesat/extensions/-/raw/main/scriptexecuter/scriptexecuter.sh'
+
+Package: Setpicon
+Version: 2.0     تمرير بيكون للقزاة
+Status: Plg
+Setpicon='https://gitlab.com/eliesat/extensions/-/raw/main/setpicon/setpicon.sh'
 
 Package: Sherlockmod
 Version: 1.4.2     اينفوبار اضافي
