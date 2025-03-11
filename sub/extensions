@@ -260,9 +260,9 @@ Package: Ipaudio-2
 Version: 7.4-ffmpeg     اضافة الصوتيات على قنوات السات
 Status: Plg
 Ipaudio='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio-7.4-ffmpeg.sh'
-
+  
 Package: Ipaudiopro-1
-Version: 1.3     py2 py3.9 اضافة الصوتيات على قنوات السات 
+Version: 1.3     py2 py3.9 اضافة الصوتيات على قنوات السات
 Status: Plg
 Ipaudiopro='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.3/ipaudiopro.sh'
 
@@ -277,7 +277,7 @@ Status: Plg
 Ipchecker-004='https://gitlab.com/eliesat/extensions/-/raw/main/ipchecker/ipchecker.sh'
 
 Package: Iptosat
-Version: 1.8     مشاهدة قنوات الip على قنوات السات
+Version: 1.8     مشاهدة الاي ابي تي على قنوات السات
 Status: Plg
 Iptosat='https://gitlab.com/eliesat/extensions/-/raw/main/iptosat/iptosat.sh'
 
@@ -287,7 +287,7 @@ Status: Plg
 Iptvarchive='https://gitlab.com/eliesat/extensions/-/raw/main/iptvarchive/iptvarchive.sh'
 
 Package: Iptvdream
-Version: 4.123     قارئ و مشغل ملفات m3u
+Version: 4.123     m3u قارئ و مشغل ملفات 
 Status: Plg
 Iptvdream='https://gitlab.com/eliesat/extensions/-/raw/main/iptvdream-all/iptvdream-all.sh'
 
@@ -347,7 +347,7 @@ Status: Plg
 Multistalkerpro='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multistalkerpro.sh'
 
 Package: Multistalkerpro-2
-Version: 1.2     مشغل بورتلات اي بي تي في •py3.12.x
+Version: 1.2     py3.12.x مشغل بورتلات اي بي تي في 
 Status: Plg
 Multistalkerpro='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multi-stalkerpro.sh'
 
