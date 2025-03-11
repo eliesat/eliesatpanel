@@ -655,7 +655,7 @@ Status: Mul
 Neoboot-11='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.65.sh'
 
 Package: Neoboot-12
-Version: 9.65     تسطيب صور على الذاكرة الخارجية م الصفطي
+Version: 9.65     تسطيب صور م.الصفطي 
 Status: Mul
 Neoboot-12='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-lea.sh'
 
@@ -824,7 +824,7 @@ Status: Pan
 zoom='https://gitlab.com/eliesat/extensions/-/raw/main/zoom/zoom.sh'
 
 Package: zoom-final-fix
-Version: 1.0     py2 بانل تسطيب اضافات سكريبتات و خدمات
+Version: 1.0     py2 بانل تسطيب اضافات سكريبتات
 Status: Pan
 zoom-final-fix='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
 
@@ -896,10 +896,10 @@ Cccam-scripts='https://gitlab.com/eliesat/free/-/raw/main/cccam-scripts/free-ccc
 
 Package: Emil-scripts
 Version: 08.01.2025     حزمة سكريبتات مجانية
-Status: Sys
+Status: Free
 Emil-scripts='https://gitlab.com/eliesat/free/-/raw/main/emil/emil-scripts.sh'
 
-Package: Fonts
+Package: Fonts     ملف خطوط
 Version: 1.0r0      
 Status: Sys
 Fonts='https://gitlab.com/eliesat/free/-/raw/main/fonts/fonts.sh'
