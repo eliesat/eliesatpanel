@@ -112,7 +112,7 @@ class allinonemain(Screen):
 		self["internetLabel"] = StaticText(_("Internet:"))
 		self["internet"] = StaticText()
 		self.intInfo()
-		t = Timer(0.5, self.update_me)
+		t = Timer(0.5, self.update_allinone)
 		t.start()
 
 	def mList(self):
@@ -412,37 +412,18 @@ class allinonemain(Screen):
 	def cancel(self):
 		self.close()
 
-	def update_me(self):
-		remote_version = '0.0'
-		remote_changelog = ''
-		req = compat_Request(installer, headers={'User-Agent': 'Mozilla/5.0'})
-		page = compat_urlopen(req).read()
-		if PY3:
-			data = page.decode("utf-8")
+	def update_allinone(self):
+		import requests
+		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/allinone'
+		response = requests.get(url)
+		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/allinone'
+		if response.status_code == 200:
+			with open(file_Path, 'wb') as file:
+				file.write(response.content)
+			print('File downloaded successfully')
 		else:
-			data = page.encode("utf-8")
-		if data:
-			lines = data.split("\n")
-			for line in lines:
-				if line.startswith("version"):
-					remote_version = line.split("=")
-					remote_version = line.split("'")[1]
-				if line.startswith("changelog"):
-					remote_changelog = line.split("=")
-					remote_changelog = line.split("'")[1]
-					break
+			print('Failed to download file')
 
-		if float(Version) < float(remote_version):
-			new_version = remote_version
-			new_changelog = remote_changelog
-			self.session.openWithCallback(self.install_update, MessageBox, _("New version %s is available. \n %s \n\nDo you want to install it now?" % (new_version, new_changelog)), MessageBox.TYPE_YESNO)
-
-	def install_update(self, answer=False):
-		if answer:
-			self.session.open(Console, title='Updating please wait...', cmdlist='wget -q "--no-check-certificate" ' + installer + ' -O - | /bin/sh', finishedCallback=self.myCallback, closeOnSuccess=False)
-
-	def myCallback(self, result):
-		return
 
 	def intInfo(self):
 		try:

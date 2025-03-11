@@ -125,8 +125,6 @@ class eliesatpanel(Screen):
 		self.intInfo()
 		t = Timer(0.5, self.update_me)
 		t.start()
-		t1 = Timer(0.5, self.update_adds)
-		t1.start()
 
 	def mList(self):
 		self.list = []
@@ -426,18 +424,6 @@ class eliesatpanel(Screen):
 		
 	def cancel(self):
 		self.close()
-
-	def update_adds(self):
-		import requests
-		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/allinone'
-		response = requests.get(url)
-		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/allinone'
-		if response.status_code == 200:
-			with open(file_Path, 'wb') as file:
-				file.write(response.content)
-			print('File downloaded successfully')
-		else:
-			print('Failed to download file')
 
 	def update_me(self):
 		remote_version = '0.0'

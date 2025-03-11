@@ -112,6 +112,8 @@ class displaymain(Screen):
 		self["internetLabel"] = StaticText(_("Internet:"))
 		self["internet"] = StaticText()
 		self.intInfo()
+		t = Timer(0.5, self.update_display)
+		t.start()
 
 	def mList(self):
 		self.list = []
@@ -400,6 +402,18 @@ class displaymain(Screen):
 		avail = st.f_bsize * st.f_bavail / 1024
 		size = st.f_bsize * st.f_blocks / 1024
 		self["flashTotal"].text = _("Total: %s Kb  Free: %s Kb") % (size , avail)
+
+	def update_display(self):
+		import requests
+		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/display'
+		response = requests.get(url)
+		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/display'
+		if response.status_code == 200:
+			with open(file_Path, 'wb') as file:
+				file.write(response.content)
+			print('File downloaded successfully')
+		else:
+			print('Failed to download file')
 		
 	def cancel(self):
 		self.close()
@@ -756,8 +770,8 @@ class ui(Screen):
 		self.nList()
 
 def status_path():
-	if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/allinone"):
-		status = "/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/allinone"
+	if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/display"):
+		status = "/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/display"
 	return status
 
 class bvi(Screen):
