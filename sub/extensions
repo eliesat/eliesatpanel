@@ -445,7 +445,7 @@ Status: Plg
 Scriptexecuter='https://gitlab.com/eliesat/extensions/-/raw/main/scriptexecuter/scriptexecuter.sh'
 
 Package: Setpicon
-Version: 2.0     تمرير بيكون للقزاة
+Version: 2.0     تمرير بيكون للقناة
 Status: Plg
 Setpicon='https://gitlab.com/eliesat/extensions/-/raw/main/setpicon/setpicon.sh'
 
