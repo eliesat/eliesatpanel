@@ -567,10 +567,10 @@ Zaptimer='https://gitlab.com/eliesat/extensions/-/raw/main/zaptimer/zaptimer.sh'
 
 ##############multiboot###############
 
-Package: barryallen
+Package: Barryallen
 Version: 12.91-r1     تسطيب صور على الذاكرة الخارجية
 Status: Mul
-barryallen='https://gitlab.com/eliesat/extensions/-/raw/main/barryallen/barryallen.sh'
+Barryallen='https://gitlab.com/eliesat/extensions/-/raw/main/barryallen/barryallen.sh'
 
 Package: Egamiboot
 Version: 10.6     تسطيب صور على الذاكرة الخارجية
@@ -643,20 +643,20 @@ Version: 9.60     تسطيب صور على الذاكرة الخارجية
 Status: Mul
 Neoboot-9='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.60.sh'
 
-Package: Neoboot-10
+Package: Neoboot10
 Version: 9.62     تسطيب صور على الذاكرة الخارجية
 Status: Mul
-Neoboot-10='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.62.sh'
+Neoboot10='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.62.sh'
 
-Package: Neoboot-11
+Package: Neoboot11
 Version: 9.65     تسطيب صور على الذاكرة الخارجية
 Status: Mul
-Neoboot-11='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.65.sh'
+Neoboot11='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-9.65.sh'
 
-Package: Neoboot-12
+Package: Neoboot12
 Version: 9.65     تسطيب صور م.الصفطي 
 Status: Mul
-Neoboot-12='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-lea.sh'
+Neoboot12='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-lea.sh'
 
 Package: Neoboot-duo4k
 Version: 5.3     تسطيب صور على الذاكرة الخارجية
