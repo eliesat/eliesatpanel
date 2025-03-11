@@ -253,22 +253,22 @@ Internetspeedtest='https://gitlab.com/eliesat/extensions/-/raw/main/internetspee
 Package: Ipaudio-1
 Version: 6.8     اضافة الصوتيات على قنوات السات
 Status: Plg
-Ipaudio='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio.sh'
+Ipaudio-1='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio.sh'
 
 Package: Ipaudio-2
 Version: 7.4-ffmpeg     اضافة الصوتيات على قنوات السات
 Status: Plg
-Ipaudio='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio-7.4-ffmpeg.sh'
+Ipaudio-2='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio-7.4-ffmpeg.sh'
   
 Package: Ipaudiopro-1
 Version: 1.3     py2 py3.9 اضافة الصوتيات على قنوات السات
 Status: Plg
-Ipaudiopro='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.3/ipaudiopro.sh'
+Ipaudiopro-1='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.3/ipaudiopro.sh'
 
 Package: Ipaudiopro-2
 Version: 1.5     اضافة الصوتيات على قنوات السات
 Status: Plg
-Ipaudiopro='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.5/ipaudiopro.sh'
+Ipaudiopro-2='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.5/ipaudiopro.sh'
 
 Package: Ipchecker-004
 Version: 1.0     عرض اي يي الرسيفر
@@ -343,12 +343,12 @@ Multistalker='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker/mult
 Package: Multistalkerpro-1
 Version: 1.0     مشغل بورتلات اي بي تي في
 Status: Plg
-Multistalkerpro='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multistalkerpro.sh'
+Multistalkerpro-1='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multistalkerpro.sh'
 
 Package: Multistalkerpro-2
 Version: 1.2     py3.12.x مشغل بورتلات اي بي تي في 
 Status: Plg
-Multistalkerpro='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multi-stalkerpro.sh'
+Multistalkerpro-2='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multi-stalkerpro.sh'
 
 Package: Mycam
 Version: 7.0     اشتراك شيرينج مدفوع
@@ -679,7 +679,6 @@ Status: Mul
 Openmultiboot='https://gitlab.com/eliesat/extensions/-/raw/main/openmultiboot/openmultiboot.sh'
 
 ##############Novaler###############
-💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢
 Package: Beengo
 Version: 11.0r0     خاص باجهزة نوفالر
 Status: Nov
@@ -736,7 +735,6 @@ Status: Nov
 Ultracam='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ultracam/ultracam.sh'
 
 ##############panels###############
-💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢
 Package: Ajpanel
 Version: 10.7.1     ادارة الملفات و مجموعة الخدمات
 Status: Pan
@@ -917,7 +915,7 @@ Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
 Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'
 
-Package: Vavoo
+Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'
