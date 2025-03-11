@@ -262,7 +262,7 @@ Status: Plg
 Ipaudio='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio-7.4-ffmpeg.sh'
 
 Package: Ipaudiopro-1
-Version: 1.3     اضافة الصوتيات على قنوات السات py2 py3.9
+Version: 1.3     py2 py3.9 اضافة الصوتيات على قنوات السات 
 Status: Plg
 Ipaudiopro='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.3/ipaudiopro.sh'
 
