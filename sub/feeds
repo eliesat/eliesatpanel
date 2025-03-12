@@ -30,15 +30,15 @@ Version: 1.0     Openatv-devel
 Status: Feeds
 Openatv-devel='https://gitlab.com/eliesat/scripts/-/raw/main/feed/openatv-devel.sh'
 
-Package: Libraries
+Package: Libraries-1
 Version: 3.12.4       openatv فيد مكتبات صورة 
 Status: Feeds
-Libraries='https://gitlab.com/eliesat/scripts/-/raw/main/feed/libraries-3.12.4-feed.sh'
+Libraries-1='https://gitlab.com/eliesat/scripts/-/raw/main/feed/libraries-3.12.4-feed.sh'
 
-Package: Libraries
+Package: Libraries-2
 Version: 3.12.6       openatv فيد مكتبات صورة 
 Status: Feeds
-Libraries='https://gitlab.com/eliesat/scripts/-/raw/main/feed/libraries-3.12.x-feed.sh'
+Libraries-2='https://gitlab.com/eliesat/scripts/-/raw/main/feed/libraries-3.12.x-feed.sh'
 
 Package: Openpicons
 Version: 1.0     فيد تسطيب بيكونات
