@@ -119,30 +119,55 @@ Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Hdf
 Openhdf-7.3='https://gitlab.com/eliesat/scripts/-/raw/main/images/openhdf-7.3.sh'
 
-Package: Openpli-7.3
+Package: Openpli-7.3-multiboot
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
-Openpli-7.3='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-7.3.sh'
+Openpli-7.3-multiboot='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-7.3.sh'
 
-Package: Openpli-8.3
+Package: Openpli-8.3-multiboot
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
-Openpli-8.3='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-8.3.sh'
+Openpli-8.3-multiboot='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-8.3.sh'
 
-Package: Openpli-9.0
+Package: Openpli-9.0-multiboot
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
-Openpli-9.0='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-9.0.sh'
+Openpli-9.0-multiboot='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-9.0.sh'
 
-Package: Openpli-9.1
+Package: Openpli-9.1-multiboot
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
-Openpli-9.1='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-9.1.sh'
+Openpli-9.1-multiboot='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-9.1.sh'
 
-Package: Openpli-develop
+Package: Openpli-develop-multiboot
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
-Openpli-develop='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-develop.sh'
+Openpli-develop-multiboot='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-develop.sh'
+
+Package: Openpli-7.3-usb
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Pli
+Openpli-7.3-usb='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-7.3-usb.sh'
+
+Package: Openpli-8.3-usb
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Pli
+Openpli-8.3-usb='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-8.3-usb.sh'
+
+Package: Openpli-9.0-usb
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Pli
+Openpli-9.0-usb='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-9.0-usb.sh'
+
+Package: Openpli-9.1-usb
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Pli
+Openpli-9.1-usb='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-9.1-usb.sh'
+
+Package: Openpli-develop-usb
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Pli
+Openpli-usb-develop='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-develop-usb.sh'
 
 Package: Openspa-7.5
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
