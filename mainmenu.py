@@ -18,6 +18,7 @@ from Plugins.Extensions.ElieSatPanel.allinonemain import allinonemain
 from Plugins.Extensions.ElieSatPanel.extensionsmain import extensionsmain
 from Plugins.Extensions.ElieSatPanel.displaymain import displaymain
 from Plugins.Extensions.ElieSatPanel.feedsmain import feedsmain
+from Plugins.Extensions.ElieSatPanel.imagesmain import imagesmain
 from Plugins.Extensions.ElieSatPanel.menus.imagesd import imagesd
 from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
 from Plugins.Extensions.ElieSatPanel.menus.picons import picons
@@ -162,7 +163,7 @@ class eliesatpanel(Screen):
 			elif item is 4:
 				self.session.open(feedsmain)
 			elif item is 5:
-				self.session.open(imagesd)
+				self.session.open(imagesmain)
 			elif item is 6:
 				self.session.open(imagesb)
 			elif item is 7:
