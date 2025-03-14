@@ -19,7 +19,6 @@ from Plugins.Extensions.ElieSatPanel.extensionsmain import extensionsmain
 from Plugins.Extensions.ElieSatPanel.displaymain import displaymain
 from Plugins.Extensions.ElieSatPanel.feedsmain import feedsmain
 from Plugins.Extensions.ElieSatPanel.imagesmain import imagesmain
-from Plugins.Extensions.ElieSatPanel.menus.imagesd import imagesd
 from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
 from Plugins.Extensions.ElieSatPanel.menus.picons import picons
 from Plugins.Extensions.ElieSatPanel.menus.settings import settings
