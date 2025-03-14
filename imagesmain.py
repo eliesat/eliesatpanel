@@ -112,7 +112,7 @@ class imagesmain(Screen):
 		self["internetLabel"] = StaticText(_("Internet:"))
 		self["internet"] = StaticText()
 		self.intInfo()
-		t = Timer(0.5, self.update_allinone)
+		t = Timer(0.5, self.update_images)
 		t.start()
 
 	def mList(self):
@@ -120,15 +120,15 @@ class imagesmain(Screen):
 		a = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
 		self.list.append((_("Egami"), 1, _("path: /media/hdd or usb or mmc ايجامي"), a))
-		self.list.append((_("Openatv"), 2, _("اوبن اي تي في"), a))
-		self.list.append((_("Openblackhole"), 3, _("اوبن بلاك هول"), a))
-		self.list.append((_("Opendroid"), 4, _("اوبن درويد"), a))
-		self.list.append((_("Openhdf"), 5, _("اوبن اش دي اف"), a))
-		self.list.append((_("Openpli"), 6, _("اوبن بلي"), a))
-		self.list.append((_("Openspa"), 7, _("اوبن سبا"), a))
-		self.list.append((_("Openvix"), 8, _("اوبن فيكس"), a))
-		self.list.append((_("pure2"), 9, _("بيور٢"), a))
-		self.list.append((_("Teamblue"), 10, _("تيم بلو"), a))
+		self.list.append((_("Openatv"), 2, _("اوبن اي تي في path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("Openblackhole"), 3, _("اوبن بلاك هول path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("Opendroid"), 4, _("اوبن درويد path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("Openhdf"), 5, _("اوبن اش دي اف path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("Openpli"), 6, _("اوبن بلي path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("Openspa"), 7, _("اوبن سبا path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("Openvix"), 8, _("اوبن فيكس path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("pure2"), 9, _("بيور٢ path: /media/hdd or usb or mmc"), a))
+		self.list.append((_("Teamblue"), 10, _("تيم بلو path: /media/hdd or usb or mmc"), a))
 
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
@@ -414,11 +414,11 @@ class imagesmain(Screen):
 	def cancel(self):
 		self.close()
 
-	def update_allinone(self):
+	def update_images(self):
 		import requests
-		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/allinone'
+		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/imagesd'
 		response = requests.get(url)
-		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/allinone'
+		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/imagesd'
 		if response.status_code == 200:
 			with open(file_Path, 'wb') as file:
 				file.write(response.content)
