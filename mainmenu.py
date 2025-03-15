@@ -21,7 +21,7 @@ from Plugins.Extensions.ElieSatPanel.feedsmain import feedsmain
 from Plugins.Extensions.ElieSatPanel.imagesmain import imagesmain
 from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
 from Plugins.Extensions.ElieSatPanel.menus.picons import picons
-from Plugins.Extensions.ElieSatPanel.menus.settings import settings
+from Plugins.Extensions.ElieSatPanel.settingsmain import settingsmain
 from Plugins.Extensions.ElieSatPanel.menus.skins import skins
 from Plugins.Extensions.ElieSatPanel.menus.softcams import softcams
 from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
@@ -168,7 +168,7 @@ class eliesatpanel(Screen):
 			elif item is 7:
 				self.session.open(picons)
 			elif item is 8:
-				self.session.open(settings)
+				self.session.open(settingsmain)
 			elif item is 9:
 				self.session.open(skins)
 			elif item is 10:
