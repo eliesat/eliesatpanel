@@ -75,10 +75,10 @@ Version: 25.01.2025     ملف قنوات
 Status: Settings
 S.refaey-motor='https://gitlab.com/eliesat/settings/-/raw/main/s.refaey/s.refaey-motor.sh'
 
-Package: t.alashry-motor
+Package: T.alashry-motor
 Version: 01.01.2025     ملف قنوات
 Status: Settings
-t.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
+T.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
 
 Package: Vhannibal-motor
 Version: 23.01.2025     ملف قنوات
@@ -90,10 +90,10 @@ Version: 24.02.2025     ملف ترددات
 Status: Freq
 Freq-Eliesat='https://gitlab.com/eliesat/settings/-/raw/main/eliesat/installer.sh'
 
-Package: Freq-flysat
+Package: Freq-Flysat
 Version: 18.12.2024     ملف ترددات
 Status: Freq
-Freq-flysat='https://gitlab.com/eliesat/settings/-/raw/main/flysat/installer.sh'
+Freq-Flysat='https://gitlab.com/eliesat/settings/-/raw/main/flysat/installer.sh'
 
 Package: Freq-Lyngsat
 Version: 26.01.2025     ملف ترددات
