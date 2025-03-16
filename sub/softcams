@@ -1,1 +1,96 @@
-##############softcams###############
+##############softcams#############
+
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+
+Package: Oscam-audi
+Version: 11871-emu-r802     .ipk .deb
+Status: Aud
+Oscam-audi='https://gitlab.com/eliesat/softcams/-/raw/main/audi06_19/oscam.sh'
+
+<item name="Ncam-15.2" icon="ncam.png" info="(mohamed-os •ipk•deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ncam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Gosatplus-ncam-15.2" icon="ncam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus-ncam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Powercam-ncam-15.2" icon="ncam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam-ncam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Supcam-ncam-15.2" icon="ncam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/supcam-ncam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="ultracam-ncam-15.2" icon="ncam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam-ncam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Oscam-11868-r802" icon="oscam.png" info="(mohamed-os •ipk•deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/oscam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Gosatplus-oscam-11868-r802" icon="oscam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus-oscam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Powercam-oscam-11868-r802" icon="oscam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam-oscam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Supcam-oscam-11868-r802" icon="oscam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/supcam-oscam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Ultracam-oscam-11868-r802" icon="oscam.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam-oscam.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: 26.10.2024     XXXX
+Status: Emu
+XXXXXX='XXXXXXXXXX'
+
+<item name="Ncam-15.2" icon="ncam.png" info="(fairbird •ipk•deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/raed/ncam.sh -O - | /bin/sh</item>
+<item name="Oscamicamnew-11868-r802" icon="oscam.png" info="(kite888 •ipk•deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamnew-kite888.sh -O - | /bin/sh</item>
+
+<item name="Oscam-11870-emu-r802" icon="oscam.png" info="(levi45 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam.sh -O - | /bin/sh</item>
+<item name="Oscam-11838-emu-r802" icon="oscam.png" info="(samur •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/samur/oscam.sh -O - | /bin/sh</item>
+
+<item name="Deneme6" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-deneme6.sh -O - | /bin/sh</item>
+<item name="Dvbsat.org-team" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-dvbsat.org-team.sh -O - | /bin/sh</item>
+<item name="Mnasr" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-mnasr.sh -O - | /bin/sh</item>
+<item name="Mohamed_os" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-mohamed_os.sh -O - | /bin/sh</item>
+<item name="Smartcam-team" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-smartcam-team.sh -O - | /bin/sh</item>
+
+<item name="Oscamicamnew-11777-emu-r801" icon="oscam.png" info="(kite888)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicam.sh -O - | /bin/sh</item>
+<item name="Oscam-11833-emu-r802" icon="oscam.png" info="(audi06 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/audi06_19/oscam-11833.sh -O - | /bin/sh</item>
+<item name="Oscam-11827-emu-r802" icon="oscam.png" info="(levi45 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam-11827.sh -O - | /bin/sh</item>
+<item name="Oscam-11815-emu-r802" icon="oscam.png" info="(levi45 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam-11815.sh -O - | /bin/sh</item>
+<item name="Cccam-239-r6" icon="cccam.png" info="(raed)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/cccam/cccam.sh -O - | /bin/sh </item>
+<item name="Mgcamd-1.46-r3" icon="mgcamd.png" info="(mgcamd)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh -O - | /bin/sh </item>
+<item name="Gosatplus-2.0" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus.sh -O - | /bin/sh</item>
+<item name="Powercam-3.0" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam.sh -O - | /bin/sh</item>
+<item name="Revcam-spider-x" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/revcam-spider-x/revcam.sh -O - | /bin/sh</item>
+<item name="Ultracam-1.0" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam.sh -O - | /bin/sh</item>
+
