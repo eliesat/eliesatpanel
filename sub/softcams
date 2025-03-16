@@ -21,6 +21,11 @@ Version: 11868-emu-r802     .ipk .deb
 Status: Kit
 Oscamicamnew-Kite888='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamnew-kite888.sh'
 
+Package: Oscamicamnew-Kite888-1
+Version: 11777-emu-r802     .ipk .deb
+Status: Kit
+Oscamicamnew-Kite888-1='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicam.sh'
+
 Package: Oscam-Levi45
 Version: 11871-emu-r802     .ipk .deb
 Status: Lev
@@ -92,7 +97,7 @@ Oscam-Samur='https://gitlab.com/eliesat/softcams/-/raw/main/samur/oscam.sh'
 <item name="Mohamed_os" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-mohamed_os.sh -O - | /bin/sh</item>
 <item name="Smartcam-team" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-smartcam-team.sh -O - | /bin/sh</item>
 
-<item name="Oscamicamnew-11777-emu-r801" icon="oscam.png" info="(kite888)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicam.sh -O - | /bin/sh</item>
+
 <item name="Oscam-11833-emu-r802" icon="oscam.png" info="(audi06 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/audi06_19/oscam-11833.sh -O - | /bin/sh</item>
 <item name="Oscam-11827-emu-r802" icon="oscam.png" info="(levi45 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam-11827.sh -O - | /bin/sh</item>
 <item name="Oscam-11815-emu-r802" icon="oscam.png" info="(levi45 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam-11815.sh -O - | /bin/sh</item>
