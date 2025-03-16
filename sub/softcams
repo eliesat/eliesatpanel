@@ -106,6 +106,21 @@ Version: 11868-emu-r802     .ipk
 Status: Moh
 Ultracam-Oscam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam-oscam.sh'
 
+Package: Gosatplus
+Version: 2.0     .ipk
+Status: Moh
+Gosatplus='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus.sh'
+
+Package: Powercam
+Version: 3.0     .ipk
+Status: Moh
+Powercam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam.sh'
+
+Package: Ultracam
+Version: 1.0     .ipk
+Status: Moh
+Ultracam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam.sh'
+
 Package: Oscam-Samur
 Version: 11838-emu-r802     .ipk
 Status: Sam
@@ -122,8 +137,8 @@ Oscam-Samur='https://gitlab.com/eliesat/softcams/-/raw/main/samur/oscam.sh'
 
 
 <item name="Mgcamd-1.46-r3" icon="mgcamd.png" info="(mgcamd)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh -O - | /bin/sh </item>
-<item name="Gosatplus-2.0" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus.sh -O - | /bin/sh</item>
-<item name="Powercam-3.0" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam.sh -O - | /bin/sh</item>
+
 <item name="Revcam-spider-x" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/revcam-spider-x/revcam.sh -O - | /bin/sh</item>
-<item name="Ultracam-1.0" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam.sh -O - | /bin/sh</item>
+
+
 
