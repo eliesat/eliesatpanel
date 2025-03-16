@@ -21,6 +21,16 @@ Version: 11868-emu-r802     .ipk .deb
 Status: Kit
 Oscamicamnew-Kite888='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamnew-kite888.sh'
 
+Package: Oscam-Levi45
+Version: 11871-emu-r802     .ipk .deb
+Status: Lev
+Oscam-Levi45='https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam.sh'
+
+Package: Oscam-Linuxsat25
+Version: 11726-emu-r798     .ipk
+Status: Lin
+Oscam-Linuxsat25='https://gitlab.com/eliesat/softcams/-/raw/main/linuxsat25/oscam.sh'
+
 <item name="Ncam-15.2" icon="ncam.png" info="(mohamed-os •ipk•deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ncam.sh -O - | /bin/sh</item>
 Package: XXXX
 Version: 26.10.2024     XXXX
@@ -83,7 +93,7 @@ XXXXXX='XXXXXXXXXX'
 
  
 
-<item name="Oscam-11870-emu-r802" icon="oscam.png" info="(levi45 •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam.sh -O - | /bin/sh</item>
+
 <item name="Oscam-11838-emu-r802" icon="oscam.png" info="(samur •ipk •deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/samur/oscam.sh -O - | /bin/sh</item>
 
 <item name="Deneme6" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-deneme6.sh -O - | /bin/sh</item>
