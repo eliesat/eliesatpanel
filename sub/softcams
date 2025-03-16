@@ -131,10 +131,20 @@ Version: 11838-emu-r802     .ipk
 Status: Sam
 Oscam-Samur='https://gitlab.com/eliesat/softcams/-/raw/main/samur/oscam.sh'
 
+Package: Astra-Sm
+Version: 1.0       اداة لتشغيل باقة ابيرتيس قمر هيسباسات
+Status: Oth
+Astra-Sm='https://gitlab.com/eliesat/softcams/-/raw/main/astra-sm/astra-sm-arm-0.2-r0.sh'
+
 Package: Mgcamd
 Version: 1.46-r3     .ipk
 Status: Oth
 Mgcamd='https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh'
+
+Package: Support
+Version: 2-r0.2      openpli حل مشكلة اقلاع الايميو  صورة
+Status: Oth
+Support='https://gitlab.com/eliesat/softcams/-/raw/main/support/support-2-r0.2.sh'
 
 Package: Deneme6
 Version: 1.0     ملف الخاص بالتشفير و مفاتيح البيس
