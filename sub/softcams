@@ -121,24 +121,50 @@ Version: 1.0     .ipk
 Status: Moh
 Ultracam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam.sh'
 
+Package: Revcam-Spider-X
+Version: 1.0     .ipk
+Status: Moh
+Revcam-Spider-X='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/revcam-spider-x/revcam.sh'
+
 Package: Oscam-Samur
 Version: 11838-emu-r802     .ipk
 Status: Sam
 Oscam-Samur='https://gitlab.com/eliesat/softcams/-/raw/main/samur/oscam.sh'
 
-<item name="Deneme6" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-deneme6.sh -O - | /bin/sh</item>
-<item name="Dvbsat.org-team" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-dvbsat.org-team.sh -O - | /bin/sh</item>
-<item name="Mnasr" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-mnasr.sh -O - | /bin/sh</item>
-<item name="Mohamed_os" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-mohamed_os.sh -O - | /bin/sh</item>
-<item name="Smartcam-team" icon="softcams1.png" info="(ملف الخاص بالتشفير و مفاتيح البيس)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-smartcam-team.sh -O - | /bin/sh</item>
+Package: Mgcamd
+Version: 1.46-r3     .ipk
+Status: Oth
+Mgcamd='https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh'
+
+Package: Deneme6
+Version: 1.0     ملف الخاص بالتشفير و مفاتيح البيس
+Status: Soft
+Deneme6='https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-deneme6.sh'
+
+Package: Dvbsat.org-team
+Version: 1.0     ملف الخاص بالتشفير و مفاتيح البيس
+Status: Soft
+Dvbsat.org-team='https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-dvbsat.org-team.sh'
+
+Package: Mnasr
+Version: 1.0     ملف الخاص بالتشفير و مفاتيح البيس
+Status: Soft
+Mnasr='https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-mnasr.sh'
+
+Package: Mohamed_os
+Version: 1.0     ملف الخاص بالتشفير و مفاتيح البيس
+Status: Soft
+Mohamed_os='https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-mohamed_os.sh'
+
+Package: Smartcam-team
+Version: 1.0     ملف الخاص بالتشفير و مفاتيح البيس
+Status: Soft
+Smartcam-team='https://gitlab.com/eliesat/softcams/-/raw/main/softcam-key/Cam-softcam.key-smartcam-team.sh'
 
 
 
 
 
-<item name="Mgcamd-1.46-r3" icon="mgcamd.png" info="(mgcamd)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh -O - | /bin/sh </item>
-
-<item name="Revcam-spider-x" icon="softcams.png" info="(mohamed-os)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/revcam-spider-x/revcam.sh -O - | /bin/sh</item>
 
 
 
