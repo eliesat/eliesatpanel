@@ -6,10 +6,10 @@ Status: Emu
 XXXXXX='XXXXXXXXXX'
 
 
-Package: Oscam-audi
+Package: Oscam-audi06
 Version: 11871-emu-r802     .ipk .deb
 Status: Aud
-Oscam-audi='https://gitlab.com/eliesat/softcams/-/raw/main/audi06_19/oscam.sh'
+Oscam-audi06='https://gitlab.com/eliesat/softcams/-/raw/main/audi06_19/oscam.sh'
 
 <item name="Ncam-15.2" icon="ncam.png" info="(mohamed-os •ipk•deb)" ask="run script file ?">sh /usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ncam.sh -O - | /bin/sh</item>
 Package: XXXX
