@@ -23,7 +23,7 @@ from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
 from Plugins.Extensions.ElieSatPanel.menus.picons import picons
 from Plugins.Extensions.ElieSatPanel.settingsmain import settingsmain
 from Plugins.Extensions.ElieSatPanel.menus.skins import skins
-from Plugins.Extensions.ElieSatPanel.menus.softcams import softcams
+from Plugins.Extensions.ElieSatPanel.softcamsmain import softcamsmain
 from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
 from Components.ConfigList import ConfigListScreen
 from Components.config import ConfigText, getConfigListEntry
@@ -172,7 +172,7 @@ class eliesatpanel(Screen):
 			elif item is 9:
 				self.session.open(skins)
 			elif item is 10:
-				self.session.open(softcams)
+				self.session.open(softcamsmain)
 
 			else:
 				self.close(None)
@@ -559,10 +559,12 @@ class Scripts(Screen):
 		self.network_info()
 		self["actions"] = ActionMap(["OkCancelActions","ColorActions"], {"ok": self.run, "green": self.update, "yellow": self.bgrun, "red": self.remove, "blue": self.restart, "cancel": self.close}, -1)
 	def script_menu(self):
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		list = []
 		if pathExists(scriptpath):
-			list = os.listdir("%s" % scriptpath[:-1])
-			list = [x for x in list if x.endswith('.sh') or x.endswith('.py')]
+			name1 = os.listdir("%s" % scriptpath[:-1])
+			name1 = [x for x in list if x.endswith('.sh') or x.endswith('.py')]
+			list.append((name1,  ipkminipng))
 		else:
 			list = []
 		list.sort()
