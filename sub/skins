@@ -10,7 +10,7 @@ Status: Sparts
 Beta-pro-tool='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-tool.sh'
 
 Package: Estuary
-Version: XXXX     اضافة بوسترات على سكين الافتراضي لصورة بيور٢
+Version: q.p     تعديل بوسترات سكين الافتراضي لصورة بيور٢
 Status: Sparts
 Estuary='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/estuary/estuary.sh'
 
