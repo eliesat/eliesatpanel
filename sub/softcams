@@ -141,6 +141,21 @@ Version: 1.46-r3     .ipk
 Status: Oth
 Mgcamd='https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh'
 
+Package: Remove-EmusAndConfigs
+Version: 1.0       حذف الايميوهات بالكامل
+Status: Oth
+Remove-EmusAndConfigs='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus-and-config-file.sh'
+
+Package: Remove-EmusConfigFolders
+Version: 1.0       حذف مجلدات الخاصة بالايميوهات
+Status: Oth
+Remove-EmusConfigFolders='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus-config-files.sh'
+
+Package: Remove-EmuskeepConfigs
+Version: 1.0       حذف الايميوهات و ترك مجلدات الكونفيج
+Status: Oth
+Remove-EmuskeepConfigs='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus.sh'
+
 Package: Support
 Version: 2-r0.2      openpli حل مشكلة اقلاع الايميو  صورة
 Status: Oth
