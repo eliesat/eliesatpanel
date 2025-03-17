@@ -1,11 +1,5 @@
 ##############softcams#############
 
-Package: XXXX
-Version: 26.10.2024     XXXX
-Status: Emu
-XXXXXX='XXXXXXXXXX'
-
-
 Package: Oscam-Audi06
 Version: 11871-emu-r802     .ipk .deb
 Status: Aud
@@ -160,6 +154,32 @@ Package: Support
 Version: 2-r0.2      openpli حل مشكلة اقلاع الايميو  صورة
 Status: Oth
 Support='https://gitlab.com/eliesat/softcams/-/raw/main/support/support-2-r0.2.sh'
+
+Package: Gosatplus-1
+Version: 3.0     openpli mips 
+Status: Oth
+Gosatplus-1='http://e2.gosatplus.com/Plugin/V3/mips-openpli-installer_py3_v3.sh'
+
+Package: Gosatplus-2
+Version: 3.0     openpli arm 
+Status: Oth
+Gosatplus-2='http://e2.gosatplus.com/Plugin/V3/arm-openpli-installer_py3_v3.sh'
+
+Package: Gosatplus-3
+Version: 3.0     mips 
+Status: Oth
+Gosatplus-3='http://e2.gosatplus.com/Plugin/V3/mips-dm-installer_py2_v3-installer.sh'
+
+Package: Gosatplus-4
+Version: 3.0     arm 
+Status: Oth
+Gosatplus-4='http://e2.gosatplus.com/Plugin/V3/arm-dm-installer_py2_v3-installer.sh'
+
+Package: Gosatplus-5
+Version: 3.0     oe2 2.5 2.6
+Status: Oth
+Gosatplus-5='http://e2.gosatplus.com/Plugin/V3/dmone-installer_py2_v3.sh'
+
 
 Package: Deneme6
 Version: 1.0     ملف الخاص بالتشفير و مفاتيح البيس
