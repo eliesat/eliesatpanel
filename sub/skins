@@ -1,1 +1,36 @@
 ##############skins###############
+Package: XXXX
+Version: XXXX     XXXX
+Status: Aud
+XXXXXXX='XXXXXXXX'
+
+Package: Beta-pro-tool
+Version: 1.6     بلاجين تنزيل سكين بيتا برو
+Status: Sparts
+Beta-pro-tool='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-tool.sh'
+
+Package: Estuary
+Version: XXXX     اضافة بوسترات على سكين الافتراضي لصورة بيور٢
+Status: Sparts
+Estuary='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/estuary/estuary.sh'
+
+Package: Metrix-fhd-no-posters
+Version: 1.0     تعديل على الانفوبار من دون بوسترات
+Status: Sparts
+Metrix-fhd-no-posters='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/skinparts-mnasr-7.4.0r2.sh'
+
+Package: Metrix-fhd-1-poster
+Version: 1.0     تعديل على السكين بوستر اكس
+Status: Sparts
+Metrix-fhd-1-poster='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/skinparts-mnasr-7.4.1r2.sh'
+
+
+Package: Metrix-fhd-4-posters
+Version: 1.0     تعديل على السكين بوستر اكس
+Status: Sparts
+Metrix-fhd-4-posters='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/skinparts-mnasr-7.4.4-r2.sh'
+
+Package: Mymetrixlitebackup
+Version: 1.0     باكآب اعدادات سكين ماتريكس
+Status: Sparts
+Mymetrixlitebackup='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/mymetrixlitebackup.sh'
