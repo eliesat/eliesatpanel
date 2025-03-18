@@ -559,12 +559,10 @@ class Scripts(Screen):
 		self.network_info()
 		self["actions"] = ActionMap(["OkCancelActions","ColorActions"], {"ok": self.run, "green": self.update, "yellow": self.bgrun, "red": self.remove, "blue": self.restart, "cancel": self.close}, -1)
 	def script_menu(self):
-		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 		list = []
 		if pathExists(scriptpath):
-			name1 = os.listdir("%s" % scriptpath[:-1])
-			name1 = [x for x in list if x.endswith('.sh') or x.endswith('.py')]
-			list.append((name1,  ipkminipng))
+			list = os.listdir("%s" % scriptpath[:-1])
+			list = [x for x in list if x.endswith('.sh') or x.endswith('.py')]
 		else:
 			list = []
 		list.sort()
