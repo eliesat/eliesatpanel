@@ -37,14 +37,14 @@ Mymetrixlitebackup='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/myme
 
 Package: Aglare-fhd
 Version: 5.4     
-Status: Soebased Satv Sspa Spure
+Status: Soebased Segami Satv Sspa Spure
 Aglare-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd/aglare-fhd.sh'
 
-<item name="Aglare-fhd-pli-5.2" icon="skins.png" info="(areadeltasat-openblackhole openpli-9.0-openvix-nonsolosat-satlodge)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd-pli.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
-Status: Aud
-XXXXXXX='XXXXXXXX'
+<item name="Aglare-fhd-pli-5.2" icon="skins.png" info="(areadeltasat-openblackhole openpli-9.0-openvix-nonsolosat-satlodge)" ask="run script file ?">wget -q "--no-check-certificate"  -O - | /bin/sh</item>
+Package: Aglare-fhd-pli
+Version: 5.2     
+Status: Soebased Sobh spli3 Svix
+Aglare-fhd-pli='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd-pli.sh'
 
 <item name="Alayam-fhd-1.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/alayam/alayam-fhd.sh -O - | /bin/sh</item>
 <item name="batman-vpx-fhd" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/batman/batman-vpx-fhd-1.0.sh -O - | /bin/sh</item>
