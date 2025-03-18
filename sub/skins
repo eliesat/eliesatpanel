@@ -9,8 +9,8 @@ Version: 1.6     بلاجين تنزيل سكين بيتا برو
 Status: Sparts
 Beta-pro-tool='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-tool.sh'
 
-Package: Estuary
-Version: q.p     تعديل بوسترات سكين الافتراضي لصورة بيور٢
+Package: Estuary-poster
+Version: 1.0     تعديل بوسترات سكين الافتراضي لصورة بيور٢
 Status: Sparts
 Estuary='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/estuary/estuary.sh'
 
@@ -34,3 +34,36 @@ Package: Mymetrixlitebackup
 Version: 1.0     باكآب اعدادات سكين ماتريكس
 Status: Sparts
 Mymetrixlitebackup='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/mymetrixlitebackup.sh'
+
+Package: Aglare-fhd
+Version: 5.4     
+Status: Soebased Satv Sspa Spure
+Aglare-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd/aglare-fhd.sh'
+
+<item name="Aglare-fhd-pli-5.2" icon="skins.png" info="(areadeltasat-openblackhole openpli-9.0-openvix-nonsolosat-satlodge)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd-pli.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: XXXX     XXXX
+Status: Aud
+XXXXXXX='XXXXXXXX'
+
+<item name="Alayam-fhd-1.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/alayam/alayam-fhd.sh -O - | /bin/sh</item>
+<item name="batman-vpx-fhd" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/batman/batman-vpx-fhd-1.0.sh -O - | /bin/sh</item>
+<item name="batman-vpx2-fhd" icon="skins.png" info="(all)" ask="run script file ?">(grep -qs -i "egami" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/batman/batman-vpx2-fhd-1.0.sh -O - | /bin/sh || echo "> install egami and try again ..."</item>
+<item name="beta-pro-fhd-1.5px" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-fhd-px.sh -O - | /bin/sh</item>
+<item name="beta-pro-fhd-1.5xe" icon="skins.png" info="(all)" ask="run script file ?">(grep -qs -i "egami" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-fhd-xe.sh -O - | /bin/sh</item>
+<item name="Blackneon-xp-fhd-1.0" icon="skins.png" info="(all mod mnasr)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh -O - | /bin/sh</item>
+<item name="Bohlala-2.3" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/bohlala/bohlala-fhd.sh -O - | /bin/sh</item>
+<item name="Desert-fhd-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/desert/desert-fhd-oa.sh -O - | /bin/sh</item>
+<item name="Dragon-fhd-2.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/dragon/dragon-fhd.sh -O - | /bin/sh</item>
+<item name="Fullhdglass17-9.32" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/fullhdglass17/fullhdglass17.sh -O - | /bin/sh</item>
+<item name="Nitroadvance-fhd-5.4" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/nitroadvance/nitroadvance-fhd.sh -O - | /bin/sh</item>
+<item name="Maxy-fhd-1.3" icon="skins.png" info="(egami-openatv-openspa-pure2)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/maxy-fhd/maxy-fhd.sh -O - | /bin/sh</item>
+<item name="Maxi-fhd-pli-1.0" icon="skins.png" info="(areadeltasat-openblackhole openpli-9.0-openvix-nonsolosat-satlodge)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/maxy-fhd/maxy-fhd-pli.sh -O - | /bin/sh</item>
+<item name="Nitro-fhd-1.0" icon="skins.png" info="(all))" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitro-fhd.sh -O - | /bin/sh</item>
+<item name="Nitrogreenwood-1.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitrogreenwood-fhd.sh -O - | /bin/sh</item>
+<item name="Nitrohoneycomb-4.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitrohoneycomb.sh -O - | /bin/sh</item>
+<item name="Premiumfhd-black-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-black.sh -O - | /bin/sh</item>
+<item name="Premiumfhd-blue-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh -O - | /bin/sh</item>
+<item name="Premium-fhd-magneta-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-magneta.sh -O - | /bin/sh</item>
+<item name="Xdreamy-fhd-5.8.0" icon="skins.png" info="(all mod inspiron)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/xdreamy/xdreamy.sh -O - | /bin/sh</item>
+</submenu>
