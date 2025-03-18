@@ -43,7 +43,7 @@ Aglare-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fh
 <item name="Aglare-fhd-pli-5.2" icon="skins.png" info="(areadeltasat-openblackhole openpli-9.0-openvix-nonsolosat-satlodge)" ask="run script file ?">wget -q "--no-check-certificate"  -O - | /bin/sh</item>
 Package: Aglare-fhd-pli
 Version: 5.2     
-Status: Soebased Sobh spli3 Svix
+Status: Soebased Sobh Spli3 Svix
 Aglare-fhd-pli='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd-pli.sh'
 
 <item name="Alayam-fhd-1.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/alayam/alayam-fhd.sh -O - | /bin/sh</item>
