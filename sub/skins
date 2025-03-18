@@ -97,10 +97,10 @@ Version: 9.32
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Fullhdglass17='https://gitlab.com/eliesat/skins/-/raw/main/all/fullhdglass17/fullhdglass17.sh'
 
-Package: fury-fhd
+Package: Fury-fhd
 Version: 3.0     
 Status: Soebased Segami Satv Sspa Spure
-fury-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/fury-fhd/fury-fhd.sh'
+Fury-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/fury-fhd/fury-fhd.sh'
 
 Package: Nitroadvance-fhd
 Version: 5.4     
