@@ -52,22 +52,22 @@ Version: 1.1
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Alayam-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/alayam/alayam-fhd.sh'
 
-Package: batman-fhd-1
+Package: Batman-fhd-1
 Version: vpx     
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-batman-fhd-1='https://gitlab.com/eliesat/skins/-/raw/main/all/batman/batman-vpx-fhd-1.0.sh'
+Batman-fhd-1='https://gitlab.com/eliesat/skins/-/raw/main/all/batman/batman-vpx-fhd-1.0.sh'
 
-Package: batman-fhd-2
+Package: Batman-fhd-2
 Version: vpx2     
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-batman-fhd-2='https://gitlab.com/eliesat/skins/-/raw/main/all/batman/batman-vpx2-fhd-1.0.sh'
+Batman-fhd-2='https://gitlab.com/eliesat/skins/-/raw/main/all/batman/batman-vpx2-fhd-1.0.sh'
 
-Package: beta-pro-fhd-1
+Package: Beta-pro-fhd-1
 Version: 1.5-px     
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 beta-pro-fhd-1='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-fhd-px.sh'
 
-Package: beta-pro-fhd-2
+Package: Beta-pro-fhd-2
 Version: 1.5-xe     
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 beta-pro-fhd-2='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-fhd-xe.sh'
