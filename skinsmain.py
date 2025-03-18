@@ -117,7 +117,7 @@ class skinsmain(Screen):
 		self.list.append((_("Openblackhole"), 4, _("سكينات"), a))
 		self.list.append((_("Openatv"), 5, _("سكينات"), a))
 		self.list.append((_("Openpli-8.3"), 6, _("py2 سكينات"), a))
-		self.list.append((_("Openpli"), 7, _("py3 سكينات"), a))
+		self.list.append((_("Openpli-based"), 7, _("py3 سكينات areadeltasat nonsolosat satlodge"), a))
 		self.list.append((_("Openspa"), 8, _("سكينات"), a))
 		self.list.append((_("Openvix"), 9, _("سكينات"), a))
 		self.list.append((_("Pure2"), 10, _("سكينات"), a))
