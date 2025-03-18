@@ -118,39 +118,32 @@ Version: 1.0
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Nitro-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitro-fhd.sh'
 
-<item name="Nitrogreenwood-1.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitrogreenwood-fhd.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
+Package: Nitrogreenwood
+Version: 1.0     
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-XXXXXXX='XXXXXXXX'
+Nitrogreenwood='https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitrogreenwood-fhd.sh'
 
-<item name="Nitrohoneycomb-4.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitrohoneycomb.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
+Package: Nitrohoneycomb
+Version: 4.0     
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-XXXXXXX='XXXXXXXX'
+Nitrohoneycomb='https://gitlab.com/eliesat/skins/-/raw/main/all/nitro/nitrohoneycomb.sh'
 
-<item name="Premiumfhd-black-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-black.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
+Package: Premiumfhd-black
+Version: 3.1     
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-XXXXXXX='XXXXXXXX'
+Premiumfhd-black='https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-black.sh'
 
-<item name="Premiumfhd-blue-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
+Package: Premiumfhd-blue
+Version: 3.1     
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-XXXXXXX='XXXXXXXX'
+Premiumfhd-blue='https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh'
 
-<item name="Premium-fhd-magneta-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-magneta.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
+Package: Premium-fhd-magneta
+Version: 3.1     
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-XXXXXXX='XXXXXXXX'
+Premium-fhd-magneta='https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-magneta.sh'
 
-<item name="Xdreamy-fhd-5.8.0" icon="skins.png" info="(all mod inspiron)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/xdreamy/xdreamy.sh -O - | /bin/sh</item>
-</submenu>
-Package: XXXX
-Version: XXXX     XXXX
+Package: Xdreamy-fhd
+Version: 5.8.1     
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
-XXXXXXX='XXXXXXXX'
+Xdreamy-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/xdreamy/xdreamy.sh'
