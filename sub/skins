@@ -72,36 +72,35 @@ Version: 1.5-xe
 Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 beta-pro-fhd-2='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-fhd-xe.sh'
 
-<item name="Blackneon-xp-fhd-1.0" icon="skins.png" info="(all mod mnasr)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Blackneon-xp-fhd
+Version: 1.0     
+Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Blackneon-xp-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh'
 
-<item name="Bohlala-2.3" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/bohlala/bohlala-fhd.sh -O - | /bin/sh</item>
-<item name="Desert-fhd-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/desert/desert-fhd-oa.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Bohlala-fhd
+Version: 2.3     
+Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Bohlala-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/bohlala/bohlala-fhd.sh'
 
-<item name="Dragon-fhd-2.0" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/dragon/dragon-fhd.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Desert-fhd
+Version: 3.1     
+Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Desert-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/desert/desert-fhd-oa.sh'
 
-<item name="Fullhdglass17-9.32" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/fullhdglass17/fullhdglass17.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Dragon-fhd
+Version: 2.0     
+Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Dragon-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/dragon/dragon-fhd.sh'
 
-<item name="Nitroadvance-fhd-5.4" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/nitroadvance/nitroadvance-fhd.sh -O - | /bin/sh</item>
-Package: XXXX
-Version: XXXX     XXXX
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Fullhdglass17
+Version: 9.32     
+Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Fullhdglass17='https://gitlab.com/eliesat/skins/-/raw/main/all/fullhdglass17/fullhdglass17.sh'
+
+Package: Nitroadvance-fhd
+Version: 5.4     
+Status: Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Nitroadvance-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/nitroadvance/nitroadvance-fhd.sh'
 
 <item name="Maxy-fhd-1.3" icon="skins.png" info="(egami-openatv-openspa-pure2)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/maxy-fhd/maxy-fhd.sh -O - | /bin/sh</item>
 Package: XXXX
@@ -146,5 +145,10 @@ Status: Aud
 XXXXXXX='XXXXXXXX'
 
 <item name="Premium-fhd-magneta-3.1" icon="skins.png" info="(all)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-magneta.sh -O - | /bin/sh</item>
+Package: XXXX
+Version: XXXX     XXXX
+Status: Aud
+XXXXXXX='XXXXXXXX'
+
 <item name="Xdreamy-fhd-5.8.0" icon="skins.png" info="(all mod inspiron)" ask="run script file ?">wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/xdreamy/xdreamy.sh -O - | /bin/sh</item>
 </submenu>
