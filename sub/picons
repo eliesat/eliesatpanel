@@ -1,1 +1,6 @@
-##############softcams###############
+##############picons###############
+
+Package: picons-motor
+Version: 07.12.2024     30W-80E شعارات القنوات
+Status: Snl
+picons-motor='https://gitlab.com/eliesat/picons/-/raw/main/picons-all-name.sh'
