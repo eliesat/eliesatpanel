@@ -514,10 +514,10 @@ Version: 2.2     حالة الطقس
 Status: Plg
 Weatherplugin='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin/weatherplugin.sh'
 
-Package: Weatherpluginicons
+Package: WeatherPluginIcons
 Version: 1.1     ايقونات بلاجين الطقس
 Status: Plg
-Weatherpluginicons='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh'
+WeatherPluginIcons='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh'
 
 Package: Wireguard-vpn
 Version: 15.1     اضافة اشتراك في بي ان معاينة سرعة النت
