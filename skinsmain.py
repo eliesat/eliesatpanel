@@ -138,23 +138,23 @@ class skinsmain(Screen):
 			if item is 1:
 				self.session.open(skinsparts)
 			elif item is 2:
-				self.session.open(allinonedeps)
+				self.session.open(soebased)
 			elif item is 3:
-				self.session.open(allinonefix)
+				self.session.open(segami)
 			elif item is 4:
-				self.session.open(allinonedrvs)
+				self.session.open(sobh)
 			elif item is 5:
-				self.session.open(allinonehdd)
+				self.session.open(satv)
 			elif item is 6:
-				self.session.open(allinoneins)
+				self.session.open(spli2)
 			elif item is 7:
-				self.session.open(allinonerem)
+				self.session.open(spli3)
 			elif item is 8:
-				self.session.open(allinoneother)
+				self.session.open(sspa)
 			elif item is 9:
-				self.close(None)
+				self.session.open(svix)
 			elif item is 10:
-				self.close(None)
+				self.session.open(spur)
 
 			else:
 				self.close(None)
@@ -534,7 +534,7 @@ class skinsparts(Screen):
         ])
 
 #############################################################################
-class allinonedeps(Screen):
+class soebased(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -580,7 +580,7 @@ class allinonedeps(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Deps" in line:
+			elif "Status:" in line and "Soebased" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -653,7 +653,7 @@ class allinonedeps(Screen):
         ])
 
 #############################################################################
-class allinonedrvs(Screen):
+class segami(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -699,7 +699,7 @@ class allinonedrvs(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Drvs" in line:
+			elif "Status:" in line and "Segami" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -772,7 +772,7 @@ class allinonedrvs(Screen):
         ])
 
 #############################################################################
-class allinonefix(Screen):
+class sobh(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -818,7 +818,7 @@ class allinonefix(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Fix" in line:
+			elif "Status:" in line and "Sobh" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -891,7 +891,7 @@ class allinonefix(Screen):
         ])
 
 #############################################################################
-class allinonehdd(Screen):
+class satv(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -937,7 +937,7 @@ class allinonehdd(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Hdd" in line:
+			elif "Status:" in line and "Satv" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -1009,7 +1009,7 @@ class allinonehdd(Screen):
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 #############################################################################
-class allinoneins(Screen):
+class spli2(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -1055,7 +1055,7 @@ class allinoneins(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Ins" in line:
+			elif "Status:" in line and "Spli2" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -1127,7 +1127,7 @@ class allinoneins(Screen):
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 #############################################################################
-class allinonerem(Screen):
+class spli3(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -1173,7 +1173,7 @@ class allinonerem(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Rem" in line:
+			elif "Status:" in line and "Spli3" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -1245,7 +1245,7 @@ class allinonerem(Screen):
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 #############################################################################
-class allinoneother(Screen):
+class sspa(Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		skin = "/skins/addons-fhd.xml"
@@ -1291,7 +1291,7 @@ class allinoneother(Screen):
 				name1 = line.replace("\n","").split()[-1]
 			elif "Version:" in line:
 				name2 = line.replace("\n","").split(r"(\s+)")[-1]
-			elif "Status:" in line and "Other" in line:
+			elif "Status:" in line and "Sspa" in line:
 				self.list.append((name1, name2, ipkminipng))
 		self.list.sort()
 		self["menu"].setList(self.list)
@@ -1363,5 +1363,239 @@ class allinoneother(Screen):
             "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
         ])
 #############################################################################
+class svix(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Svix" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
+
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
+
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		self.session.open(PluginBrowser)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 #############################################################################
+class spur(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Spur" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
+
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
+
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		self.session.open(PluginBrowser)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 #############################################################################
