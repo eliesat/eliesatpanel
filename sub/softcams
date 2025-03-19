@@ -103,17 +103,17 @@ Ultracam-Oscam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultrac
 Package: Gosatplus-emu
 Version: 2.0     .ipk
 Status: Moh
-Gosatplus='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus.sh'
+Gosatplus-emu='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus.sh'
 
 Package: Powercam-emu
 Version: 3.0     .ipk
 Status: Moh
-Powercam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam.sh'
+Powercam-emu='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam.sh'
 
 Package: Ultracam-emu
 Version: 1.0     .ipk
 Status: Moh
-Ultracam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam.sh'
+Ultracam-emu='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam.sh'
 
 Package: Revcam-Spider-X
 Version: 1.0     .ipk
