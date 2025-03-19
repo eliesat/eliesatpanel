@@ -765,7 +765,7 @@ Status: Pan
 Levi45addonmanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45-addon-manager.sh'
 
 Package: Levi45multicammanager
-Version: 10.1-r38     بانل تسطيب كامات
+Version: 10.2-r1     بانل تسطيب كامات
 Status: Pan
 Levi45multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh'
 
