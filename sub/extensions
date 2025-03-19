@@ -475,7 +475,7 @@ Status: Plg
 Subssupport-1='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh'
 
 Package: Subssupport-2
-Version: 1.7.0-r16     الترجمة
+Version: 1.7.0-r17     الترجمة
 Status: Plg
 Subssupport-2='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh'
 
