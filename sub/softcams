@@ -30,10 +30,10 @@ Version: 11777-emu-r802     .ipk .deb
 Status: Kit
 Oscamicamnew-Kite888-1='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicam.sh'
 
-Package: Oscam-Levi45
+Package: Oscam-Levi45-3
 Version: 11874-emu-r802     .ipk .deb
 Status: Lev
-Oscam-Levi45='https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam.sh'
+Oscam-Levi45-3='https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam.sh'
 
 Package: Oscam-Levi45-1
 Version: 11827-emu-r802     .ipk .deb
