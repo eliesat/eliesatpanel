@@ -180,10 +180,10 @@ Version: 1.0
 Status: Soebased  Spli2
 Championsleague='https://gitlab.com/eliesat/skins/-/raw/main/pli/championsleague-1.0.sh'
 
-Package: Cinodream
+Package: Cinodream-1
 Version: 1.0     
 Status: Soebased  Spli2
-Cinodream='https://gitlab.com/eliesat/skins/-/raw/main/pli/cinodream-ashawky-1.0.sh'
+Cinodream-1='https://gitlab.com/eliesat/skins/-/raw/main/pli/cinodream-ashawky-1.0.sh'
 
 Package: Cino-dreamosat
 Version: 1.0     
@@ -367,10 +367,10 @@ Xe4x1-fhd-x='https://gitlab.com/eliesat/skins/-/raw/main/pli/xe4x1-fhd-x-mod-h.a
 
 --------------openpli-9.x--------------
 
-Package: Cino-dream
+Package: Cino-dream-2
 Version: 1.0
 Status: Soebased  Spli3
-Cino-dream='https://gitlab.com/eliesat/skins/-/raw/main/pli3/cino-dream-ashawky.sh'
+Cino-dream-2='https://gitlab.com/eliesat/skins/-/raw/main/pli3/cino-dream-ashawky.sh'
 
 Package: De-skin
 Version: 1.0
