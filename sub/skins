@@ -235,10 +235,10 @@ Version: 1.0
 Status: Soebased  Spli2
 Fullnighthd='https://gitlab.com/eliesat/skins/-/raw/main/pli/fullnighthd-ashawky-1.0.sh'
 
-Package: Hdline-super
+Package: Hdline-super-py2
 Version: 1.0     
 Status: Soebased  Spli2
-Hdline-super='https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-1.0.sh'
+Hdline-super-py2='https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-1.0.sh'
 
 Package: Hd-line-super
 Version: 1.0     
@@ -403,10 +403,10 @@ Version: 1.0
 Status: Soebased  Spli3
 Gigablue-paxv2='https://gitlab.com/eliesat/skins/-/raw/main/pli3/gigablue-paxv2-ashawky.sh'
 
-Package: Hdline-super
+Package: Hdline-super-py3
 Version: 1.0     
 Status: Soebased  Spli3
-Hdline-super='https://gitlab.com/eliesat/skins/-/raw/main/pli3/hdline-super-ashawky.sh'
+Hdline-super-py3='https://gitlab.com/eliesat/skins/-/raw/main/pli3/hdline-super-ashawky.sh'
 
 Package: Ozeta-fhd
 Version: 1.0     
