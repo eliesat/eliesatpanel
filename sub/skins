@@ -165,120 +165,100 @@ Version: 2.0
 Status: Soebased  Spli2
 Artemis-fhd-posterx='https://gitlab.com/eliesat/skins/-/raw/main/pli/artemisfhd-x-mod-h.ahmed-2.0.sh'
 
-<item name="Artemis-fhd-xtra" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/artemisfhd-xtra-mod-h.ahmed-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Artemis-fhd-xtra
+Version: 1.0     
+Status: Soebased  Spli2
+Artemis-fhd-xtra='https://gitlab.com/eliesat/skins/-/raw/main/pli/artemisfhd-xtra-mod-h.ahmed-1.0.sh'
 
-<item name="Blackclbs-xtra" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/blackclbs-xtra-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Blackclbs-xtra
+Version: 1.0     
+Status: Soebased  Spli2
+Blackclbs-xtra='https://gitlab.com/eliesat/skins/-/raw/main/pli/blackclbs-xtra-1.0.sh'
 
-<item name="Championsleague" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/championsleague-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Championsleague
+Version: 1.0     
+Status: Soebased  Spli2
+Championsleague='https://gitlab.com/eliesat/skins/-/raw/main/pli/championsleague-1.0.sh'
 
-<item name="Cinodream" icon="skins.png" info="(ashawky)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/cinodream-ashawky-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Cinodream
+Version: 1.0     
+Status: Soebased  Spli2
+Cinodream='https://gitlab.com/eliesat/skins/-/raw/main/pli/cinodream-ashawky-1.0.sh'
 
-<item name="Cino-dream-osat" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/cino-dream-osat-pli-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Cino-dreamosat
+Version: 1.0     
+Status: Soebased  Spli2
+Cino-dreamosat='https://gitlab.com/eliesat/skins/-/raw/main/pli/cino-dream-osat-pli-1.0.sh'
 
-<item name="Cino-gri-pli" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/cino-gri-pli-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Cino-gri-pli
+Version: 1.0     
+Status: Soebased  Spli2
+Cino-gri-pli='https://gitlab.com/eliesat/skins/-/raw/main/pli/cino-gri-pli-1.0.sh'
 
-<item name="Cool-red-fhd" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/cool-red-fhd-mod-h.ahmed-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Cool-red-fhd
+Version: 1.0     
+Status: Soebased  Spli2
+Cool-red-fhd='https://gitlab.com/eliesat/skins/-/raw/main/pli/cool-red-fhd-mod-h.ahmed-1.0.sh'
 
-<item name="Dmm-fhd" icon="skins.png" info="(mod-master)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/dmm-fhd-mod-master-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Dmm-fhd
+Version: 1.0     
+Status: Soebased  Spli2
+Dmm-fhd='https://gitlab.com/eliesat/skins/-/raw/main/pli/dmm-fhd-mod-master-1.0.sh'
 
-<item name="Dmm-fhd-xe" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/dmm-fhd-xe-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Dmm-fhd-xe
+Version: 1.0     
+Status: Soebased  Spli2
+Dmm-fhd-xe='https://gitlab.com/eliesat/skins/-/raw/main/pli/dmm-fhd-xe-1.0.sh'
 
-<item name="Ekselancexe" icon="skins.png" info="(3.1)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/ekselancexe-3.1.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Ekselancexe
+Version: 3.1     
+Status: Soebased  Spli2
+Ekselancexe='https://gitlab.com/eliesat/skins/-/raw/main/pli/ekselancexe-3.1.sh'
 
-<item name="Excortlux-blue"
- icon="skins.png" info="(3.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/excortlux-blue-fhd-mod-h.ahmed-3.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Excortlux-blue
+Version: 3.0     
+Status: Soebased  Spli2
+Excortlux-blue='https://gitlab.com/eliesat/skins/-/raw/main/pli/excortlux-blue-fhd-mod-h.ahmed-3.0.sh'
 
-<item name="Excortlux-purple" icon="skins.png" info="(mod-hamdy)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/excortlux-purple-fhd-mod-h.ahmed-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Excortlux-purple
+Version: 1.0     
+Status: Soebased  Spli2
+Excortlux-purple='https://gitlab.com/eliesat/skins/-/raw/main/pli/excortlux-purple-fhd-mod-h.ahmed-1.0.sh'
 
-<item name="Extreme-golden-fhd" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/extreme-golden-fhd-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Extreme-golden-fhd
+Version: 1.0     
+Status: Soebased  Spli2
+Extreme-golden-fhd='https://gitlab.com/eliesat/skins/-/raw/main/pli/extreme-golden-fhd-1.0.sh'
 
-<item name="Fullnighthd" icon="skins.png" info="(ashawky)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/fullnighthd-ashawky-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Fullnighthd
+Version: 1.0     
+Status: Soebased  Spli2
+Fullnighthd='https://gitlab.com/eliesat/skins/-/raw/main/pli/fullnighthd-ashawky-1.0.sh'
 
-<item name="Hdline-super" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Hdline-super
+Version: 1.0     
+Status: Soebased  Spli2
+Hdline-super='https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-1.0.sh'
 
-<item name="Hd-line-super" icon="skins.png" info="(ashawky)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-ashawky-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Hd-line-super
+Version: 1.0     
+Status: Soebased  Spli2
+Hd-line-super='https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-ashawky-1.0.sh'
 
-<item name="Hiq-fhd-4k" icon="skins.png" info="(mod-hamdy-3.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/hiq-fhd-4k-mod-h.ahmed-3.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Hiq-fhd-4k
+Version: 3.0     
+Status: Soebased  Spli2
+Hiq-fhd-4k='https://gitlab.com/eliesat/skins/-/raw/main/pli/hiq-fhd-4k-mod-h.ahmed-3.0.sh'
 
-<item name="hiq-purpel-fhd" icon="skins.png" info="(mod-hamdy-3.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/hiq-purpel-fhd-4k-mod-h.ahmed-3.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Hiq-purpel-fhd
+Version: 3.0     
+Status: Soebased  Spli2
+Hiq-purpel-fhd='https://gitlab.com/eliesat/skins/-/raw/main/pli/hiq-purpel-fhd-4k-mod-h.ahmed-3.0.sh'
 
-<item name="karonte" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/karonte-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
-Package: XXXX
-Version: XXXX     
-Status: Aud
-XXXXXXX='XXXXXXXX'
+Package: Karonte
+Version: 1.0     
+Status: Soebased  Spli2
+Karonte='https://gitlab.com/eliesat/skins/-/raw/main/pli/karonte-1.0.sh'
 
 <item name="Karonte" icon="skins.png" info="(ashawky)" ask="run script file ?">(grep -qs -i openpli /etc/issue) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/pli/karonte-ashawky-1.0.sh -O - | /bin/sh || echo "> install openpli and try again ..."</item>
 Package: XXXX
