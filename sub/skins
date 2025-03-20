@@ -200,10 +200,10 @@ Version: 1.0
 Status: Soebased  Spli2
 Cool-red-fhd='https://gitlab.com/eliesat/skins/-/raw/main/pli/cool-red-fhd-mod-h.ahmed-1.0.sh'
 
-Package: Dmm-fhd
+Package: Dmm-fhd-px
 Version: 1.0     
 Status: Soebased  Spli2
-Dmm-fhd='https://gitlab.com/eliesat/skins/-/raw/main/pli/dmm-fhd-mod-master-1.0.sh'
+Dmm-fhd-px='https://gitlab.com/eliesat/skins/-/raw/main/pli/dmm-fhd-mod-master-1.0.sh'
 
 Package: Dmm-fhd-xe
 Version: 1.0     
