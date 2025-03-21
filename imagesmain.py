@@ -30,7 +30,7 @@ from enigma import *
 from os import environ
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
-from Screens.PluginBrowser import PluginBrowser
+from Screens.FlashManager import FlashManager
 from Screens.Standby import TryQuitMainloop
 from Screens.MessageBox import MessageBox
 from Tools.LoadPixmap import LoadPixmap
@@ -425,7 +425,7 @@ class Egami(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -485,7 +485,10 @@ class Egami(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -544,7 +547,7 @@ class Openatv(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -604,7 +607,10 @@ class Openatv(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -663,7 +669,7 @@ class Openblackhole(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -723,7 +729,10 @@ class Openblackhole(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -782,7 +791,7 @@ class Opendroid(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -842,7 +851,10 @@ class Opendroid(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -901,7 +913,7 @@ class Openhdf(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -961,7 +973,10 @@ class Openhdf(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -1019,7 +1034,7 @@ class Openpli(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -1079,7 +1094,10 @@ class Openpli(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -1137,7 +1155,7 @@ class Openspa(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -1197,7 +1215,10 @@ class Openspa(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -1255,7 +1276,7 @@ class Openvix(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -1315,7 +1336,10 @@ class Openvix(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -1373,7 +1397,7 @@ class Pure2(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -1433,7 +1457,10 @@ class Pure2(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
@@ -1491,7 +1518,7 @@ class Teamblue(Screen):
 		self.status = False
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Install"))
-		self["key_yellow"] = StaticText(_("Browse"))
+		self["key_yellow"] = StaticText(_("Flash"))
 		self["key_blue"] = StaticText(_("RestartE2"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -1551,7 +1578,10 @@ class Teamblue(Screen):
             "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
         ])
 	def browse(self):
-		self.session.open(PluginBrowser)
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
 	def network_info(self):
 		self.iConsole.ePopen("ifconfig -a", self.network_result)
