@@ -170,20 +170,20 @@ Version: 6.3
 Status: Soebased
 Artemis-mnasr='https://gitlab.com/eliesat/skins/-/raw/main/all/artemis/artemis.sh'
 
-Package: black-neon-p-fhd
+Package: Black-neon-p-fhd
 Version: 1.0     
 Status: Soebased
-black-neon-p-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/black-neon-p-fhd.sh'
+Black-neon-p-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/black-neon-p-fhd.sh'
 
 Package: Blackneon-xp-fhd-mnasr
 Version: 1.0     
 Status: Soebased
 Blackneon-xp-fhd-mnasr='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh'
 
-Package: blackalu
+Package: Blackalu
 Version: 1.0     
 Status: Soebased
-blackalu='https://gitlab.com/eliesat/skins/-/raw/main/all/blackalu-ashawky/blackalu-ashawky.sh'
+Blackalu='https://gitlab.com/eliesat/skins/-/raw/main/all/blackalu-ashawky/blackalu-ashawky.sh'
 
 Package: Blackyblue
 Version: 1.0     
