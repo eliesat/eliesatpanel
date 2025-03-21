@@ -158,6 +158,179 @@ Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Xdreamy-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/xdreamy/xdreamy.sh'
 
 
+
+--------------egami--------------
+Package: Artemisfhd
+Version: 5.6     
+Status: Soebased
+Artemisfhd='https://gitlab.com/eliesat/skins/-/raw/main/all/artemis/artemis-5.6.sh'
+
+Package: Artemis-mnasr
+Version: 6.3     
+Status: Soebased
+Artemis-mnasr='https://gitlab.com/eliesat/skins/-/raw/main/all/artemis/artemis.sh'
+
+Package: black-neon-p-fhd
+Version: 1.0     
+Status: Soebased
+black-neon-p-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/black-neon-p-fhd.sh'
+
+Package: Blackneon-xp-fhd-mnasr
+Version: 1.0     
+Status: Soebased
+Blackneon-xp-fhd-mnasr='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh'
+
+Package: blackalu
+Version: 1.0     
+Status: Soebased
+blackalu='https://gitlab.com/eliesat/skins/-/raw/main/all/blackalu-ashawky/blackalu-ashawky.sh'
+
+Package: Blackyblue
+Version: 1.0     
+Status: Soebased
+Blackyblue='https://gitlab.com/eliesat/skins/-/raw/main/egami/blacky/blacky-ashawky.sh'
+
+Package: Blackyorange
+Version: 1.0     
+Status: Soebased
+Blackyorange='https://gitlab.com/eliesat/skins/-/raw/main/egami/blacky/blackyorange-ashawky.sh'
+
+Package: C-odreamyfhd-mini
+Version: 1.0     
+Status: Soebased
+C-odreamyfhd-mini='https://gitlab.com/eliesat/skins/-/raw/main/egami/c-odreamyfhd-mini/c-odreamyfhd-mini-addon.sh'
+
+Package: Copper-fhd
+Version: 1.2     
+Status: Soebased
+Copper-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/copper/copperfhd.sh'
+
+Package: Duskyfhd
+Version: 1.0     
+Status: Soebased
+Duskyfhd='https://gitlab.com/eliesat/skins/-/raw/main/all/dusky/duskyfhd-ashawky.sh'
+
+Package: Gigabluepaxv2
+Version: Soebased     
+Status: Aud
+Gigabluepaxv2='https://gitlab.com/eliesat/skins/-/raw/main/all/gigabluepax/gigabluepaxv2-ashawky.sh'
+
+Package: Icone-vpx-fhd
+Version: 1.0     
+Status: Soebased
+Icone-vpx-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/icone/icone-vpx-fhd.sh'
+
+Package: Icone-vpx2-fhd
+Version: 1.0     
+Status: Soebased
+Icone-vpx2-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/icone/icone-vpx2-fhd.sh'
+
+Package: Jihad
+Version: 2.4     
+Status: Soebased
+Jihad='https://gitlab.com/eliesat/skins/-/raw/main/all/jihad/jihad.sh'
+
+Package: Lava
+Version: 2.0     
+Status: Soebased
+Lava='https://gitlab.com/eliesat/skins/-/raw/main/all/lava/lava-ashawky.sh'
+
+Package: Malek-fhd
+Version: 2.2     
+Status: Soebased
+Malek-fhd='https://gitlab.com/eliesat/skins/-/raw/main/egami/malek/malek-fhd.sh?inline=false'
+
+Package: Metrix-fhd
+Version: 3.12     
+Status: Soebased
+Metrix-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/metrixfhd/metrix.sh'
+
+Package: Nacht
+Version: 2.2     
+Status: Soebased
+Nacht='https://gitlab.com/eliesat/skins/-/raw/main/all/nacht/nacht-a.shawky.sh'
+
+Package: Novaler-s-fhd-green-2
+Version: 3.6     
+Status: Soebased
+Novaler-s-fhd-green='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-fhd-green.sh'
+
+Package: Novaler-s-fhd-green-1
+Version: 4.0     
+Status: Soebased
+Novaler-s-fhd-green-1='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler-s-fhd-green/novaler-s-fhd-green.sh'
+
+Package: Novaler-s-x-blue
+Version: 3.2     
+Status: Soebased
+Novaler-s-x-blue='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-x-blue.sh'
+
+Package: Novaler-s-x-green
+Version: 3.2     
+Status: Soebased
+Novaler-s-x-green='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-x-green.sh'
+
+Package: Novaler-s-x-infrared
+Version: 3.2     
+Status: Soebased
+Novaler-s-x-infrared='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-x-infrared.sh'
+
+Package: Novaler-s-xtra-blue
+Version: 3.2     
+Status: Soebased
+Novaler-s-xtra-blue='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-xtra-fhd-blue.sh'
+
+Package: Novaler-s-xtra-green
+Version: 3.2     
+Status: Soebased
+Novaler-s-xtra-green='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-xtra-fhd-green.sh'
+
+Package: Novaler-s-xtra-indianred
+Version: 3.2     
+Status: Soebased
+Novaler-s-xtra-indianred='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-xtra-fhd-indianred.sh'
+
+Package: Novax-fhd
+Version: 2.1     
+Status: Soebased
+Novax-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/novax/novax-fhd.sh'
+
+Package: Orangesky-xp-fhd
+Version: 1.0     
+Status: Soebased
+Orangesky-xp-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/orangesky/orangesky-xp-fhd.sh'
+
+Package: Orangesky-xp2-fhd
+Version: 1.0     
+Status: Soebased
+Orangesky-xp2-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/orangesky/orangesky-xp2-fhd.sh'
+
+Package: Ozeta-fhd-2
+Version: 2.0.4     
+Status: Soebased
+Ozeta-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/ozeta/ozeta.sh'
+
+Package: Pal
+Version: 1.0     
+Status: Aud
+Pal='https://gitlab.com/eliesat/skins/-/raw/main/all/pal-a.shawky/pal.ashawky.sh'
+
+Package: Pdreamy-n-fhd
+Version: 1.0     
+Status: Aud
+Pdreamy-n-fhd='https://gitlab.com/eliesat/skins/-/raw/main/egami/pdreamy/pdreamy-n-fhd.sh'
+
+Package: Spiderman-vpx-fhd
+Version: 1.0     
+Status: Aud
+Spiderman-vpx-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/spiderman/spiderman-vpx-fhd.sh'
+
+<item name="" icon="skins.png" info="()" ask="run script file ?">(grep -qs -i "egami" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate"  -O - | /bin/sh || echo "> install egami and try again ..."</item>
+Package: Spiderman-vpx2-fhd
+Version: 1.0     
+Status: Aud
+Spiderman-vpx2-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/spiderman/spiderman-vpx2-fhd.sh'
+
 --------------openpli-8.x--------------
 
 Package: Artemis-fhd-posterx
@@ -387,7 +560,7 @@ Version: 1.0
 Status: Soebased  Spli3
 Hdline-super-py3='https://gitlab.com/eliesat/skins/-/raw/main/pli3/hdline-super-ashawky.sh'
 
-Package: Ozeta-fhd
+Package: Ozeta-fhd-1
 Version: 1.0     
 Status: Soebased  Spli3
 Ozeta-fhd='https://gitlab.com/eliesat/skins/-/raw/main/pli3/ozeta-fhd.sh'
