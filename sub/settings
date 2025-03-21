@@ -71,7 +71,7 @@ Status: Settings
 Ismail-saidi-motor='https://gitlab.com/eliesat/settings/-/raw/main/saidi-motor/saidi-motor.sh'
 
 Package: S.refaey-motor
-Version: 25.01.2025     ملف قنوات
+Version: 18.03.2025     ملف قنوات
 Status: Settings
 S.refaey-motor='https://gitlab.com/eliesat/settings/-/raw/main/s.refaey/s.refaey-motor.sh'
 
