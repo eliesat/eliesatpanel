@@ -30,7 +30,6 @@ from enigma import *
 from os import environ
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
-from Screens.FlashManager import FlashManager
 from Screens.Standby import TryQuitMainloop
 from Screens.MessageBox import MessageBox
 from Tools.LoadPixmap import LoadPixmap
@@ -486,6 +485,7 @@ class Egami(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -608,6 +608,7 @@ class Openatv(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -730,6 +731,7 @@ class Openblackhole(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -852,6 +854,7 @@ class Opendroid(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -974,6 +977,7 @@ class Openhdf(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -1095,6 +1099,7 @@ class Openpli(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -1216,6 +1221,7 @@ class Openspa(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -1337,6 +1343,7 @@ class Openvix(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -1458,6 +1465,7 @@ class Pure2(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
@@ -1579,6 +1587,7 @@ class Teamblue(Screen):
         ])
 	def browse(self):
 		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
 			self.session.open(FlashManager)
 		else:
 			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
