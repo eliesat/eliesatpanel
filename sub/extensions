@@ -400,7 +400,7 @@ Status: Plg
 Quran-karim='https://gitlab.com/eliesat/extensions/-/raw/main/quran-karim/quran-karim.sh'
 
 Package: Quran
-Version: 0.2     القرآن الكريم
+Version: 2.2-r1     القرآن الكريم
 Status: Plg
 Quran='https://gitlab.com/eliesat/extensions/-/raw/main/quran/quran.sh'
 
