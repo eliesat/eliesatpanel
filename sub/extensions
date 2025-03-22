@@ -114,6 +114,11 @@ Version: 1.5     تنزيل و تثبيت ملف قنوات بافل سييف
 Status: Plg
 Ciefpsettingsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-settings-motor/ciefp-settings-motor.sh'
 
+Package: Ciefpsettingsdownloader
+Version: 1.4     تنزيل و تثبيت ملف قنوات بافل سييف
+Status: Plg
+Ciefpsettingsdownloader='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-settings-downloader/ciefp-settings-downloader.sh'
+
 
 Package: Crashlogviewer
 Version: 1.5     تصفح ملفات الكراش
