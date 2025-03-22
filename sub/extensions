@@ -500,10 +500,10 @@ Version: 1.33     اي بي تي في مجاني
 Status: Plg
 Vavoo='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
-Package: Vhannibal-settings-motor
+Package: Vhannibalsettingsmotor
 Version: 1.7     ملفات قنوات
 Status: Plg
-Vhannibal-settings-motor='https://gitlab.com/eliesat/extensions/-/raw/main/vhannibal-settings-motor/vhannibal-settings-motor.sh'
+Vhannibalsettingsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/vhannibal-settings-motor/vhannibal-settings-motor.sh'
 
 Package: Visualweather
 Version: 1.10     حالة الطقس
