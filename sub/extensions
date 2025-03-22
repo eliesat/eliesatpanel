@@ -110,9 +110,10 @@ Status: Plg
 Chocholousek='https://gitlab.com/eliesat/extensions/-/raw/main/chocholousek-picons/chocholousek-picons.sh'
 
 Package: Ciefpsettingsmotor
-Version: 1.6     تنزيل و تثبيت ملف قنوات بافل سييف
+Version: 1.5     تنزيل و تثبيت ملف قنوات بافل سييف
 Status: Plg
-Ciefpsettingsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingsmotor/ciefpsettingsmotor.sh'
+Ciefpsettingsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-settings-motor/ciefp-settings-motor.sh'
+
 
 Package: Crashlogviewer
 Version: 1.5     تصفح ملفات الكراش
@@ -498,6 +499,11 @@ Package: Vavoo
 Version: 1.33     اي بي تي في مجاني
 Status: Plg
 Vavoo='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
+
+Package: Vhannibal-settings-motor
+Version: 1.7     ملفات قنوات
+Status: Plg
+Vhannibal-settings-motor='https://gitlab.com/eliesat/extensions/-/raw/main/vhannibal-settings-motor/vhannibal-settings-motor.sh'
 
 Package: Visualweather
 Version: 1.10     حالة الطقس
