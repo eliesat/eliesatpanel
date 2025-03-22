@@ -501,7 +501,7 @@ Status: Plg
 Vavoo='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
 Package: Vhannibalsettingsmotor
-Version: 1.7     ملفات قنوات
+Version: 2.7     ملفات قنوات
 Status: Plg
 Vhannibalsettingsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/vhannibal-settings-motor/vhannibal-settings-motor.sh'
 
