@@ -72,10 +72,10 @@ Version: 1.5-xe
 Status: Soebased Sobh Spli3 Segami Satv Sspa Spure
 beta-pro-fhd-2='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-fhd-xe.sh'
 
-Package: Blackneon-xp-fhd
+Package: Blackneon-xp-fhd-1
 Version: 1.0     
 Status: Soebased Sobh Spli3 Segami Satv Sspa Spure
-Blackneon-xp-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh'
+Blackneon-xp-fhd-1='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh'
 
 Package: Bohlala-fhd
 Version: 2.3     
@@ -290,10 +290,10 @@ Version: 3.2
 Status: Soebased Segami Satv Sspa Spure
 Novaler-s-xtra-indianred='https://gitlab.com/eliesat/skins/-/raw/main/all/novaler/novaler-s-xtra-fhd-indianred.sh'
 
-Package: Novax-fhd
+Package: Novax-fhd-2
 Version: 2.1     
 Status: Soebased Segami Satv Sspa Spure
-Novax-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/novax/novax-fhd.sh'
+Novax-fhd-2='https://gitlab.com/eliesat/skins/-/raw/main/all/novax/novax-fhd.sh'
 
 Package: Orangesky-xp-fhd
 Version: 1.0     
@@ -487,10 +487,10 @@ Version: 1.0
 Status: Soebased  Spli2
 Hdline-super-py2='https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-1.0.sh'
 
-Package: Hd-line-super
+Package: Hd-line-super-1
 Version: 1.0     
 Status: Soebased  Spli2
-Hd-line-super='https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-ashawky-1.0.sh'
+Hd-line-super-1='https://gitlab.com/eliesat/skins/-/raw/main/pli/hdline-super-ashawky-1.0.sh'
 
 Package: Hiq-fhd-4k
 Version: 3.0     
@@ -547,10 +547,10 @@ Version: 1.0
 Status: Soebased  Spli2
 Newblack-extra='https://gitlab.com/eliesat/skins/-/raw/main/pli/newblack-extra-1.0.sh'
 
-Package: Novax-fhd
+Package: Novax-fhd-1
 Version: 1.5     
 Status: Soebased  Spli2
-Novax-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/novax/novaxfhd.sh'
+Novax-fhd-1='https://gitlab.com/eliesat/skins/-/raw/main/all/novax/novaxfhd.sh'
 
 Package: Novaxfhd-mauve
 Version: 1.0     
