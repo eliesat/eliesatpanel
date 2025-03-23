@@ -332,26 +332,78 @@ Spiderman-vpx2-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/spiderman/sp
 
 --------------openblackhole-------------
 
-<item name="Darkforest" icon="skins.png" info="(ashawky)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/darkforest-ashawky.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: Openbhgreenfhd
+Version: 5.2     
+Status: Soebased Sobh
+Openbhgreenfhd='https://gitlab.com/eliesat/skins/-/raw/main/obh/openbhgreenfhd/openbhgreenfhd.sh'
+
+Package: Qxklass-obh
+Version: 2.0     
+Status: Soebased Sobh 
+Qxklass-obh='https://gitlab.com/eliesat/skins/-/raw/main/obh/qxklass-obh/qxklass-obh.sh'
+
 
 --------------openatv-------------
 
+<item name="Darkforest" icon="skins.png" info="(ashawky)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/darkforest-ashawky.sh -O - | /bin/sh || echo ">
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
+
 <item name="Elite-fhd" icon="skins.png" info="(1.3)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/elitefhd.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
+
 <item name="Glamouraurafhd" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/glamouraurafhd-atv.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 <item name="Madmax-impossible" icon="skins.png" info="(2.9)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/madmax-impossible.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 <item name="M-ashawky" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/m-ashawky.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 <item name="Maxy-fhd-1.x" icon="skins.png" info="(mod inspiron)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/all/maxy-fhd/maxy-fhd.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 <item name="Obs-elite-fhd" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/obs-elite-fhd.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 <item name="Octagon-fhd" icon="skins.png" info="(1.0)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/octagonfhd.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 <item name="Pdreamy" icon="skins.png" info="(1.4)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/pdreamy.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 <item name="Revolution-pro" icon="skins.png" info="(6.3)" ask="run script file ?">(grep -qs -i "openatv" /etc/image-version) &amp;&amp; wget -q "--no-check-certificate" https://gitlab.com/eliesat/skins/-/raw/main/atv/revolution-pro.sh -O - | /bin/sh || echo "> install openatv and try again ..."</item>
+Package: XXXX
+Version: XXXX     
+Status: Soebased Satv
+XXXXXXX='XXXXXXXX'
 
 --------------openpli-8.x--------------
 
