@@ -107,10 +107,10 @@ Version: 5.4
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Nitroadvance-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/nitroadvance/nitroadvance-fhd.sh'
 
-Package: Maxy-fhd
+Package: Maxy-fhd-1
 Version: 1.3     
 Status: Soebased Segami Satv Sspa Spure
-Maxy-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/maxy-fhd/maxy-fhd.sh'
+Maxy-fhd-1='https://gitlab.com/eliesat/skins/-/raw/main/all/maxy-fhd/maxy-fhd.sh'
 
 Package: Maxi-fhd-pli
 Version: 1.0     
