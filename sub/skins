@@ -648,3 +648,11 @@ Package: Simple-gray
 Version: 1.9     
 Status: Soebased  Spli3 
 Simple-gray='https://gitlab.com/eliesat/skins/-/raw/main/pli3/simple-gray/simple-gray.sh?inline=false'
+
+
+--------------openvix--------------
+
+Package: Qxklass-ovix
+Version: 2.0     
+Status: Soebased  Svix 
+Qxklass-ovix='https://gitlab.com/eliesat/skins/-/raw/main/openvix/qxklass-ovix/qxklass-ovix.sh'
