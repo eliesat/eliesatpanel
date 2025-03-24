@@ -388,7 +388,7 @@ Oscam-status='https://gitlab.com/eliesat/extensions/-/raw/main/oscam-status/osca
 Package: Piconbuddy
 Version: 1.1     ادارة ملفات البيكونات
 Status: Plg
-Piconinstaller='https://gitlab.com/eliesat/extensions/-/raw/main/picon-buddy/picon-buddy.sh'
+Piconbuddy='https://gitlab.com/eliesat/extensions/-/raw/main/picon-buddy/picon-buddy.sh'
 
 Package: Piconinstaller
 Version: 24.08.23     تسطيب بيكونات
