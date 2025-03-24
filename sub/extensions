@@ -221,7 +221,7 @@ Status: Plg
 Freeserver='https://gitlab.com/eliesat/extensions/-/raw/main/freeserver/freeserver.sh'
 
 Package: Gioppygio
-Version: 12.2     بيكونات و ملفات قنوات
+Version: 12.5     بيكونات و ملفات قنوات
 Status: Plg
 Gioppygio='https://gitlab.com/eliesat/extensions/-/raw/main/gioppygio/gioppygio.sh'
 
@@ -321,7 +321,7 @@ Status: Plg
 Keyadder='https://gitlab.com/eliesat/extensions/-/raw/main/keyadder/keyadder.sh'
 
 Package: Lamedbmerger
-Version: 1.0     دمج ملفين قنوات و اقمار ببعض
+Version: 13.2     دمج ملفين قنوات و اقمار ببعض
 Status: Plg
 Lamedbmerger='https://gitlab.com/eliesat/extensions/-/raw/main/lamedbmerger/lamedbmerger.sh'
 
