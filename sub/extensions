@@ -240,6 +240,11 @@ Version: 1.0.42     تصفح آخر قنوات سات قلبت فيهم
 Status: Plg
 Historyzapselector='https://gitlab.com/eliesat/extensions/-/raw/main/historyzapselector/historyzapselector-dorik.sh'
 
+Package: Holidaycountdown
+Version: 1.0     عرض الأيام المتبقية للأعياد والفصول
+Status: Plg
+Holidaycountdown='https://gitlab.com/eliesat/extensions/-/raw/main/holidaycountdown/holidaycountdown.sh'
+
 Package: Horoscope
 Version: 1.1     الابراج
 Status: Plg
@@ -444,6 +449,11 @@ Package: Screennames
 Version: 1.06     عرض اسامي سكرينات السكين
 Status: Plg
 Screennames='https://gitlab.com/eliesat/extensions/-/raw/main/screennames/screennames.sh'
+
+Package: Screenrecorder
+Version: 3.0     تسجيل مقاطع فيديو
+Status: Plg
+Screenrecorder='https://gitlab.com/eliesat/extensions/-/raw/main/screenrecorder/screenrecorder.sh'
 
 Package: Scriptexecuter
 Version: 1.0     تصفح لايحة السكريبتات و تنفيذهم
