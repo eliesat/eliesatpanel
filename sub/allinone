@@ -314,6 +314,11 @@ Wifi-zgemmah7s='https://gitlab.com/eliesat/drivers/-/raw/main/network-usb-zgemma
 
 ###################################
 
+Package: Credentials-subssupport
+Version: 1.0       اعدادات د. محمد نصر بلاجين الترجمة
+Status: Other
+Credentials-subssupport='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/all/_credentials_subssupport.sh'
+
 Package: Scripts-update
 Version: 1.0       تحديث لايحة السكريبتات
 Status: Other
