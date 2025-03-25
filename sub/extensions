@@ -456,7 +456,7 @@ Status: Plg
 Screennames='https://gitlab.com/eliesat/extensions/-/raw/main/screennames/screennames.sh'
 
 Package: Screenrecorder
-Version: 3.0     تسجيل مقاطع فيديو
+Version: 4.0     تسجيل مقاطع فيديو
 Status: Plg
 Screenrecorder='https://gitlab.com/eliesat/extensions/-/raw/main/screenrecorder/screenrecorder.sh'
 
