@@ -349,7 +349,7 @@ Multicamadder='https://gitlab.com/eliesat/extensions/-/raw/main/muticamadder/mut
 Package: Multiiptvadder
 Version: 1.0     تعريف اشتراك الاي بي تي في
 Status: Plg
-Multiiptvadder='https://gitlab.com/eliesat/extensions/-/raw/main/mutiiptvadder/muticamadder.sh'
+Multiiptvadder='https://gitlab.com/eliesat/extensions/-/raw/main/mutiiptvadder/mutiiptvadder.sh'
 
 Package: Multiquickbutton
 Version: 2.7.15-r10     تخصيص وظائف لازرار الرومونت
