@@ -592,7 +592,7 @@ Status: Plg
 Xtraevent-2='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.5.sh'
 
 Package: Xtraevent-3
-Version: 6.810     تسطيب بوسترات
+Version: 6.820     تسطيب بوسترات
 Status: Plg
 Xtraevent-3='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/new/xtraevent.sh'
 
