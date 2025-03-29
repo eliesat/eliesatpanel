@@ -13,17 +13,17 @@ import gettext
 from datetime import datetime
 from threading import Timer
 from .menus.compat import compat_urlopen, compat_Request, PY3, readFromFile
-from Plugins.Extensions.ElieSatPanel.menus.Console import Console
-from Plugins.Extensions.ElieSatPanel.allinonemain import allinonemain
-from Plugins.Extensions.ElieSatPanel.extensionsmain import extensionsmain
-from Plugins.Extensions.ElieSatPanel.displaymain import displaymain
-from Plugins.Extensions.ElieSatPanel.feedsmain import feedsmain
-from Plugins.Extensions.ElieSatPanel.imagesmain import imagesmain
-from Plugins.Extensions.ElieSatPanel.menus.imagesb import imagesb
-from Plugins.Extensions.ElieSatPanel.piconsmain import piconsmain
-from Plugins.Extensions.ElieSatPanel.settingsmain import settingsmain
-from Plugins.Extensions.ElieSatPanel.skinsmain import skinsmain
-from Plugins.Extensions.ElieSatPanel.softcamsmain import softcamsmain
+from .menus.Console import Console
+from .menus.allinonemain import allinonemain
+from .menus.extensionsmain import extensionsmain
+from .menus.displaymain import displaymain
+from .menus.feedsmain import feedsmain
+from .menus.imagesmain import imagesmain
+from .menus.imagesb import imagesb
+from .menus.piconsmain import piconsmain
+from .menus.settingsmain import settingsmain
+from .menus.skinsmain import skinsmain
+from .menus.softcamsmain import softcamsmain
 from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
 from Components.ConfigList import ConfigListScreen
 from Components.config import ConfigText, getConfigListEntry
