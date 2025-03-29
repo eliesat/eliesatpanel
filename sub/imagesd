@@ -144,6 +144,11 @@ Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
 Openpli-develop-multiboot='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-develop.sh'
 
+Package: Openpli-scarthgap-multiboot
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Pli
+Openpli-scarthgap-multiboot='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-scarthgap.sh'
+
 Package: Openpli-7.3-usb
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
@@ -168,6 +173,11 @@ Package: Openpli-develop-usb
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Pli
 Openpli-usb-develop='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-develop-usb.sh'
+
+Package: Openpli-scarthgap-usb
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Pli
+Openpli-scarthgap-usb='https://gitlab.com/eliesat/scripts/-/raw/main/images/openpli-scarthgap-usb.sh'
 
 Package: Openspa-7.5
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
