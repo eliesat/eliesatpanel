@@ -21,7 +21,7 @@ Status: Settings
 A-shawky-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.shawky/a.shawky-motor.sh'
 
 Package: Ciefp-motor
-Version: 14.03.2025     ملف قنوات
+Version: 29.03.2025     ملف قنوات
 Status: Settings
 Ciefp-motor='https://gitlab.com/eliesat/settings/-/raw/main/ciefp-motor/ciefp-motor.sh'
 
@@ -56,7 +56,7 @@ Status: Settings
 Mohgooda-motor='https://gitlab.com/eliesat/settings/-/raw/main/mohgooda-motor/mohgooda-motor.sh'
 
 Package: Morpheus883-motor
-Version: 22.03.2025     ملف قنوات
+Version: 28.03.2025     ملف قنوات
 Status: Settings
 Morpheus883-motor='https://gitlab.com/eliesat/settings/-/raw/main/morpheus883/morpheus883-motor.sh'
 
@@ -81,7 +81,7 @@ Status: Settings
 T.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
 
 Package: Vhannibal-motor
-Version: 23.03.2025     ملف قنوات
+Version: 30.03.2025     ملف قنوات
 Status: Settings
 Vhannibal-motor='https://gitlab.com/eliesat/settings/-/raw/main/vhannibal/vhannibal-motor.sh'
 
