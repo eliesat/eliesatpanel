@@ -4,3 +4,8 @@ Package: picons-motor
 Version: 07.12.2024     30W-80E شعارات القنوات
 Status: Snp
 picons-motor='https://gitlab.com/eliesat/picons/-/raw/main/picons-all-name.sh'
+
+Package: 30w-picons
+Version: 30.03.2025     شعار قنوات هيسباسات
+Status: Srp
+30w-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-all-name.sh'
