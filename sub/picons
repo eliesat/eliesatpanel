@@ -16,6 +16,11 @@ Status: Srp
 30.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-30w.sh'
 
 Package: 24.5W-picons
-Version: 30.03.2025     شعار قنوات الكومسات١
+Version: 01.04.2025     شعار قنوات الكومسات ١
 Status: Srp
 24.5W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-24.5w.sh'
+
+Package: 22.0W-picons
+Version: 01.04.2025     شعار قنوات اس او اس ٤
+Status: Srp
+22.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-22w.sh'
