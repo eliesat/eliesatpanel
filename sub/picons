@@ -24,3 +24,8 @@ Package: 22.0W-picons
 Version: 01.04.2025     شعار قنوات اس او اس ٤
 Status: Srp
 22.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-22w.sh'
+
+Package: 14.0W-picons
+Version: 01.04.2025     شعار قنوات اكسبريس اي ام ٨
+Status: Srp
+14.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-14w.sh'
