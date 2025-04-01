@@ -29,3 +29,8 @@ Package: 14.0W-picons
 Version: 01.04.2025     شعار قنوات اكسبريس اي ام ٨
 Status: Srp
 14.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-14w.sh'
+
+Package: 7.0W-picons
+Version: 01.04.2025     شعار قنوات نيل سات و المجاور 
+Status: Srp
+7.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-7w.sh'
