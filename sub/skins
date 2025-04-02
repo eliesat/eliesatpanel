@@ -147,10 +147,15 @@ Version: 3.1
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Premium-fhd-magneta='https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-magneta.sh'
 
+Package: Youchie-obh-fhd
+Version: 1.0.0     
+Status: Soebased Sobh  
+Youchie-obh-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/youchie-pli-fhd/youchie-pli-fhd.sh'
+
 Package: Youchie-pli-fhd
-Version: 1.0     
-Status: Soebased Sobh Spli3 
-Youchie-pli-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/youchie-pli-fhd/youchie-pli-fhd.sh'
+Version: 1.0.1     
+Status: Soebased Spli3 
+Youchie-pli-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/youchie-pli-fhd/pli/youchie-pli-fhd.sh'
 
 Package: Xdreamy-fhd
 Version: 5.9.0     
