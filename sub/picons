@@ -34,3 +34,8 @@ Package: 7.0W-picons
 Version: 01.04.2025     شعار قنوات نيل سات و المجاور 
 Status: Srp
 7.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-7w.sh'
+
+Package: 5.0W-picons
+Version: 02.04.2025     شعار قنوات يوتل سات ٥ 
+Status: Srp
+5.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-5w.sh'
