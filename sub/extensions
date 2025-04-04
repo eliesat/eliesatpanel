@@ -20,7 +20,7 @@ Status: Plg
 Apod='https://gitlab.com/eliesat/extensions/-/raw/main/apod/apod.sh'
 
 Package: Ansite
-Version: 1.6     انصت للقرآن الكريم
+Version: 1.10     py3 انصت للقرآن الكريم
 Status: Plg
 Ansite='https://gitlab.com/eliesat/extensions/-/raw/main/ansite/ansite.sh'
 
