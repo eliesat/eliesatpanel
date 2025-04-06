@@ -61,7 +61,7 @@ Status: Settings
 Morpheus883-motor='https://gitlab.com/eliesat/settings/-/raw/main/morpheus883/morpheus883-motor.sh'
 
 Package: Novaler-motor
-Version: 05.09.2024     ملف قنوات
+Version: 06.04.2025     ملف قنوات
 Status: Settings
 Novaler-motor='https://gitlab.com/eliesat/settings/-/raw/main/novaler-motor/novaler-motor.sh'
 
