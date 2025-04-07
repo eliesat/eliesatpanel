@@ -65,39 +65,39 @@
 <widget source="flashTotal" render="Label" position="1390,485" zPosition="2" size="620,40" font="lsat; 23" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- image -->
-<widget source="ImageLabel" render="Label" position="1200,536.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="ImageLabel" render="Label" position="1200,536" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="Image" render="Label" position="1390,540" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- python -->
-<widget source="pythonLabel" render="Label" position="1200,570.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="pythonLabel" render="Label" position="1200,570" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="python" render="Label" position="1390,570" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- last upgrade -->
-<widget source="EnigmaVersionLabel" render="Label" position="1200,600.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="EnigmaVersionLabel" render="Label" position="1200,600" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="EnigmaVersion" render="Label" position="1390,600" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 	
 <!-- hardware -->
-<widget source="HardwareLabel" render="Label" position="1200,660.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="HardwareLabel" render="Label" position="1200,660" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="Hardware" render="Label" position="1390,660" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- processor -->
-<widget source="CPULabel" render="Label" position="1200,690.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="CPULabel" render="Label" position="1200,690" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="CPU" render="Label" position="1390,690" zPosition="2" size="400,50" font="lsat; 22" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- mac address -->
-<widget source="macLabel" render="Label" position="1300,2770.5" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1"/>
+<widget source="macLabel" render="Label" position="1300,2770" zPosition="2" size="180,50" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1"/>
 <widget source="macInfo" render="Label" position="1490,2770" zPosition="2" size="200,50" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- driver version-->
-<widget source="driverLabel" render="Label" position="1200,750.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="driverLabel" render="Label" position="1200,750" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="driver" render="Label" position="1390,755" zPosition="2" size="390,30" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- kernel version -->
-<widget source="KernelLabel" render="Label" position="1200,780.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="KernelLabel" render="Label" position="1200,780" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="Kernel" render="Label" position="1390,780" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- gstreamer -->
-<widget source="gstreamerLabel" render="Label" position="1200,810.5" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
+<widget source="gstreamerLabel" render="Label" position="1200,810" zPosition="2" size="180,40" font="lsat; 24" halign="right" valign="center" backgroundColor="background" foregroundColor="#aaaaaa" transparent="1" />
 <widget source="gstreamer" render="Label" position="1390,810" zPosition="2" size="390,40" font="lsat; 24" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
 <!-- ip address -->
