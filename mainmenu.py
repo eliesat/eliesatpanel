@@ -491,7 +491,6 @@ class Scripts(Screen):
 
 <!-- title2 -->
 <eLabel text="Select and press ok to execute" position="380,880" size="700,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="310,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
 
 <!-- title3 -->
 <eLabel text="ELIE" position="1450,535" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
@@ -667,7 +666,6 @@ class ui(Screen):
 
 <!-- title2 -->
 <eLabel text="Select and press ok to remove" position="380,880" size="700,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="310,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
     <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
     <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
 <!-- title3 -->
