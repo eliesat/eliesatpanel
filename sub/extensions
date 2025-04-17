@@ -526,10 +526,10 @@ Version: 5.0.9.9     مشاهدة و تنزيل افلام و مسلسلات
 Status: Plg
 Transmission='https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh'
 
-Package: Vavoo
+Package: Vavoo-plugin
 Version: 1.34     اي بي تي في مجاني
 Status: Plg
-Vavoo='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
+Vavoo-plugin='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
 Package: Vhannibalsettingsmotor
 Version: 2.7     ملفات قنوات
