@@ -204,6 +204,11 @@ Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Spa
 Openspa-8.4='https://gitlab.com/eliesat/scripts/-/raw/main/images/openspa-8.4.sh'
 
+Package: Openspa-8.5
+Version: 1.0     تنزيل صور خام من الموقع الرسمي
+Status: Spa
+Openspa-8.4='https://gitlab.com/eliesat/scripts/-/raw/main/images/openspa-8.5.sh'
+
 Package: Openvix-6.7
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Vix
