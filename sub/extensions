@@ -782,7 +782,7 @@ Status: Pan
 Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh'
 
 Package: Ciefpsettingspanel
-Version: 2.2     بانل تسطيب اضافات
+Version: 3.2     بانل تسطيب اضافات
 Status: Pan
 Ciefpsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 
