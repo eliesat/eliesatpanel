@@ -791,6 +791,11 @@ Version: 1.0     بانل تسطيب اضافات
 Status: Pan
 Ajpanel-Eliesatpanel='https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh'
 
+Package: Emilpanel
+Version: 1.3     بانل تسطيب اضافات
+Status: Pan
+Emilpanel='https://gitlab.com/eliesat/extensions/-/raw/main/emilpanel/emilpanel.sh'
+
 Package: Epanel
 Version: 5.8r2     بانل خدمات متنوعة للصورة
 Status: Pan
