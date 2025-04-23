@@ -392,7 +392,7 @@ Status: Plg
 Oaweather='https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false'
 
 Package: Oscam-status
-Version: 6.5     معلومات عن حالة المحاكي
+Version: 6.6     معلومات عن حالة المحاكي
 Status: Plg
 Oscam-status='https://gitlab.com/eliesat/extensions/-/raw/main/oscam-status/oscam-status.sh'
 
