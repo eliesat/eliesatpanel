@@ -852,7 +852,7 @@ Status: Pan
 Tvaddon='https://gitlab.com/eliesat/extensions/-/raw/main/tvaddon/tvaddon.sh'
 
 Package: Tvmanager
-Version: 2.5     بانل تسطيب اضافات
+Version: 2.6     بانل تسطيب اضافات
 Status: Pan
 Tvmanager='https://gitlab.com/eliesat/extensions/-/raw/main/tvmanager/tvmanager.sh'
 
