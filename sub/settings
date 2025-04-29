@@ -51,7 +51,7 @@ Status: Settings
 Mohamed-os-motor='https://gitlab.com/eliesat/settings/-/raw/main/mohamed-os/mohamed-os-motor.sh'
 
 Package: Mohgooda-motor
-Version: 30.08.2024     ملف قنوات
+Version: 29.04.2025     ملف قنوات
 Status: Settings
 Mohgooda-motor='https://gitlab.com/eliesat/settings/-/raw/main/mohgooda-motor/mohgooda-motor.sh'
 
