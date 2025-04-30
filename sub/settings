@@ -96,7 +96,7 @@ Status: Freq
 Freq-Flysat='https://gitlab.com/eliesat/settings/-/raw/main/flysat/installer.sh'
 
 Package: Freq-Lyngsat
-Version: 21.04.2025     ملف ترددات
+Version: 28.04.2025     ملف ترددات
 Status: Freq
 Freq-Lyngsat='https://gitlab.com/eliesat/settings/-/raw/main/lyngsat/installer.sh'
 
