@@ -31,7 +31,7 @@ Status: Settings
 Lassaed-motor='https://gitlab.com/eliesat/settings/-/raw/main/lassaed-motor/lassaed-motor.sh'
 
 Package: M.mallah-motor
-Version: 25.01.2025     ملف قنوات
+Version: 01.05.2025     ملف قنوات
 Status: Settings
 M.mallah-motor='https://gitlab.com/eliesat/settings/-/raw/main/m.mallah/m.mallah-motor.sh'
 
@@ -81,7 +81,7 @@ Status: Settings
 T.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
 
 Package: Vhannibal-motor
-Version: 30.03.2025     ملف قنوات
+Version: 27.04.2025     ملف قنوات
 Status: Settings
 Vhannibal-motor='https://gitlab.com/eliesat/settings/-/raw/main/vhannibal/vhannibal-motor.sh'
 
