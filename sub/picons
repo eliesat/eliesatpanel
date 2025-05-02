@@ -1,7 +1,7 @@
 ##############picons###############
 
 Package: picons-motor
-Version: 07.12.2024     30W-80E شعارات القنوات
+Version: 02.25.2025     /media/hdd 30W-80E شعارات القنوات
 Status: Snp
 picons-motor='https://gitlab.com/eliesat/picons/-/raw/main/picons-all-name.sh'
 
@@ -36,6 +36,6 @@ Status: Srp
 7.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-7w.sh'
 
 Package: 5.0W-picons
-Version: 02.04.2025     شعار قنوات يوتل سات ٥ 
+Version: 05.04.2025     شعار قنوات يوتل سات ٥ 
 Status: Srp
 5.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-5w.sh'
