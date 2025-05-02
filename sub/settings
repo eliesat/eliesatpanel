@@ -21,7 +21,7 @@ Status: Settings
 A-shawky-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.shawky/a.shawky-motor.sh'
 
 Package: Ciefp-motor
-Version: 29.03.2025     ملف قنوات
+Version: 18.04.2025     ملف قنوات
 Status: Settings
 Ciefp-motor='https://gitlab.com/eliesat/settings/-/raw/main/ciefp-motor/ciefp-motor.sh'
 
