@@ -1,7 +1,7 @@
 ##############softcams#############
 
 Package: Oscam-Audi06-1
-Version: 11881-emu-r802     .ipk .deb
+Version: 11882-emu-r802     .ipk .deb
 Status: Aud
 Oscam-Audi06-1='https://gitlab.com/eliesat/softcams/-/raw/main/audi06_19/oscam.sh'
 
