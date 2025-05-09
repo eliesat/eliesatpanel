@@ -1,6 +1,6 @@
 ##############extensions###############
 Package: Acherone
-Version: 1.2     تصفح لايحة السكريبتات و تنفيذهم
+Version: 1.3     تصفح لايحة السكريبتات و تنفيذهم
 Status: Plg
 Acherone='https://gitlab.com/eliesat/extensions/-/raw/main/acherone/acherone.sh'
 
