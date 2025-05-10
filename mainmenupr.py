@@ -211,9 +211,9 @@ class eliesatpanel(Screen):
 
 	def grid(self):
 		try:
-			from Plugins.Extensions.AJPan.plugin import CC3BpF
+			from Plugins.Extensions.AJPan.plugin import CCMVXX
 			if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh"):
-				self.session.open(CC3BpF)
+				self.session.open(CCMVXX)
 		except:
 				self.session.open(MessageBox, _('Install Ajpanel_Eliesatpanel and try again...'), MessageBox.TYPE_ERROR)
 	def scriptslist(self):
