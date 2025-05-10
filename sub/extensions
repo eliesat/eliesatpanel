@@ -817,7 +817,7 @@ Status: Pan
 Levi45multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh'
 
 Package: Linuxsat-panel
-Version: 2.7.8     بانل تسطيب اضافات
+Version: 2.7.9     بانل تسطيب اضافات
 Status: Pan
 Linuxsat-panel='https://gitlab.com/eliesat/extensions/-/raw/main/linuxsat-panel/linuxsat-panel.sh'
 
