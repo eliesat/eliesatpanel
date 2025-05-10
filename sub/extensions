@@ -516,6 +516,11 @@ Version: 1.7.0-r19     الترجمة
 Status: Plg
 Subssupport-2='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh'
 
+Package: Suptv
+Version: 4.4     تفعيل  اشتراك كود السوب تيفي 
+Status: Plg
+Suptv='https://gitlab.com/eliesat/extensions/-/raw/main/suptv/suptv.sh'
+
 Package: Theweather
 Version: 2.5r0     حالة الطقس
 Status: Plg
