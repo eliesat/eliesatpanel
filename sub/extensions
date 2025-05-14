@@ -791,10 +791,10 @@ Version: 10.8.2     ادارة الملفات و مجموعة الخدمات
 Status: Pan
 Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh'
 
-Package: Ciefpsettingspanel
-Version: 3.2     بانل تسطيب اضافات
+Package: Ciefp-plugins
+Version: 1.5     بانل تسطيب اضافات
 Status: Pan
-Ciefpsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
+Ciefp-plugins='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-plugins/ciefp-plugins.sh'
 
 Package: Ajpanel-Eliesatpanel
 Version: 1.0     بانل تسطيب اضافات
