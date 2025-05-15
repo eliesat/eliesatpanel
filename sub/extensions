@@ -787,7 +787,7 @@ Ultracam='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ultracam
 
 ##############panels###############
 Package: Ajpanel
-Version: 10.8.2     ادارة الملفات و مجموعة الخدمات
+Version: 10.8.3     ادارة الملفات و مجموعة الخدمات
 Status: Pan
 Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh'
 
