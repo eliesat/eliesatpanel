@@ -24,7 +24,7 @@ class cccam3(Screen, ConfigListScreen):
 <ePixmap position="1325,925" size="360,360" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/icon2.png" zPosition="2" alphatest="blend" />
 <eLabel text=" ابو عمر : 201011058982+" position="1350,900" size="400,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <eLabel text=" داخل لبنان : 70787872 961" position="1350,940" size="400,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<eLabel text="اضغط على زر الازرق لعرض تقرير عن باقات العاملة سيرفر ايغل" position="320,800" size="900,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<eLabel text="اضغط على زر الازرق لعرض تقرير عن باقات العاملة على سيرفر ايغل" position="320,800" size="900,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <eLabel text="اضغط تباعا على زر الاصفر و الاخضر لحفظ و ارسال البيانات اللي تمت كتابتها اعلاه " position="20,760" size="1200,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <!-- title2 -->
 <eLabel text="Select and press ok to write on the screen" position="280,880" size="1000,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
