@@ -8,6 +8,7 @@ from Components.config import ConfigText, ConfigSelection, getConfigListEntry, C
 from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
 
 class cccam3(Screen, ConfigListScreen):
     skin = """
@@ -49,7 +50,7 @@ class cccam3(Screen, ConfigListScreen):
 <ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
 <eLabel text="Save" position="720,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
-<eLabel text="CheckUser" position="985,960" zPosition="2" size="185,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<eLabel text="Report" position="985,960" zPosition="2" size="185,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 
     <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
     <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
@@ -65,7 +66,7 @@ class cccam3(Screen, ConfigListScreen):
             "red": self.exit,
             "green": self.send,
             "yellow": self.save,
-            "blue": self.check
+            "blue": self.report
         }, -2)
         self.protocol = ConfigSelection(choices=[
             ("cccam", "Cccam"), 
@@ -123,9 +124,17 @@ class cccam3(Screen, ConfigListScreen):
             with open(path, "a") as f:
                 f.write(sus)
 
-    def check(self):
-     cmd1 = ". /usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/ccuser.sh"
-     self.session.open(Console, _("Writing your sharing suscription, please wait"), cmdlist=[cmd1])
+    def report(self):
+        info_path = resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/sus/report.txt")
+        if fileExists(info_path):
+            try:
+                with open(info_path, "r") as f:
+                    content = f.read()
+                self.session.open(MessageBox, content, MessageBox.TYPE_INFO)
+            except Exception as e:
+                self.session.open(MessageBox, f"Error reading report file: {str(e)}", MessageBox.TYPE_ERROR)
+        else:
+            self.session.open(MessageBox, "report file not found", MessageBox.TYPE_ERROR)
 
     def exit(self):
         self.close()

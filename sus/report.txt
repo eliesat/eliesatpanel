@@ -1,0 +1,24 @@
+●Server Eagle تقرير عن الباقات العاملة على●
+
+■ Hispasat 30W : MeoTV
+■ Thor 0.8W : FocusSat UpcDirect DigiTV CanalDigital DirectOne
+■ Amos 4W : YES  SD,HD,4K 
+■ Eutelsat 5W : BisTV Fransat
+
+■ Bulgaria-Sat 1.9E : PolarisMedia Nos
+■Eutlsat 9E : Kabile Discovery Afn M4
+■ Hotbird 13E : Eurosport NC+ Canal+ Mediaset Srg Ssr Rai Cyfrowy Polsat Sfr HBO Vod vivacom Rai 4k Travelxp 4K Myzen 4K Museum 4K LoveNature 4k
+■ Eutelsat 16E : DigiAlba MaxTV Antiksat Pink Hrt FreesatRomania HayatHD
+
+■Astra 19.2E : SkyDE Astra+ HD+ Tnt Orf
+■ Astra 23E: CanalDigital Skylink
+■ Astra 28E : SkyUK sd
+■ Eutelsat 36E : NtvPlus
+
+■ Hellasat 39E : TelekomeRomania Prima
+■ Turksat 42E : Dsmart
+■ TurkmenAlem 52E : BigBang
+■Express 80E : Telekart
+
+
+
