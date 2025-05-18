@@ -966,6 +966,11 @@ Version: 08.01.2025     حزمة سكريبتات مجانية
 Status: Free
 Emil-scripts='https://gitlab.com/eliesat/free/-/raw/main/emil/emil-scripts.sh'
 
+Package: Ipaudiopro-haitham
+Version: 18.05.2025     صوتيات هيثم السوداني
+Status: Free
+Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopro-haitham.sh'
+
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
