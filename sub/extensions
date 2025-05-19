@@ -496,6 +496,11 @@ Version: 0.3     التقاط و تخزين صورة عن الشاشة
 Status: Plg
 Shootyourscreen='https://gitlab.com/eliesat/extensions/-/raw/main/shootyourscreen/shootyourscreen.sh'
 
+Package: Showclock
+Version: 0.9     تثبيت الساعة على الشاشة بشكل مؤقت
+Status: Plg
+Showclock='https://gitlab.com/eliesat/extensions/-/raw/main/showclock/showclock.sh'
+
 Package: Skin-e2sentials
 Version: 1.0     اضافات على السكين المستخدم
 Status: Plg
