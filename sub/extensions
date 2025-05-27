@@ -126,7 +126,7 @@ Ciefpsettingsdownloader='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-
 
 
 Package: Crashlogviewer
-Version: 1.5     تصفح ملفات الكراش
+Version: 1.6     تصفح ملفات الكراش
 Status: Plg
 Crashlogviewer='https://gitlab.com/eliesat/extensions/-/raw/main/crashlogviewer/crashlogviewer.sh'
 
