@@ -146,7 +146,7 @@ Status: Plg
 E2iplayer-mohamed_os='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer/e2iplayer-main.sh'
 
 Package: E2m3ubouquet
-Version: 2.0.3     تحويل ال اي بي تي في لمفضلات
+Version: 2.0.7     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 E2m3ubouquet='https://gitlab.com/eliesat/extensions/-/raw/main/e2m3u2bouquet/e2m3u2bouquet.sh'
 
@@ -321,7 +321,7 @@ Status: Plg
 Jedimakerxtream='https://gitlab.com/eliesat/extensions/-/raw/main/jedimakerxtream/jedimakerxtream.sh'
 
 Package: Keyadder
-Version: 8.8     اضافة مفتاح بيس بملف السوفتكام
+Version: 8.9     اضافة مفتاح بيس بملف السوفتكام
 Status: Plg
 Keyadder='https://gitlab.com/eliesat/extensions/-/raw/main/keyadder/keyadder.sh'
 
