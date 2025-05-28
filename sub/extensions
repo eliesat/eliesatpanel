@@ -9,6 +9,11 @@ Version: 1.2     الأجر
 Status: Plg
 Alajre='https://https://gitlab.com/eliesat/extensions/-/raw/main/alajre/alajre.shn/acherone/acherone.sh'
 
+Package: Advancedscreenshot
+Version: 1.2     التقاط و تخزين صورة عن الشاشة
+Status: Plg
+Advancedscreenshot='https://gitlab.com/eliesat/extensions/-/raw/main/advancedscreenshot/advancedscreenshot.sh'
+
 Package: Alternativesoftcammanager
 Version: 2.0     ادارة الكامات
 Status: Plg
@@ -184,6 +189,11 @@ Package: Epgtranslator
 Version: 1.4r2     ترجمة دليل الالكتروني
 Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
+
+Package: Estalker
+Version: 0.01     مشغل بورتلات اي بي تي في
+Status: Plg
+Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
 Package: Feedsfinder
 Version: 3.1     الفيدات و شفرات البيس
