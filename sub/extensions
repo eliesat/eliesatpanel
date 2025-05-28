@@ -340,6 +340,11 @@ Version: 13.2     دمج ملفين قنوات و اقمار ببعض
 Status: Plg
 Lamedbmerger='https://gitlab.com/eliesat/extensions/-/raw/main/lamedbmerger/lamedbmerger.sh'
 
+Package: M3uconverter
+Version: 1.2     تحويل ال اي بي تي في لمفضلات
+Status: Plg
+M3uconverter='https://gitlab.com/eliesat/extensions/-/raw/main/m3uconverter/m3uconverter.sh'
+
 Package: Mmpicons
 Version: 1.4     تسطيب بيكونات
 Status: Plg
