@@ -8,6 +8,7 @@ from Components.config import ConfigText, ConfigInteger, getConfigListEntry
 from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
+
 class iptv3(Screen, ConfigListScreen):
     skin = """
 <screen name="iptv" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="iptvadder">
@@ -17,6 +18,15 @@ class iptv3(Screen, ConfigListScreen):
 <eLabel text="Iptv user adder" position="460,120" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="370,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 <ePixmap position="780,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+
+<!-- title1 -->
+<ePixmap position="1450,560" size="360,360" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/icon3.png" zPosition="2" alphatest="blend" />
+<eLabel text="Jepro-iptv" position="1480,775" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<eLabel text="للاشتراك يرجى الاتصال :" position="1350,860" size="400,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="1325,885" size="360,360" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/icon2.png" zPosition="2" alphatest="blend" />
+<eLabel text=" ايلي سات : 70787872 961" position="1350,900" size="400,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<eLabel text="اضغط تباعا على زر الاصفر و الاخضر لحفظ و ارسال البيانات اللي تمت كتابتها اعلاه " position="20,760" size="1200,50" zPosition="1" font="Regular;30" halign="right" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+
 <!-- title2 -->
 <eLabel text="Select and press ok to write on the screen" position="280,880" size="1000,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="210,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
@@ -29,18 +39,17 @@ class iptv3(Screen, ConfigListScreen):
 <eLabel text="Save" position="720,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
 <eLabel text="CheckUser" position="985,960" zPosition="2" size="185,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<!-- minitv -->
-<widget source="session.VideoPicture" render="Pig" position="1305,195" size="550,400" zPosition="1" backgroundColor="#ff000000" />
 
 <!-- clock -->
-<widget source="global.CurrentTime" render="Label" position="1290,100" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="2">
+<widget source="global.CurrentTime" render="Label" position="1290,400" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
 		<convert type="ClockToText">Default</convert>
-
 <!-- calender -->
 </widget>
-<widget source="global.CurrentTime" render="Label" position="1530,105" size="335,54" font="lsat; 24" halign="center" valign="bottom" backgroundColor="background" foregroundColor="foreground" transparent="1" zPosition="1">
+<widget source="global.CurrentTime" render="Label" position="1530,410" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
 <convert type="ClockToText">Format %A %d %B</convert>
 </widget>
+<!-- minitv -->
+<widget source="session.VideoPicture" render="Pig" position="1305,100" size="550,290" zPosition="1" backgroundColor="#ff000000" />
 
     <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
     <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
@@ -58,8 +67,8 @@ class iptv3(Screen, ConfigListScreen):
             "blue": self.check
         }, -2)
 
-        self.url = ConfigText(default="http://eliesatpanel.com", fixed_size=False)
-        self.port = ConfigText(default="8080", fixed_size=False)
+        self.url = ConfigText(default="http://jep2024.online", fixed_size=False)
+        self.port = ConfigText(default="2082", fixed_size=False)
         self.user = ConfigText(default="username", fixed_size=False)
         self.passw = ConfigText(default="password", fixed_size=False)
 
