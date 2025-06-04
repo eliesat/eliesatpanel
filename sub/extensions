@@ -191,7 +191,7 @@ Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker
-Version: 0.01     مشغل بورتلات اي بي تي في
+Version: 0.06     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
@@ -457,7 +457,7 @@ Status: Plg
 Radiom='https://gitlab.com/eliesat/extensions/-/raw/main/radiom/radiom.sh'
 
 Package: Radiogit
-Version: 1.1     ستريم لمحطات راديو
+Version: 1.2     ستريم لمحطات راديو
 Status: Plg
 Radiogit='https://gitlab.com/eliesat/extensions/-/raw/main/radiogit/radiogit.sh'
 
@@ -557,7 +557,7 @@ Status: Plg
 Transmission='https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh'
 
 Package: Vavoo-plugin
-Version: 1.37     اي بي تي في مجاني
+Version: 1.38     اي بي تي في مجاني
 Status: Plg
 Vavoo-plugin='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
