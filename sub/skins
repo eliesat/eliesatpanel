@@ -240,6 +240,11 @@ Version: 2.0
 Status: Soebased Segami Satv Sspa Spure
 Lava='https://gitlab.com/eliesat/skins/-/raw/main/all/lava/lava-ashawky.sh'
 
+Package: luka-fhd
+Version: 1.0     
+Status: Soebased Segami
+luka-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd/luka-fhd.sh'
+
 Package: Malek-fhd
 Version: 2.2     
 Status: Soebased Segami Satv Sspa Spure
