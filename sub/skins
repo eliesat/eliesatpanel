@@ -98,7 +98,7 @@ Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Fullhdglass17='https://gitlab.com/eliesat/skins/-/raw/main/all/fullhdglass17/fullhdglass17.sh'
 
 Package: Fury-fhd
-Version: 4.2     
+Version: 4.3     
 Status: Soebased Segami Satv Sspa Sobh Spure Svix
 Fury-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/fury-fhd/fury-fhd.sh'
 
@@ -240,10 +240,10 @@ Version: 2.0
 Status: Soebased Segami Satv Sspa Spure
 Lava='https://gitlab.com/eliesat/skins/-/raw/main/all/lava/lava-ashawky.sh'
 
-Package: luka-fhd
+Package: Luka-fhd
 Version: 1.0     
 Status: Soebased Segami
-luka-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd/luka-fhd.sh'
+Luka-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd/luka-fhd.sh'
 
 Package: Malek-fhd
 Version: 2.2     
