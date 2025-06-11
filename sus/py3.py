@@ -8,6 +8,7 @@ from Components.config import ConfigText, ConfigInteger, getConfigListEntry
 from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
 from Plugins.Extensions.ElieSatPanel.menus.Console import Console
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
 
 class iptv3(Screen, ConfigListScreen):
     skin = """
@@ -32,7 +33,7 @@ class iptv3(Screen, ConfigListScreen):
 <ePixmap position="210,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />            
-<eLabel text="Close" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />     
+<eLabel text="Clear" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />     
 <ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
 <eLabel text="Send" position="387.5,960" zPosition="2" size="265,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
@@ -61,7 +62,7 @@ class iptv3(Screen, ConfigListScreen):
         Screen.__init__(self, session)
         self["actions"] = ActionMap(["SetupActions", "ColorActions"], {
             "cancel": self.exit,
-            "red": self.exit,
+            "red": self.clear,
             "green": self.send,
             "yellow": self.save,
             "blue": self.check
@@ -105,11 +106,23 @@ class iptv3(Screen, ConfigListScreen):
         for path in config_file[extension]:
             if extension == ".m3u":
                     sus = f"{line['url']} {line['port']} {line['user']} {line['passw']}\n"
+            with open('/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sus/iptv.txt', 'w'):
+                pass
             with open(path, "a") as f:
                 f.write(sus)
 
 
     def check(self):
-        self.close()
-    def exit(self):
+        info_path = resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/sus/iptv.txt")
+        if fileExists(info_path):
+            try:
+                with open(info_path, "r") as f:
+                    content = f.read()
+                self.session.open(MessageBox, content, MessageBox.TYPE_INFO)
+            except Exception as e:
+                self.session.open(MessageBox, f"Error reading report file: {str(e)}", MessageBox.TYPE_ERROR)
+        else:
+            self.session.open(MessageBox, "report file not found", MessageBox.TYPE_ERROR)
+
+    def clear(self):
         self.close()

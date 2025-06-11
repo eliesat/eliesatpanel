@@ -18,13 +18,11 @@ fi
 url=$(more $dir | head -n 1 |awk '{print $1}')
 echo "> url= $url"
 
-
 port=$(more $dir | head -n 1 |awk '{print $2}')
 echo "> port= $port"
 
 username=$(more $dir | head -n 1 |awk '{print $3}')
 echo "> username= $username"
-
 
 password=$(more $dir | head -n 1 |awk '{print $4}')
 echo "> password= $password"
@@ -37,7 +35,7 @@ declare -A files=(
 ["e2iplayer"]="/etc/enigma2/e2iplayer/playlists.txt"
 ["xcplugin"]="/etc/enigma2/xc/xclink.txt"
 )
-
+echo
 if [ -f "/etc/enigma2/iptosat.conf" ]; then
 > /etc/enigma2/iptosat.conf
 cat <<EOF >> /etc/enigma2/iptosat.conf
@@ -52,23 +50,21 @@ else
 echo "> iptosat config file not found"
 sleep 3
 fi
-
+echo
 for playlists in "${!files[@]}"
 do
     if [ ! -f "${files[$playlists]}" ]; then
    echo "> $playlists playlists file not found"
    sleep 3
+echo
    else
-if ! grep -q $username "${files[$playlists]}" >/dev/null 2>&1; then
 cat <<EOF >> "${files[$playlists]}"
 $url:$port/get.php?username=$username&password=$password&type=m3u
 EOF
 echo "> your iptv data installed in $playlists playlists file successfully"
 sleep 3
-else
-echo "> your iptv data already installed in $playlists playlists file"
+echo
 sleep 3
-fi
    fi
 done
 
