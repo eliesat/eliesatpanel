@@ -822,7 +822,7 @@ Status: Pan
 Ajpanel-Eliesatpanel='https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh'
 
 Package: Emilpanel
-Version: 1.4     بانل تسطيب اضافات
+Version: 1.6     بانل تسطيب اضافات
 Status: Pan
 Emilpanel='https://gitlab.com/eliesat/extensions/-/raw/main/emilpanel/emilpanel.sh'
 
@@ -837,12 +837,12 @@ Status: Pan
 Levi45addonmanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45-addon-manager.sh'
 
 Package: Levi45multicammanager
-Version: 10.2-r1     بانل تسطيب كامات
+Version: 10.2-r2     بانل تسطيب كامات
 Status: Pan
 Levi45multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh'
 
 Package: Linuxsat-panel
-Version: 2.7.9     بانل تسطيب اضافات
+Version: 2.8.0     بانل تسطيب اضافات
 Status: Pan
 Linuxsat-panel='https://gitlab.com/eliesat/extensions/-/raw/main/linuxsat-panel/linuxsat-panel.sh'
 
@@ -872,7 +872,7 @@ Status: Pan
 Satvenuspanel='https://gitlab.com/eliesat/extensions/-/raw/main/satvenuspanel/satvenuspanel.sh'
 
 Package: Simple-zoom-panel
-Version: 2.2.5     بانل تسطيب اضافات
+Version: 2.2.6     بانل تسطيب اضافات
 Status: Pan
 Simple-zoom-panel='https://gitlab.com/eliesat/extensions/-/raw/main/simple-zoom-panel/simple-zoom-panel.sh'
 
@@ -887,7 +887,7 @@ Status: Pan
 Tvaddon='https://gitlab.com/eliesat/extensions/-/raw/main/tvaddon/tvaddon.sh'
 
 Package: Tvmanager
-Version: 2.9     بانل تسطيب اضافات
+Version: 3.0     بانل تسطيب اضافات
 Status: Pan
 Tvmanager='https://gitlab.com/eliesat/extensions/-/raw/main/tvmanager/tvmanager.sh'
 
