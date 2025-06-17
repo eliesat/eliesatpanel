@@ -818,7 +818,7 @@ Ciefp-plugins='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-plugins/ci
 
 Package: Ciefsettingspanel
 Version: 4.0     بانل تسطيب اضافات
-Status: Sparts
+Status: Pan
 Ciefsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 
 Package: Ajpanel-Eliesatpanel
