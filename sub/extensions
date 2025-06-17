@@ -812,9 +812,14 @@ Status: Pan
 Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh'
 
 Package: Ciefp-plugins
-Version: 1.5     بانل تسطيب اضافات
+Version: 1.5     بانل تسطيب اضافات خاصة ببافل سييف
 Status: Pan
 Ciefp-plugins='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-plugins/ciefp-plugins.sh'
+
+Package: Ciefsettingspanel
+Version: 4.0     بانل تسطيب اضافات
+Status: Sparts
+Ciefsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 
 Package: Ajpanel-Eliesatpanel
 Version: 1.0     بانل تسطيب اضافات
