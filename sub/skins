@@ -3,6 +3,11 @@ Package: XXXX
 Version: XXXX     
 Status: Aud
 XXXXXXX='XXXXXXXX'
+
+Package: Ciefsettingspanel
+Version: 4.0     بانل تسطيب اضافات
+Status: Sparts
+Ciefsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 --------------allll--------------
 Package: Beta-pro-tool
 Version: 1.6     بلاجين تنزيل سكين بيتا برو
@@ -98,7 +103,7 @@ Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Fullhdglass17='https://gitlab.com/eliesat/skins/-/raw/main/all/fullhdglass17/fullhdglass17.sh'
 
 Package: Fury-fhd
-Version: 4.3     
+Version: 4.4     
 Status: Soebased Segami Satv Sspa Sobh Spure Svix
 Fury-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/fury-fhd/fury-fhd.sh'
 
@@ -153,8 +158,8 @@ Status: Soebased Sobh
 Youchie-obh-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/youchie-pli-fhd/youchie-pli-fhd.sh'
 
 Package: Youchie-pli-fhd
-Version: 1.0.1     
-Status: Soebased Spli3 
+Version: 1.0.3     
+Status: Soebased Spli3 Sobh Svix
 Youchie-pli-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/youchie-pli-fhd/pli/youchie-pli-fhd.sh'
 
 Package: Xdreamy-fhd
