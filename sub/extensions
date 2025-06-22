@@ -351,7 +351,7 @@ Status: Plg
 Mmpicons='https://gitlab.com/eliesat/extensions/-/raw/main/mmpicons/mmpicons.sh'
 
 Package: Moviebrowser
-Version: 3.8     تصفح الافلام و المسلسلات المخزنة
+Version: 3.9     تصفح الافلام و المسلسلات المخزنة
 Status: Plg
 Moviebrowser='https://gitlab.com/eliesat/extensions/-/raw/main/moviebrowser/moviebrowser.sh'
 
