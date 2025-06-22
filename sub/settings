@@ -10,11 +10,6 @@ Version: 15.07.2024     ملف قنوات
 Status: Settings
 A-hussein-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.hussein/a.hussein-motor.sh'
 
-Package: A-salama-motor
-Version: 26.09.2024     ملف قنوات
-Status: Settings
-A-salama-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.salama/a.salama-motor.sh'
-
 Package: A-shawky-motor
 Version: 08.06.2024     ملف قنوات
 Status: Settings
@@ -64,6 +59,11 @@ Package: Novaler-motor
 Version: 06.04.2025     ملف قنوات
 Status: Settings
 Novaler-motor='https://gitlab.com/eliesat/settings/-/raw/main/novaler-motor/novaler-motor.sh'
+
+Package: Islam-salama-motor
+Version: 22.06.2025     ملف قنوات
+Status: Settings
+Islam-salama-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.salama/a.salama-motor.sh'
 
 Package: Ismail-saidi-motor
 Version: 23.12.2024     ملف قنوات
