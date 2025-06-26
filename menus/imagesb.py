@@ -1,4 +1,5 @@
 from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
@@ -98,15 +99,16 @@ class imagesb(Screen):
         self["background"] = Pixmap()
         self["status"] = Label("Select plugins with OK, install with Green")
         self["key_green"] = Button("Install")
-        self["key_red"] = Button("Close")
+        self["key_red"] = Button("Restart")
         self["key_yellow"] = Button("Dependencies")
-        self["key_blue"] = Button("Restart")
+        self["key_blue"] = Button("Report")
 
         self["actions"] = ActionMap(
             ["ColorActions", "SetupActions"],
             {
                 "green": self.start_installation,
-                "blue": self.restart_enigma2,
+                "red": self.restart_enigma2,
+                "blue": self.report,
                 "ok": self.toggle_selection,
                 "cancel": self.close,
             },
@@ -257,3 +259,15 @@ class imagesb(Screen):
     def restart_enigma2(self):
         self.container.execute("init 4 && init 3")
         self.close()
+
+    def report(self):
+        info_path = resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/menus/Imagesb")
+        if fileExists(info_path):
+            try:
+                with open(info_path, "r") as f:
+                    content = f.read()
+                self.session.open(MessageBox, content, MessageBox.TYPE_INFO)
+            except Exception as e:
+                self.session.open(MessageBox, f"Error reading report file: {str(e)}", MessageBox.TYPE_ERROR)
+        else:
+            self.session.open(MessageBox, "report file not found", MessageBox.TYPE_ERROR)
