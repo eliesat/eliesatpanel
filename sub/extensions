@@ -45,7 +45,7 @@ Status: Plg
 Athantimes='https://gitlab.com/eliesat/extensions/-/raw/main/athantimes/athantimes.sh'
 
 Package: Auto-dcw-key-add
-Version: 1.0.5     اضافة مفتاح بيس بملف السوفتكام
+Version: 1.0.6     اضافة مفتاح بيس بملف السوفتكام
 Status: Plg
 Auto-dcw-key-add='https://gitlab.com/eliesat/extensions/-/raw/main/dcw-key-add/dcw-key-add.sh'
 
