@@ -1,231 +1,259 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-from Plugins.Extensions.ElieSatPanel.menus.Console import Console
-import gettext
-from Components.Button import Button
-from Components.Language import language
-from Components.PluginComponent import plugins
-from Components.Sources.StaticText import StaticText
-from Components.Pixmap import Pixmap
-from Components.ActionMap import ActionMap, NumberActionMap
-from Components.Sources.List import List
-import os
+from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
 from Plugins.Plugin import PluginDescriptor
-from Screens.Standby import TryQuitMainloop
+from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
-from Components.Console import Console as iConsole
-from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
-from types import *
+from Components.ActionMap import ActionMap
 from Components.Label import Label
 from Components.MenuList import MenuList
-from Screens.PluginBrowser import PluginBrowser
-from Screens.Screen import Screen
-from Tools.LoadPixmap import LoadPixmap
+from Components.Button import Button
+from Components.Pixmap import Pixmap
+from enigma import eConsoleAppContainer
+from enigma import eTimer
+import urllib.request
+import json
+import os
+import logging
+import re
+import shutil
+import glob
 
-global min, first_start
-min = first_start = 0
-####################################
+PLUGINS = {
+    "Bitrate": "opkg install enigma2-plugin-extensions-bitrate", 
+    "Cacheflush": "opkg install enigma2-plugin-extensions-cacheflush",  
+    "Chocholousek-picons": "opkg install enigma2-plugin-extensions-chocholousek-picons",
+    "E2iplayer-deps": "opkg install enigma2-plugin-extensions-e2iplayer-deps ", 
+    "Epgimport": "opkg install enigma2-plugin-extensions-epgimport",
+    "Epgtranslator": "opkg install enigma2-plugin-extensions-epgtranslator",
+    "Ipchecker": "opkg install enigma2-plugin-extensions-ipchecker",
+    "Oaweather": "opkg install enigma2-plugin-extensions-oaweather",
+    "Permanentclock": "opkg install enigma2-plugin-extensions-permanentclock",
+    "Setpicon": "opkg install enigma2-plugin-extensions-setpicon",
+    "Tmdb": "opkg install enigma2-plugin-extensions-tmdb",
+    "Autoresolution": "opkg install enigma2-plugin-systemplugins-autoresolution",
+    "Weathercomponenthandler": "opkg install enigma2-plugin-systemplugins-weathercomponenthandler",
+    "Ai-powered-subtitle-translation": "opkg install enigma2-plugin-subscription-ai-powered-subtitle-translation",
+    "Metrix-atv-fhd-icons": "opkg install enigma2-plugin-skins-metrix-atv-fhd-icons",
+}
+FILE = "/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/menus/Imagesb"
+DIR = "/usr/lib/enigma2/python/Plugins/Extensions/"
 
 class imagesb(Screen):
-	skin = """
-<screen name="imagesb" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="ElieSatPanel">
-<ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png"/>
+    skin = """
+<screen name="Backup" position="center,center" size="1920,1080" title="Backup">
+        
+<!-- menu -->
+<widget name="menu" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png"  position="48,200" size="1240,660" scrollbarMode="showOnDemand" itemHeight="66" font="Regular;35" transparent="1" />
+<widget name="background" position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png" zPosition="-1" alphatest="on" />
 
 <!-- title -->
-<eLabel text="Install" position="160,120" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
-<ePixmap position="73,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/1.png" alphatest="blend" />
-
-<!-- title1 -->
-<eLabel text="Install" position="1530,700" size="400,50" zPosition="1" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
+<eLabel text="Packages:" position="160,105" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="73,105" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<eLabel text="Descriptions:" position="770,105" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="683,105" size="50,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
 <!-- title2 -->
-<eLabel text="Select and press ok to install" position="1440,790" size="400,50" zPosition="1" font="Bold;27" halign="left" foregroundColor="white" backgroundColor="#ff2c2d2b" transparent="1" />
-
-<!-- minitv -->
-<widget source="session.VideoPicture" render="Pig" position="1305,120" size="550,400" zPosition="1" backgroundColor="#ff000000" />
+<widget name="status" position="200,880" size="1240,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="110,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,1" zPosition="2" />
+    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,1" zPosition="2" />
+<eLabel text="ELIE" position="1450,535" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<eLabel text="PANEL" position="1635,535" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget name="Version" position="1510,650" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+<ePixmap position="1525,505" size="240,150" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/icon.png" zPosition="2" alphatest="blend" />
 
 <!-- clock -->
-<widget source="global.CurrentTime" render="Label" position="1290,600" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
+<widget source="global.CurrentTime" render="Label" position="1290,400" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
 		<convert type="ClockToText">Default</convert>
-
 <!-- calender -->
 </widget>
-<widget source="global.CurrentTime" render="Label" position="1530,610" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<widget source="global.CurrentTime" render="Label" position="1530,410" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
 <convert type="ClockToText">Format %A %d %B</convert>
 </widget>
+<!-- minitv -->
+<widget source="session.VideoPicture" render="Pig" position="1305,100" size="550,290" zPosition="1" backgroundColor="#ff000000" />
 
-<!-- button -->
-<ePixmap position="120,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
-<widget source="key_red" render="Label" position="160,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="400,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
-<widget source="key_green" render="Label" position="440,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="680,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
-<widget source="key_yellow" render="Label" position="720,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="960,930" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
-<widget source="key_blue" render="Label" position="1000,870" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<!--buttons -->
+<widget name="key_red" position="150,960"  size="165,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
+<widget name="key_green" position="430,960"  size="165,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
+<widget name="key_yellow" position="680,960"  size="250,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
+<widget name="key_blue" position="990,960"  size="165,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
+</screen>
+    """
 
-<!-- menu list -->
-<widget source="menu" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png" render="Listbox" position="48,200" size="1240,660" scrollbarMode="showOnDemand" transparent="1">
-<convert type="TemplatedMultiContent">
-	{"template": [
-		MultiContentEntryText(pos = (120, 10), size = (600, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-		MultiContentEntryText(pos = (700, 19), size = (600, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-		MultiContentEntryPixmapAlphaTest(pos = (25, 10), size = (50, 40), png = 3), # index 4 is the pixmap
-			],
-	"fonts": [gFont("Regular", 35),gFont("Regular", 25)],
-	"itemHeight": 66
-	}
-	</convert>
+    def __init__(self, session):
+        self.session = session
+        Screen.__init__(self, session)
 
-<!-- info button -->
-</widget>
-<ePixmap position="1530,870" size="140,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/info.png" zPosition="2" alphatest="blend" />
+        self.selected_plugins = set()
+        self.plugin_display_list = [f"{plugin}" for plugin in PLUGINS.keys()]
+        self.current_install_index = 0
+        self.installed_plugins = set()
 
-</screen>"""
+        self["Version"] = Label(_("V" + Version))
+        self["menu"] = MenuList(self.plugin_display_list)
+        self["background"] = Pixmap()
+        self["status"] = Label("Select plugins with OK, install with Green")
+        self["key_green"] = Button("Install")
+        self["key_red"] = Button("Close")
+        self["key_yellow"] = Button("Dependencies")
+        self["key_blue"] = Button("Restart")
 
-	def __init__(self, session):
-		self.session = session
-		Screen.__init__(self, session)
-		self.setTitle(_("ElieSatPanel"))
-		self.iConsole = iConsole()
-		self.indexpos = None
-		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions", "EPGSelectActions", "NumberActions" "ColorActions", "HotkeyActions"],
-		{
-			"ok": self.keyOK,
-			"cancel": self.exit,
-			"back": self.exit,
-			"red": self.exit,
-			"info": self.infoKey,
-			"green": self.keyGreen,
-			"yellow": self.keyOK,
-			"blue": self.restart,
-		})
-		self["key_red"] = StaticText(_("Close"))
-		self["key_green"] = StaticText(_("Browse"))
-		self["key_yellow"] = StaticText(_("Install"))
-		self["key_blue"] = StaticText(_("Restart E2"))
-		self.list = []
-		self["menu"] = List(self.list)
-		self.mList()
-	def mList(self):
-		self.list = []
-		a = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		b = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		c = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		d = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		e = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		f = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		g = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		h = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		i = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
-		j = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+        self["actions"] = ActionMap(
+            ["ColorActions", "SetupActions"],
+            {
+                "green": self.start_installation,
+                "blue": self.restart_enigma2,
+                "ok": self.toggle_selection,
+                "cancel": self.close,
+            },
+        )
 
-		self.list.append((_("Openatv-7.5.1"), 1, _("باكآب صورة openatv 7.5"), a))
-		self.list.append((_("xxxx"), 2, _("xxxx"), b))
-		self.list.append((_("xxxx"), 3, _("xxxx"), c))
-		self.list.append((_("xxxx"), 4, _("xxxx"), d))
-		self.list.append((_("xxxx"), 5, _("xxxx"), e))
-		self.list.append((_("xxxx"), 6, _("xxxx"), f))
-		self.list.append((_("xxxx"), 7, _("xxxx"), g))
-		self.list.append((_("xxxx"), 8, _("xxxx"), h))
-		self.list.append((_("xxxx"), 9, _("xxxx"), i))
-		self.list.append((_("xxxx"), 10, _("xxxx"), j))
+        self.container = eConsoleAppContainer()
+        self.container.appClosed.append(self.command_finished)
+        self.update_status()
 
-		if self.indexpos != None:
-			self["menu"].setIndex(self.indexpos)
-		self["menu"].setList(self.list)
-		
-	def go(self, num = None):
-		if num is not None:
-			num -= 1
-			if not num < self["menu"].count():
-				return
-			self["menu"].setIndex(num)
-		item = self["menu"].getCurrent()[1]
-		self.select_item(item)
-		
-	def keyOK(self, item = None):
-		self.indexpos = self["menu"].getIndex()
-		if item == None:
-			item = self["menu"].getCurrent()[1]
-			self.select_item(item)
+    def toggle_selection(self):
+        current_index = self["menu"].getSelectionIndex()
+        current_plugin = list(PLUGINS.keys())[current_index]
 
-	def select_item(self, item):
-		if item:
-			if item is 1:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/images/-/raw/main/openatv/backup-atv.feed-new.sh -qO - | /bin/sh"
-        ])
-			elif item is 2:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 3:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 4:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 5:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 6:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 7:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 8:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 9:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
-			elif item is 10:
-				self.session.open(Console, _("Installing package please wait..."), [
-            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/news.sh -qO - | /bin/sh"
-        ])
+        if current_plugin in self.selected_plugins:
+            self.selected_plugins.remove(current_plugin)
+            self.plugin_display_list[current_index] = f" {current_plugin}"
+            self.remove_plugin_from_file(current_plugin)
+        else:
+            self.selected_plugins.add(current_plugin)
+            self.plugin_display_list[current_index] = f"Ready to install  {current_plugin}"
+            self.log_selected_plugin(current_plugin)
 
-			else:
-				self.close(None)
+        self["menu"].setList(self.plugin_display_list)
+        self.update_status()
 
-	def exit(self):
-		self.close()
+    def update_status(self):
+        count = len(self.selected_plugins)
+        if count == 0:
+            self["status"].setText("Select with ok and press the green button to install")
+        elif count == 1:
+            self["status"].setText("1 package selected")
+        else:
+            self["status"].setText(f"{count} packages selected")
 
-	def keyRed (self):
+    def log_selected_plugin(self, plugin):
+        try:
+            logging.debug(f"Logging selected plugin: {plugin}")
+            plugin_dir = os.path.dirname(FILE)
+            if not os.path.exists(plugin_dir):
+                os.makedirs(plugin_dir)
+                logging.debug(f"Created directory: {plugin_dir}")
 
-		self.session.open(PluginBrowser)
+            existing_plugins = set()
+            if os.path.exists(FILE):
+                with open(FILE, "r") as f:
+                    existing_plugins = {line.strip() for line in f if line.strip()}
+                logging.debug(f"Existing plugins in file: {existing_plugins}")
 
-	def restart (self):
-				self.session.open(Console, _("Restarting enigma2 please wait..."), [
-            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
-        ])
+            if plugin not in existing_plugins:
+                with open(FILE, "a") as f:
+                    f.write(f"{plugin}\n")
+                logging.debug(f"Successfully logged plugin {plugin} to {FILE}")
+            else:
+                logging.debug(f"Plugin {plugin} already exists in {FILE}")
 
-	def keyRed (self):
+        except Exception as e:
+            logging.error(f"Error logging plugin {plugin} to {FILE}: {str(e)}")
+            self["status"].setText(f"Error logging plugin {plugin}: {str(e)}")
 
-		self.session.open(PluginBrowser)
+    def remove_plugin_from_file(self, plugin):
+        try:
+            if os.path.exists(FILE):
+                with open(FILE, "r") as f:
+                    plugins = [line.strip() for line in f if line.strip()]
+                plugins = [p for p in plugins if p != plugin]
+                with open(FILE, "w") as f:
+                    for p in plugins:
+                        f.write(f"{p}\n")
+                logging.debug(f"Removed plugin {plugin} from {FILE}")
+        except Exception as e:
+            logging.error(f"Error removing plugin {plugin} from {FILE}: {str(e)}")
+            self["status"].setText(f"Error removing plugin {plugin}: {str(e)}")
+    def find_plugin_folder(self, plugin_name):
+        if not os.path.exists(DIR):
+            return None
 
-	def keyBlue (self):
-		self.session.open(PluginBrowser)
-				
-	def keyYellow (self):
-		self.session.open(PluginBrowser)
-		
-	def keyGreen (self):
-		self.session.open(PluginBrowser)
-	
-	def infoKey (self):
-		self.session.open(Console, _("Please wait..."), [
-            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
-        ])
+        PLUGIN_FOLDER_MAP = {
+            "Levi45 Addons Manager": "Levi45Addons",
+            "TV Addon": "tvaddon",
+            "SubsSupport 1.7.0-r18 Mnasr": "SubsSupport",
+        }
+        if plugin_name in PLUGIN_FOLDER_MAP:
+            folder = PLUGIN_FOLDER_MAP[plugin_name]
+            if os.path.exists(os.path.join(DIR, folder)):
+                return folder
 
-	def cancel(self):
-		self.close()
+        normalized_name = re.sub(r'[\s\-\_]', '', plugin_name.lower())
+        normalized_name = re.sub(r'\d+\.\d+\.\d+.*|r\d+', '', normalized_name)
+        for folder in os.listdir(DIR):
+            normalized_folder = re.sub(r'[\s\-\_]', '', folder.lower())
+            if normalized_folder == normalized_name or folder.lower() == plugin_name.lower():
+                return folder
+        return None
+
+    def start_installation(self):
+        if not self.selected_plugins:
+            self["status"].setText("No plugins selected!")
+            return
+
+        self.plugins_to_install = list(self.selected_plugins)
+        self.current_install_index = 0
+        self.installed_plugins.clear()
+        self.install_next_plugin()
+
+    def install_next_plugin(self):
+        logging.debug(f"Installing plugin {self.current_install_index + 1}/{len(self.plugins_to_install)}")
+        if self.current_install_index >= len(self.plugins_to_install):
+            self["status"].setText("All installations complete!")
+            logging.debug(f"All installations complete, installed_plugins: {self.installed_plugins}")
+            self.clear_selections()
+            return
+
+        plugin = self.plugins_to_install[self.current_install_index]
+        self["status"].setText(f"Installing {plugin} ({self.current_install_index + 1}/{len(self.plugins_to_install)})...")
+        logging.debug(f"Executing command for plugin: {plugin}")
+        self.container.execute(PLUGINS[plugin])
+
+    def command_finished(self, retval):
+        current_plugin = self.plugins_to_install[self.current_install_index]
+        logging.debug(f"Installation finished for plugin {current_plugin}, return value: {retval}")
+        folder_name = self.find_plugin_folder(current_plugin)
+        package_installed = False
+
+        if folder_name:
+            if os.system(f"opkg list-installed | grep -q enigma2-plugin-extensions-{folder_name.lower()}") == 0:
+                package_installed = True
+            elif os.system(f"dpkg -l | grep -q enigma2-plugin-extensions-{folder_name.lower()}") == 0:
+                package_installed = True
+
+        if retval == 0 and (folder_name or package_installed):
+            logging.debug(f"Plugin {current_plugin} successfully installed in folder {folder_name or 'unknown'}")
+            self.installed_plugins.add(current_plugin)
+            self.current_install_index += 1
+            self.install_next_plugin()
+        else:
+            logging.warning(f"Plugin {current_plugin} not found in {DIR} or not installed, retval: {retval}")
+            self["status"].setText(f"Plugin {current_plugin} not installed properly!")
+            self.remove_plugin_from_file(current_plugin)
+            self.current_install_index += 1
+            self.install_next_plugin()
+
+    def clear_selections(self):
+        self.selected_plugins.clear()
+        self.plugin_display_list = [f"{plugin}" for plugin in PLUGINS.keys()]
+        self["menu"].setList(self.plugin_display_list)
+        self.update_status()
+
+    def restart_enigma2(self):
+        self.container.execute("init 4 && init 3")
+        self.close()
