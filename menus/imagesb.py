@@ -185,15 +185,6 @@ class imagesb(Screen):
         if not os.path.exists(DIR):
             return None
 
-        PLUGIN_FOLDER_MAP = {
-            "Levi45 Addons Manager": "Levi45Addons",
-            "TV Addon": "tvaddon",
-            "SubsSupport 1.7.0-r18 Mnasr": "SubsSupport",
-        }
-        if plugin_name in PLUGIN_FOLDER_MAP:
-            folder = PLUGIN_FOLDER_MAP[plugin_name]
-            if os.path.exists(os.path.join(DIR, folder)):
-                return folder
 
         normalized_name = re.sub(r'[\s\-\_]', '', plugin_name.lower())
         normalized_name = re.sub(r'\d+\.\d+\.\d+.*|r\d+', '', normalized_name)
