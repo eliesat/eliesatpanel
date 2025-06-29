@@ -198,7 +198,7 @@ Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
 Package: Estalkerwebcontrol
 Version: 1.0     
-Status:plg
+Status: Plg
 Estalkerwebcontrol='https://gitlab.com/eliesat/extensions/-/raw/main/estalkerwebcontrol/estalkerwebcontrol.sh'
 
 Package: Feedsfinder
@@ -534,7 +534,7 @@ Spinnerselector='https://gitlab.com/eliesat/extensions/-/raw/main/spinnerselecto
 
 Package: Stalkerportalconverter
 Version: 1.4     تحويل بورتلات لمفضلات و m3u     
-Status: plg
+Status: Plg
 Stalkerportalconverter='https://gitlab.com/eliesat/extensions/-/raw/main/stalkerportalconverter/stalkerportalconverter.sh'
 
 Package: Subssupport-1
