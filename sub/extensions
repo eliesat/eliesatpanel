@@ -592,7 +592,7 @@ Status: Plg
 Wireguard-vpn='https://gitlab.com/eliesat/extensions/-/raw/main/wireguard-vpn/wireguard-vpn.sh'
 
 Package: Worldcam
-Version: 4.9     كاميرات حول العالم
+Version: 5.4     كاميرات حول العالم
 Status: Plg
 Worldcam='https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh'
 
