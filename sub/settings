@@ -10,10 +10,10 @@ Version: 15.07.2024     ملف قنوات
 Status: Settings
 A-hussein-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.hussein/a.hussein-motor.sh'
 
-Package: A-shawky-motor
-Version: 08.06.2024     ملف قنوات
+Package: Adelsat-motor
+Version: 02.07.2025     ملف قنوات
 Status: Settings
-A-shawky-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.shawky/a.shawky-motor.sh'
+Adelsat-motor='https://gitlab.com/eliesat/settings/-/raw/main/adelsat/adelsat-motor.sh
 
 Package: Ciefp-motor
 Version: 18.04.2025     ملف قنوات
