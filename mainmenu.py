@@ -19,7 +19,6 @@ from .menus.extensionsmain import extensionsmain
 from .menus.displaymain import displaymain
 from .menus.feedsmain import feedsmain
 from .menus.imagesmain import imagesmain
-from .menus.imagesb import imagesb
 from .menus.piconsmain import piconsmain
 from .menus.settingsmain import settingsmain
 from .menus.skinsmain import skinsmain
@@ -165,7 +164,12 @@ class eliesatpanel(Screen):
 			elif item is 5:
 				self.session.open(imagesmain)
 			elif item is 6:
-				self.session.open(imagesb)
+				PY3 = sys.version_info.major >= 3
+				if sys.version_info[0] < 3:
+					self.session.open(eliesatpanel)
+				else:
+					from .menus.imagesb import imagesb
+					self.session.open(imagesb)
 			elif item is 7:
 				self.session.open(piconsmain)
 			elif item is 8:
