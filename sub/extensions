@@ -257,7 +257,7 @@ Status: Plg
 Hasbahca='https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh'
 
 Package: Historyzapselector
-Version: 1.0.42     تصفح آخر قنوات سات قلبت فيهم
+Version: 1.0.44     تصفح آخر قنوات سات قلبت فيهم
 Status: Plg
 Historyzapselector='https://gitlab.com/eliesat/extensions/-/raw/main/historyzapselector/historyzapselector-dorik.sh'
 
