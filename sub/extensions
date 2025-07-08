@@ -157,7 +157,7 @@ Status: Plg
 E2m3ubouquet='https://gitlab.com/eliesat/extensions/-/raw/main/e2m3u2bouquet/e2m3u2bouquet.sh'
 
 Package: E2readeradder
-Version: 2.0     كتابة سطر السسكام و ارساله الى الايميوهات
+Version: 3.0     كتابة سطر السسكام و ارساله الى الايميوهات
 Status: Plg
 E2readeradder='https://gitlab.com/eliesat/extensions/-/raw/main/e2reader/enigma2readeradder.sh'
 
