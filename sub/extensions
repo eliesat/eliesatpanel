@@ -413,7 +413,7 @@ Status: Plg
 Newpermanentclock='https://gitlab.com/eliesat/extensions/-/raw/main/newpermanentclock/newpermanentclock.sh'
 
 Package: Oaweather
-Version: 3.0     حالة الطقس
+Version: 3.9     حالة الطقس
 Status: Plg
 Oaweather='https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false'
 
