@@ -65,9 +65,9 @@ class cccam2(Screen, ConfigListScreen):
 
         self.label = ConfigText(default="ElieSat", fixed_size=False)
         self.url = ConfigText(default="tv8k.cc", fixed_size=False)
-        self.port = ConfigText(default="22222", fixed_size=False)
-        self.user = ConfigText(default="server-eagle", fixed_size=False)
-        self.passw = ConfigText(default="server-eagle", fixed_size=False)
+        self.port = ConfigText(default="44355", fixed_size=False)
+        self.user = ConfigText(default="servereagle", fixed_size=False)
+        self.passw = ConfigText(default="16.7.2025", fixed_size=False)
 
         ConfigListScreen.__init__(self, [
             getConfigListEntry("LABEL :", self.label),
