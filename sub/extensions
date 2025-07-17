@@ -166,10 +166,10 @@ Version: 0.2     اضافة اسطر سسكام
 Status: Plg
 Easy-cccam='https://gitlab.com/eliesat/extensions/-/raw/main/easy-cccam/easy-cccam.sh'
 
-Package: Epggrabber
+Package: Epggrabber-ziko
 Version: 24.6     الدليل الالكتروني
 Status: Plg
-Epggrabber='https://gitlab.com/eliesat/extensions/-/raw/main/epggrabber2/epggrabber.sh'
+Epggrabber-ziko='https://gitlab.com/eliesat/extensions/-/raw/main/epggrabber2/epggrabber.sh'
 
 Package: Epggrabber-mod-elie
 Version: 24.2     الدليل الالكتروني
