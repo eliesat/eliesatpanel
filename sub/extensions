@@ -216,10 +216,10 @@ Version: 1.4     اي بي تي في مجاني
 Status: Plg
 Filmxy='https://gitlab.com/eliesat/extensions/-/raw/main/filmxy/filmxy.sh'
 
-Package: Footonsat
+Package: Footonsat-Ziko
 Version: 1.9     مواعيد مباريات كرة القدم مع القنوات الناقلة
 Status: Plg
-Footonsat='https://gitlab.com/eliesat/extensions/-/raw/main/footonsat/footonsat.sh'
+Footonsat-Ziko='https://gitlab.com/eliesat/extensions/-/raw/main/footonsat/footonsat.sh'
 
 Package: Footonsat-mohamed-os
 Version: 1.9     مواعيد مباريات كرة القدم مع القنوات الناقلة
