@@ -608,7 +608,7 @@ Status: Plg
 Worldcam='https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh'
 
 Package: Xcplugin-forever
-Version: 4.8     مشغل اي بي تي في
+Version: 4.9     مشغل اي بي تي في
 Status: Plg
 Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
