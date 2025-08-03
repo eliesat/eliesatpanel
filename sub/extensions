@@ -948,7 +948,7 @@ Status: Sys
 Newvirtualkeyboard='https://gitlab.com/eliesat/extensions/-/raw/main/newvirtualkeyboard/newvirtualkeyboard.sh'
 
 Package: Servicescanupdates
-Version: 1.0     انشاء مفضلة لقنوات
+Version: 1.5     انشاء مفضلة للقنوات الجديدة بعد البحث
 Status: Sys
 Servicescanupdates='https://gitlab.com/eliesat/extensions/-/raw/main/servicescanupdates/servicescanupdates.sh'
 
