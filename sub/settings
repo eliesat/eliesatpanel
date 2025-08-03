@@ -20,10 +20,10 @@ Version: 18.04.2025     ملف قنوات
 Status: Settings
 Ciefp-motor='https://gitlab.com/eliesat/settings/-/raw/main/ciefp-motor/ciefp-motor.sh'
 
-Package: Lassaed-motor
-Version: 25.06.2024     ملف قنوات
+Package: H.wahba-motor
+Version: 29.07.2025     ملف قنوات
 Status: Settings
-Lassaed-motor='https://gitlab.com/eliesat/settings/-/raw/main/lassaed-motor/lassaed-motor.sh'
+H.wahba-motor='https://gitlab.com/eliesat/settings/-/raw/main/h.wahba/h.wahba-motor.sh'
 
 Package: M.mallah-motor
 Version: 01.05.2025     ملف قنوات
