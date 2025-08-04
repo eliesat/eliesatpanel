@@ -866,6 +866,12 @@ Version: 3.1     بانل تسطيب بيكونات و ملفات قنوات
 Status: Pan
 Oneupdater='https://gitlab.com/eliesat/extensions/-/raw/main/oneupdater/oneupdater.sh'
 
+
+Package: Panelaio
+Version: 1.5-r1     بانل تسطيب اضافات
+Status: Pan
+Panelaio='https://gitlab.com/eliesat/extensions/-/raw/main/panelaio/panelaio.sh'
+
 Package: S4aupdater
 Version: 24.08.30.2303     بانل تسطيب اضافات
 Status: Pan
@@ -1004,4 +1010,4 @@ Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ip
 Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'
