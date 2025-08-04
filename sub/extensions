@@ -120,17 +120,6 @@ Version: 5.0.240904     تسطيب بيكونات
 Status: Plg
 Chocholousek='https://gitlab.com/eliesat/extensions/-/raw/main/chocholousek-picons/chocholousek-picons.sh'
 
-Package: Ciefpsettingsmotor
-Version: 1.5     تنزيل و تثبيت ملف قنوات بافل سييف
-Status: Plg
-Ciefpsettingsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-settings-motor/ciefp-settings-motor.sh'
-
-Package: Ciefpsettingsdownloader
-Version: 1.4     تنزيل و تثبيت ملف قنوات بافل سييف
-Status: Plg
-Ciefpsettingsdownloader='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-settings-downloader/ciefp-settings-downloader.sh'
-
-
 Package: Crashlogviewer
 Version: 1.6     تصفح ملفات الكراش
 Status: Plg
@@ -823,12 +812,12 @@ Status: Pan
 Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh'
 
 Package: Ciefp-plugins
-Version: 1.5     بانل تسطيب اضافات خاصة ببافل سييف
+Version: 2.0     بانل تسطيب اضافات خاصة ببافل سييف
 Status: Pan
 Ciefp-plugins='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-plugins/ciefp-plugins.sh'
 
 Package: Ciefsettingspanel
-Version: 4.0     بانل تسطيب اضافات
+Version: 4.6     بانل تسطيب اضافات
 Status: Pan
 Ciefsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 
