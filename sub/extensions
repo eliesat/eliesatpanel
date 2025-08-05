@@ -407,7 +407,7 @@ Status: Plg
 Oaweather='https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false'
 
 Package: Oscam-status
-Version: 6.6     معلومات عن حالة المحاكي
+Version: 6.94     معلومات عن حالة المحاكي
 Status: Plg
 Oscam-status='https://gitlab.com/eliesat/extensions/-/raw/main/oscam-status/oscam-status.sh'
 
@@ -622,7 +622,7 @@ Status: Plg
 Xtraevent-2='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.5.sh'
 
 Package: Xtraevent-3
-Version: 6.840     تسطيب بوسترات
+Version: 6.870     تسطيب بوسترات بايتون٣
 Status: Plg
 Xtraevent-3='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/new/xtraevent.sh'
 
