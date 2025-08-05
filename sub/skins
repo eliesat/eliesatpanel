@@ -653,6 +653,12 @@ Version: 1.9
 Status: Soebased  Spli3 
 Simple-gray='https://gitlab.com/eliesat/skins/-/raw/main/pli3/simple-gray/simple-gray.sh?inline=false'
 
+--------------openspa--------------
+Package: Skyline
+Version: 1.0     
+Status: Soebased Sspa
+Skyline='https://gitlab.com/eliesat/skins/-/raw/main/openspa/skyline/skyline.sh'
+
 
 --------------openvix--------------
 
