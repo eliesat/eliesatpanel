@@ -602,12 +602,12 @@ Status: Plg
 Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
 Package: Xklass
-Version: 1.58     مشغل اي بي تي في
+Version: 1.60     مشغل اي بي تي في
 Status: Plg
 Xklass='https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh'
 
 Package: Xstreamity
-Version: 5.0.5     مشغل اي بي تي في
+Version: 5.0.7     مشغل اي بي تي في
 Status: Plg
 Xstreamity='https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh'
 
