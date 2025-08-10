@@ -5,10 +5,10 @@ Version: 26.10.2024     ملف قنوات
 Status: Settings
 A.ibrahreem-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.ibraheem/a.ibraheem-motor.sh'
 
-Package: A-hussein-motor
-Version: 15.07.2024     ملف قنوات
+Package: A-altahan-motor
+Version: 06.08.2025     ملف قنوات
 Status: Settings
-A-hussein-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.hussein/a.hussein-motor.sh'
+A-altahan-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.altahan/a.altahan-motor.sh'
 
 Package: Adelsat-motor
 Version: 06.07.2025     ملف قنوات
