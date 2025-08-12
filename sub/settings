@@ -86,7 +86,7 @@ Status: Settings
 Vhannibal-motor='https://gitlab.com/eliesat/settings/-/raw/main/vhannibal/vhannibal-motor.sh'
 
 Package: Freq-Eliesat
-Version: 25.03.2025     ملف ترددات
+Version: 12.08.2025     ملف ترددات
 Status: Freq
 Freq-Eliesat='https://gitlab.com/eliesat/settings/-/raw/main/eliesat/installer.sh'
 
