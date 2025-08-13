@@ -663,6 +663,11 @@ Version: 7.1     تنزيل و تسطيب صور خام
 Status: Mul
 Multiboot-flashonline='https://gitlab.com/eliesat/extensions/-/raw/main/multiboot-flashonline/multiboot-flashonline.sh'
 
+Package: Multibootselector
+Version: 7.1     اقلاع  صور خام
+Status: Mul
+Multibootselector='https://gitlab.com/eliesat/extensions/-/raw/main/multibootselector/multibootselector.sh'
+
 Package: Nfr4xboot
 Version: 2.0     تسطيب صور على الذاكرة الخارجية
 Status: Mul
@@ -1015,4 +1020,4 @@ Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ip
 Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'
