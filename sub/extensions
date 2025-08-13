@@ -831,6 +831,11 @@ Version: 1.6     بانل تسطيب اضافات
 Status: Pan
 Emilpanel='https://gitlab.com/eliesat/extensions/-/raw/main/emilpanel/emilpanel.sh'
 
+Package: Emilpanelpro
+Version: 1.0     بانل تسطيب اضافات
+Status: Pan
+Emilpanelpro='https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh'
+
 Package: Epanel
 Version: 5.8r2     بانل خدمات متنوعة للصورة
 Status: Pan
