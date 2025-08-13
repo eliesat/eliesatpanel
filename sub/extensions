@@ -664,7 +664,7 @@ Status: Mul
 Multiboot-flashonline='https://gitlab.com/eliesat/extensions/-/raw/main/multiboot-flashonline/multiboot-flashonline.sh'
 
 Package: Multibootselector
-Version: 7.1     اقلاع  صور خام
+Version: 1.14     اقلاع  صور خام
 Status: Mul
 Multibootselector='https://gitlab.com/eliesat/extensions/-/raw/main/multibootselector/multibootselector.sh'
 
