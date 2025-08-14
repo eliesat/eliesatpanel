@@ -5,6 +5,11 @@ Version: 02.05.2025     /media/hdd 30W-80E شعارات القنوات
 Status: Snp
 picons-motor='https://gitlab.com/eliesat/picons/-/raw/main/picons-all-name.sh'
 
+Package: Picons-transparent
+Version: 15.08.2025     شعار ايميو سات بروفايدير و التشفير
+Status: Srp
+Picons-transparent='https://gitlab.com/eliesat/picons/-/raw/main/picons-transparent.sh'
+
 Package: 34.5W-picons
 Version: 30.03.2025     شعار قنوات انتلسات ٣٥
 Status: Srp
