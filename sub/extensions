@@ -195,6 +195,11 @@ Version: 3.1     الفيدات و شفرات البيس
 Status: Plg
 Feedsfinder='https://gitlab.com/eliesat/extensions/-/raw/main/feedsfinder/feedsfinder.sh'
 
+Package: Feedcatcher
+Version: 1.1     الفيدات و شفرات البيس
+Status: Plg
+Feedcatcher='https://gitlab.com/eliesat/extensions/-/raw/main/feedcatcher/feedcatcher.sh'
+
 Package: Filecommander
 Version: 2024.08.31     مدير ملفات
 Status: Plg
