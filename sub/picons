@@ -13,17 +13,17 @@ Picons-transparent='https://gitlab.com/eliesat/picons/-/raw/main/picons-transpar
 Package: Picons-black
 Version: 15.08.2025     شعارات الايميو السات البروفايدر و التشفير
 Status: Srp
-Picons-black='https://gitlab.com/eliesat/picons/-/raw/main/picons-transparent.sh'
+Picons-black='https://gitlab.com/eliesat/picons/-/raw/main/picons-black.sh'
 
 Package: Picons-white
 Version: 15.08.2025     شعارات الايميو السات البروفايدر و التشفير
 Status: Srp
-Picons-white='https://gitlab.com/eliesat/picons/-/raw/main/picons-transparent.sh'
+Picons-white='https://gitlab.com/eliesat/picons/-/raw/main/picons-white.sh'
 
 Package: Picons-zelda
 Version: 15.08.2025     شعارات الايميو السات البروفايدر و التشفير
 Status: Srp
-Picons-zelda='https://gitlab.com/eliesat/picons/-/raw/main/picons-transparent.sh'
+Picons-zelda='https://gitlab.com/eliesat/picons/-/raw/main/picons-zelda.sh'
 
 Package: 34.5W-picons
 Version: 30.03.2025     شعار قنوات انتلسات ٣٥
