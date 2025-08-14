@@ -527,7 +527,7 @@ Status: Plg
 Spinnerselector='https://gitlab.com/eliesat/extensions/-/raw/main/spinnerselector/spinnerselector.sh'
 
 Package: Stalkerportalconverter
-Version: 1.4     تحويل بورتلات لمفضلات و m3u     
+Version: 1.6     تحويل بورتلات لمفضلات و m3u     
 Status: Plg
 Stalkerportalconverter='https://gitlab.com/eliesat/extensions/-/raw/main/stalkerportalconverter/stalkerportalconverter.sh'
 
