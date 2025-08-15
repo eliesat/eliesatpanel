@@ -315,6 +315,11 @@ Version: 4.123     m3u قارئ و مشغل ملفات
 Status: Plg
 Iptvdream='https://gitlab.com/eliesat/extensions/-/raw/main/iptvdream-all/iptvdream-all.sh'
 
+Package: Iqraaquran
+Version: 1.2     إقرا القرآن الكريم
+Status: Plg
+Iqraaquran='https://gitlab.com/eliesat/extensions/-/raw/main/iqraaquran/iqraaquran.sh'
+
 Package: Isettingse2
 Version: 5.8     تسطيب ملفات قنوات
 Status: Plg
@@ -1025,4 +1030,4 @@ Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ip
 Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h''
