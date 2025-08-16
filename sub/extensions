@@ -181,7 +181,7 @@ Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker
-Version: 1.05     مشغل بورتلات اي بي تي في
+Version: 1.06     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
@@ -968,7 +968,7 @@ Status: Sys
 Newvirtualkeyboard='https://gitlab.com/eliesat/extensions/-/raw/main/newvirtualkeyboard/newvirtualkeyboard.sh'
 
 Package: Servicescanupdates
-Version: 1.5     انشاء مفضلة للقنوات الجديدة بعد البحث
+Version: 3.2     انشاء مفضلة للقنوات الجديدة بعد البحث
 Status: Sys
 Servicescanupdates='https://gitlab.com/eliesat/extensions/-/raw/main/servicescanupdates/servicescanupdates.sh'
 
@@ -1023,7 +1023,7 @@ Status: Free
 Emil-scripts='https://gitlab.com/eliesat/free/-/raw/main/emil/emil-scripts.sh'
 
 Package: Ipaudiopro-haitham
-Version: 18.05.2025     صوتيات هيثم السوداني
+Version: 13.08.2025     صوتيات هيثم السوداني
 Status: Free
 Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopro-haitham.sh'
 
