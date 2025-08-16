@@ -10,6 +10,11 @@ Version: 1.2     الأجر
 Status: Plg
 Alajre='https://https://gitlab.com/eliesat/extensions/-/raw/main/alajre/alajre.shn/acherone/acherone.sh'
 
+Package: Advancedbootlogo
+Version: 1.0     إدارة صور الاقلاع
+Status: Plg
+Advancedbootlogo='https://gitlab.com/eliesat/extensions/-/raw/main/advancedbootlogo/advancedbootlogo.sh'
+
 Package: Advancedscreenshot
 Version: 1.2     التقاط و تخزين صورة عن الشاشة
 Status: Plg
@@ -1035,4 +1040,4 @@ Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ip
 Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h''
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h'''h''''
