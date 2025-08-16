@@ -250,6 +250,11 @@ Version: 1.8     اي بي تي في مجاني
 Status: Plg
 Hasbahca='https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh'
 
+Package: Hdfradio
+Version: 2.22.1     راديو
+Status: Plg
+Hdfradio='https://gitlab.com/eliesat/extensions/-/raw/main/hdfradio/hdfradio.sh'
+
 Package: Historyzapselector
 Version: 1.0.45     تصفح آخر قنوات سات قلبت فيهم
 Status: Plg
