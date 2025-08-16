@@ -602,7 +602,7 @@ Status: Plg
 WeatherPluginIcons='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh'
 
 Package: Wireguard-vpn
-Version: 15.1     اضافة اشتراك في بي ان معاينة سرعة النت
+Version: 15.6     اضافة اشتراك في بي ان معاينة سرعة النت
 Status: Plg
 Wireguard-vpn='https://gitlab.com/eliesat/extensions/-/raw/main/wireguard-vpn/wireguard-vpn.sh'
 
