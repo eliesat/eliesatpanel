@@ -487,7 +487,7 @@ Status: Plg
 Rakutentv='https://gitlab.com/eliesat/extensions/-/raw/main/rakutentv/rakutentv.sh'
 
 Package: Samsungtvplus
-Version: 20241116     اي بي تي في مجاني
+Version: 20250815     اي بي تي في مجاني
 Status: Plg
 Samsungtvplus='https://gitlab.com/eliesat/extensions/-/raw/main/samsungtvplus/samsungtvplus.sh'
 
