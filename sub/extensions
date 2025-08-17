@@ -357,7 +357,7 @@ Lamedbmerger='https://gitlab.com/eliesat/extensions/-/raw/main/lamedbmerger/lame
 
 Package: Levi45emulator
 Version: 1.0     إدارة الايميوهات
-Status: Pan
+Status: Plg
 Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
 
 Package: M3uconverter
