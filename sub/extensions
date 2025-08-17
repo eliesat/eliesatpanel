@@ -256,7 +256,7 @@ Status: Plg
 Hasbahca='https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh'
 
 Package: Hdfradio
-Version: 2.22.1     راديو
+Version: 2.22.2     راديو
 Status: Plg
 Hdfradio='https://gitlab.com/eliesat/extensions/-/raw/main/hdfradio/hdfradio.sh'
 
