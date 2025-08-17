@@ -355,6 +355,11 @@ Version: 13.2     دمج ملفين قنوات و اقمار ببعض
 Status: Plg
 Lamedbmerger='https://gitlab.com/eliesat/extensions/-/raw/main/lamedbmerger/lamedbmerger.sh'
 
+Package: Levi45emulator
+Version: 1.0     إدارة الايميوهات
+Status: Pan
+Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
+
 Package: M3uconverter
 Version: 1.6     تحويل ال اي بي تي في لمفضلات
 Status: Plg
@@ -1040,4 +1045,4 @@ Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ip
 Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h'''h''''
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h'''h''''sh'h'''h'''''h'h'''h'''''
