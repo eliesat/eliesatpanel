@@ -863,6 +863,12 @@ class updateinfo(Screen):
 
     <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
     <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
+<!-- ip address -->
+<widget source="ipLabel" render="Label" position="1350,730" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<widget source="ipInfo" render="Label" position="1540,730" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<!-- internet -->
+	<widget source="internet" render="Label" position="1540,805" zPosition="2" size="390,40" font="Regular;35" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget source="internetLabel" render="Label" position="1350,805" zPosition="2" size="180,40" font="Regular;35" halign="right" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
     </screen>
     """
 
@@ -871,6 +877,14 @@ class updateinfo(Screen):
         info = ''
         self['text'] = ScrollLabel(info)
         self["Version"] = Label(_("V" + Version))
+        self.iConsole = iConsole()
+        self["ipLabel"] = StaticText(_("IP address:"))
+        self["ipInfo"] = StaticText()
+        self["macInfo"] = StaticText()
+        self.network_info()
+        self["internetLabel"] = StaticText(_("Internet:"))
+        self["internet"] = StaticText()
+        self.intInfo()
         self['actions'] = ActionMap(['SetupActions', 'DirectionActions'], {
             'right': self['text'].pageDown,
             'ok': self.close,
@@ -899,3 +913,41 @@ class updateinfo(Screen):
             print(e)
             self['text'].setText('Server down')
 
+    def intInfo(self):
+     try:
+       import socket
+       socket.setdefaulttimeout(0.5)
+       socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+       self["internet"].text = _("Connected")
+       return True
+     except:
+       self["internet"].text = _("Disconnected")
+       return False
+     if os.system("ping -c 1 8.8.8.8 "):
+       self["internet"].text = _("Connected")
+     else:
+       self["internet"].text = _("Disconnected")
+     return
+
+    def network_info(self):
+     self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+    def network_result(self, result, retval, extra_args):
+     if retval is 0:
+      ip = ''
+      mac = []
+      if len(result) > 0:
+       for line in result.splitlines(True):
+         if 'HWaddr' in line:
+           mac.append('%s' % line.split()[-1].strip('\n'))
+         elif 'inet addr:' in line and 'Bcast:' in line:
+           ip = line.split()[1].split(':')[-1]
+       self["macInfo"].text = '/'.join(mac)
+      else:
+       self["macInfo"].text =  _("unknown")
+     else:
+       self["macInfo"].text =  _("unknown")
+     if ip is not '':
+       self["ipInfo"].text = ip
+     else:
+       self["ipInfo"].text = _("unknown")
