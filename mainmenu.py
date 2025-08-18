@@ -1,3 +1,16 @@
+from Screens.Screen import Screen
+from Plugins.Plugin import PluginDescriptor
+from Components.ActionMap import ActionMap
+from Components.MenuList import MenuList
+from xml.dom import minidom
+from Components.Button import Button
+from Components.ScrollLabel import ScrollLabel
+from enigma import eTimer
+from Screens.MessageBox import MessageBox
+from Screens.Console import Console
+from twisted.web.client import getPage
+import urllib
+from Components.Label import Label
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
@@ -46,6 +59,7 @@ from Tools.LoadPixmap import LoadPixmap
 from Components.Console import Console as iConsole
 from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from types import *
+from Components.ScrollLabel import ScrollLabel
 
 global min, first_start
 min = first_start = 0
@@ -72,12 +86,12 @@ class eliesatpanel(Screen):
 			"red": self.iptv,
 			"info": self.infoKey,
 			"green": self.cccam,
-			"yellow": self.grid,
+			"yellow": self.updateinfo,
 			"blue": self.scriptslist,
 		})
 		self["key_red"] = StaticText(_("IptvAdder"))
 		self["key_green"] = StaticText(_("CccamAdder"))
-		self["key_yellow"] = StaticText(_("GridMode"))
+		self["key_yellow"] = StaticText(_("Info"))
 		self["key_blue"] = StaticText(_("Scripts"))
 		self.list = []
 		self["menu"] = List(self.list)
@@ -213,13 +227,9 @@ class eliesatpanel(Screen):
 			from Plugins.Extensions.ElieSatPanel.sus.cpy3 import cccam3
 			self.session.open(cccam3)
 
-	def grid(self):
-		try:
-			from Plugins.Extensions.AJPan.plugin import CCNm9T
-			if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/AJPan/eliesat-panel/autoupdate-panel.sh"):
-				self.session.open(CCNm9T)
-		except:
-				self.session.open(MessageBox, _('Install Ajpanel_Eliesatpanel and try again...'), MessageBox.TYPE_ERROR)
+	def updateinfo(self):
+		self.session.open(updateinfo)
+
 	def scriptslist(self):
 				self.session.open(Scripts)
 	def infoKey (self):
@@ -817,3 +827,75 @@ class ui(Screen):
 
 	def finish(self, result, retval, extra_args):
 		self.nList()
+
+import sys
+try:
+    pv = sys.version_info.major
+except:
+    pv = 2
+
+class updateinfo(Screen):
+    skin = """
+    <screen name="info" position="center,center" size="1920,1080" title="panel addons info" backgroundColor="transparent">\n<widget name="text" position="48,200" size="1240,660" font="Regular;39" transparent="1"/>
+        <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="//usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png" transparent="1" alphatest="on" />
+<eLabel text="Panels addons updates" position="460,120" size="500,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="370,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+<ePixmap position="920,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+
+<!-- title1 -->
+<ePixmap position="1525,505" size="360,360" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/icon.png" zPosition="2" alphatest="blend" />
+<eLabel text="ELIE" position="1450,535" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<eLabel text="PANEL" position="1635,535" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<widget name="Version" position="1510,650" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+<ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />            
+<eLabel text="Close" position="160,960" zPosition="2" size="165,45" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />     
+
+<!-- clock -->
+<widget source="global.CurrentTime" render="Label" position="1290,400" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
+		<convert type="ClockToText">Default</convert>
+<!-- calender -->
+</widget>
+<widget source="global.CurrentTime" render="Label" position="1530,410" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
+<convert type="ClockToText">Format %A %d %B</convert>
+</widget>
+<!-- minitv -->
+<widget source="session.VideoPicture" render="Pig" position="1305,100" size="550,290" zPosition="1" backgroundColor="#ff000000" />
+
+    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,3" zPosition="2" />
+    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,3" zPosition="2" />
+    </screen>
+    """
+
+    def __init__(self, session):
+        Screen.__init__(self, session)
+        info = ''
+        self['text'] = ScrollLabel(info)
+        self["Version"] = Label(_("V" + Version))
+        self['actions'] = ActionMap(['SetupActions', 'DirectionActions'], {
+            'right': self['text'].pageDown,
+            'ok': self.close,
+            'up': self['text'].pageUp,
+            'down': self['text'].pageDown,
+            'cancel': self.close,
+            'left': self['text'].pageUp
+        }, -1)
+
+        try:
+            try:
+                link = urllib.urlopen('https://raw.githubusercontent.com/eliesat/eliesatpanel/main/info.txt')
+            except:
+                link = urllib.request.urlopen('https://raw.githubusercontent.com/eliesat/eliesatpanel/main/info.txt')
+
+            self.labeltext = ''
+            lines = link.readlines()
+            for line in lines:
+                if pv == 3:
+                    line = line.decode()
+                self.labeltext += str(line)
+              
+            link.close()
+            self['text'].setText(self.labeltext)
+        except Exception as e:
+            print(e)
+            self['text'].setText('Server down')
+
