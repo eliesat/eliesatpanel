@@ -1,6 +1,10 @@
-18.08.2025 
+19.08.2025 
 -------------------------------------------------------------------------
-no new updates
+Novaler-beengo-py3.13 
+Novaler-novacam-py3.13
+Novaler-novalerstore-py3.13
+Novaler-novalertv-py3.13
+Novaler-novatv-py3.13
 
 enjoy!
 -------------------------------------------------------------------------
