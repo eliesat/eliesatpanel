@@ -1,16 +1,3 @@
-from Screens.Screen import Screen
-from Plugins.Plugin import PluginDescriptor
-from Components.ActionMap import ActionMap
-from Components.MenuList import MenuList
-from xml.dom import minidom
-from Components.Button import Button
-from Components.ScrollLabel import ScrollLabel
-from enigma import eTimer
-from Screens.MessageBox import MessageBox
-from Screens.Console import Console
-from twisted.web.client import getPage
-import urllib
-from Components.Label import Label
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
@@ -60,6 +47,7 @@ from Components.Console import Console as iConsole
 from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from types import *
 from Components.ScrollLabel import ScrollLabel
+import urllib
 
 global min, first_start
 min = first_start = 0
