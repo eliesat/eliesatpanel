@@ -838,7 +838,7 @@ class updateinfo(Screen):
     skin = """
     <screen name="info" position="center,center" size="1920,1080" title="panel addons info" backgroundColor="transparent">\n<widget name="text" position="48,200" size="1240,660" font="Regular;39" transparent="1"/>
         <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="//usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png" transparent="1" alphatest="on" />
-<eLabel text="Panels addons updates" position="460,120" size="500,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<eLabel text="Panel addons updates" position="460,120" size="500,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
 <ePixmap position="370,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 <ePixmap position="920,125" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
 
