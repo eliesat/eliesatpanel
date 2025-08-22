@@ -486,10 +486,10 @@ Version: 18.0     مستكشف اشارة الترددات
 Status: Plg
 Raedquicksignal='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh'
 
-Package: Radiodelay
+Package: Radiostreamrelay
 Version: 1.0     راديو
 Status: Plg
-Radiodelay='https://gitlab.com/eliesat/extensions/-/raw/main/radiorelay/radiorelay.sh'
+Radiostreamrelay='https://gitlab.com/eliesat/extensions/-/raw/main/radiorelay/radiorelay.sh'
 
 Package: Rakutentv
 Version: 20240324     اي بي تي في مجاني
