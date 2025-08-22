@@ -51,7 +51,7 @@ Status: Plg
 Athantimes='https://gitlab.com/eliesat/extensions/-/raw/main/athantimes/athantimes.sh'
 
 Package: Auto-dcw-key-add
-Version: 1.0.6     اضافة مفتاح بيس بملف السوفتكام
+Version: 1.0.7     اضافة مفتاح بيس بملف السوفتكام
 Status: Plg
 Auto-dcw-key-add='https://gitlab.com/eliesat/extensions/-/raw/main/dcw-key-add/dcw-key-add.sh'
 
@@ -186,7 +186,7 @@ Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker
-Version: 1.07     مشغل بورتلات اي بي تي في
+Version: 1.08     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
