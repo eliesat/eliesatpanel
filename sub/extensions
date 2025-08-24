@@ -957,6 +957,11 @@ Version: 3.12     3g 4g تعريف مودم يو اس بي
 Status: Sys
 3gmodemmanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/3gmodemmanager/3gmodemmanager.sh'
 
+Package: Arabic-menus
+Version: 1.0    قوائم الصورة باللغة العربية
+Status: Sys
+Arabic-menus='https://gitlab.com/eliesat/systemplugins/-/raw/main/arabic-menus/arabic-menus.sh'
+
 Package: Ciplushelper
 Version: 5.8-r2     تعريف الكامة الخارجية
 Status: Sys
@@ -1050,4 +1055,4 @@ Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ip
 Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h'''h''''sh'h'''h'''''h'h'''h'''''
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h'''h''''sh'h'''h'''''h'h'''h'''''''''
