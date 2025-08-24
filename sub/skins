@@ -152,6 +152,11 @@ Version: 3.1
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Premium-fhd-magneta='https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-magneta.sh'
 
+Package: Slyk-q-1080
+Version: 1.52     
+Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Slyk-q-1080='https://gitlab.com/eliesat/skins/-/raw/main/all/slyk-q-1080/slyk-q-1080.sh'
+
 Package: Youchie-obh-fhd
 Version: 1.0.2     
 Status: Soebased Sobh  
