@@ -21,7 +21,7 @@ Status: Fai
 Cccam-Fairbird='https://gitlab.com/eliesat/softcams/-/raw/main/cccam/cccam.sh'
 
 Package: Oscamicamall
-Version: v9.1     .ipk
+Version: v9.2     .ipk
 Status: Kit
 Oscamicamall='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamall-kite888.sh'
 
