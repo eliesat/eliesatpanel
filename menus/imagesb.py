@@ -1,264 +1,1263 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import os
+import _enigma
+import enigma
+import socket
+import gzip
+import stat
+import sys, traceback
+import re
+import time
+import gettext
+from datetime import datetime
+from threading import Timer
+from Plugins.Extensions.ElieSatPanel.menus.compat import compat_urlopen, compat_Request, PY3, readFromFile
+from Plugins.Extensions.ElieSatPanel.menus.Console import Console
 from Plugins.Extensions.ElieSatPanel.__init__  import Version, Panel
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
-from Plugins.Plugin import PluginDescriptor
-from Screens.Screen import Screen
-from Screens.MessageBox import MessageBox
-from Components.ActionMap import ActionMap
+from Components.ConfigList import ConfigListScreen
+from Components.config import ConfigText, getConfigListEntry
+from Components.PluginComponent import plugins
+from Components.Sources.StaticText import StaticText
+from Components.Pixmap import Pixmap
+from Components.ActionMap import ActionMap, NumberActionMap
+from Components.Sources.List import List
 from Components.Label import Label
 from Components.MenuList import MenuList
 from Components.Button import Button
-from Components.Pixmap import Pixmap
-from enigma import eConsoleAppContainer
-from enigma import eTimer
-import urllib.request
-import json
-import os
-import logging
-import re
-import shutil
-import glob
+from Components.Harddisk import harddiskmanager
+from enigma import *
+from os import environ
+from Plugins.Plugin import PluginDescriptor
+from Screens.Screen import Screen
+from Screens.Standby import TryQuitMainloop
+from Screens.MessageBox import MessageBox
+from Tools.LoadPixmap import LoadPixmap
+from Components.Console import Console as iConsole
+from Tools.Directories import fileExists, pathExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
+from types import *
 
-PLUGINS = {
-    "Bitrate": "opkg install enigma2-plugin-extensions-bitrate", 
-    "Cacheflush": "opkg install enigma2-plugin-extensions-cacheflush",  
-    "Chocholousek-picons": "opkg install enigma2-plugin-extensions-chocholousek-picons",
-    "E2iplayer-deps": "opkg install enigma2-plugin-extensions-e2iplayer-deps ", 
-    "Epgimport": "opkg install enigma2-plugin-extensions-epgimport",
-    "Epgtranslator": "opkg install enigma2-plugin-extensions-epgtranslator",
-    "Ipchecker": "opkg install enigma2-plugin-extensions-ipchecker",
-    "Oaweather": "opkg install enigma2-plugin-extensions-oaweather",
-    "Permanentclock": "opkg install enigma2-plugin-extensions-permanentclock",
-    "Setpicon": "opkg install enigma2-plugin-extensions-setpicon",
-    "Tmdb": "opkg install enigma2-plugin-extensions-tmdb",
-    "Autoresolution": "opkg install enigma2-plugin-systemplugins-autoresolution",
-    "Weathercomponenthandler": "opkg install enigma2-plugin-systemplugins-weathercomponenthandler",
-    "Ai-powered-subtitle-translation": "opkg install enigma2-plugin-subscription-ai-powered-subtitle-translation",
-    "Metrix-atv-fhd-icons": "opkg install enigma2-plugin-skins-metrix-atv-fhd-icons",
-}
-FILE = "/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/menus/Imagesb"
-DIR = "/usr/lib/enigma2/python/Plugins/Extensions/"
+global min, first_start
+min = first_start = 0
+installer = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh'
+scriptpath = "/usr/script/"
 
 class imagesb(Screen):
-    skin = """
-<screen name="Backup" position="center,center" size="1920,1080" title="Backup">
-        
-<!-- menu -->
-<widget name="menu" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/selection.png"  position="48,200" size="1240,660" scrollbarMode="showOnDemand" itemHeight="66" font="Regular;35" transparent="1" />
-<widget name="background" position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/bglist.png" zPosition="-1" alphatest="on" />
+	def __init__(self, session):
+		self.session = session
+		Screen.__init__(self, session)
+		skin = "/skins/submenus-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("ElieSatPanel"))
+		self.iConsole = iConsole()
+		self.indexpos = None
+		self["NumberActions"] = NumberActionMap(["NumberActions"], {'0': self.keyNumberGlobal,
+                                                                    },)
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+			"ok": self.keyOK,
+			"cancel": self.exit,
+			"back": self.exit,
+			"info": self.infoKey,
+		})
+		self.list = []
+		self["menu"] = List(self.list)
+		self.mList()
+		self["MemoryLabel"] = StaticText(_("Ram:"))
+		self["SwapLabel"] = StaticText(_("Swap:"))
+		self["FlashLabel"] = StaticText(_("Flash:"))
+		self["gstreamerLabel"] = StaticText(_("Gst:"))
+		self["pythonLabel"] = StaticText(_("Py:"))
+		self["CPULabel"] = StaticText(_("Prc:"))
+		self["HardwareLabel"] = StaticText(_("Hdw:"))
+		self["ImageLabel"] = StaticText(_("Img:"))
+		self["KernelLabel"] = StaticText(_("Krn:"))
+		self["EnigmaVersionLabel"] = StaticText(_("Upd:"))
+		self["driverLabel"] = StaticText(_("Drv:"))
+		self["ipLabel"] = StaticText(_("IP address:"))
+		self["macLabel"] = StaticText(_("Mac Address:"))
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["memTotal"] = StaticText()
+		self["swapTotal"] = StaticText()
+		self["flashTotal"] = StaticText()
+		self["device"] = StaticText()
+		self["gstreamer"] = StaticText()
+		self["python"] = StaticText()
+		self["Hardware"] = StaticText()
+		self["Image"] = StaticText()
+		self["CPU"] = StaticText()
+		self["Kernel"] = StaticText()
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["EnigmaVersion"] = StaticText()
+		self["driver"] = StaticText()
+		self.memInfo()
+		self.FlashMem()
+		self.devices()
+		self.mainInfo()
+		self.cpuinfo()
+		self.getPythonVersionString()
+		self.getGStreamerVersionString()
+		self.network_info()
+		self["Version"] = Label(_("V" + Version))
+		self["Panel"] = Label(_(Panel))
+		self["internet"] = StaticText()
+		self.intInfo()
+		t = Timer(0.5, self.update_images)
+		t.start()
 
-<!-- title -->
-<eLabel text="Packages:" position="160,105" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="73,105" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
-<eLabel text="Descriptions:" position="770,105" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="683,105" size="50,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
+	def mList(self):
+		self.list = []
+		a = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
 
-<!-- title2 -->
-<widget name="status" position="200,880" size="1240,50" zPosition="1" font="Regular;40" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="110,880" size="180,47" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/2.png" alphatest="blend" />
-    <eLabel backgroundColor="#00ffffff" position="55,860" size="1220,1" zPosition="2" />
-    <eLabel backgroundColor="#00ffffff" position="55,195" size="1220,1" zPosition="2" />
-<eLabel text="ELIE" position="1450,535" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<eLabel text="PANEL" position="1635,535" size="400,50" zPosition="1" font="Regular;39" halign="left" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<widget name="Version" position="1510,650" size="150,50" font="Regular;35" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
-<ePixmap position="1525,505" size="240,150" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/icon.png" zPosition="2" alphatest="blend" />
+		self.list.append((_("Egami"), 1, _(" ايجامي"), a))
+		self.list.append((_("Openatv"), 2, _("اوبن اي تي في"), a))
+		self.list.append((_("Openblackhole"), 3, _("اوبن بلاك هول"), a))
+		self.list.append((_("Openpli"), 4, _("اوبن بلي"), a))
+		self.list.append((_("Openspa"), 5, _("اوبن سبا"), a))
+		self.list.append((_("Openvix"), 6, _("اوبن فيكس"), a))
+		self.list.append((_("pure2"), 7, _("بيور٢"), a))
 
-<!-- clock -->
-<widget source="global.CurrentTime" render="Label" position="1290,400" size="350,90" font="lsat; 75" noWrap="1" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="2">
-		<convert type="ClockToText">Default</convert>
-<!-- calender -->
-</widget>
-<widget source="global.CurrentTime" render="Label" position="1530,410" size="335,54" font="lsat; 24" halign="center" valign="bottom" foregroundColor="#11ffffff" backgroundColor="#20000000" transparent="1" zPosition="1">
-<convert type="ClockToText">Format %A %d %B</convert>
-</widget>
-<!-- minitv -->
-<widget source="session.VideoPicture" render="Pig" position="1305,100" size="550,290" zPosition="1" backgroundColor="#ff000000" />
+		if self.indexpos != None:
+			self["menu"].setIndex(self.indexpos)
+		self["menu"].setList(self.list)
+		
+		
+	def keyOK(self, item = None):
+		self.indexpos = self["menu"].getIndex()
+		if item == None:
+			item = self["menu"].getCurrent()[1]
+			self.select_item(item)
 
-<!--buttons -->
-<widget name="key_red" position="150,960"  size="165,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="120,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/red.png" alphatest="blend" />
-<widget name="key_green" position="430,960"  size="165,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="400,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/green.png" alphatest="blend" />
-<widget name="key_yellow" position="680,960"  size="250,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="680,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/yellow.png" alphatest="blend" />
-<widget name="key_blue" position="990,960"  size="165,45" font="Regular;35" halign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-<ePixmap position="960,1015" zPosition="1" size="240,10" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/images/blue.png" alphatest="blend" />
-</screen>
-    """
+	def select_item(self, item):
+		if item:
+			if item is 1:
+				self.session.open(Egami)
+			elif item is 2:
+				self.session.open(Openatv)
+			elif item is 3:
+				self.session.open(Openblackhole)
+			elif item is 4:
+				self.session.open(Openpli)
+			elif item is 5:
+				self.session.open(Openspa)
+			elif item is 6:
+				self.session.open(Openvix)
+			elif item is 7:
+				self.session.open(Pure2)
+			else:
+				self.close(None)
 
-    def __init__(self, session):
-        self.session = session
-        Screen.__init__(self, session)
+	def keyNumberGlobal(self, number):
+			print('pressed', number)
+			if number == 0:
+				self.session.open(Console, _("Updating ElieSatPanel, please wait..."), [
+            "wget --no-check-certificate https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -qO - | /bin/sh"
+        ])
+			else:
+				return
 
-        self.selected_plugins = set()
-        self.plugin_display_list = [f"{plugin}" for plugin in PLUGINS.keys()]
-        self.current_install_index = 0
-        self.installed_plugins = set()
+	def exit(self):
+		self.close()
 
-        self["Version"] = Label(_("V" + Version))
-        self["menu"] = MenuList(self.plugin_display_list)
-        self["background"] = Pixmap()
-        self["status"] = Label("Select plugins with OK, install with Green")
-        self["key_green"] = Button("Install")
-        self["key_red"] = Button("Restart")
-        self["key_yellow"] = Button("Dependencies")
-        self["key_blue"] = Button("Report")
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
-        self["actions"] = ActionMap(
-            ["ColorActions", "SetupActions"],
-            {
-                "green": self.start_installation,
-                "red": self.restart_enigma2,
-                "blue": self.report,
-                "ok": self.toggle_selection,
-                "cancel": self.close,
-            },
-        )
+	def getLivestreamerVersion(self):
+		if fileExists("/usr/lib/python2.7/site-packages/livestreamer/__init__.py"):
+			for line in open("/usr/lib/python2.7/site-packages/livestreamer/__init__.py"):
+				if '__version__' in line:
+					self["livestreamer"].text = line.split('"')[1]
+		else:
+			self["livestreamer"].text = _("Not Installed")
 
-        self.container = eConsoleAppContainer()
-        self.container.appClosed.append(self.command_finished)
-        self.update_status()
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
 
-    def toggle_selection(self):
-        current_index = self["menu"].getSelectionIndex()
-        current_plugin = list(PLUGINS.keys())[current_index]
+	def getGStreamerVersionString(self):
+		import enigma
+		try:
+			self["gstreamer"].text =  enigma.getGStreamerVersionString().strip('GStreamer ')
+		except:
+			self["gstreamer"].text =  _("unknown")
+		
+			
+	def getPythonVersionString(self):
+		try:
+			import subprocess
+			status, output = subprocess.getstatusoutput("python -V")
+			self["python"].text =  output.split(' ')[1]
+		except:
+			self["python"].text =  _("unknown")
+		
+	def cpuinfo(self):
+		if fileExists("/proc/cpuinfo"):
+			cpu_count = 0
+			processor = cpu_speed = cpu_family = cpu_variant = temp = ''
+			core = _("core")
+			cores = _("cores")
+			for line in open('/proc/cpuinfo'):
+				if "system type" in line:
+					processor = line.split(':')[-1].split()[0].strip().strip('\n')
+				elif "cpu MHz" in line:
+					cpu_speed =  line.split(':')[-1].strip().strip('\n')
+					#cpu_count += 1
+				elif "cpu type" in line:
+					processor = line.split(':')[-1].strip().strip('\n')
+				elif "model name" in line:
+					processor = line.split(':')[-1].strip().strip('\n').replace('Processor ', '')
+				elif "cpu family" in line:
+					cpu_family = line.split(':')[-1].strip().strip('\n')
+				elif "cpu variant" in line:
+					cpu_variant = line.split(':')[-1].strip().strip('\n')
+				elif line.startswith('processor'):
+					cpu_count += 1
+			if not cpu_speed:
+				try:
+					cpu_speed = int(open("/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq").read()) / 1000
+				except:
+					try:
+						import binascii
+						cpu_speed = int(int(binascii.hexlify(open('/sys/firmware/devicetree/base/cpus/cpu@0/clock-frequency', 'rb').read()), 16) / 100000000) * 100
+					except:
+						cpu_speed = '-'
+			if fileExists("/proc/stb/sensors/temp0/value") and fileExists("/proc/stb/sensors/temp0/unit"):
+				temp = "%s%s%s" % (open("/proc/stb/sensors/temp0/value").read().strip('\n'), chr(176).encode("latin-1"), open("/proc/stb/sensors/temp0/unit").read().strip('\n'))
+			elif fileExists("/proc/stb/fp/temp_sensor_avs"):
+				temp = "%s%sC" % (open("/proc/stb/fp/temp_sensor_avs").read().strip('\n'), chr(176).encode("latin-1"))
+			if cpu_variant is '':
+				self["CPU"].text = _("%s, %s Mhz (%d %s) %s") % (processor, cpu_speed, cpu_count, cpu_count > 1 and cores or core, temp)
+			else:
+				self["CPU"].text = "%s(%s), %s %s" % (processor, cpu_family, cpu_variant, temp)
+		else:
+			self["CPU"].text = _("undefined")
 
-        if current_plugin in self.selected_plugins:
-            self.selected_plugins.remove(current_plugin)
-            self.plugin_display_list[current_index] = f" {current_plugin}"
-            self.remove_plugin_from_file(current_plugin)
-        else:
-            self.selected_plugins.add(current_plugin)
-            self.plugin_display_list[current_index] = f"Ready to install  {current_plugin}"
-            self.log_selected_plugin(current_plugin)
+	def status(self):
+		status = ''
+		if fileExists("/usr/lib/opkg/status"):
+			status = "/usr/lib/opkg/status"
+		elif fileExists("/usr/lib/ipkg/status"):
+			status = "/usr/lib/ipkg/status"
+		elif fileExists("/var/lib/opkg/status"):
+			status = "/var/lib/opkg/status"
+		elif fileExists("/var/opkg/status"):
+			status = "/var/opkg/status"
+		return status
+		
+	def devices(self):
+		list = ""
+		hddlist = harddiskmanager.HDDList()
+		hddinfo = ""
+		if hddlist:
+			for count in range(len(hddlist)):
+				hdd = hddlist[count][1]
+				if int(hdd.free()) > 1024:
+					list += ((_("%s  %s  (%d.%03d GB free)\n") % (hdd.model(), hdd.capacity(), hdd.free()/1024 , hdd.free()%1024)))
+				else:
+					list += ((_("%s  %s  (%03d MB free)\n") % (hdd.model(), hdd.capacity(),hdd.free())))
+		else:
+			hddinfo = _("none")
+		self["device"].text = list
+		
+	def HardWareType(self):
+		if os.path.isfile("/proc/stb/info/boxtype"):
+			return open("/proc/stb/info/boxtype").read().strip().upper()
+		if os.path.isfile("/proc/stb/info/vumodel"):
+			return "VU+" + open("/proc/stb/info/vumodel").read().strip().upper()
+		if os.path.isfile("/proc/stb/info/model"):
+			return open("/proc/stb/info/model").read().strip().upper()
+		return _("unavailable")
+		
+	def getImageTypeString(self):
+		try:
+			if os.path.isfile("/etc/issue"):
+				for line in open("/etc/issue"):
+					if not line.startswith('Welcom') and '\l' in line:
+						return line.capitalize().replace('\n', ' ').replace('\l', ' ').strip()
+		except:
+			pass
+		return _("undefined")
+		
+	def getKernelVersionString(self):
+		try:
+			return open("/proc/version").read().split()[2]
+		except:
+			return _("unknown")
+			
+	def getImageVersionString(self):
+		try:
+			if os.path.isfile('/var/lib/opkg/status'):
+				st = os.stat('/var/lib/opkg/status')
+			elif os.path.isfile('/usr/lib/ipkg/status'):
+				st = os.stat('/usr/lib/ipkg/status')
+			elif os.path.isfile('/usr/lib/opkg/status'):
+				st = os.stat('/usr/lib/opkg/status')
+			elif os.path.isfile('/var/opkg/status'):
+				st = os.stat('/var/opkg/status')
+			tm = time.localtime(st.st_mtime)
+			if tm.tm_year >= 2011:
+				return time.strftime("%Y-%m-%d %H:%M:%S", tm)
+		except:
+			pass
+		return _("unavailable")
+		
+			
+	def mainInfo(self):
+		package = 0
+		self["Hardware"].text = self.HardWareType()
+		self["Image"].text = self.getImageTypeString()
+		self["Kernel"].text = self.getKernelVersionString()
+		self["EnigmaVersion"].text = self.getImageVersionString()
+		if fileExists(self.status()):
+			for line in open(self.status()):
+				if "-dvb-modules" in line and "Package:" in line:
+					package = 1
+				elif "kernel-module-player2" in line and "Package:" in line:
+					package = 1
+				elif "formuler-dvb-modules" in line and "Package:" in line:
+					package = 1
+				elif "vuplus-dvb-proxy-vusolo4k" in line and "Package:" in line:
+					package = 1
+				if "Version:" in line and package == 1:
+					package = 0
+					self["driver"].text = line.split()[-1]
+					break
 
-        self["menu"].setList(self.plugin_display_list)
-        self.update_status()
+	def memInfo(self):
+		for line in open("/proc/meminfo"):
+			if "MemTotal:" in line:
+				memtotal = line.split()[1]
+			elif "MemFree:" in line:
+				memfree = line.split()[1]
+			elif "SwapTotal:" in line:
+				swaptotal =  line.split()[1]
+			elif "SwapFree:" in line:
+				swapfree = line.split()[1]
+		self["memTotal"].text = _("Total: %s Kb  Free: %s Kb") % (memtotal, memfree)
+		self["swapTotal"].text = _("Total: %s Kb  Free: %s Kb") % (swaptotal, swapfree)
+		
+	def FlashMem(self):
+		size = avail = 0
+		st = os.statvfs("/")
+		avail = st.f_bsize * st.f_bavail / 1024
+		size = st.f_bsize * st.f_blocks / 1024
+		self["flashTotal"].text = _("Total: %s Kb  Free: %s Kb") % (size , avail)
+		
+	def cancel(self):
+		self.close()
 
-    def update_status(self):
-        count = len(self.selected_plugins)
-        if count == 0:
-            self["status"].setText("Select with ok and press the green button to install")
-        elif count == 1:
-            self["status"].setText("1 package selected")
-        else:
-            self["status"].setText(f"{count} packages selected")
-
-    def log_selected_plugin(self, plugin):
-        try:
-            logging.debug(f"Logging selected plugin: {plugin}")
-            plugin_dir = os.path.dirname(FILE)
-            if not os.path.exists(plugin_dir):
-                os.makedirs(plugin_dir)
-                logging.debug(f"Created directory: {plugin_dir}")
-
-            existing_plugins = set()
-            if os.path.exists(FILE):
-                with open(FILE, "r") as f:
-                    existing_plugins = {line.strip() for line in f if line.strip()}
-                logging.debug(f"Existing plugins in file: {existing_plugins}")
-
-            if plugin not in existing_plugins:
-                with open(FILE, "a") as f:
-                    f.write(f"{plugin}\n")
-                logging.debug(f"Successfully logged plugin {plugin} to {FILE}")
-            else:
-                logging.debug(f"Plugin {plugin} already exists in {FILE}")
-
-        except Exception as e:
-            logging.error(f"Error logging plugin {plugin} to {FILE}: {str(e)}")
-            self["status"].setText(f"Error logging plugin {plugin}: {str(e)}")
-
-    def remove_plugin_from_file(self, plugin):
-        try:
-            if os.path.exists(FILE):
-                with open(FILE, "r") as f:
-                    plugins = [line.strip() for line in f if line.strip()]
-                plugins = [p for p in plugins if p != plugin]
-                with open(FILE, "w") as f:
-                    for p in plugins:
-                        f.write(f"{p}\n")
-                logging.debug(f"Removed plugin {plugin} from {FILE}")
-        except Exception as e:
-            logging.error(f"Error removing plugin {plugin} from {FILE}: {str(e)}")
-            self["status"].setText(f"Error removing plugin {plugin}: {str(e)}")
-    def find_plugin_folder(self, plugin_name):
-        if not os.path.exists(DIR):
-            return None
+	def update_images(self):
+		import requests
+		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/imagesd'
+		response = requests.get(url)
+		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/imagesd'
+		if response.status_code == 200:
+			with open(file_Path, 'wb') as file:
+				file.write(response.content)
+			print('File downloaded successfully')
+		else:
+			print('Failed to download file')
 
 
-        normalized_name = re.sub(r'[\s\-\_]', '', plugin_name.lower())
-        normalized_name = re.sub(r'\d+\.\d+\.\d+.*|r\d+', '', normalized_name)
-        for folder in os.listdir(DIR):
-            normalized_folder = re.sub(r'[\s\-\_]', '', folder.lower())
-            if normalized_folder == normalized_name or folder.lower() == plugin_name.lower():
-                return folder
-        return None
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
 
-    def start_installation(self):
-        if not self.selected_plugins:
-            self["status"].setText("No plugins selected!")
-            return
 
-        self.plugins_to_install = list(self.selected_plugins)
-        self.current_install_index = 0
-        self.installed_plugins.clear()
-        self.install_next_plugin()
+def status_path():
+	if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/imagesb"):
+		status = "/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/imagesb"
+	return status
 
-    def install_next_plugin(self):
-        logging.debug(f"Installing plugin {self.current_install_index + 1}/{len(self.plugins_to_install)}")
-        if self.current_install_index >= len(self.plugins_to_install):
-            self["status"].setText("All installations complete!")
-            logging.debug(f"All installations complete, installed_plugins: {self.installed_plugins}")
-            self.clear_selections()
-            return
+class Egami(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Flash"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Ega" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
 
-        plugin = self.plugins_to_install[self.current_install_index]
-        self["status"].setText(f"Installing {plugin} ({self.current_install_index + 1}/{len(self.plugins_to_install)})...")
-        logging.debug(f"Executing command for plugin: {plugin}")
-        self.container.execute(PLUGINS[plugin])
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
 
-    def command_finished(self, retval):
-        current_plugin = self.plugins_to_install[self.current_install_index]
-        logging.debug(f"Installation finished for plugin {current_plugin}, return value: {retval}")
-        folder_name = self.find_plugin_folder(current_plugin)
-        package_installed = False
+	def cancel(self):
+		self.close()
 
-        if folder_name:
-            if os.system(f"opkg list-installed | grep -q enigma2-plugin-extensions-{folder_name.lower()}") == 0:
-                package_installed = True
-            elif os.system(f"dpkg -l | grep -q enigma2-plugin-extensions-{folder_name.lower()}") == 0:
-                package_installed = True
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
 
-        if retval == 0 and (folder_name or package_installed):
-            logging.debug(f"Plugin {current_plugin} successfully installed in folder {folder_name or 'unknown'}")
-            self.installed_plugins.add(current_plugin)
-            self.current_install_index += 1
-            self.install_next_plugin()
-        else:
-            logging.warning(f"Plugin {current_plugin} not found in {DIR} or not installed, retval: {retval}")
-            self["status"].setText(f"Plugin {current_plugin} not installed properly!")
-            self.remove_plugin_from_file(current_plugin)
-            self.current_install_index += 1
-            self.install_next_plugin()
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
 
-    def clear_selections(self):
-        self.selected_plugins.clear()
-        self.plugin_display_list = [f"{plugin}" for plugin in PLUGINS.keys()]
-        self["menu"].setList(self.plugin_display_list)
-        self.update_status()
+#############################################################################
+class Openatv(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Flash"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Atv" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
 
-    def restart_enigma2(self):
-        self.container.execute("init 4 && init 3")
-        self.close()
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
 
-    def report(self):
-        info_path = resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/menus/Imagesb")
-        if fileExists(info_path):
-            try:
-                with open(info_path, "r") as f:
-                    content = f.read()
-                self.session.open(MessageBox, content, MessageBox.TYPE_INFO)
-            except Exception as e:
-                self.session.open(MessageBox, f"Error reading report file: {str(e)}", MessageBox.TYPE_ERROR)
-        else:
-            self.session.open(MessageBox, "report file not found", MessageBox.TYPE_ERROR)
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
+
+#############################################################################
+class Openblackhole(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Flash"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Obh" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
+
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
+
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
+
+#############################################################################
+class Openpli(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Flash"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Pli" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
+
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
+
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
+#############################################################################
+class Openspa(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Flash"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Spa" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
+
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
+
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
+#############################################################################
+class Openvix(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Flash"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Vix" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
+
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
+
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
+#############################################################################
+class Pure2(Screen):
+	def __init__(self, session, args=None):
+		Screen.__init__(self, session)
+		skin = "/skins/addons-fhd.xml"
+		self.skin = readFromFile(skin)
+		self.setTitle(_("Ipk remove"))
+		self.session = session
+		self.path = status_path()
+		self.iConsole = iConsole()
+		self.status = False
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Install"))
+		self["key_yellow"] = StaticText(_("Flash"))
+		self["key_blue"] = StaticText(_("RestartE2"))
+		self.list = []
+		self["menu"] = List(self.list)
+		self.nList()
+		self["ipLabel"] = StaticText(_("Local  IP:"))
+		self["ipInfo"] = StaticText()
+		self["macInfo"] = StaticText()
+		self["internetLabel"] = StaticText(_("Internet:"))
+		self["internet"] = StaticText()
+		self.intInfo()
+		self.network_info()
+		self["Panel"] = Label(_(Panel))
+		self["Version"] = Label(_("V" + Version))
+		self["shortcuts"] = NumberActionMap(["ShortcutActions", "WizardActions",  "ColorActions", "HotkeyActions"],
+		{
+				"cancel": self.cancel,
+				"back": self.cancel,
+				"ok": self.install,
+				"red": self.cancel,
+				"green": self.install,
+				"yellow": self.browse,
+				"blue": self.restart,
+				"info": self.infoKey,
+			},-1)
+		
+	def nList(self):
+		self.list = []
+		ipkminipng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/ElieSatPanel/images/1.png"))
+		for line in open(status_path()):
+			if "Package:" in line:
+				name1 = line.replace("\n","").split()[-1]
+			elif "Version:" in line:
+				name2 = line.replace("\n","").split(r"(\s+)")[-1]
+			elif "Status:" in line and "Pur" in line:
+				self.list.append((name1, name2, ipkminipng))
+		self.list.sort()
+		self["menu"].setList(self.list)
+
+	def install(self):
+		pkg_name = self["menu"].getCurrent()[0]
+		for line in open(status_path()):
+				if line.startswith(pkg_name):
+					remote_changelog = line.split("=")
+					remote_changelog = line.split("'")[1]
+					wget = 'wget --no-check-certificate'
+					Installer = remote_changelog
+					runbs = '-qO - | /bin/sh'
+					self.session.open(Console, _("Running the script, please wait..."), [
+         ("%s %s %s" % (wget, Installer, runbs))
+        ])
+
+	def cancel(self):
+		self.close()
+
+	def restart (self):
+				self.session.open(Console, _("Restarting enigma2 please wait..."), [
+            "[ command -v dpkg &> /dev/null ] && systemctl restart enigma2 || killall -9 enigma2"
+        ])
+	def browse(self):
+		if fileExists("/usr/lib/enigma2/python/Screens/FlashManager.pyc"):
+			from Screens.FlashManager import FlashManager
+			self.session.open(FlashManager)
+		else:
+			session.open(MessageBox, _('Not supported'), MessageBox.TYPE_ERROR)
+
+	def network_info(self):
+		self.iConsole.ePopen("ifconfig -a", self.network_result)
+		
+	def network_result(self, result, retval, extra_args):
+		if retval is 0:
+			ip = ''
+			mac = []
+			if len(result) > 0:
+				for line in result.splitlines(True):
+					if 'HWaddr' in line:
+						mac.append('%s' % line.split()[-1].strip('\n'))
+					elif 'inet addr:' in line and 'Bcast:' in line:
+						ip = line.split()[1].split(':')[-1]
+				self["macInfo"].text = '/'.join(mac)
+			else:
+				self["macInfo"].text =  _("unknown")
+		else:
+			self["macInfo"].text =  _("unknown")
+		if ip is not '':
+			self["ipInfo"].text = ip
+		else:
+			self["ipInfo"].text = _("unknown")
+	def finish(self, result, retval, extra_args):
+		self.nList()
+	def intInfo(self):
+		try:
+			import socket
+			socket.setdefaulttimeout(0.5)
+			socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(('8.8.8.8', 53))
+			self["internet"].text = _("Connected")
+			return True
+		except:
+			self["internet"].text = _("Disconnected")
+			return False
+		if os.system("ping -c 1 8.8.8.8 "):
+			self["internet"].text = _("Connected")
+		else:
+			self["internet"].text = _("Disconnected")
+		return
+	def infoKey (self):
+		self.session.open(Console, _("Please wait..."), [
+            "wget --no-check-certificate https://gitlab.com/eliesat/scripts/-/raw/main/check/_check-all.sh -qO - | /bin/sh"
+        ])
+#############################################################################
+#############################################################################
