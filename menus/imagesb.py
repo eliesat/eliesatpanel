@@ -370,9 +370,9 @@ class imagesb(Screen):
 
 	def update_images(self):
 		import requests
-		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/imagesd'
+		url = 'https://raw.githubusercontent.com/eliesat/eliesatpanel/refs/heads/main/sub/imagesb'
 		response = requests.get(url)
-		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/imagesd'
+		file_Path = '/usr/lib/enigma2/python/Plugins/Extensions/ElieSatPanel/sub/imagesb'
 		if response.status_code == 200:
 			with open(file_Path, 'wb') as file:
 				file.write(response.content)
