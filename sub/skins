@@ -48,7 +48,7 @@ Status: Soebased Segami Satv Sspa Spure
 Aglare-fhd-atv='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd/aglare-fhd.sh'
 
 Package: Aglare-fhd-pli
-Version: 6.2     
+Version: 6.3     
 Status: Soebased Sobh Spli3 Svix
 Aglare-fhd-pli='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd-pli.sh'
 
@@ -168,7 +168,7 @@ Status: Soebased Spli3 Sobh Svix
 Youchie-pli-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/youchie-pli-fhd/pli/youchie-pli-fhd.sh'
 
 Package: Xdreamy-fhd
-Version: 6.0.0     
+Version: 6.1.0     
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Xdreamy-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/xdreamy/xdreamy.sh'
 
