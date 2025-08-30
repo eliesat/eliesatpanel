@@ -112,6 +112,11 @@ Version: 5.4
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Nitroadvance-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/nitroadvance/nitroadvance-fhd.sh'
 
+Package: Luka-fhd
+Version: 1.2     
+Status: Soebased Segami Satv Sspa Spure
+Luka-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd/luka-fhd.sh'
+
 Package: Maxy-fhd-1
 Version: 1.3     
 Status: Soebased Segami Satv Sspa Spure
@@ -249,11 +254,6 @@ Package: Lava
 Version: 2.0     
 Status: Soebased Segami Satv Sspa Spure
 Lava='https://gitlab.com/eliesat/skins/-/raw/main/all/lava/lava-ashawky.sh'
-
-Package: Luka-fhd
-Version: 1.0     
-Status: Soebased Segami
-Luka-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd/luka-fhd.sh'
 
 Package: Malek-fhd
 Version: 2.2     
