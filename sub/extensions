@@ -96,7 +96,7 @@ Status: Plg
 Bootlogoswapper='https://gitlab.com/eliesat/extensions/-/raw/main/bootlogoswapper/bootlogoswapper-eliesat-special-edition.sh'
 
 Package: Bouquetmakerxtream
-Version: 1.60     تحويل الاي بي تي في لمفضلات
+Version: 1.61     تحويل الاي بي تي في لمفضلات
 Status: Plg
 Bouquetmakerxtream='https://gitlab.com/eliesat/extensions/-/raw/main/bouquetmakerxtream/bouquetmakerxtream.sh'
 
@@ -186,7 +186,7 @@ Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker
-Version: 1.08     مشغل بورتلات اي بي تي في
+Version: 1.09     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
