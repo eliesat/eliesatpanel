@@ -22,7 +22,7 @@ Egami-10.6='https://gitlab.com/eliesat/scripts/-/raw/main/images/egami-10.6.sh'
 Package: Egami-11.0
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
 Status: Ega
-Egami-10.6='https://gitlab.com/eliesat/scripts/-/raw/main/images/egami-11.0.sh'
+Egami-11.0='https://gitlab.com/eliesat/scripts/-/raw/main/images/egami-11.0.sh'
 
 Package: Openatv-6.4
 Version: 1.0     تنزيل صور خام من الموقع الرسمي
