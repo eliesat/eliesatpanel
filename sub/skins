@@ -1,13 +1,5 @@
 ##############skins###############
-Package: XXXX
-Version: Version: 4.0     بانل تسطيب اضافات     
-Status: Aud
-XXXXXXX='XXXXXXXX'
 
-Package: Ciefsettingspanel
-Version: 4.0     بانل تسطيب اضافات
-Status: Sparts
-Ciefsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 --------------allll--------------
 Package: Beta-pro-tool
 Version: 1.6     بلاجين تنزيل سكين بيتا برو
