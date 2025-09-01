@@ -1,6 +1,7 @@
 01.09.2025 
 -------------------------------------------------------------------------
 Adelsat-motor
+Novaler-motor
 M3uconverter 1.8
 Ciefp-plugins 2.4 
 Ciefsettingspanel 5.0 
