@@ -6,6 +6,7 @@ Ciefp-plugins 2.4
 Ciefsettingspanel 5.0 
 Oscam-levi 11886-emu-802
 Oscam-Youchie 11886-emu-r803 (new)
+Raedquicksignal2-bohlala 18.0 (new)
 
 31.08.2025 
 -------------------------------------------------------------------------
