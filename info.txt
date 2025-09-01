@@ -4,7 +4,8 @@ Adelsat-motor
 M3uconverter 1.8
 Ciefp-plugins 2.4 
 Ciefsettingspanel 5.0 
-levi oscam-11886-emu-802
+Oscam levi 11886-emu-802
+Oscam-Youchie 11886-emu-r803 (new)
 
 31.08.2025 
 -------------------------------------------------------------------------
