@@ -431,6 +431,11 @@ Version: 3.9     حالة الطقس
 Status: Plg
 Oaweather='https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false'
 
+Package: Orangeaudio
+Version: 1.1     صوتيات اورانج
+Status: Plg
+Orangeaudio='https://gitlab.com/eliesat/extensions/-/raw/main/orangeaudio/orangeaudio.sh'
+
 Package: Oscam-status
 Version: 6.6     معلومات عن حالة المحاكي
 Status: Plg
@@ -1055,4 +1060,4 @@ Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ip
 Package: Vavoo-fav
 Version: 1.0     مفضلات اي بي تي في مجاني
 Status: Free
-Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h'''h''''sh'h'''h'''''h'h'''h'''''''''
+Vavoo-fav='https://gitlab.com/eliesat/free/-/raw/main/vavoo/vavoo-fav.sh'aw/main/vavoo/vavoo-fav.sh'.sh'.sh'.sh'h'''h''''sh'h'''h'''''h'h'''h''''''''''h'''''h'h'''h'''''''''
