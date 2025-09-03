@@ -1,5 +1,7 @@
 03.09.2025 
 -------------------------------------------------------------------------
+suptv 6.0r0 novaler
+supvod 6.0r0 novaler
 Ultracam 3.0r0 novaler
 Ipaudioplus 5.0r0 novaler
 Ipsat 9.5r0 novaler
