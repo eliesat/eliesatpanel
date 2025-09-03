@@ -810,11 +810,6 @@ Version: 4.0r0     خاص باجهزة نوفالر
 Status: Nov
 Novacampro='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novacam/novacampro.sh'
 
-Package: Novacam-supreme
-Version: 9.2r0     خاص باجهزة نوفالر
-Status: Nov
-Novacam-supreme='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novacam/novacam-supreme.sh'
-
 Package: Novalerstore
 Version: 3.0r0     خاص باجهزة نوفالر
 Status: Nov
