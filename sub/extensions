@@ -796,7 +796,7 @@ Status: Nov
 Beengo='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/beengo/beengo.sh'
 
 Package: Ipaudioplus
-Version: 4.1r0     خاص باجهزة نوفالر
+Version: 5.0r0     خاص باجهزة نوفالر
 Status: Nov
 Ipaudioplus='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ipaudioplus/ipaudioplus.sh'
 
