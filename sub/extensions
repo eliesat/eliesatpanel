@@ -1047,6 +1047,12 @@ Version: 08.01.2025     حزمة سكريبتات مجانية
 Status: Free
 Emil-scripts='https://gitlab.com/eliesat/free/-/raw/main/emil/emil-scripts.sh'
 
+Package: Levi45-freeserver
+Version: 0.1     سسكام مجاني
+Status: Free
+Levi45-freeserver='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-freeserver/levi45-freeserver.sh'
+
+
 Package: Ipaudiopro-haitham
 Version: 13.08.2025     صوتيات هيثم السوداني
 Status: Free
