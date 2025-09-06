@@ -993,7 +993,7 @@ Status: Sys
 Networkbrowser='https://gitlab.com/eliesat/systemplugins/-/raw/main/networkbrowser/networkbrowser.sh'
 
 Package: Newvirtualkeyboard
-Version: 13.1     لوحة مفاتيح اضافية
+Version: 13.6     لوحة مفاتيح اضافية
 Status: Sys
 Newvirtualkeyboard='https://gitlab.com/eliesat/extensions/-/raw/main/newvirtualkeyboard/newvirtualkeyboard.sh'
 
