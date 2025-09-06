@@ -99,6 +99,16 @@ Version: 4.7
 Status: Soebased Segami Satv Sspa Sobh Spure Svix Spli3
 Fury-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/fury-fhd/fury-fhd.sh'
 
+Package: KIII-pro
+Version: 3.3     
+Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+KIII-pro='https://gitlab.com/eliesat/skins/-/raw/main/all/KIII-pro/KIII-pro.sh'
+
+Package: Nacht-digiteng
+Version: 7.0     
+Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
+Nacht-digiteng='https://gitlab.com/eliesat/skins/-/raw/main/all/nacht-digiteng/nacht-digiteng.sh'
+
 Package: Nitroadvance-fhd
 Version: 5.4     
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
@@ -257,10 +267,10 @@ Version: 3.12
 Status: Soebased Segami Satv Sspa Spure
 Metrix-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/metrixfhd/metrix.sh'
 
-Package: Nacht
+Package: Nacht-ash
 Version: 2.2     
 Status: Soebased Segami Satv Sspa Spure
-Nacht='https://gitlab.com/eliesat/skins/-/raw/main/all/nacht/nacht-a.shawky.sh'
+Nacht-ash='https://gitlab.com/eliesat/skins/-/raw/main/all/nacht/nacht-a.shawky.sh'
 
 Package: Novaler-s-fhd-green-2
 Version: 3.6     
