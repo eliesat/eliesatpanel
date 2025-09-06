@@ -601,6 +601,11 @@ Version: 1.38     اي بي تي في مجاني
 Status: Plg
 Vavoo-plugin='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
+Package: Vavoo-maker
+Version: 1.0     اي بي تي في مجاني
+Status: Plg
+Vavoo-maker='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo-maker/vavoo-maker.sh'
+
 Package: Vhannibalsettingsmotor
 Version: 2.9     ملفات قنوات
 Status: Plg
