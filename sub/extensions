@@ -572,7 +572,7 @@ Status: Plg
 Subssupport-1='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh'
 
 Package: Subssupport-2
-Version: 1.7.0-r27     الترجمة
+Version: 1.7.0-r28     الترجمة
 Status: Plg
 Subssupport-2='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh'
 
@@ -647,12 +647,12 @@ Status: Plg
 Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
 Package: Xklass
-Version: 1.62     مشغل اي بي تي في
+Version: 1.63     مشغل اي بي تي في
 Status: Plg
 Xklass='https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh'
 
 Package: Xstreamity
-Version: 5.11     مشغل اي بي تي في
+Version: 5.12     مشغل اي بي تي في
 Status: Plg
 Xstreamity='https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh'
 
