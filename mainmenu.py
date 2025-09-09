@@ -80,7 +80,7 @@ class eliesatpanel(Screen):
 		})
 		self["key_red"] = StaticText(_("IptvAdder"))
 		self["key_green"] = StaticText(_("CccamAdder"))
-		self["key_yellow"] = StaticText(_("Info"))
+		self["key_yellow"] = StaticText(_("News"))
 		self["key_blue"] = StaticText(_("Scripts"))
 		self.list = []
 		self["menu"] = List(self.list)
