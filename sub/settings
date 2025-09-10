@@ -15,6 +15,11 @@ Version: 29.08.2025     ملف قنوات
 Status: Settings
 Adelsat-motor='https://gitlab.com/eliesat/settings/-/raw/main/adelsat/adelsat-motor.sh'
 
+Package: Atef-motor
+Version: 04.09.2025     ملف قنوات
+Status: Settings
+Atef-motor='https://gitlab.com/eliesat/settings/-/raw/main/channels/atef-motor.sh'
+
 Package: Ciefp-motor
 Version: 03.08.2025     ملف قنوات
 Status: Settings
