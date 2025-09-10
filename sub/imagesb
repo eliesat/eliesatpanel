@@ -15,3 +15,7 @@ Version: 2025.09.08     باكآب محدث تاريخ تسطيبه
 Status: Atv
 Openatv-7.6='https://gitlab.com/eliesat/images/-/raw/main/atv-alfa7.6/backup-7.6.sh'
 
+Package: Pure2-7.4
+Version: 2025.09.10     باكآب محدث تاريخ تسطيبه
+Status: Pur
+Pure2-7.4='https://gitlab.com/eliesat/images/-/raw/main/pure-7.4/backup.sh'
