@@ -4,6 +4,7 @@ A-altahan-motor
 M3uconverter 2.1
 Radiostreamrelay 1.1
 Subssupport 1.7.0-r29
+Skin fury-fhd 4.8
 
 10.09.2025 
 -------------------------------------------------------------------------
