@@ -361,7 +361,7 @@ Status: Plg
 Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
 
 Package: M3uconverter
-Version: 2.0     تحويل ال اي بي تي في لمفضلات
+Version: 2.1     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 M3uconverter='https://gitlab.com/eliesat/extensions/-/raw/main/m3uconverter/m3uconverter.sh'
 
