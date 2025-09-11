@@ -486,15 +486,10 @@ Version: 1.2     ستريم لمحطات راديو
 Status: Plg
 Radiogit='https://gitlab.com/eliesat/extensions/-/raw/main/radiogit/radiogit.sh'
 
-Package: Raedquicksignal1
-Version: 18.0     مستكشف اشارة الترددات
+Package: Raedquicksignal
+Version: 18.2     مستكشف اشارة الترددات
 Status: Plg
-Raedquicksignal1='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh'
-
-Package: Raedquicksignal2-bohlala
-Version: 18.0     مستكشف اشارة الترددات
-Status: Plg
-Raedquicksignal2-bohlala='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal-bohlala/raedquicksignal.sh'
+Raedquicksignal='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh'
 
 Package: Radiostreamrelay
 Version: 1.1     راديو
