@@ -497,7 +497,7 @@ Status: Plg
 Raedquicksignal2-bohlala='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal-bohlala/raedquicksignal.sh'
 
 Package: Radiostreamrelay
-Version: 1.0     راديو
+Version: 1.1     راديو
 Status: Plg
 Radiostreamrelay='https://gitlab.com/eliesat/extensions/-/raw/main/radiorelay/radiorelay.sh'
 
