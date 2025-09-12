@@ -159,6 +159,11 @@ Version: 3.1
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Premium-fhd-magneta='https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-magneta.sh'
 
+Package: Red-knight-fhd
+Version: 1.0.    py.3.13
+Status: Soebased Segami Satv 
+Red-knight-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/red-knight-fhd/red-knight-fhd.sh'
+
 Package: Slyk-q-1080
 Version: 1.52     
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
