@@ -913,7 +913,7 @@ Oneupdater='https://gitlab.com/eliesat/extensions/-/raw/main/oneupdater/oneupdat
 
 
 Package: Panelaio
-Version: 1.5-r1     بانل تسطيب اضافات
+Version: 1.8     بانل تسطيب اضافات
 Status: Pan
 Panelaio='https://gitlab.com/eliesat/extensions/-/raw/main/panelaio/panelaio.sh'
 
