@@ -23,4 +23,4 @@ fi
 
 echo "hi this is a test"
 sleep 6
-exit 0
+killall -9 enigma2
