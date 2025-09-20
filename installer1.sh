@@ -23,3 +23,4 @@ fi
 
 echo "hi this is a test"
 sleep 6
+exit 0
