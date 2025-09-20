@@ -22,4 +22,4 @@ fi
 
 
 echo "hi this is a test"
-sleep 60
+sleep 6
