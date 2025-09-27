@@ -111,7 +111,7 @@ Status: Plg
 Cacheflush='https://gitlab.com/eliesat/extensions/-/raw/main/cacheflush/cacheflush.sh'
 
 Package: Channel-logo-changer
-Version: 1.1     تخصيص شعار للقنوات من اختيارك
+Version: 1.2     تخصيص شعار للقنوات من اختيارك
 Status: Plg
 Channel-logo-changer='https://gitlab.com/eliesat/extensions/-/raw/main/chlogochanger/chlogochanger.sh'
 
@@ -361,7 +361,7 @@ Status: Plg
 Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
 
 Package: M3uconverter
-Version: 2.1     تحويل ال اي بي تي في لمفضلات
+Version: 2.3     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 M3uconverter='https://gitlab.com/eliesat/extensions/-/raw/main/m3uconverter/m3uconverter.sh'
 
@@ -567,7 +567,7 @@ Status: Plg
 Subssupport-1='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh'
 
 Package: Subssupport-2
-Version: 1.7.0-r29     الترجمة
+Version: 1.8.0-r1     الترجمة
 Status: Plg
 Subssupport-2='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh'
 
