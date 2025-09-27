@@ -8,6 +8,7 @@ M3uconverter 2.3
 Worldcam 6.1
 Subssupport 1.8.0-r1
 Diskcputemp 1.2
+Footonsat 2.0
 
 22.09.2025 
 -------------------------------------------------------------------------
