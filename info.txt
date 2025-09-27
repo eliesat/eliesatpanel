@@ -4,6 +4,9 @@ Chlogochanger 1.2
 Aglare-fhd-atv 6.1
 Luka-fhd 1.3
 Xdreamy-fhd 6.5.0
+M3uconverter 2.3
+Worldcam 6.1
+Subssupport 1.8.0-r1
 
 22.09.2025 
 -------------------------------------------------------------------------
