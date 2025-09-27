@@ -7,6 +7,7 @@ Xdreamy-fhd 6.5.0
 M3uconverter 2.3
 Worldcam 6.1
 Subssupport 1.8.0-r1
+Diskcputemp 1.2
 
 22.09.2025 
 -------------------------------------------------------------------------
