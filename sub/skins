@@ -35,7 +35,7 @@ Mymetrixlitebackup='https://gitlab.com/eliesat/skins/-/raw/main/skins-parts/myme
 #########################################################################################################
 
 Package: Aglare-fhd-atv
-Version: 6.0     
+Version: 6.1     
 Status: Soebased Segami Satv Sspa Spure
 Aglare-fhd-atv='https://gitlab.com/eliesat/skins/-/raw/main/all/aglare-fhd/aglare-fhd/aglare-fhd.sh'
 
@@ -115,7 +115,7 @@ Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Nitroadvance-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/teamnitro/nitroadvance/nitroadvance-fhd.sh'
 
 Package: Luka-fhd
-Version: 1.2     
+Version: 1.3     
 Status: Soebased Segami Satv Sspa Spure
 Luka-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd/luka-fhd.sh'
 
@@ -180,7 +180,7 @@ Status: Soebased Spli3 Sobh Svix
 Youchie-pli-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/youchie-pli-fhd/pli/youchie-pli-fhd.sh'
 
 Package: Xdreamy-fhd
-Version: 6.4.0     
+Version: 6.5.0     
 Status: Soebased Sobh Spli3 Svix Segami Satv Sspa Spure
 Xdreamy-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/xdreamy/xdreamy.sh'
 
