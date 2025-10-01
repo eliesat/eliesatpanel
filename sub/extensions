@@ -904,7 +904,7 @@ Status: Pan
 Linuxsat-panel='https://gitlab.com/eliesat/extensions/-/raw/main/linuxsat-panel/linuxsat-panel.sh'
 
 Package: Magicpanel
-Version: 6.0     بانل تسطيب اضافات
+Version: 6.1     بانل تسطيب اضافات
 Status: Pan
 Magicpanel='https://gitlab.com/eliesat/extensions/-/raw/main/magicpanel/magicpanel.sh'
 
