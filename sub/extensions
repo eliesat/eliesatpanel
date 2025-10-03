@@ -20,10 +20,10 @@ Version: 1.2     التقاط و تخزين صورة عن الشاشة
 Status: Plg
 Advancedscreenshot='https://gitlab.com/eliesat/extensions/-/raw/main/advancedscreenshot/advancedscreenshot.sh'
 
-Package: Altersoftcammanager
+Package: Softcammanager
 Version: 2.0     ادارة الكامات
 Status: Plg
-Altersoftcammanager='https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh'
+Softcammanager='https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh'
 
 Package: Apod
 Version: 1.4     صورة و معلومات عن كوكب الارض
@@ -147,10 +147,10 @@ Version: 2024.08.21     مدير ملفات
 Status: Plg
 Dreamexplorer='https://gitlab.com/eliesat/extensions/-/raw/main/dreamexplorer/dreamexplorer.sh'
 
-Package: E2iplayer-mohamed_os
+Package: E2iplayer-moh_os
 Version: 1.0     مشغل اي بي تي في
 Status: Plg
-E2iplayer-mohamed_os='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer/e2iplayer-main.sh'
+E2iplayer-moh_os='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer/e2iplayer-main.sh'
 
 Package: E2m3ubouquet
 Version: 2.0.7     تحويل ال اي بي تي في لمفضلات
@@ -298,7 +298,7 @@ Status: Plg
 Ipaudio-1='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio.sh'
 
 Package: Ipaudio-2
-Version: 7.4-ffmpeg     اضافة الصوتيات على قنوات السات
+Version: 7.4.ffmpeg     اضافة الصوتيات على قنوات السات
 Status: Plg
 Ipaudio-2='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudio/ipaudio-7.4-ffmpeg.sh'
   
@@ -608,10 +608,10 @@ Version: 1.0     اي بي تي في مجاني
 Status: Plg
 Vavoo-maker='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo-maker/vavoo-maker.sh'
 
-Package: Vhannibalsettingsmotor
+Package: Vhannibalsmotor
 Version: 2.9     ملفات قنوات
 Status: Plg
-Vhannibalsettingsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/vhannibal-settings-motor/vhannibal-settings-motor.sh'
+Vhannibalsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/vhannibal-settings-motor/vhannibal-settings-motor.sh'
 
 Package: Visualweather
 Version: 1.10     حالة الطقس
