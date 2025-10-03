@@ -109,3 +109,13 @@ Package: zoom-final-fix
 Version: 1.0     py2 بانل تسطيب اضافات سكريبتات
 Status: Pan
 zoom-final-fix='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
+
+Package: test
+Version: 1.0     py2 بانل تسطيب اضافات سكريبتات
+Status: Pan
+test='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
+
+Package: test1
+Version: 1.0     py2 بانل تسطيب اضافات سكريبتات
+Status: Pan1
+test1='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
