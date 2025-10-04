@@ -1015,7 +1015,7 @@ Status: Sys
 Softwaremanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/softwaremanager/softwaremanager.sh'
 
 Package: Ts-sateditor
-Version: 4.0     اضافة حذف تعديل بالاقمار و الترددات
+Version: 4.4     اضافة حذف تعديل بالاقمار و الترددات
 Status: Sys
 Ts-sateditor='https://gitlab.com/eliesat/extensions/-/raw/main/ts-sateditor/ts-sateditor.sh'
 
