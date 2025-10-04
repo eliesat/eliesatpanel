@@ -1025,7 +1025,7 @@ Version: 4.4     اضافة حذف تعديل بالاقمار و الترددا
 Status: Sys
 Ts-sateditor='https://gitlab.com/eliesat/extensions/-/raw/main/ts-sateditor/ts-sateditor.sh'
 
-Package: Weathercomponenthandler
+Package: Weathercomphandler
 Version: 1.0     اداة خاصة بالطقس
 Status: Sys
 Weathercomponenthandler='https://gitlab.com/eliesat/extensions/-/raw/main/weathercomponenthandler/weathercomponenthandler.sh'
