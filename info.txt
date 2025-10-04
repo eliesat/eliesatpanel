@@ -5,11 +5,10 @@ CiefpsettingsPanel 5.0
 Emilpanel 1.6
 Emilpanelpro 2.0
 Smartpanel 2.0
-Magicpanelpro 6.2
+Magicpanelpro 6.3
 Skin fury fhd 5.4
 Skin slyk onix 1080 2.5
 Ts-sateditor 4.4
-Boxtools 1.7 new
 
 03.10.2025 
 -------------------------------------------------------------------------
