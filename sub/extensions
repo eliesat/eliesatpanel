@@ -105,6 +105,12 @@ Version: 1.0     تثبيت الساعة على الشاشة بشكل دائم
 Status: Plg
 Bundesliga-clock='https://gitlab.com/eliesat/extensions/-/raw/main/bundesliga-permanent-clock/bundesliga-permanent-clock.sh'
 
+Package: Boxtools
+Version: 1.7     ادوات و خدمات  مختلفة
+Status: Plg
+Boxtools='https://gitlab.com/eliesat/extensions/-/raw/main/boxtools/boxtools.sh'
+
+
 Package: Cacheflush
 Version: 2.0.r4     مسح ملفات الكاش من الذاكرة العشوائية
 Status: Plg
@@ -1068,4 +1074,4 @@ Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopr
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
-Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'
+Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'
