@@ -76,7 +76,7 @@ Status: Settings
 S.refaey-motor='https://gitlab.com/eliesat/settings/-/raw/main/s.refaey/s.refaey-motor.sh'
 
 Package: T.alashry-motor
-Version: 01.01.2025     ملف قنوات
+Version: 05.10.2025     ملف قنوات
 Status: Settings
 T.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
 
