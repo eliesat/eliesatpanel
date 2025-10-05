@@ -858,6 +858,7 @@ Version: 3.0.r0     خاص باجهزة نوفالر
 Status: Nov
 Ultracam='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ultracam/ultracam.sh'
 
+
 ##############panels###############
 Package: Ajpanel
 Version: 10.8.4     ادارة الملفات و مجموعة الخدمات
@@ -890,19 +891,19 @@ Status: Pan
 Emilpanelpro='https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh'
 
 Package: Epanel
-Version: 5.8.r2     بانل خدمات متنوعة للصورة
+Version: 5.8r2     بانل خدمات متنوعة للصورة
 Status: Pan
 Epanel='https://gitlab.com/eliesat/extensions/-/raw/main/epanel/epanel.sh'
 
-Package: Levi45addonmanager
+Package: Addonmanager
 Version: 10.2.r1     بانل تسطيب اضافات
 Status: Pan
-Levi45addonmanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45-addon-manager.sh'
+Addonmanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45-addon-manager.sh'
 
-Package: Levi45multicammanager
+Package: Multicammanager
 Version: 10.2.r2     بانل تسطيب كامات
 Status: Pan
-Levi45multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh'
+Multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh'
 
 Package: Linuxsat-panel
 Version: 2.8.2     بانل تسطيب اضافات
@@ -970,6 +971,8 @@ Version: 1.0     py2 بانل تسطيب اضافات سكريبتات
 Status: Pan
 zoom-final-fix='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
 
+
+##########system plugins###########@
 Package: 3gmodemmanager
 Version: 3.12     3g 4g تعريف مودم يو اس بي
 Status: Sys
