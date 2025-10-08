@@ -30,12 +30,12 @@ Version: v9.2     .ipk
 Status: Kit
 Oscamicamall='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamall-kite888.sh'
 
-Package: Oscamicamnew-Kite888-1
+Package: Oscamicamnew-1
 Version: 11886.emu.r802     .ipk .deb
 Status: Kit
 Oscamicamnew-Kite888-1='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamnew-kite888.sh'
 
-Package: Oscamicamnew-Kite888-2
+Package: Oscamicamnew-2
 Version: 11777.emu.r802     .ipk .deb
 Status: Kit
 Oscamicamnew-Kite888-2='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicam.sh'
@@ -145,17 +145,17 @@ Version: 1.46.r3     .ipk
 Status: Oth
 Mgcamd='https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh'
 
-Package: Remove-EmusAndConfigs
+Package: Rm-EmusAndConfigs
 Version: 1.0       حذف الايميوهات بالكامل
 Status: Oth
 Remove-EmusAndConfigs='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus-and-config-file.sh'
 
-Package: Remove-EmusConfigFolders
+Package: Rm-EmusConfigFolders
 Version: 1.0       حذف مجلدات الخاصة بالايميوهات
 Status: Oth
 Remove-EmusConfigFolders='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus-config-files.sh'
 
-Package: Remove-EmuskeepConfigs
+Package: Rm-EmuskeepConfigs
 Version: 1.0       حذف الايميوهات و ترك مجلدات الكونفيج
 Status: Oth
 Remove-EmuskeepConfigs='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus.sh'
