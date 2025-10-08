@@ -145,17 +145,17 @@ Version: 1.46.r3     .ipk
 Status: Oth
 Mgcamd='https://gitlab.com/eliesat/softcams/-/raw/main/mgcamd/mgcamd.sh'
 
-Package: Rm-EmusAndConfigs
+Package: Rm-Emus-Configs
 Version: 1.0       حذف الايميوهات بالكامل
 Status: Oth
 Remove-EmusAndConfigs='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus-and-config-file.sh'
 
-Package: Rm-EmusConfigFolders
+Package: Rm-Configs
 Version: 1.0       حذف مجلدات الخاصة بالايميوهات
 Status: Oth
 Remove-EmusConfigFolders='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus-config-files.sh'
 
-Package: Rm-EmuskeepConfigs
+Package: Rm-Emus
 Version: 1.0       حذف الايميوهات و ترك مجلدات الكونفيج
 Status: Oth
 Remove-EmuskeepConfigs='https://raw.githubusercontent.com/eliesat/oe2/main/allineone/remove/_remove-emus.sh'
