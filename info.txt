@@ -5,6 +5,7 @@ M3uconverter 2.4
 Simplezoompanel 2.7.7
 tarek.alashry-motor fixed
 h.wahba-motor 10.10.2025
+Lyngsat satellites.xml 06.10.2025
 
 10.10.2025 
 -------------------------------------------------------------------------
