@@ -16,7 +16,7 @@ Status: Settings
 Adelsat-motor='https://gitlab.com/eliesat/settings/-/raw/main/adelsat/adelsat-motor.sh'
 
 Package: Ciefp-motor
-Version: 03.08.2025     ملف قنوات
+Version: 27.09.2025     ملف قنوات
 Status: Settings
 Ciefp-motor='https://gitlab.com/eliesat/settings/-/raw/main/ciefp-motor/ciefp-motor.sh'
 
@@ -51,7 +51,7 @@ Status: Settings
 Mohgooda-motor='https://gitlab.com/eliesat/settings/-/raw/main/mohgooda-motor/mohgooda-motor.sh'
 
 Package: Morpheus883-motor
-Version: 28.07.2025     ملف قنوات
+Version: 06.10.2025     ملف قنوات
 Status: Settings
 Morpheus883-motor='https://gitlab.com/eliesat/settings/-/raw/main/morpheus883/morpheus883-motor.sh'
 
@@ -81,7 +81,7 @@ Status: Settings
 T.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
 
 Package: Vhannibal-motor
-Version: 03.08.2025     ملف قنوات
+Version: 09.10.2025     ملف قنوات
 Status: Settings
 Vhannibal-motor='https://gitlab.com/eliesat/settings/-/raw/main/vhannibal/vhannibal-motor.sh'
 
