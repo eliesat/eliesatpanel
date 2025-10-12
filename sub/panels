@@ -87,9 +87,9 @@ Smartaddonspanel='https://raw.githubusercontent.com/emilnabil/download-plugins/r
 Package: Tvaddon
 Version: N/A     بانل تسطيب اضافات
 Status: Pan
-Tvaddon='https://gitlab.com/eliesat/extensions/-/raw/main/tvaddon/tvaddon.sh'
+Tvaddon='https://raw.githubusercontent.com/Belfagor2005/tvPanel/main/installer.sh'
 
 Package: Tvmanager
 Version: N/A     بانل تسطيب اضافات
 Status: Pan
-Tvmanager='https://raw.githubusercontent.com/Belfagor2005/tvPanel/main/installer.sh'
+Tvmanager='https://gitlab.com/eliesat/extensions/-/raw/main/tvaddon/tvaddon.sh'
