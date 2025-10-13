@@ -344,7 +344,7 @@ Status: Plg
 Isettingse2='https://gitlab.com/eliesat/extensions/-/raw/main/isetting-e2/isetting-e2.sh'
 
 Package: Jediepgxtream
-Version: 2.12     تثبيت الدليل على قنوات ال اي يي تي في
+Version: 2.15     تثبيت الدليل على قنوات ال اي يي تي في
 Status: Plg
 Jediepgxtream='https://gitlab.com/eliesat/extensions/-/raw/main/jediepgxtream/jediepgxtream.sh'
 
@@ -369,7 +369,7 @@ Status: Plg
 Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
 
 Package: M3uconverter
-Version: 2.4     تحويل ال اي بي تي في لمفضلات
+Version: 2.5     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 M3uconverter='https://gitlab.com/eliesat/extensions/-/raw/main/m3uconverter/m3uconverter.sh'
 
@@ -937,7 +937,7 @@ Status: Pan
 Satvenuspanel='https://gitlab.com/eliesat/extensions/-/raw/main/satvenuspanel/satvenuspanel.sh'
 
 Package: Simple-zoom-panel
-Version: 2.2.6     بانل تسطيب اضافات
+Version: 2.2.8     بانل تسطيب اضافات
 Status: Pan
 Simple-zoom-panel='https://gitlab.com/eliesat/extensions/-/raw/main/simple-zoom-panel/simple-zoom-panel.sh'
 
