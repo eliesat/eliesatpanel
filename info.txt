@@ -6,6 +6,7 @@ Xcplugin-forever 5.0
 Footonsat 3.3
 Oscam-Levi45-11891.emu.r803
 Ajpanel 10.8.5
+Skin-blackneon xp fhd elkooly
 
 13.10.2025 
 -------------------------------------------------------------------------
