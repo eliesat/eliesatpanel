@@ -159,7 +159,7 @@ Status: Plg
 E2iplayer-moh_os='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer/e2iplayer-main.sh'
 
 Package: E2m3ubouquet
-Version: 2.0.7     تحويل ال اي بي تي في لمفضلات
+Version: 2.0.12     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 E2m3ubouquet='https://gitlab.com/eliesat/extensions/-/raw/main/e2m3u2bouquet/e2m3u2bouquet.sh'
 
@@ -229,7 +229,7 @@ Status: Plg
 Filmxy='https://gitlab.com/eliesat/extensions/-/raw/main/filmxy/filmxy.sh'
 
 Package: Footonsat
-Version: 3.2     مواعيد مباريات كرة القدم مع القنوات الناقلة
+Version: 3.3     مواعيد مباريات كرة القدم مع القنوات الناقلة
 Status: Plg
 Footonsat='https://gitlab.com/eliesat/extensions/-/raw/main/footonsat/footonsat.sh'
 
@@ -645,7 +645,7 @@ Status: Plg
 Worldcam='https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh'
 
 Package: Xcplugin-forever
-Version: 4.9     مشغل اي بي تي في
+Version: 5.0     مشغل اي بي تي في
 Status: Plg
 Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
@@ -937,7 +937,7 @@ Status: Pan
 Satvenuspanel='https://gitlab.com/eliesat/extensions/-/raw/main/satvenuspanel/satvenuspanel.sh'
 
 Package: Simple-zoom-panel
-Version: 2.2.8     بانل تسطيب اضافات
+Version: 2.2.9     بانل تسطيب اضافات
 Status: Pan
 Simple-zoom-panel='https://gitlab.com/eliesat/extensions/-/raw/main/simple-zoom-panel/simple-zoom-panel.sh'
 
