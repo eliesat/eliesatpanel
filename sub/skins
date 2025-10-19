@@ -69,10 +69,15 @@ Version: 1.5-xe
 Status: Soebased Sobh Spli3 Segami Satv Sspa Spure
 beta-pro-fhd-2='https://gitlab.com/eliesat/skins/-/raw/main/all/beta-pro/beta-pro-fhd-xe.sh'
 
-Package: Blackneon-xp-fhd-1
+Package: Blackneon-xp-fhd-mnasr
 Version: 1.0     
 Status: Soebased Sobh Spli3 Segami Satv Sspa Spure
-Blackneon-xp-fhd-1='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh'
+Blackneon-xp-fhd-mnasr='https://gitlab.com/eliesat/skins/-/raw/main/all/black-neon/blackneon-xp-fhd-mod-mnasr.sh'
+
+Package: Blackneon-xp-fhd-elkooly
+Version: 1.0     
+Status: Soebased Sobh Spli3 Segami Satv Sspa Spure
+Blackneon-xp-fhd-elkooly='https://gitlab.com/eliesat/skins/-/raw/main/all/blackneon-xp-fhd/blackneon-xp-fhd.sh'
 
 Package: Bohlala-fhd
 Version: 2.3     
