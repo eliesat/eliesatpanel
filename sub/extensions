@@ -199,7 +199,7 @@ Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker
-Version: 1.14     مشغل بورتلات اي بي تي في
+Version: 1.15     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
@@ -369,7 +369,7 @@ Status: Plg
 Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
 
 Package: M3uconverter
-Version: 2.5     تحويل ال اي بي تي في لمفضلات
+Version: 2.7     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 M3uconverter='https://gitlab.com/eliesat/extensions/-/raw/main/m3uconverter/m3uconverter.sh'
 
