@@ -329,7 +329,7 @@ Status: Plg
 Iptvarchive='https://gitlab.com/eliesat/extensions/-/raw/main/iptvarchive/iptvarchive.sh'
 
 Package: Iptvdream
-Version: 4.123     m3u قارئ و مشغل ملفات 
+Version: 4.125     m3u قارئ و مشغل ملفات 
 Status: Plg
 Iptvdream='https://gitlab.com/eliesat/extensions/-/raw/main/iptvdream-all/iptvdream-all.sh'
 
@@ -650,12 +650,12 @@ Status: Plg
 Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
 Package: Xklass
-Version: 1.66     مشغل اي بي تي في
+Version: 1.68     مشغل اي بي تي في
 Status: Plg
 Xklass='https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh'
 
 Package: Xstreamity
-Version: 5.15     مشغل اي بي تي في
+Version: 5.17     مشغل اي بي تي في
 Status: Plg
 Xstreamity='https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh'
 
