@@ -495,7 +495,7 @@ Status: Plg
 Radiogit='https://gitlab.com/eliesat/extensions/-/raw/main/radiogit/radiogit.sh'
 
 Package: Raedquicksignal
-Version: 18.2     مستكشف اشارة الترددات
+Version: 18.5     مستكشف اشارة الترددات
 Status: Plg
 Raedquicksignal='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh'
 
