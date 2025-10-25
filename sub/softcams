@@ -30,12 +30,12 @@ Version: v9.2     .ipk
 Status: Kit
 Oscamicamall='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamall-kite888.sh'
 
-Package: Oscamicamnew-1
+Package: Oscamicamnew1
 Version: 11886.emu.r802     .ipk .deb
 Status: Kit
 Oscamicamnew-Kite888-1='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicamnew-kite888.sh'
 
-Package: Oscamicamnew-2
+Package: Oscamicamnew2
 Version: 11777.emu.r802     .ipk .deb
 Status: Kit
 Oscamicamnew-Kite888-2='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicam.sh'
