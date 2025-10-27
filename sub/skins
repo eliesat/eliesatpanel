@@ -668,7 +668,7 @@ Pli-fullnighthd='https://gitlab.com/eliesat/skins/-/raw/main/pli3/pli-fullnighth
 Package: Simple-gray
 Version: 1.9     
 Status: Soebased  Spli3 
-Simple-gray='https://gitlab.com/eliesat/skins/-/raw/main/pli3/simple-gray/simple-gray.sh?inline=false'
+Simple-gray='https://gitlab.com/eliesat/skins/-/raw/main/pli3/simple-gray/simple-gray.sh'
 
 --------------openspa--------------
 Package: Skyline
