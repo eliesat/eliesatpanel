@@ -199,7 +199,7 @@ Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker
-Version: 1.17     مشغل بورتلات اي بي تي في
+Version: 1.19     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
@@ -435,7 +435,7 @@ Status: Plg
 Newpermanentclock='https://gitlab.com/eliesat/extensions/-/raw/main/newpermanentclock/newpermanentclock.sh'
 
 Package: Oaweather
-Version: 3.9     حالة الطقس
+Version: 4.0     حالة الطقس
 Status: Plg
 Oaweather='https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false'
 
@@ -575,7 +575,7 @@ Status: Plg
 Subssupport-1='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh'
 
 Package: Subssupport-2
-Version: 1.8.0.r1     الترجمة
+Version: 1.8.0.r3     الترجمة
 Status: Plg
 Subssupport-2='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh'
 
