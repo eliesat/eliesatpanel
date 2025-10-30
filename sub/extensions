@@ -229,7 +229,7 @@ Status: Plg
 Filmxy='https://gitlab.com/eliesat/extensions/-/raw/main/filmxy/filmxy.sh'
 
 Package: Footonsat
-Version: 3.4     مواعيد مباريات كرة القدم مع القنوات الناقلة
+Version: 3.5     مواعيد مباريات كرة القدم مع القنوات الناقلة
 Status: Plg
 Footonsat='https://gitlab.com/eliesat/extensions/-/raw/main/footonsat/footonsat.sh'
 
