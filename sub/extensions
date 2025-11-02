@@ -369,7 +369,7 @@ Status: Plg
 Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
 
 Package: M3uconverter
-Version: 2.7     تحويل ال اي بي تي في لمفضلات
+Version: 2.9     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 M3uconverter='https://gitlab.com/eliesat/extensions/-/raw/main/m3uconverter/m3uconverter.sh'
 
@@ -793,7 +793,7 @@ Status: Mul
 Neoboot-e2turk='https://gitlab.com/eliesat/extensions/-/raw/main/neoboot/neoboot-e2turk.sh'
 
 Package: Opdboot
-Version: 3.11.x     تسطيب صور على الذاكرة الخارجية
+Version: 3.1.20251102     تسطيب صور على الذاكرة الخارجية
 Status: Mul
 Opdboot='https://gitlab.com/eliesat/extensions/-/raw/main/opdboot/opdboot.sh'
 
