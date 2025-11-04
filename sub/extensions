@@ -158,6 +158,11 @@ Version: 1.0     مشغل اي بي تي في
 Status: Plg
 E2iplayer-moh_os='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer/e2iplayer-main.sh'
 
+Package: E2iplayer-oem
+Version: 1.0     مشغل اي بي تي في
+Status: Plg
+E2iplayer-oem='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer-oem/e2iplayer.sh'
+
 Package: E2m3ubouquet
 Version: 2.0.12     تحويل ال اي بي تي في لمفضلات
 Status: Plg
@@ -1072,4 +1077,4 @@ Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopr
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
-Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh''
+Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''
