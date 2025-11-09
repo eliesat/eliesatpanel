@@ -124,6 +124,11 @@ Version: 1.5
 Status: Soebased Segami Satv Sspa Spure
 Luka-fhd='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd/luka-fhd.sh'
 
+Package: Luka-fhd-pli
+Version: 1.0     
+Status: Soebased Sobh Spli3 Svix
+Luka-fhd-pli='https://gitlab.com/eliesat/skins/-/raw/main/all/luka-fhd-pli/luka-fhd-pli.sh'
+
 Package: Maxy-fhd-1
 Version: 1.3     
 Status: Soebased Segami Satv Sspa Spure
