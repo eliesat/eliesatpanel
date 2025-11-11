@@ -204,7 +204,7 @@ Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker
-Version: 1.19     مشغل بورتلات اي بي تي في
+Version: 1.21     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
@@ -675,7 +675,7 @@ Status: Plg
 Xtraevent-2='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/xtraevent-4.5.sh'
 
 Package: Xtraevent-3
-Version: 6.870     تسطيب بوسترات بايتون٣
+Version: 6.892     تسطيب بوسترات بايتون٣
 Status: Plg
 Xtraevent-3='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/new/xtraevent.sh'
 
