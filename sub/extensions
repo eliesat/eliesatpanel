@@ -639,6 +639,11 @@ Version: 1.1     ايقونات بلاجين الطقس
 Status: Plg
 WeatherPluginIcons='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh'
 
+Package: Wifimanager
+Version: 1.0     خدمات خاصة بالواي فاي
+Status: Plg
+Wifimanager='https://gitlab.com/eliesat/extensions/-/raw/main/wifimanager/wifimanager.sh'
+
 Package: Wireguard-vpn
 Version: 15.6     اضافة اشتراك في بي ان معاينة سرعة النت
 Status: Plg
@@ -1077,4 +1082,4 @@ Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopr
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
-Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''
+Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h'''
