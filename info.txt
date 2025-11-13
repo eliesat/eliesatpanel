@@ -7,6 +7,7 @@ Simplezoompanel 2.3.2
 Xklass 1.69
 Xstreamity 5.18
 Wifimanager 1.0
+Xcplugin 5.0
 
 11.11.2025 
 -------------------------------------------------------------------------
