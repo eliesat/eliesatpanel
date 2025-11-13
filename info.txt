@@ -8,6 +8,7 @@ Xklass 1.69
 Xstreamity 5.18
 Wifimanager 1.0
 Xcplugin 5.0
+Skinparts mymetrixlitebackup t.alashry
 
 11.11.2025 
 -------------------------------------------------------------------------
