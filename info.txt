@@ -4,6 +4,8 @@
 Levi45 oscam-11904-emu-803
 Bouquetmakerxtream 1.65
 Simplezoompanel 2.3.2
+Xklass 1.69
+Xstreamity 5.18
 
 11.11.2025 
 -------------------------------------------------------------------------
