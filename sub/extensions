@@ -500,7 +500,7 @@ Status: Plg
 Radiogit='https://gitlab.com/eliesat/extensions/-/raw/main/radiogit/radiogit.sh'
 
 Package: Raedquicksignal
-Version: 18.5     مستكشف اشارة الترددات
+Version: 18.6     مستكشف اشارة الترددات
 Status: Plg
 Raedquicksignal='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh'
 
@@ -660,12 +660,12 @@ Status: Plg
 Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
 Package: Xklass
-Version: 1.69     مشغل اي بي تي في
+Version: 1.70     مشغل اي بي تي في
 Status: Plg
 Xklass='https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh'
 
 Package: Xstreamity
-Version: 5.18     مشغل اي بي تي في
+Version: 5.19     مشغل اي بي تي في
 Status: Plg
 Xstreamity='https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh'
 
