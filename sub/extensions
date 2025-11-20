@@ -605,7 +605,7 @@ Status: Plg
 Transmission='https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh'
 
 Package: Vavoo-plugin
-Version: 1.38     اي بي تي في مجاني
+Version: 1.41     اي بي تي في مجاني
 Status: Plg
 Vavoo-plugin='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
