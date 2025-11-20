@@ -189,7 +189,7 @@ Status: Plg
 Epggrabber-mod-elie='https://gitlab.com/eliesat/extensions/-/raw/main/epggrabber/epggrabber.sh'
 
 Package: Epgimport
-Version: 9.9.4     قراءة و عرض ملفات الدليل الاكتروني
+Version: 2.0     قراءة و عرض ملفات الدليل الاكتروني
 Status: Plg
 Epgimport='https://gitlab.com/eliesat/extensions/-/raw/main/epgimport/epgimport.sh'
 
@@ -1082,4 +1082,4 @@ Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopr
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
-Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h'''
+Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h'''''
