@@ -203,12 +203,12 @@ Version: 1.4.r2     ترجمة دليل الالكتروني
 Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
-Package: Estalker
+Package: Estalker1
 Version: 1.23     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
-Package: Estalker-webcontrol
+Package: Estalker2webcontrol
 Version: 1.0     
 Status: Plg
 Estalkerwebcontrol='https://gitlab.com/eliesat/extensions/-/raw/main/estalkerwebcontrol/estalkerwebcontrol.sh'
