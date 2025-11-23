@@ -1,2 +1,2 @@
 Panel = 'ElieSatPanel'
-Version = '3.66'
+Version = '3.67'
