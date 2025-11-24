@@ -26,7 +26,7 @@ Status: Plg
 Softcammanager='https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh'
 
 Package: Apod
-Version: 1.4     صورة و معلومات عن كوكب الارض
+Version: 1.7     صورة و معلومات عن كوكب الارض
 Status: Plg
 Apod='https://gitlab.com/eliesat/extensions/-/raw/main/apod/apod.sh'
 
