@@ -605,12 +605,12 @@ Status: Plg
 Transmission='https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh'
 
 Package: Vavoo-plugin
-Version: 1.41     اي بي تي في مجاني
+Version: 1.42     اي بي تي في مجاني
 Status: Plg
 Vavoo-plugin='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
 Package: Vavoo-maker
-Version: 1.0     اي بي تي في مجاني
+Version: 1.2     اي بي تي في مجاني
 Status: Plg
 Vavoo-maker='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo-maker/vavoo-maker.sh'
 
@@ -650,7 +650,7 @@ Status: Plg
 Wireguard-vpn='https://gitlab.com/eliesat/extensions/-/raw/main/wireguard-vpn/wireguard-vpn.sh'
 
 Package: Worldcam
-Version: 6.1     كاميرات حول العالم
+Version: 6.2     كاميرات حول العالم
 Status: Plg
 Worldcam='https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh'
 
