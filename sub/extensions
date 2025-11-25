@@ -600,7 +600,7 @@ Status: Plg
 Tmdb='https://gitlab.com/eliesat/extensions/-/raw/main/tmdb/tmbd.sh'
 
 Package: Transmission
-Version: 5.0.9.9     مشاهدة و تنزيل افلام و مسلسلات
+Version: 4.0.6-1     مشاهدة و تنزيل افلام و مسلسلات
 Status: Plg
 Transmission='https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh'
 
