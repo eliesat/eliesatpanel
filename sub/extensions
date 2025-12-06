@@ -153,6 +153,12 @@ Version: 2024.08.21     مدير ملفات
 Status: Plg
 Dreamexplorer='https://gitlab.com/eliesat/extensions/-/raw/main/dreamexplorer/dreamexplorer.sh'
 
+
+Package: E2bisskeyeditor
+Version: 1.0     إضافة مفاتيح البيس
+Status: Plg
+E2bisskeyeditor='https://gitlab.com/eliesat/extensions/-/raw/main/e2Bisskeyseditor/e2Bisskeyseditor.sh'
+
 Package: E2iplayer-moh_os
 Version: 1.0     مشغل اي بي تي في
 Status: Plg
