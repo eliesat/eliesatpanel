@@ -51,7 +51,7 @@ Status: Settings
 Mohgooda-motor='https://gitlab.com/eliesat/settings/-/raw/main/mohgooda-motor/mohgooda-motor.sh'
 
 Package: Morpheus883-motor
-Version: 06.10.2025     ملف قنوات
+Version: 02.12.2025     ملف قنوات
 Status: Settings
 Morpheus883-motor='https://gitlab.com/eliesat/settings/-/raw/main/morpheus883/morpheus883-motor.sh'
 
@@ -81,7 +81,7 @@ Status: Settings
 T.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
 
 Package: Vhannibal-motor
-Version: 09.10.2025     ملف قنوات
+Version: 07.12.2025     ملف قنوات
 Status: Settings
 Vhannibal-motor='https://gitlab.com/eliesat/settings/-/raw/main/vhannibal/vhannibal-motor.sh'
 
