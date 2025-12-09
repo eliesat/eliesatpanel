@@ -641,7 +641,7 @@ Status: Plg
 Weathermsn='https://gitlab.com/eliesat/extensions/-/raw/main/weathermsn/weathermsn.sh'
 
 Package: Weatherplugin
-Version: 2.2     حالة الطقس
+Version: 2.4     حالة الطقس
 Status: Plg
 Weatherplugin='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin/weatherplugin.sh'
 
