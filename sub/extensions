@@ -545,6 +545,11 @@ Version: 1.0     تصفح لايحة السكريبتات و تنفيذهم
 Status: Plg
 Scriptexecuter='https://gitlab.com/eliesat/extensions/-/raw/main/scriptexecuter/scriptexecuter.sh'
 
+Package: Servereaglesat
+Version: 1.1     تعريف اشتراك الشيرينج
+Status: Plg
+Servereaglesat='https://gitlab.com/eliesat/extensions/-/raw/main/servereaglesat/servereaglesat.sh'
+
 Package: Setpicon
 Version: 2.0     تمرير بيكون للقناة
 Status: Plg
