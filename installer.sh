@@ -13,7 +13,7 @@ rm -rf /tmp/$plugin.tar.gz >/dev/null 2>&1
 
 # Check script url connectivity and install eliesatpanel
 ###########################################
-if wget -q --method=HEAD https://github.com/eliesat/eliesatpanel/blob/main/installer.sh; then
+if wget -q --method=HEAD https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh; then
 connection=ok
 else
 echo "> Server is down, try again later..."
