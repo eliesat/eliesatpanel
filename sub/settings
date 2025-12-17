@@ -6,97 +6,97 @@ Status: Settings
 A.ibrahreem-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.ibraheem/a.ibraheem-motor.sh'
 
 Package: A-altahan-motor
-Version: 10.09.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 A-altahan-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.altahan/a.altahan-motor.sh'
 
 Package: Adelsat-motor
-Version: 07.10.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Adelsat-motor='https://gitlab.com/eliesat/settings/-/raw/main/adelsat/adelsat-motor.sh'
 
 Package: Ciefp-motor
-Version: 07.12.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Ciefp-motor='https://gitlab.com/eliesat/settings/-/raw/main/ciefp-motor/ciefp-motor.sh'
 
 Package: H.wahba-motor
-Version: 06.12.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 H.wahba-motor='https://gitlab.com/eliesat/settings/-/raw/main/h.wahba/h.wahba-motor.sh'
 
 Package: M.mallah-motor
-Version: 01.05.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 M.mallah-motor='https://gitlab.com/eliesat/settings/-/raw/main/m.mallah/m.mallah-motor.sh'
 
 Package: M.saleh-motor
-Version: 01.01.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 M.saleh-motor='https://gitlab.com/eliesat/settings/-/raw/main/m.saleh-motor/m.saleh-motor.sh'
 
 Package: Mnasr-motor
-Version: 08.03.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Mnasr-motor='https://gitlab.com/eliesat/settings/-/raw/main/mnasr-motor/mnasr-motor.sh'
 
 Package: Mohamed-os-motor
-Version: 21.02.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Mohamed-os-motor='https://gitlab.com/eliesat/settings/-/raw/main/mohamed-os/mohamed-os-motor.sh'
 
 Package: Mohgooda-motor
-Version: 29.04.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Mohgooda-motor='https://gitlab.com/eliesat/settings/-/raw/main/mohgooda-motor/mohgooda-motor.sh'
 
 Package: Morpheus883-motor
-Version: 02.12.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Morpheus883-motor='https://gitlab.com/eliesat/settings/-/raw/main/morpheus883/morpheus883-motor.sh'
 
 Package: Novaler-motor
-Version: 01.09.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Novaler-motor='https://gitlab.com/eliesat/settings/-/raw/main/novaler-motor/novaler-motor.sh'
 
 Package: Islam-salama-motor
-Version: 22.06.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Islam-salama-motor='https://gitlab.com/eliesat/settings/-/raw/main/a.salama/a.salama-motor.sh'
 
 Package: Ismail-saidi-motor
-Version: 27.10.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Ismail-saidi-motor='https://gitlab.com/eliesat/settings/-/raw/main/saidi-motor/saidi-motor.sh'
 
 Package: S.refaey-motor
-Version: 18.03.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 S.refaey-motor='https://gitlab.com/eliesat/settings/-/raw/main/s.refaey/s.refaey-motor.sh'
 
 Package: T.alashry-motor
-Version: 05.10.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 T.alashry-motor='https://gitlab.com/eliesat/settings/-/raw/main/T.alashry/t.alashry-motor.sh'
 
 Package: Vhannibal-motor
-Version: 07.12.2025     ملف قنوات
+Version: N/A     ملف قنوات
 Status: Settings
 Vhannibal-motor='https://gitlab.com/eliesat/settings/-/raw/main/vhannibal/vhannibal-motor.sh'
 
 Package: Freq-Eliesat
-Version: 12.08.2025     ملف ترددات
+Version: N/A     ملف ترددات
 Status: Freq
 Freq-Eliesat='https://gitlab.com/eliesat/settings/-/raw/main/eliesat/installer.sh'
 
 Package: Freq-Flysat
-Version: 18.12.2024     ملف ترددات
+Version: N/A     ملف ترددات
 Status: Freq
 Freq-Flysat='https://gitlab.com/eliesat/settings/-/raw/main/flysat/installer.sh'
 
 Package: Freq-Lyngsat
-Version: 06.10.2025     ملف ترددات
+Version: N/A     ملف ترددات
 Status: Freq
 Freq-Lyngsat='https://gitlab.com/eliesat/settings/-/raw/main/lyngsat/installer.sh'
 
