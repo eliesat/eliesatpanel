@@ -10,297 +10,298 @@ Version: N/A     الأجر
 Status: Plg
 Alajre='https://https://gitlab.com/eliesat/extensions/-/raw/main/alajre/alajre.shn/acherone/acherone.sh'
 
+
 Package: Advancedbootlogo
 Version: N/A     إدارة صور الاقلاع
 Status: Plg
 Advancedbootlogo='https://gitlab.com/eliesat/extensions/-/raw/main/advancedbootlogo/advancedbootlogo.sh'
 
 Package: Advancedscreenshot
-Version: 1.2     التقاط و تخزين صورة عن الشاشة
+Version: N/A     التقاط و تخزين صورة عن الشاشة
 Status: Plg
 Advancedscreenshot='https://gitlab.com/eliesat/extensions/-/raw/main/advancedscreenshot/advancedscreenshot.sh'
 
 Package: Softcammanager
-Version: 2.0     ادارة الكامات
+Version: N/A     ادارة الكامات
 Status: Plg
 Softcammanager='https://gitlab.com/eliesat/extensions/-/raw/main/alternativesoftcammanager/alternativesoftcammanager.sh'
 
 Package: Apod
-Version: 1.7     صورة و معلومات عن كوكب الارض
+Version: N/A     صورة و معلومات عن كوكب الارض
 Status: Plg
 Apod='https://gitlab.com/eliesat/extensions/-/raw/main/apod/apod.sh'
 
 Package: Ansite
-Version: 1.10     py3 انصت للقرآن الكريم
+Version: N/A     py3 انصت للقرآن الكريم
 Status: Plg
 Ansite='https://gitlab.com/eliesat/extensions/-/raw/main/ansite/ansite.sh'
 
 Package: Arabic-savior
-Version: 2.1     المنقذ العربي
+Version: N/A     المنقذ العربي
 Status: Plg
 Arabic-savior='https://gitlab.com/eliesat/extensions/-/raw/main/arabicsavior/arabicsavior.sh'
 
 Package: Astronomy
-Version: 1.3     الفلك و حركة الكواكب
+Version: N/A     الفلك و حركة الكواكب
 Status: Plg
 Astronomy='https://gitlab.com/eliesat/extensions/-/raw/main/astronomy/astronomy.sh'
 
 Package: Athantimes
-Version: 2.8     الآذان
+Version: N/A     الآذان
 Status: Plg
 Athantimes='https://gitlab.com/eliesat/extensions/-/raw/main/athantimes/athantimes.sh'
 
 Package: Auto-dcw-key-add
-Version: 1.0.8     اضافة مفتاح بيس بملف السوفتكام
+Version: N/A     اضافة مفتاح بيس بملف السوفتكام
 Status: Plg
 Auto-dcw-key-add='https://gitlab.com/eliesat/extensions/-/raw/main/dcw-key-add/dcw-key-add.sh'
 
 Package: Azkar
-Version: 1.0     اذكار المسلم م. الصفطي
+Version: N/A     اذكار المسلم م. الصفطي
 Status: Plg
 Azkar='https://gitlab.com/eliesat/extensions/-/raw/main/athkar/athkar.sh'
 
 Package: Azkar-almuslim
-Version: 1.1     اذكار المسلم
+Version: N/A     اذكار المسلم
 Status: Plg
 Azkar-almuslim='https://gitlab.com/eliesat/extensions/-/raw/main/azkar-almuslim/azkar-almuslim.sh'
 
 Package: Backupflashe
-Version: 9.5     باكآب الصورة
+Version: N/A     باكآب الصورة
 Status: Plg
 Backupflashe='https://gitlab.com/eliesat/extensions/-/raw/main/backupflashe/backupflashe.sh'
 
 Package: Bissfeedautokey
-Version: 2.8     الفيدات و شفرات البيس
+Version: N/A     الفيدات و شفرات البيس
 Status: Plg
 Bissfeedautokey='https://gitlab.com/eliesat/extensions/-/raw/main/bissfeedautokey/bissfeedautokey.sh'
 
 Package: Bitrate
-Version: 2.0     عرض معدل البت رايت على الشاشة
+Version: N/A     عرض معدل البت رايت على الشاشة
 Status: Plg
 Bitrate='https://gitlab.com/eliesat/extensions/-/raw/main/bitrate/bitrate.sh'
 
 Package: Bitrate-mod-ariad
-Version: 1.0     عرض معدل البت رايت على الشاشة
+Version: N/A     عرض معدل البت رايت على الشاشة
 Status: Plg
 Bitrate-mod-ariad='https://gitlab.com/eliesat/extensions/-/raw/main/bitrate/bitrate-mod-ariad.sh'
 
 Package: Bootlogokids-stony272
-Version: 1.0     صور اقلاع للاطفال
+Version: N/A     صور اقلاع للاطفال
 Status: Plg
 Bootlogokids-stony272='https://gitlab.com/eliesat/extensions/-/raw/main/bootlogokids/bootlogokids-stony272.sh'
 
 Package: Bootlogoswapper
-Version: 1.0     eliesat-special-edition صور اقلاع
+Version: N/A     eliesat-special-edition صور اقلاع
 Status: Plg
 Bootlogoswapper='https://gitlab.com/eliesat/extensions/-/raw/main/bootlogoswapper/bootlogoswapper-eliesat-special-edition.sh'
 
 Package: Bouquetmakerxtream
-Version: 1.67     تحويل الاي بي تي في لمفضلات
+Version: N/A     تحويل الاي بي تي في لمفضلات
 Status: Plg
 Bouquetmakerxtream='https://gitlab.com/eliesat/extensions/-/raw/main/bouquetmakerxtream/bouquetmakerxtream.sh'
 
 Package: Bundesliga-clock
-Version: 1.0     تثبيت الساعة على الشاشة بشكل دائم
+Version: N/A     تثبيت الساعة على الشاشة بشكل دائم
 Status: Plg
 Bundesliga-clock='https://gitlab.com/eliesat/extensions/-/raw/main/bundesliga-permanent-clock/bundesliga-permanent-clock.sh'
 
 Package: Boxtools
-Version: 1.7     ادوات و خدمات  مختلفة
+Version: N/A     ادوات و خدمات  مختلفة
 Status: Plg
 Boxtools='https://gitlab.com/eliesat/extensions/-/raw/main/boxtools/boxtools.sh'
 
 
 Package: Cacheflush
-Version: 2.0.r4     مسح ملفات الكاش من الذاكرة العشوائية
+Version: N/A     مسح ملفات الكاش من الذاكرة العشوائية
 Status: Plg
 Cacheflush='https://gitlab.com/eliesat/extensions/-/raw/main/cacheflush/cacheflush.sh'
 
 Package: Channel-logo-changer
-Version: 1.2     تخصيص شعار للقنوات من اختيارك
+Version: N/A     تخصيص شعار للقنوات من اختيارك
 Status: Plg
 Channel-logo-changer='https://gitlab.com/eliesat/extensions/-/raw/main/chlogochanger/chlogochanger.sh'
 
 Package: Cccamimfo
-Version: 1.9     معلومات عن حالة السسكام
+Version: N/A     معلومات عن حالة السسكام
 Status: Plg
 Cccamimfo='https://gitlab.com/eliesat/extensions/-/raw/main/cccaminfo/cccaminfo.sh'
 
 Package: Chocholousek
-Version: 5.0.240904     تسطيب بيكونات
+Version: N/A     تسطيب بيكونات
 Status: Plg
 Chocholousek='https://gitlab.com/eliesat/extensions/-/raw/main/chocholousek-picons/chocholousek-picons.sh'
 
 Package: Crashlogviewer
-Version: 1.6     تصفح ملفات الكراش
+Version: N/A     تصفح ملفات الكراش
 Status: Plg
 Crashlogviewer='https://gitlab.com/eliesat/extensions/-/raw/main/crashlogviewer/crashlogviewer.sh'
 
 Package: Crondmanager
-Version: 1.3     اضافة توقيت للسكريبت برسم التنفيذ
+Version: N/A     اضافة توقيت للسكريبت برسم التنفيذ
 Status: Plg
 Crondmanager='https://gitlab.com/eliesat/extensions/-/raw/main/crondmanager/crondmanager.sh'
 
 
 Package: Diskcputemp
-Version: 1.2     تصفح حرارة الهارد زدو المعالج
+Version: N/A     تصفح حرارة الهارد زدو المعالج
 Status: Plg
 Diskcputemp='https://gitlab.com/eliesat/extensions/-/raw/main/diskcputemp/diskcputemp.sh'
 
 
 Package: Dreamexplorer
-Version: 2024.08.21     مدير ملفات
+Version: N/A     مدير ملفات
 Status: Plg
 Dreamexplorer='https://gitlab.com/eliesat/extensions/-/raw/main/dreamexplorer/dreamexplorer.sh'
 
 
 Package: E2bisskeyeditor
-Version: 1.0     إضافة مفاتيح البيس
+Version: N/A     إضافة مفاتيح البيس
 Status: Plg
 E2bisskeyeditor='https://gitlab.com/eliesat/extensions/-/raw/main/e2Bisskeyseditor/e2Bisskeyseditor.sh'
 
 Package: E2iplayer-moh_os
-Version: 1.0     مشغل اي بي تي في
+Version: N/A     مشغل اي بي تي في
 Status: Plg
 E2iplayer-moh_os='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer/e2iplayer-main.sh'
 
 Package: E2iplayer-oem
-Version: 1.0     مشغل اي بي تي في
+Version: N/A     مشغل اي بي تي في
 Status: Plg
 E2iplayer-oem='https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer-oem/e2iplayer.sh'
 
 Package: E2m3ubouquet
-Version: 2.0.12     تحويل ال اي بي تي في لمفضلات
+Version: N/A     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 E2m3ubouquet='https://gitlab.com/eliesat/extensions/-/raw/main/e2m3u2bouquet/e2m3u2bouquet.sh'
 
 Package: E2readeradder
-Version: 3.0     كتابة سطر السسكام و ارساله الى الايميوهات
+Version: N/A     كتابة سطر السسكام و ارساله الى الايميوهات
 Status: Plg
 E2readeradder='https://gitlab.com/eliesat/extensions/-/raw/main/e2reader/enigma2readeradder.sh'
 
 Package: Easy-cccam
-Version: 0.2     اضافة اسطر سسكام
+Version: N/A     اضافة اسطر سسكام
 Status: Plg
 Easy-cccam='https://gitlab.com/eliesat/extensions/-/raw/main/easy-cccam/easy-cccam.sh'
 
 Package: Epggrabber-ziko
-Version: 24.6     الدليل الالكتروني
+Version: N/A     الدليل الالكتروني
 Status: Plg
 Epggrabber-ziko='https://gitlab.com/eliesat/extensions/-/raw/main/epggrabber2/epggrabber.sh'
 
 Package: Epggrabber-mod-elie
-Version: 24.2     الدليل الالكتروني
+Version: N/A     الدليل الالكتروني
 Status: Plg
 Epggrabber-mod-elie='https://gitlab.com/eliesat/extensions/-/raw/main/epggrabber/epggrabber.sh'
 
 Package: Epgimport
-Version: 2.0     قراءة و عرض ملفات الدليل الاكتروني
+Version: N/A     قراءة و عرض ملفات الدليل الاكتروني
 Status: Plg
 Epgimport='https://gitlab.com/eliesat/extensions/-/raw/main/epgimport/epgimport.sh'
 
 Package: Epgimport-mod-dorik
-Version: 1.9.1     قراءة و عرض ملفات الدليل الاكتروني
+Version: N/A     قراءة و عرض ملفات الدليل الاكتروني
 Status: Plg
 Epgimport-mod-dorik='https://gitlab.com/eliesat/extensions/-/raw/main/epgimport-mod-dorik1972/epgimport-mod-dorik1972.sh'
 
 Package: Epgtranslator
-Version: 1.4.r2     ترجمة دليل الالكتروني
+Version: N/A     ترجمة دليل الالكتروني
 Status: Plg
 Epgtranslator='https://gitlab.com/eliesat/extensions/-/raw/main/epgtranslator/epgtranslator.sh'
 
 Package: Estalker1
-Version: 1.25     مشغل بورتلات اي بي تي في
+Version: N/A     مشغل بورتلات اي بي تي في
 Status: Plg
 Estalker1='https://gitlab.com/eliesat/extensions/-/raw/main/estalker/estalker.sh'
 
 Package: Estalker2webcontrol
-Version: 1.0     
+Version: N/A     
 Status: Plg
 Estalker2webcontrol='https://gitlab.com/eliesat/extensions/-/raw/main/estalkerwebcontrol/estalkerwebcontrol.sh'
 
 Package: Feedsfinder
-Version: 3.1     الفيدات و شفرات البيس
+Version: N/A     الفيدات و شفرات البيس
 Status: Plg
 Feedsfinder='https://gitlab.com/eliesat/extensions/-/raw/main/feedsfinder/feedsfinder.sh'
 
 Package: Feedcatcher
-Version: 1.1     الفيدات و شفرات البيس
+Version: N/A     الفيدات و شفرات البيس
 Status: Plg
 Feedcatcher='https://gitlab.com/eliesat/extensions/-/raw/main/feedcatcher/feedcatcher.sh'
 
 Package: Filecommander
-Version: 2024.08.31     مدير ملفات
+Version: N/A     مدير ملفات
 Status: Plg
 Filecommander='https://gitlab.com/eliesat/extensions/-/raw/main/filecommander/filecommander.sh'
 
 Package: Filmxy
-Version: 1.4     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Filmxy='https://gitlab.com/eliesat/extensions/-/raw/main/filmxy/filmxy.sh'
 
 Package: Footonsat
-Version: 5.0     مواعيد مباريات كرة القدم مع القنوات الناقلة
+Version: N/A     مواعيد مباريات كرة القدم مع القنوات الناقلة
 Status: Plg
 Footonsat='https://gitlab.com/eliesat/extensions/-/raw/main/footonsat/footonsat.sh'
 
 Package: Foreca
-Version: 3.3.7     حالة الطقس
+Version: N/A     حالة الطقس
 Status: Plg
 Foreca='https://gitlab.com/eliesat/extensions/-/raw/main/foreca/foreca.sh'
 
 Package: Freearhey
-Version: 3.1     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Freearhey='https://gitlab.com/eliesat/extensions/-/raw/main/freearhey/freearhey.sh'
 
 Package: Freeserver
-Version: 8.3.8.r1     سسكام مجاني
+Version: N/A     سسكام مجاني
 Status: Plg
 Freeserver='https://gitlab.com/eliesat/extensions/-/raw/main/freeserver/freeserver.sh'
 
 Package: Gioppygio
-Version: 12.5     بيكونات و ملفات قنوات
+Version: N/A     بيكونات و ملفات قنوات
 Status: Plg
 Gioppygio='https://gitlab.com/eliesat/extensions/-/raw/main/gioppygio/gioppygio.sh'
 
 Package: Hardwareinfo
-Version: 5.2     معلومات عن الجهاز
+Version: N/A     معلومات عن الجهاز
 Status: Plg
 Hardwareinfo='https://gitlab.com/eliesat/extensions/-/raw/main/hardwareinfo/hardwareinfo.sh'
 
 Package: Hasbahca
-Version: 1.8     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Hasbahca='https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh'
 
 Package: Hdfradio
-Version: 2.22.4     راديو
+Version: N/A     راديو
 Status: Plg
 Hdfradio='https://gitlab.com/eliesat/extensions/-/raw/main/hdfradio/hdfradio.sh'
 
 Package: Historyzapselector
-Version: 1.0.45     تصفح آخر قنوات سات قلبت فيهم
+Version: N/A     تصفح آخر قنوات سات قلبت فيهم
 Status: Plg
 Historyzapselector='https://gitlab.com/eliesat/extensions/-/raw/main/historyzapselector/historyzapselector-dorik.sh'
 
 Package: Holidaycountdown
-Version: 1.0     عرض الأيام المتبقية للأعياد والفصول
+Version: N/A     عرض الأيام المتبقية للأعياد والفصول
 Status: Plg
 Holidaycountdown='https://gitlab.com/eliesat/extensions/-/raw/main/holidaycountdown/holidaycountdown.sh'
 
 Package: Horoscope
-Version: 1.1     الابراج
+Version: N/A     الابراج
 Status: Plg
 Horoscope='https://gitlab.com/eliesat/extensions/-/raw/main/horoscope/horoscope.sh'
 
 Package: Imdb
-Version: 2.1     عرض بوستر و معلومات فيلم للدليل
+Version: N/A     عرض بوستر و معلومات فيلم للدليل
 Status: Plg
 Imdb='https://gitlab.com/eliesat/extensions/-/raw/main/imdb/imdb.sh'
 
 Package: Internetspeedtest
-Version: 1.7     اختبار سرعة الاتصال بالانترنيت
+Version: N/A     اختبار سرعة الاتصال بالانترنيت
 Status: Plg
 Internetspeedtest='https://gitlab.com/eliesat/extensions/-/raw/main/internetspeedtest/internet-speed-test.sh'
 
@@ -325,88 +326,88 @@ Status: Plg
 Ipaudiopro-2='https://gitlab.com/eliesat/extensions/-/raw/main/ipaudiopro/1.5/ipaudiopro.sh'
 
 Package: Ipchecker-004
-Version: 1.0     عرض اي يي الرسيفر
+Version: N/A     عرض اي يي الرسيفر
 Status: Plg
 Ipchecker-004='https://gitlab.com/eliesat/extensions/-/raw/main/ipchecker/ipchecker.sh'
 
 Package: Iptosat
-Version: 1.8     مشاهدة الاي ابي تي على قنوات السات
+Version: N/A     مشاهدة الاي ابي تي على قنوات السات
 Status: Plg
 Iptosat='https://gitlab.com/eliesat/extensions/-/raw/main/iptosat/iptosat.sh'
 
 Package: Iptvarchive
-Version: 2.0.93     معاينة ارشيف الاي بي تي في
+Version: N/A     معاينة ارشيف الاي بي تي في
 Status: Plg
 Iptvarchive='https://gitlab.com/eliesat/extensions/-/raw/main/iptvarchive/iptvarchive.sh'
 
 Package: Iptvdream
-Version: 4.125     m3u قارئ و مشغل ملفات 
+Version: N/A     m3u قارئ و مشغل ملفات 
 Status: Plg
 Iptvdream='https://gitlab.com/eliesat/extensions/-/raw/main/iptvdream-all/iptvdream-all.sh'
 
 Package: Iqraaquran
-Version: 1.2     إقرا القرآن الكريم
+Version: N/A     إقرا القرآن الكريم
 Status: Plg
 Iqraaquran='https://gitlab.com/eliesat/extensions/-/raw/main/iqraaquran/iqraaquran.sh'
 
 Package: Isettingse2
-Version: 5.8     تسطيب ملفات قنوات
+Version: N/A     تسطيب ملفات قنوات
 Status: Plg
 Isettingse2='https://gitlab.com/eliesat/extensions/-/raw/main/isetting-e2/isetting-e2.sh'
 
 Package: Jediepgxtream
-Version: 2.15     تثبيت الدليل على قنوات ال اي يي تي في
+Version: N/A     تثبيت الدليل على قنوات ال اي يي تي في
 Status: Plg
 Jediepgxtream='https://gitlab.com/eliesat/extensions/-/raw/main/jediepgxtream/jediepgxtream.sh'
 
 Package: Jedimakerxtream
-Version: 6.40     مشاهدة الاي بي تي في بمفضلات السات
+Version: N/A     مشاهدة الاي بي تي في بمفضلات السات
 Status: Plg
 Jedimakerxtream='https://gitlab.com/eliesat/extensions/-/raw/main/jedimakerxtream/jedimakerxtream.sh'
 
 Package: Keyadder
-Version: 9.4     اضافة مفتاح بيس بملف السوفتكام
+Version: N/A     اضافة مفتاح بيس بملف السوفتكام
 Status: Plg
 Keyadder='https://gitlab.com/eliesat/extensions/-/raw/main/keyadder/keyadder.sh'
 
 Package: Lamedbmerger
-Version: 13.2     دمج ملفين قنوات و اقمار ببعض
+Version: N/A     دمج ملفين قنوات و اقمار ببعض
 Status: Plg
 Lamedbmerger='https://gitlab.com/eliesat/extensions/-/raw/main/lamedbmerger/lamedbmerger.sh'
 
 Package: Levi45emulator
-Version: 1.0     إدارة الايميوهات
+Version: N/A     إدارة الايميوهات
 Status: Plg
 Levi45emulator='https://gitlab.com/eliesat/extensions/-/raw/main/levi45emulator/levi45emulator.sh'
 
 Package: M3uconverter
-Version: 2.9     تحويل ال اي بي تي في لمفضلات
+Version: N/A     تحويل ال اي بي تي في لمفضلات
 Status: Plg
 M3uconverter='https://gitlab.com/eliesat/extensions/-/raw/main/m3uconverter/m3uconverter.sh'
 
 Package: Mmpicons
-Version: 1.4     تسطيب بيكونات
+Version: N/A     تسطيب بيكونات
 Status: Plg
 Mmpicons='https://gitlab.com/eliesat/extensions/-/raw/main/mmpicons/mmpicons.sh'
 
 Package: Moviebrowser
-Version: 4.0     تصفح الافلام و المسلسلات المخزنة
+Version: N/A     تصفح الافلام و المسلسلات المخزنة
 Status: Plg
 Moviebrowser='https://gitlab.com/eliesat/extensions/-/raw/main/moviebrowser/moviebrowser.sh'
 
 Package: Moviesmanager
-Version: 1.7     تصفح الافلام  و المسلسلات المخزنة
+Version: N/A     تصفح الافلام  و المسلسلات المخزنة
 Status: Plg
 Moviesmanager='https://gitlab.com/eliesat/extensions/-/raw/main/moviesmanager/moviesmanager.sh'
 
 
 Package: Multicamadder
-Version: 1.0     كتابة سطر السسكام و ارساله الى الايميوهات 
+Version: N/A     كتابة سطر السسكام و ارساله الى الايميوهات 
 Status: Plg
 Multicamadder='https://gitlab.com/eliesat/extensions/-/raw/main/muticamadder/muticamadder.sh'
 
 Package: Multiiptvadder
-Version: 1.0     تعريف اشتراك الاي بي تي في
+Version: N/A     تعريف اشتراك الاي بي تي في
 Status: Plg
 Multiiptvadder='https://gitlab.com/eliesat/extensions/-/raw/main/mutiiptvadder/mutiiptvadder.sh'
 
@@ -431,157 +432,157 @@ Status: Plg
 Multistalkerpro-2='https://gitlab.com/eliesat/extensions/-/raw/main/multistalker-pro/multi-stalkerpro.sh'
 
 Package: Mycam
-Version: 7.0     اشتراك شيرينج مدفوع
+Version: N/A     اشتراك شيرينج مدفوع
 Status: Plg
 Mycam='https://gitlab.com/eliesat/extensions/-/raw/main/mycam/mycam.sh'
 
 Package: Ncam-status
-Version: 3.2     معلومات عن حالة المحاكي
+Version: N/A     معلومات عن حالة المحاكي
 Status: Plg
 Ncam-status='https://gitlab.com/eliesat/extensions/-/raw/main/ncam-status/ncam-status.sh'
 
 Package: Newpermanentclock
-Version: 1.0     تثبيت الساعة على الشاشة بشكل دائم
+Version: N/A     تثبيت الساعة على الشاشة بشكل دائم
 Status: Plg
 Newpermanentclock='https://gitlab.com/eliesat/extensions/-/raw/main/newpermanentclock/newpermanentclock.sh'
 
 Package: Oaweather
-Version: 4.0     حالة الطقس
+Version: N/A     حالة الطقس
 Status: Plg
 Oaweather='https://gitlab.com/eliesat/extensions/-/raw/main/oaweather/oaweather.sh?inline=false'
 
 Package: Orangeaudio
-Version: 1.1     صوتيات اورانج
+Version: N/A     صوتيات اورانج
 Status: Plg
 Orangeaudio='https://gitlab.com/eliesat/extensions/-/raw/main/orangeaudio/orangeaudio.sh'
 
 Package: Oscam-status
-Version: 6.6     معلومات عن حالة المحاكي
+Version: N/A     معلومات عن حالة المحاكي
 Status: Plg
 Oscam-status='https://gitlab.com/eliesat/extensions/-/raw/main/oscam-status/oscam-status.sh'
 
 Package: Piconbuddy
-Version: 1.1     ادارة ملفات البيكونات
+Version: N/A     ادارة ملفات البيكونات
 Status: Plg
 Piconbuddy='https://gitlab.com/eliesat/extensions/-/raw/main/picon-buddy/picon-buddy.sh'
 
 Package: Piconinstaller
-Version: 24.08.23     تسطيب بيكونات
+Version: N/A     تسطيب بيكونات
 Status: Plg
 Piconinstaller='https://gitlab.com/eliesat/extensions/-/raw/main/piconinstaller/piconinstaller.sh'
 
 Package: Pluginskinmover
-Version: 0.8     نقل و قراءة البلاجينات على التخزين الخارجي
+Version: N/A     نقل و قراءة البلاجينات على التخزين الخارجي
 Status: Plg
 Pluginskinmover='https://gitlab.com/eliesat/extensions/-/raw/main/pluginskinmover/pluginskinmover.sh'
 
 Package: Plutotv
-Version: 20240831     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Plutotv='https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh'
 
 Package: Quarter-pounder
-Version: 6.2.0     تنشيط قنوات الاي بي تي في
+Version: N/A     تنشيط قنوات الاي بي تي في
 Status: Plg
 Quarter-pounder='https://gitlab.com/eliesat/extensions/-/raw/main/quarter-pounder/quarter-pounder.sh'
 
 Package: Quran-karim
-Version: 2.2     القرآن الكريم
+Version: N/A     القرآن الكريم
 Status: Plg
 Quran-karim='https://gitlab.com/eliesat/extensions/-/raw/main/quran-karim/quran-karim.sh'
 
 Package: Quran
-Version: 2.2.r1     القرآن الكريم
+Version: N/A     القرآن الكريم
 Status: Plg
 Quran='https://gitlab.com/eliesat/extensions/-/raw/main/quran/quran.sh'
 
 Package: Radiom
-Version: 1.1     ستريم لمحطات راديو
+Version: N/A     ستريم لمحطات راديو
 Status: Plg
 Radiom='https://gitlab.com/eliesat/extensions/-/raw/main/radiom/radiom.sh'
 
 Package: Radiogit
-Version: 1.2     ستريم لمحطات راديو
+Version: N/A     ستريم لمحطات راديو
 Status: Plg
 Radiogit='https://gitlab.com/eliesat/extensions/-/raw/main/radiogit/radiogit.sh'
 
 Package: Raedquicksignal
-Version: 18.6     مستكشف اشارة الترددات
+Version: N/A     مستكشف اشارة الترددات
 Status: Plg
 Raedquicksignal='https://gitlab.com/eliesat/extensions/-/raw/main/raedquicksignal/raedquicksignal.sh'
 
 Package: Radiostreamrelay
-Version: 1.1     راديو
+Version: N/A     راديو
 Status: Plg
 Radiostreamrelay='https://gitlab.com/eliesat/extensions/-/raw/main/radiorelay/radiorelay.sh'
 
 Package: Rakutentv
-Version: 20240324     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Rakutentv='https://gitlab.com/eliesat/extensions/-/raw/main/rakutentv/rakutentv.sh'
 
 Package: Samsungtvplus
-Version: 20250815     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Samsungtvplus='https://gitlab.com/eliesat/extensions/-/raw/main/samsungtvplus/samsungtvplus.sh'
 
 Package: Screengrabber
-Version: 3.2     التقاط و تخزين صورة عن الشاشة
+Version: N/A     التقاط و تخزين صورة عن الشاشة
 Status: Plg
 Screengrabber='https://gitlab.com/eliesat/extensions/-/raw/main/screengrabber/screengrabber.sh'
 
 Package: Screennames
-Version: 1.07     عرض اسامي سكرينات السكين
+Version: N/A     عرض اسامي سكرينات السكين
 Status: Plg
 Screennames='https://gitlab.com/eliesat/extensions/-/raw/main/screennames/screennames.sh'
 
 Package: Screenrecorder
-Version: 4.1     تسجيل مقاطع فيديو
+Version: N/A     تسجيل مقاطع فيديو
 Status: Plg
 Screenrecorder='https://gitlab.com/eliesat/extensions/-/raw/main/screenrecorder/screenrecorder.sh'
 
 Package: Scriptexecuter
-Version: 1.0     تصفح لايحة السكريبتات و تنفيذهم
+Version: N/A     تصفح لايحة السكريبتات و تنفيذهم
 Status: Plg
 Scriptexecuter='https://gitlab.com/eliesat/extensions/-/raw/main/scriptexecuter/scriptexecuter.sh'
 
 Package: Servereaglesat
-Version: 1.1     تعريف اشتراك الشيرينج
+Version: N/A     تعريف اشتراك الشيرينج
 Status: Plg
 Servereaglesat='https://gitlab.com/eliesat/extensions/-/raw/main/servereaglesat/servereaglesat.sh'
 
 Package: Setpicon
-Version: 2.0     تمرير بيكون للقناة
+Version: N/A     تمرير بيكون للقناة
 Status: Plg
 Setpicon='https://gitlab.com/eliesat/extensions/-/raw/main/setpicon/setpicon.sh'
 
 Package: Sherlockmod
-Version: 1.4.2     اينفوبار اضافي
+Version: N/A     اينفوبار اضافي
 Status: Plg
 Sherlockmod='https://gitlab.com/eliesat/extensions/-/raw/main/sherlockmod/sherlockmod.sh'
 
 Package: Shootyourscreen
-Version: 0.3     التقاط و تخزين صورة عن الشاشة
+Version: N/A     التقاط و تخزين صورة عن الشاشة
 Status: Plg
 Shootyourscreen='https://gitlab.com/eliesat/extensions/-/raw/main/shootyourscreen/shootyourscreen.sh'
 
 Package: Showclock
-Version: 0.9     تثبيت الساعة على الشاشة بشكل مؤقت
+Version: N/A     تثبيت الساعة على الشاشة بشكل مؤقت
 Status: Plg
 Showclock='https://gitlab.com/eliesat/extensions/-/raw/main/showclock/showclock.sh'
 
 Package: Skin-e2sentials
-Version: 1.0     اضافات على السكين المستخدم
+Version: N/A     اضافات على السكين المستخدم
 Status: Plg
 Skin-e2sentials='https://gitlab.com/eliesat/extensions/-/raw/main/skine2sentials/skin-e2sentials.sh'
 
 Package: Spinnerselector
-Version: 3.2     تسطيب سبينرات
+Version: N/A     تسطيب سبينرات
 Status: Plg
 Spinnerselector='https://gitlab.com/eliesat/extensions/-/raw/main/spinnerselector/spinnerselector.sh'
 
 Package: Stalkerportalconverter
-Version: 1.6     تحويل بورتلات لمفضلات و m3u     
+Version: N/A     تحويل بورتلات لمفضلات و m3u     
 Status: Plg
 Stalkerportalconverter='https://gitlab.com/eliesat/extensions/-/raw/main/stalkerportalconverter/stalkerportalconverter.sh'
 
@@ -591,92 +592,92 @@ Status: Plg
 Subssupport-1='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh'
 
 Package: Subssupport-2
-Version: 1.8.0.r3     الترجمة
+Version: N/A     الترجمة
 Status: Plg
 Subssupport-2='https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh'
 
 Package: Suptv-1
-Version: 4.4     تفعيل  اشتراك كود السوب تيفي 
+Version: N/A     تفعيل  اشتراك كود السوب تيفي 
 Status: Plg
 Suptv-1='https://gitlab.com/eliesat/extensions/-/raw/main/suptv/suptv.sh'
 
 Package: Theweather
-Version: 2.5.r0     حالة الطقس
+Version: N/A     حالة الطقس
 Status: Plg
 Theweather='https://gitlab.com/eliesat/extensions/-/raw/main/theweather/theweather.sh'
 
 Package: Tmdb
-Version: 8.6.r7     عرض بوستر و معلومات فيلم
+Version: N/A     عرض بوستر و معلومات فيلم
 Status: Plg
 Tmdb='https://gitlab.com/eliesat/extensions/-/raw/main/tmdb/tmbd.sh'
 
 Package: Transmission
-Version: 4.0.6-1     مشاهدة و تنزيل افلام و مسلسلات
+Version: N/A     مشاهدة و تنزيل افلام و مسلسلات
 Status: Plg
 Transmission='https://gitlab.com/eliesat/extensions/-/raw/main/transmission/transmission.sh'
 
 Package: Vavoo-plugin
-Version: 1.42     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Vavoo-plugin='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh'
 
 Package: Vavoo-maker
-Version: 1.2     اي بي تي في مجاني
+Version: N/A     اي بي تي في مجاني
 Status: Plg
 Vavoo-maker='https://gitlab.com/eliesat/extensions/-/raw/main/vavoo-maker/vavoo-maker.sh'
 
 Package: Vhannibalsmotor
-Version: 2.9     ملفات قنوات
+Version: N/A     ملفات قنوات
 Status: Plg
 Vhannibalsmotor='https://gitlab.com/eliesat/extensions/-/raw/main/vhannibal-settings-motor/vhannibal-settings-motor.sh'
 
 Package: Visualweather
-Version: 1.10     حالة الطقس
+Version: N/A     حالة الطقس
 Status: Plg
 Visualweather='https://gitlab.com/eliesat/extensions/-/raw/main/visualweather/visualweather.sh'
 
 Package: Weathermsn
-Version: 1.3.r3     حالة الطقس
+Version: N/A     حالة الطقس
 Status: Plg
 Weathermsn='https://gitlab.com/eliesat/extensions/-/raw/main/weathermsn/weathermsn.sh'
 
 Package: Weatherplugin
-Version: 2.4     حالة الطقس
+Version: N/A     حالة الطقس
 Status: Plg
 Weatherplugin='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin/weatherplugin.sh'
 
 Package: WeatherPluginIcons
-Version: 1.1     ايقونات بلاجين الطقس
+Version: N/A     ايقونات بلاجين الطقس
 Status: Plg
 WeatherPluginIcons='https://gitlab.com/eliesat/extensions/-/raw/main/weatherplugin-icons/weatherplugin-icons.sh'
 
 Package: Wifimanager
-Version: 1.0     خدمات خاصة بالواي فاي
+Version: N/A     خدمات خاصة بالواي فاي
 Status: Plg
 Wifimanager='https://gitlab.com/eliesat/extensions/-/raw/main/wifimanager/wifimanager.sh'
 
 Package: Wireguard-vpn
-Version: 15.6     اضافة اشتراك في بي ان معاينة سرعة النت
+Version: N/A     اضافة اشتراك في بي ان معاينة سرعة النت
 Status: Plg
 Wireguard-vpn='https://gitlab.com/eliesat/extensions/-/raw/main/wireguard-vpn/wireguard-vpn.sh'
 
 Package: Worldcam
-Version: 6.2     كاميرات حول العالم
+Version: N/A     كاميرات حول العالم
 Status: Plg
 Worldcam='https://gitlab.com/eliesat/extensions/-/raw/main/worldcam/worldcam.sh'
 
 Package: Xcplugin-forever
-Version: 5.0     مشغل اي بي تي في
+Version: N/A     مشغل اي بي تي في
 Status: Plg
 Xcplugin-forever='https://gitlab.com/eliesat/extensions/-/raw/main/xcplugin-forever/xcplugin-forever.sh'
 
 Package: Xklass
-Version: 1.71     مشغل اي بي تي في
+Version: N/A     مشغل اي بي تي في
 Status: Plg
 Xklass='https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh'
 
 Package: Xstreamity
-Version: 5.20     مشغل اي بي تي في
+Version: N/A     مشغل اي بي تي في
 Status: Plg
 Xstreamity='https://gitlab.com/eliesat/extensions/-/raw/main/xstreamity/xstreamity.sh'
 
@@ -696,12 +697,12 @@ Status: Plg
 Xtraevent-3='https://gitlab.com/eliesat/extensions/-/raw/main/xtraevent/new/xtraevent.sh'
 
 Package: Youtube
-Version: 2025.03.10     مشاهدة فيديوهات اليوتيوب
+Version: N/A     مشاهدة فيديوهات اليوتيوب
 Status: Plg
 Youtube='https://gitlab.com/eliesat/extensions/-/raw/main/youtube/youtube.sh'
 
 Package: Zaptimer
-Version: 1.0     توقيت للرجوع للقناة
+Version: N/A     توقيت للرجوع للقناة
 Status: Plg
 Zaptimer='https://gitlab.com/eliesat/extensions/-/raw/main/zaptimer/zaptimer.sh'
 
@@ -1093,4 +1094,4 @@ Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopr
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
-Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h'''''
+Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h'''''diopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h''''''h'''''
