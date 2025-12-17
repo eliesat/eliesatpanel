@@ -826,269 +826,270 @@ Openmultiboot='https://gitlab.com/eliesat/extensions/-/raw/main/openmultiboot/op
 
 ##############Novaler###############
 Package: Beengo
-Version: 11.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Beengo='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/beengo/beengo.sh'
 
 Package: Ipaudioplus
-Version: 5.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Ipaudioplus='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ipaudioplus/ipaudioplus.sh'
 
 Package: Ipsat
-Version: 9.5.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Ipsat='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ipsat/ipsat.sh'
 
 Package: Novacampro
-Version: 4.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Novacampro='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novacam/novacampro.sh'
 
 Package: Novalerstore
-Version: 3.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Novalerstore='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novalerstore/novalerstore.sh'
 
 Package: Novalertv
-Version: 11.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Novalertv='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novalertv/novalertv.sh'
 
 Package: Novatv
-Version: 11.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Novatv='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novacam/novatv.sh'
 
 Package: Suptv
-Version: 6.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Suptv='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/suptv/suptv.sh'
 
 Package: Supvod
-Version: 6.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Supvod='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/suptv/supvod.sh'
 
 Package: Ultracam
-Version: 3.0.r0     خاص باجهزة نوفالر
+Version: N/A     خاص باجهزة نوفالر
 Status: Nov
 Ultracam='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/ultracam/ultracam.sh'
 
 
 ##############panels###############
 Package: Ajpanel
-Version: 10.8.5     ادارة الملفات و مجموعة الخدمات
+Version: N/A     ادارة الملفات و مجموعة الخدمات
 Status: Pan
 Ajpanel='https://gitlab.com/eliesat/extensions/-/raw/main/ajpanel/ajpanel.sh'
 
 Package: Ciefp-plugins
-Version: 2.4     بانل تسطيب اضافات خاصة ببافل سييف
+Version: N/A     بانل تسطيب اضافات خاصة ببافل سييف
 Status: Pan
 Ciefp-plugins='https://gitlab.com/eliesat/extensions/-/raw/main/ciefp-plugins/ciefp-plugins.sh'
 
 Package: Ciefsettingspanel
-Version: 5.0     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Ciefsettingspanel='https://gitlab.com/eliesat/extensions/-/raw/main/ciefpsettingspanel/ciefpsettingspanel.sh'
 
 Package: Ajpanel-Eliesatpanel
-Version: 1.0     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Ajpanel-Eliesatpanel='https://gitlab.com/eliesat/eliesatpanel/-/raw/main/eliesatpanel.sh'
 
 Package: Emilpanel
-Version: 1.6     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Emilpanel='https://gitlab.com/eliesat/extensions/-/raw/main/emilpanel/emilpanel.sh'
 
 Package: Emilpanelpro
-Version: 2.0     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Emilpanelpro='https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh'
 
 Package: Epanel
-Version: 5.8r2     بانل خدمات متنوعة للصورة
+Version: N/A     بانل خدمات متنوعة للصورة
 Status: Pan
 Epanel='https://gitlab.com/eliesat/extensions/-/raw/main/epanel/epanel.sh'
 
 Package: Addonmanager
-Version: 10.2.r1     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Addonmanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45-addon-manager.sh'
 
 Package: Multicammanager
-Version: 10.2.r2     بانل تسطيب كامات
+Version: N/A     بانل تسطيب كامات
 Status: Pan
 Multicammanager='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-addon-manager/levi45multicammanager.sh'
 
 Package: Linuxsat-panel
-Version: 2.8.2     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Linuxsat-panel='https://gitlab.com/eliesat/extensions/-/raw/main/linuxsat-panel/linuxsat-panel.sh'
 
 Package: Magicpanelpro
-Version: 6.4     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Magicpanelpro='https://gitlab.com/eliesat/extensions/-/raw/main/magicpanel/magicpanel.sh'
 
 Package: Novalerstore
-Version: 3.0.r0     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Novalerstore='https://gitlab.com/eliesat/extensions/-/raw/main/novalerstore/novalerstore/novalerstore.sh'
 
 Package: Oneupdater
-Version: 3.1     بانل تسطيب بيكونات و ملفات قنوات
+Version: N/A     بانل تسطيب بيكونات و ملفات قنوات
 Status: Pan
 Oneupdater='https://gitlab.com/eliesat/extensions/-/raw/main/oneupdater/oneupdater.sh'
 
 
 Package: Panelaio
-Version: 1.8     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Panelaio='https://gitlab.com/eliesat/extensions/-/raw/main/panelaio/panelaio.sh'
 
 Package: S4aupdater
-Version: 24.08.30.2303     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 S4aupdater='https://gitlab.com/eliesat/extensions/-/raw/main/s4aupdater/s4aupdater.sh'
 
 Package: Satvenuspanel
-Version: 7.3.3     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Satvenuspanel='https://gitlab.com/eliesat/extensions/-/raw/main/satvenuspanel/satvenuspanel.sh'
 
 Package: Simple-zoom-panel
-Version: 2.3.2    بانل تسطيب اضافات
+Version: N/A    بانل تسطيب اضافات
 Status: Pan
 Simple-zoom-panel='https://gitlab.com/eliesat/extensions/-/raw/main/simple-zoom-panel/simple-zoom-panel.sh'
 
 Package: Smartaddonspanel
-Version: 2.0     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Smartaddonspanel='https://gitlab.com/eliesat/extensions/-/raw/main/smartaddonspanel/smartaddonspanel.sh'
 
 Package: Tvaddon
-Version: 2.1.5     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Tvaddon='https://gitlab.com/eliesat/extensions/-/raw/main/tvaddon/tvaddon.sh'
 
 Package: Tvmanager
-Version: 3.0     بانل تسطيب اضافات
+Version: N/A     بانل تسطيب اضافات
 Status: Pan
 Tvmanager='https://gitlab.com/eliesat/extensions/-/raw/main/tvmanager/tvmanager.sh'
 
 Package: zoom
-Version: 11.0.r0     اسطر سسكام مجانية
+Version: N/A     اسطر سسكام مجانية
 Status: Pan
 zoom='https://gitlab.com/eliesat/extensions/-/raw/main/zoom/zoom.sh'
 
 Package: zoom-final-fix
-Version: 1.0     py2 بانل تسطيب اضافات سكريبتات
+Version: N/A     py2 بانل تسطيب اضافات سكريبتات
 Status: Pan
 zoom-final-fix='https://gitlab.com/eliesat/extensions/-/raw/main/zoom-final-fix7x/zoom-final-fix7x.sh'
 
 
 ##########system plugins###########@
 Package: 3gmodemmanager
-Version: 3.12     3g 4g تعريف مودم يو اس بي
+Version: N/A     3g 4g تعريف مودم يو اس بي
 Status: Sys
 3gmodemmanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/3gmodemmanager/3gmodemmanager.sh'
 
 Package: Arabic-menus
-Version: 1.0     atv hdf pli obh vix تعريب قوائم الصورة
+Version: N/A     atv hdf pli obh vix تعريب قوائم الصورة
 Status: Sys
 Arabic-menus='https://gitlab.com/eliesat/systemplugins/-/raw/main/arabic-menus/arabic-menus.sh'
 
 Package: Ciplushelper
-Version: 5.8.r2     تعريف الكامة الخارجية
+Version: N/A     تعريف الكامة الخارجية
 Status: Sys
 Ciplushelper='https://gitlab.com/eliesat/systemplugins/-/raw/main/ciplushelper/ciplushelper.sh'
 
 Package: Devicemanager
-Version: 3.12     فرمطة الفلاشة الخارجية
+Version: N/A     فرمطة الفلاشة الخارجية
 Status: Sys
 Devicemanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/devicemanager/devicemanager.sh'
 
 Package: Mountmanager
-Version: 3.12     ماونت للفلاشة الخارجية
+Version: N/A     ماونت للفلاشة الخارجية
 Status: Sys
 Mountmanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/mountmanager/mountmanager.sh'
 
 Package: Networkbrowser
-Version: 3.12     البحث و تصفح الشبكة الداخليه
+Version: N/A     البحث و تصفح الشبكة الداخليه
 Status: Sys
 Networkbrowser='https://gitlab.com/eliesat/systemplugins/-/raw/main/networkbrowser/networkbrowser.sh'
 
 Package: Newvirtualkeyboard
-Version: 13.6     لوحة مفاتيح اضافية
+Version: N/A     لوحة مفاتيح اضافية
 Status: Sys
 Newvirtualkeyboard='https://gitlab.com/eliesat/extensions/-/raw/main/newvirtualkeyboard/newvirtualkeyboard.sh'
 
 Package: Servicescanupdates
-Version: 3.2     انشاء مفضلة للقنوات الجديدة بعد البحث
+Version: N/A     انشاء مفضلة للقنوات الجديدة بعد البحث
 Status: Sys
 Servicescanupdates='https://gitlab.com/eliesat/extensions/-/raw/main/servicescanupdates/servicescanupdates.sh'
 
 Package: Setpasswd
-Version: 3.12     تغيير كلمة مرور الصورة
+Version: N/A     تغيير كلمة مرور الصورة
 Status: Sys
 Setpasswd='https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/setpasswd.sh'
 
 Package: Softwaremanager
-Version: 3.12     openpli ادارة الصورة و الدخول على الفيدات
+Version: N/A     openpli ادارة الصورة و الدخول على الفيدات
 Status: Sys
 Softwaremanager='https://gitlab.com/eliesat/systemplugins/-/raw/main/softwaremanager/softwaremanager.sh'
 
 Package: Ts-sateditor
-Version: 4.4     اضافة حذف تعديل بالاقمار و الترددات
+Version: N/A     اضافة حذف تعديل بالاقمار و الترددات
 Status: Sys
 Ts-sateditor='https://gitlab.com/eliesat/extensions/-/raw/main/ts-sateditor/ts-sateditor.sh'
 
 Package: Weathercomphandler
-Version: 1.0     اداة خاصة بالطقس
+Version: N/A     اداة خاصة بالطقس
 Status: Sys
 Weathercomponenthandler='https://gitlab.com/eliesat/extensions/-/raw/main/weathercomponenthandler/weathercomponenthandler.sh'
 
 Package: xmlupdate
-Version: 3.12     تحديث ملف الترددات
+Version: N/A     تحديث ملف الترددات
 Status: Sys
 xmlupdate='https://gitlab.com/eliesat/systemplugins/-/raw/main/xmlupdate/xmlupdate.sh'
 
 Package: Fonts
-Version: 1.0.r0     ملف خطوط
+Version: N/A     ملف خطوط
 Status: Sys
 xmlupdate='https://gitlab.com/eliesat/free/-/raw/main/fonts/fonts.sh'
 
 Package: Font-saber
-Version: 1.2     ملف خطوط صابر ارنان
+Version: N/A     ملف خطوط صابر ارنان
 Status: Sys
 Font-saber='https://gitlab.com/eliesat/free/-/raw/main/fonts/font-saber.sh'
 
 Package: Subtitles-mora
-Version: 1.0     ملفات ترجمة
+Version: N/A     ملفات ترجمة
 Status: Sys
 Subtitles-mora='https://gitlab.com/eliesat/free/-/raw/main/subtites-mora/subtitles-mora.sh'
 
 Package: Cccam-scripts
-Version: 1.0     اسطر سسكام مجانية
+Version: N/A     اسطر سسكام مجانية
 Status: Free
 Cccam-scripts='https://gitlab.com/eliesat/free/-/raw/main/cccam-scripts/free-cccam.sh'
 
 Package: Emil-scripts
-Version: 08.01.2025     حزمة سكريبتات مجانية
+Version: N/A     حزمة سكريبتات مجانية
 Status: Free
 Emil-scripts='https://gitlab.com/eliesat/free/-/raw/main/emil/emil-scripts.sh'
 
 Package: Levi45-freeserver
-Version: 1.9     سسكام مجاني
+Version: N/A     سسكام مجاني
 Status: Free
 Levi45-freeserver='https://gitlab.com/eliesat/extensions/-/raw/main/levi45-freeserver/levi45-freeserver.sh'
 
 
 Package: Ipaudiopro-haitham
-Version: 13.09.2025     صوتيات هيثم السوداني
+Version: N/A     صوتيات هيثم السوداني
 Status: Free
+Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopro-haitham.sh': Free
 Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopro-haitham.sh'
 
 Package: Ipaudiopro-radios
