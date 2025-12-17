@@ -1,17 +1,17 @@
 ##############extensions###############
 
 Package: Acherone
-Version: 1.3     تصفح لايحة السكريبتات و تنفيذهم
+Version: N/A     تصفح لايحة السكريبتات و تنفيذهم
 Status: Plg
 Acherone='https://gitlab.com/eliesat/extensions/-/raw/main/acherone/acherone.sh'
 
 Package: Alajre
-Version: 1.2     الأجر
+Version: N/A     الأجر
 Status: Plg
 Alajre='https://https://gitlab.com/eliesat/extensions/-/raw/main/alajre/alajre.shn/acherone/acherone.sh'
 
 Package: Advancedbootlogo
-Version: 1.0     إدارة صور الاقلاع
+Version: N/A     إدارة صور الاقلاع
 Status: Plg
 Advancedbootlogo='https://gitlab.com/eliesat/extensions/-/raw/main/advancedbootlogo/advancedbootlogo.sh'
 
