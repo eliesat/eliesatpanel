@@ -1,62 +1,25 @@
 from Plugins.Plugin import PluginDescriptor
 from Screens.MessageBox import MessageBox
-from enigma import getDesktop
+from enigma import  getDesktop
 from .mainmenu import eliesatpanel
 
-# Check if the screen is HD
 def isHD():
-    return getDesktop(0).size().width() < 1920
+	if getDesktop(0).size().width() < 1920:
+		return True
+	else:
+		return False
 
-# Main entry point for the plugin
 def main(session, **kwargs):
     if isHD():
-        session.open(MessageBox, _('Install a FHD skin and try again...'), MessageBox.TYPE_ERROR)
+        session.open(MessageBox, _('Install a fhd skin and try again...'), MessageBox.TYPE_ERROR)
     else:
-        message_text = _(
-    "إعلان هام\n\n"
-    "●نود إعلامكم بأنه سيتم إيقاف دعم وتحديثات بلاجين البانل بشكل نهائي ابتداءً من بداية سنة ٢٠٢٦.\n"
-"●النظام قيد الصيانة، يرجى المحاولة لاحقا.\n"
-"●النسخة الجديدة محدثة بآخر الاضافات و تتضمن خدمات اضافية ،لدعمها و للحصول عليها.\n\n"
-"- التواصل عبر الواتساب على الرقم: 70787872 961+\n"
-"- مصر ودول افريقيا التواصل عبر الواتساب بالاستاذ وليد على الرقم:  201066883994+\n"
-"مع التحية والتقدير، فريق التطوير"
-)
-
-
-        # Show multi-line message in MessageBox; scroll automatically if too long
-        session.openWithCallback(
-            lambda result: open_panel(session, result),
-            MessageBox,
-            message_text,
-            MessageBox.TYPE_INFO
-        )
-
-# Callback function to open the plugin after user presses OK
-def open_panel(session, result):
-    if result is None or result:
         session.open(eliesatpanel)
 
-# Menu entry for the plugin
 def menu(menuid, **kwargs):
-    if menuid == "mainmenu":
-        return [(_("ElieSatPanel"), main, _("eliesatpanel_"), 48)]
-    return []
+	if menuid == "mainmenu":
+		return [(_("ElieSatPanel"), main, _("eliesatpanel_"), 48)]
+	return []
 
-# Register the plugin in Enigma2
 def Plugins(**kwargs):
-    return [
-        PluginDescriptor(
-            name="ElieSatPanel",
-            description=_("Addons for enigma2 devices"),
-            where=PluginDescriptor.WHERE_PLUGINMENU,
-            icon="esp.png",
-            fnc=main
-        ),
-        PluginDescriptor(
-            name="ElieSatPanel",
-            description=_("Addons for enigma2 devices"),
-            where=PluginDescriptor.WHERE_MENU,
-            fnc=menu
-        )
-    ]
-
+    return [PluginDescriptor(name="ElieSatPanel", description=_("Addons for enigma2 devices"), where=PluginDescriptor.WHERE_PLUGINMENU, icon="esp.png", fnc=main),
+            PluginDescriptor(name="ElieSatPanel", description=_("Addons for enigma2 devices"), where=PluginDescriptor.WHERE_MENU, fnc=menu)]
