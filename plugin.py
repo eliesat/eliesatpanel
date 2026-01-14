@@ -15,12 +15,17 @@ def main(session, **kwargs):
         session.open(MessageBox, _('Install a FHD skin and try again...'), MessageBox.TYPE_ERROR)
     else:
         message_text = _(
+    "● This is an outdated version.\n"
+    "Please contact technical support for the latest release. (961 70787872)\n"
+    "----------------------------------\n"
+    "\n"
     "إعلان هام\n\n"
-    "●هذه نسخة قديمة. يرجى الاتصال بالدعم الفني للحصول على أحدث إصدار..\n\n"
-"-للتواصل عبر الواتساب على الرقم: 70787872 961+\n"
-"- مصر ودول افريقيا التواصل عبر الواتساب بالاستاذ وليد على الرقم:  201066883994+\n"
-"مع التحية والتقدير، فريق التطوير"
+    "● هذه نسخة قديمة. يرجى الاتصال بالدعم الفني للحصول على أحدث إصدار.\n\n"
+    "- للتواصل عبر الواتساب على الرقم: +961 70787872\n"
+    "- مصر ودول أفريقيا: التواصل عبر الواتساب مع الأستاذ وليد على الرقم: +201066883994\n\n"
+    "مع التحية والتقدير، فريق التطوير"
 )
+
 
 
         # Show multi-line message in MessageBox; scroll automatically if too long
