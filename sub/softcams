@@ -1,7 +1,7 @@
 ##############softcams#############
 
 Package: Oscam-Audi06-1
-Version: 11922.emu.r802     .ipk .deb
+Version: 11884.emu.r802     .ipk .deb
 Status: Aud
 Oscam-Audi06-1='https://gitlab.com/eliesat/softcams/-/raw/main/audi06_19/oscam.sh'
 
@@ -41,7 +41,7 @@ Status: Kit
 Oscamicamnew2='https://gitlab.com/eliesat/softcams/-/raw/main/kite888/oscamicam.sh'
 
 Package: Oscam-Levi45-1
-Version: 11929.emu.r803     .ipk .deb
+Version: 11906.emu.r803     .ipk .deb
 Status: Lev
 Oscam-Levi45-1='https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam.sh'
 
@@ -56,77 +56,77 @@ Status: Lev
 Oscam-Levi45-3='https://gitlab.com/eliesat/softcams/-/raw/main/levi/oscam-11815.sh'
 
 Package: Oscam-Linuxsat25
-Version: 11725.emu.r798     .ipk
+Version: 11726.emu.r798     .ipk
 Status: Lin
 Oscam-Linuxsat25='https://gitlab.com/eliesat/softcams/-/raw/main/linuxsat25/oscam.sh'
 
 Package: Ncam
-Version: 15.2     .ipk .deb
+Version: N/A     .ipk .deb
 Status: Moh
 Ncam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ncam.sh'
 
 Package: Gosatplus-Ncam
-Version: 15.2     .ipk
+Version: N/A     .ipk
 Status: Moh
 Gosatplus-Ncam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus-ncam.sh'
 
 Package: Powercam-Ncam
-Version: 15.2     .ipk
+Version: N/A     .ipk
 Status: Moh
 Powercam-Ncam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam-ncam.sh'
 
 Package: Supcam-Ncam
-Version: 15.2     .ipk
+Version: N/A     .ipk
 Status: Moh
 Supcam-Ncam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/supcam-ncam.sh'
 
 Package: Ultracam-Ncam
-Version: 15.2     .ipk
+Version: N/A     .ipk
 Status: Moh
 Ultracam-Ncam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam-ncam.sh'
 
 Package: Oscam
-Version: 11930.emu.r802     .ipk .deb
+Version: N/A     .ipk .deb
 Status: Moh
 Oscam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/oscam.sh'
 
 Package: Gosatplus-Oscam
-Version: 11930.emu.r802     .ipk
+Version: N/A     .ipk
 Status: Moh
 Gosatplus-Oscam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus-oscam.sh'
 
 Package: Powercam-Oscam
-Version: 11930.emu.r802     .ipk
+Version: N/A     .ipk
 Status: Moh
 Powercam-Oscam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam-oscam.sh'
 
 Package: Supcam-Oscam
-Version: 11930.emu.r802     .ipk
+Version: N/A     .ipk
 Status: Moh
 Supcam-Oscam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/supcam-oscam.sh'
 
 Package: Ultracam-Oscam
-Version: 11930.emu.r802     .ipk
+Version: N/A     .ipk
 Status: Moh
 Ultracam-Oscam='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam-oscam.sh'
 
 Package: Gosatplus-emu
-Version: 2.0     .ipk
+Version: N/A     .ipk
 Status: Moh
 Gosatplus-emu='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/gosatplus.sh'
 
 Package: Powercam-emu
-Version: 3.0     .ipk
+Version: N/A     .ipk
 Status: Moh
 Powercam-emu='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/powercam.sh'
 
 Package: Ultracam-emu
 Version: 1.0     .ipk
-Status: Moh
+Status: N/A
 Ultracam-emu='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/ultracam.sh'
 
 Package: Revcam-Spider-X
-Version: 1.0     .ipk
+Version: N/A     .ipk
 Status: Moh
 Revcam-Spider-X='https://gitlab.com/eliesat/softcams/-/raw/main/mohamed-os/revcam-spider-x/revcam.sh'
 
