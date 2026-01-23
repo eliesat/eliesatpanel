@@ -1,0 +1,61 @@
+##############picons###############
+
+Package: picons-motor
+Version: 02.05.2025     /media/hdd 30W-80E شعارات القنوات
+Status: Snp
+picons-motor='https://gitlab.com/eliesat/picons/-/raw/main/picons-all-name.sh'
+
+Package: Picons-transparent
+Version: 15.08.2025     شعارات الايميو السات البروفايدر و التشفير
+Status: Srp
+Picons-transparent='https://gitlab.com/eliesat/picons/-/raw/main/picons-transparent.sh'
+
+Package: Picons-black
+Version: 15.08.2025     شعارات الايميو السات البروفايدر و التشفير
+Status: Srp
+Picons-black='https://gitlab.com/eliesat/picons/-/raw/main/picons-black.sh'
+
+Package: Picons-white
+Version: 15.08.2025     شعارات الايميو السات البروفايدر و التشفير
+Status: Srp
+Picons-white='https://gitlab.com/eliesat/picons/-/raw/main/picons-white.sh'
+
+Package: Picons-zelda
+Version: 15.08.2025     شعارات الايميو السات البروفايدر و التشفير
+Status: Srp
+Picons-zelda='https://gitlab.com/eliesat/picons/-/raw/main/picons-zelda.sh'
+
+Package: 34.5W-picons
+Version: 30.03.2025     شعار قنوات انتلسات ٣٥
+Status: Srp
+34.5W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-34w.sh'
+
+Package: 30.0W-picons
+Version: 30.03.2025     شعار قنوات هيسباسات
+Status: Srp
+30.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-30w.sh'
+
+Package: 24.5W-picons
+Version: 01.04.2025     شعار قنوات الكومسات ١
+Status: Srp
+24.5W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-24.5w.sh'
+
+Package: 22.0W-picons
+Version: 01.04.2025     شعار قنوات اس او اس ٤
+Status: Srp
+22.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-22w.sh'
+
+Package: 14.0W-picons
+Version: 01.04.2025     شعار قنوات اكسبريس اي ام ٨
+Status: Srp
+14.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-14w.sh'
+
+Package: 7.0W-picons
+Version: 01.04.2025     شعار قنوات نيل سات و المجاور 
+Status: Srp
+7.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-7w.sh'
+
+Package: 5.0W-picons
+Version: 05.04.2025     شعار قنوات يوتل سات ٥ 
+Status: Srp
+5.0W-picons='https://gitlab.com/eliesat/picons/-/raw/main/picons-5w.sh'
