@@ -953,10 +953,10 @@ Version: 24.08.30.2303     بانل تسطيب اضافات
 Status: Pan
 S4aupdater='https://gitlab.com/eliesat/extensions/-/raw/main/s4aupdater/s4aupdater.sh'
 
-Package: Satvenuspanel
+Package: Eliesatpanel
 Version: 7.3.3     بانل تسطيب اضافات
 Status: Pan
-Satvenuspanel='https://gitlab.com/eliesat/extensions/-/raw/main/satvenuspanel/satvenuspanel.sh'
+Eliesatpanel='https://www.dropbox.com/scl/fi/qkmk5xsxwpzdbnpon6hts/installer-grid.sh?rlkey=bylcyjwqvjrj8acrsku07orww&st=lf62m95a&dl=0" -O - | sh'
 
 Package: Simple-zoom-panel
 Version: 2.3.2    بانل تسطيب اضافات
@@ -1094,4 +1094,4 @@ Ipaudiopro-haitham='https://gitlab.com/eliesat/free/-/raw/main/ipaudio/ipaudiopr
 Package: Ipaudiopro-radios
 Version: 14.07.2024     صوتيات م. الصفطي
 Status: Free
-Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h'''''diopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h''''''h'''''
+Ipaudiopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h'''''diopro-radios='https://gitlab.com/eliesat/free/-/raw/main/ipaudio-elsafty/ipaudio.sh'-elsafty/ipaudio.sh'''h''''''h''''''''h'''''
