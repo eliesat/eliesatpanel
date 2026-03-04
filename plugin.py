@@ -12,33 +12,29 @@ def isHD():
 # Main entry point for the plugin
 def main(session, **kwargs):
     if isHD():
-        session.open(MessageBox, _('Install a FHD skin and try again...'), MessageBox.TYPE_ERROR)
+        session.open(
+            MessageBox,
+            _('Install a FHD skin and try again...'),
+            MessageBox.TYPE_ERROR
+        )
     else:
         message_text = _(
-    "● This is an outdated version.\n"
-    "Please contact technical support for the latest release. (961 70787872)\n"
-    "----------------------------------\n"
-    "\n"
-    "إعلان هام\n\n"
-    "● هذه نسخة قديمة. يرجى الاتصال بالدعم الفني للحصول على أحدث إصدار.\n"
-    "- للتواصل عبر الواتساب على الرقم:  96170787872+\n"
-    "مع التحية والتقدير، فريق التطوير"
-)
+            "● This is an outdated version.\n"
+            "Please contact technical support for the latest release. (961 70787872)\n"
+            "----------------------------------\n"
+            "\n"
+            "إعلان هام\n\n"
+            "● هذه نسخة قديمة. يرجى الاتصال بالدعم الفني للحصول على أحدث إصدار.\n"
+            "- للتواصل عبر الواتساب على الرقم:  96170787872+\n"
+            "مع التحية والتقدير، فريق التطوير"
+        )
 
-
-
-        # Show multi-line message in MessageBox; scroll automatically if too long
-        session.openWithCallback(
-            lambda result: open_panel(session, result),
+        # Show message only — DO NOT open panel after OK
+        session.open(
             MessageBox,
             message_text,
             MessageBox.TYPE_INFO
         )
-
-# Callback function to open the plugin after user presses OK
-def open_panel(session, result):
-    if result is None or result:
-        session.open(eliesatpanel)
 
 # Menu entry for the plugin
 def menu(menuid, **kwargs):
@@ -63,4 +59,3 @@ def Plugins(**kwargs):
             fnc=menu
         )
     ]
-
